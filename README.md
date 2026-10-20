@@ -2,7 +2,7 @@
 
 AQA Trilogy 8464. Shared Biology revision plus allowlisted Chemistry and Physics lessons, all 21 required-practical methods, and twelve new 70-mark / 75-minute practice papers.
 
-Live site: https://prodigyai-app.github.io/GCSECombinedScience/
+Live site: https://combinedsciencegcse.prodigyai.uk/
 
 ## Edit and check
 
