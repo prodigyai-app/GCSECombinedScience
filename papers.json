@@ -1,0 +1,3871 @@
+[
+  {
+    "id": "biology-1-foundation",
+    "title": "Biology Paper 1 — Foundation · Original practice",
+    "subject": "Biology",
+    "paper": 1,
+    "tier": "Foundation",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Cell biology",
+      "Organisation",
+      "Infection and response",
+      "Bioenergetics"
+    ],
+    "questions": [
+      {
+        "title": "Viewing leaf cells",
+        "topic": "Cell biology",
+        "stem": "A student observes leaf cells with a light microscope. A drawing of one cell is 36 mm long. The actual cell is 0.09 mm long.",
+        "parts": [
+          {
+            "q": "Name the structure that contains genetic material and the structure where photosynthesis occurs.",
+            "m": 2,
+            "ms": [
+              "Nucleus (1).",
+              "Chloroplast (1)."
+            ]
+          },
+          {
+            "q": "Calculate the magnification of the drawing. Show your working.",
+            "m": 2,
+            "ms": [
+              "Magnification = image size / actual size (1).",
+              "36 / 0.09 = 400 (1)."
+            ],
+            "answer": 400,
+            "unit": "times",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe how to prepare a thin leaf sample on a microscope slide.",
+            "m": 3,
+            "ms": [
+              "Place a thin sample in a drop of water on a slide (1).",
+              "Lower a coverslip gently at an angle to reduce trapped air (1).",
+              "Remove excess water and begin observing with low-power objective (1)."
+            ]
+          },
+          {
+            "q": "Give three differences between a bacterial cell and a leaf cell.",
+            "m": 3,
+            "ms": [
+              "Bacteria lack a nucleus; leaf cells have one (1).",
+              "Bacteria have no chloroplasts; photosynthetic leaf cells have chloroplasts (1).",
+              "Bacteria have no mitochondria; leaf cells have mitochondria (1). Accept bacterial circular DNA/plasmids versus chromosomes in a nucleus as an alternative distinct difference."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Osmosis in potato cylinders",
+        "topic": "Cell biology",
+        "stem": "<table><thead><tr><th>Solution</th><th>Initial mass / g</th><th>Final mass / g</th></tr></thead><tbody><tr><td>Water</td><td>4</td><td>4.8</td></tr><tr><td>Concentrated sugar solution</td><td>4</td><td>3.6</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Calculate the increase in mass of the cylinder in water.",
+            "m": 2,
+            "ms": [
+              "4.8 - 4.0 (1).",
+              "0.8 g (1)."
+            ],
+            "answer": 0.8,
+            "unit": "g",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the percentage increase in mass of this cylinder.",
+            "m": 2,
+            "ms": [
+              "0.8 / 4.0 x 100 (1).",
+              "20% (1)."
+            ],
+            "answer": 20,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the cylinder in concentrated sugar solution loses mass.",
+            "m": 3,
+            "ms": [
+              "Water moves out of potato cells (1).",
+              "Through partially permeable membranes (1).",
+              "By osmosis, from a more dilute solution inside to a more concentrated solution outside (1)."
+            ]
+          },
+          {
+            "q": "Describe three controls or improvements that make this comparison more reliable.",
+            "m": 3,
+            "ms": [
+              "Use cylinders of equal dimensions/from the same potato (1).",
+              "Use the same immersion time and temperature (1).",
+              "Repeat with several cylinders and calculate means; or blot each cylinder consistently before weighing (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enzymes and digestion",
+        "topic": "Organisation",
+        "stem": "Amylase digests starch. In a test at 35 °C, starch takes 120 seconds to disappear. At 45 °C it takes 60 seconds.",
+        "parts": [
+          {
+            "q": "Name the product type made by amylase and the reagent used to test for starch.",
+            "m": 2,
+            "ms": [
+              "Sugars (1).",
+              "Iodine solution (1)."
+            ]
+          },
+          {
+            "q": "Calculate the ratio of the time at 35 °C to the time at 45 °C. Give the simplest whole-number ratio.",
+            "m": 2,
+            "ms": [
+              "120:60 (1).",
+              "2:1 (1)."
+            ]
+          },
+          {
+            "q": "Explain how bile helps the digestion of fats.",
+            "m": 3,
+            "ms": [
+              "Neutralises stomach acid in the small intestine (1).",
+              "Provides alkaline conditions for enzymes (1).",
+              "Emulsifies fats into small droplets, increasing surface area for lipase (1)."
+            ]
+          },
+          {
+            "q": "Explain why amylase works very slowly at 80 °C.",
+            "m": 3,
+            "ms": [
+              "High temperature changes the shape of the enzyme/active site (1).",
+              "The substrate no longer fits the active site (1).",
+              "The enzyme is denatured, so fewer enzyme-substrate complexes form (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Transport in the body",
+        "topic": "Organisation",
+        "stem": "Blood circulates between the heart, lungs and body tissues.",
+        "parts": [
+          {
+            "q": "Name the blood component that carries oxygen and the component involved in clotting.",
+            "m": 2,
+            "ms": [
+              "Red blood cells (1).",
+              "Platelets (1)."
+            ]
+          },
+          {
+            "q": "Explain why the left ventricle has a thicker muscular wall than the right ventricle.",
+            "m": 2,
+            "ms": [
+              "Left ventricle pumps blood around the whole body (1).",
+              "Needs to generate higher pressure than the right ventricle, which pumps to nearby lungs (1)."
+            ]
+          },
+          {
+            "q": "Explain three features of alveoli that make gas exchange effective.",
+            "m": 3,
+            "ms": [
+              "Large surface area increases exchange (1).",
+              "Thin walls provide short diffusion distance (1).",
+              "Good blood supply/ventilation maintains a concentration gradient (1)."
+            ]
+          },
+          {
+            "q": "Describe how coronary heart disease develops and one treatment.",
+            "m": 3,
+            "ms": [
+              "Fatty deposits build up in coronary arteries (1).",
+              "Reduced blood flow reduces oxygen supply to heart muscle (1).",
+              "Stent holds artery open or statins lower blood cholesterol and slow deposit formation (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Preventing infectious disease",
+        "topic": "Infection and response",
+        "stem": "A school has 800 pupils. Following a vaccination programme, 680 pupils are vaccinated.",
+        "parts": [
+          {
+            "q": "Calculate the percentage of pupils vaccinated.",
+            "m": 2,
+            "ms": [
+              "680 / 800 x 100 (1).",
+              "85% (1)."
+            ],
+            "answer": 85,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "State one bacterial disease and one viral disease from the course.",
+            "m": 2,
+            "ms": [
+              "Salmonella food poisoning or gonorrhoea (1).",
+              "Measles, HIV or tobacco mosaic virus (1)."
+            ]
+          },
+          {
+            "q": "Explain how vaccination reduces the risk of becoming ill after later exposure to a pathogen.",
+            "m": 6,
+            "ms": [
+              "Vaccine introduces dead/inactive pathogen or pathogen antigens.",
+              "Antigens stimulate white blood cells.",
+              "White blood cells produce specific antibodies.",
+              "Some white blood cells remain as memory cells.",
+              "On later exposure the specific antibodies are produced faster.",
+              "Antibodies destroy the pathogen before it causes serious illness. Accept a valid explanation of reduced transmission protecting unvaccinated people as an alternative final point."
+            ],
+            "note": "Award one mark for each distinct valid linked point, maximum 6."
+          }
+        ]
+      },
+      {
+        "title": "Photosynthesis in pondweed",
+        "topic": "Bioenergetics",
+        "stem": "<table><thead><tr><th>Lamp distance / cm</th><th>Bubbles in 1 minute</th></tr></thead><tbody><tr><td>10</td><td>44</td></tr><tr><td>20</td><td>22</td></tr><tr><td>30</td><td>12</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Name the gas in the bubbles and the organelle that absorbs light.",
+            "m": 2,
+            "ms": [
+              "Oxygen (1).",
+              "Chloroplast (1)."
+            ]
+          },
+          {
+            "q": "Calculate the decrease in bubbles per minute between 10 cm and 30 cm.",
+            "m": 2,
+            "ms": [
+              "44 - 12 (1).",
+              "32 bubbles per minute (1)."
+            ],
+            "answer": 32,
+            "unit": "bubbles/min",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain the pattern in the table.",
+            "m": 3,
+            "ms": [
+              "Light intensity decreases as lamp distance increases (1).",
+              "Less light energy is available for photosynthesis (1).",
+              "Photosynthesis rate decreases, so fewer oxygen bubbles are produced each minute (1)."
+            ]
+          },
+          {
+            "q": "Suggest three improvements to the method.",
+            "m": 3,
+            "ms": [
+              "Collect gas volume rather than count unequal bubbles (1).",
+              "Keep temperature constant using a water bath/heat shield (1).",
+              "Repeat each distance and calculate a mean; or control carbon dioxide with the same bicarbonate solution (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Respiration during exercise",
+        "topic": "Bioenergetics",
+        "stem": "A runner starts a fast sprint. Their muscles need more energy.",
+        "parts": [
+          {
+            "q": "Complete the word equation for aerobic respiration: glucose + ____ → ____ + water.",
+            "m": 2,
+            "ms": [
+              "Oxygen (1).",
+              "Carbon dioxide (1)."
+            ]
+          },
+          {
+            "q": "State two changes to the body during exercise that deliver more oxygen to muscles.",
+            "m": 2,
+            "ms": [
+              "Heart rate increases (1).",
+              "Breathing rate and/or depth increases (1)."
+            ]
+          },
+          {
+            "q": "Compare aerobic and anaerobic respiration in human muscles.",
+            "m": 3,
+            "ms": [
+              "Aerobic uses oxygen; anaerobic does not (1).",
+              "Anaerobic forms lactic acid; aerobic forms carbon dioxide and water (1).",
+              "Anaerobic transfers less energy per glucose molecule (1)."
+            ]
+          },
+          {
+            "q": "Explain why breathing remains fast for a while after the sprint.",
+            "m": 3,
+            "ms": [
+              "Lactic acid accumulated when oxygen supply was insufficient (1).",
+              "Extra oxygen is needed to react with/remove accumulated lactic acid (1).",
+              "This extra oxygen requirement is the oxygen debt (1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biology-1-higher",
+    "title": "Biology Paper 1 — Higher · Original practice",
+    "subject": "Biology",
+    "paper": 1,
+    "tier": "Higher",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Cell biology",
+      "Organisation",
+      "Infection and response",
+      "Bioenergetics"
+    ],
+    "questions": [
+      {
+        "title": "Exchange surfaces and cell size",
+        "topic": "Cell biology",
+        "stem": "Model cells are cubes. Cube A has side length 1 mm; cube B has side length 3 mm. Surface area of a cube = 6 × side²; volume = side³.",
+        "parts": [
+          {
+            "q": "Calculate the surface-area-to-volume ratio of cube B.",
+            "m": 3,
+            "ms": [
+              "Surface area = 6 x 9 = 54 mm² (1).",
+              "Volume = 27 mm³ (1).",
+              "Ratio = 2:1 (1)."
+            ]
+          },
+          {
+            "q": "Explain why diffusion alone may be insufficient for a large multicellular organism.",
+            "m": 3,
+            "ms": [
+              "Smaller surface-area-to-volume ratio than a small organism (1).",
+              "Longer internal diffusion distances (1).",
+              "Diffusion cannot supply all cells rapidly enough to meet demand for oxygen/nutrients (1)."
+            ]
+          },
+          {
+            "q": "A micrograph is 72 mm wide at ×600. Calculate the real width in micrometres.",
+            "m": 2,
+            "ms": [
+              "72 / 600 = 0.12 mm (1).",
+              "120 micrometres (1)."
+            ],
+            "answer": 120,
+            "unit": "µm",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how active transport differs from diffusion.",
+            "m": 2,
+            "ms": [
+              "Active transport moves substances against their concentration gradient; diffusion is down it (1).",
+              "Active transport requires energy from respiration; diffusion does not (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Interpreting an osmosis investigation",
+        "topic": "Cell biology",
+        "stem": "<table><thead><tr><th>Sugar concentration / mol dm⁻³</th><th>Mean mass change / %</th></tr></thead><tbody><tr><td>0.2</td><td>6</td></tr><tr><td>0.3</td><td>2</td></tr><tr><td>0.4</td><td>-2</td></tr><tr><td>0.5</td><td>-7</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Estimate the concentration giving no net mass change by linear interpolation between 0.3 and 0.4 mol dm⁻³.",
+            "m": 2,
+            "ms": [
+              "Zero lies halfway between +2 and -2 (1).",
+              "0.35 mol dm⁻³ (1)."
+            ],
+            "answer": 0.35,
+            "unit": "mol dm⁻³",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "A cylinder initially has mass 5.50 g and loses 7% of its mass. Calculate its final mass.",
+            "m": 3,
+            "ms": [
+              "Mass loss = 5.50 x 0.07 (1).",
+              "Mass loss = 0.385 g (1).",
+              "Final mass = 5.115 g; accept 5.12 g (1)."
+            ],
+            "answer": 5.115,
+            "unit": "g",
+            "tolerance": 0.01
+          },
+          {
+            "q": "Explain why zero net mass change does not mean water molecules have stopped moving.",
+            "m": 2,
+            "ms": [
+              "Water still moves in both directions through the membrane (1).",
+              "Equal average rates produce no net transfer (1)."
+            ]
+          },
+          {
+            "q": "Identify a possible systematic error and explain a practical improvement and its benefit.",
+            "m": 3,
+            "ms": [
+              "Valid systematic error such as consistently leaving surface solution on cylinders before weighing (1).",
+              "Blot each cylinder using a standard procedure (1).",
+              "Reduces bias caused by measuring surface solution rather than tissue mass (1). Accept another coherent error-improvement-benefit sequence."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enzyme evidence",
+        "topic": "Organisation",
+        "stem": "<table><thead><tr><th>pH</th><th>Time for starch to disappear / s</th></tr></thead><tbody><tr><td>4</td><td>180</td></tr><tr><td>6</td><td>60</td></tr><tr><td>7</td><td>30</td></tr><tr><td>9</td><td>120</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Using rate = 1/time, calculate the reaction rate at pH 7 to 3 significant figures.",
+            "m": 2,
+            "ms": [
+              "1 / 30 (1).",
+              "0.0333 s⁻¹ (1)."
+            ],
+            "answer": 0.03333333333333333,
+            "unit": "s⁻¹",
+            "tolerance": 0.0001
+          },
+          {
+            "q": "Calculate how many times faster the reaction is at pH 7 than at pH 4.",
+            "m": 2,
+            "ms": [
+              "(1/30) / (1/180), or 180/30 (1).",
+              "6 times (1)."
+            ],
+            "answer": 6,
+            "unit": "times",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain the effect of pH on enzyme activity.",
+            "m": 3,
+            "ms": [
+              "Changes in pH can alter the active-site shape (1).",
+              "Substrate becomes less complementary (1).",
+              "Fewer enzyme-substrate complexes form; sufficiently extreme pH can denature the enzyme (1)."
+            ]
+          },
+          {
+            "q": "Explain why temperature, enzyme concentration and starch concentration must each be controlled.",
+            "m": 3,
+            "ms": [
+              "Temperature affects collision rate/denaturation (1).",
+              "Enzyme concentration affects the number of available active sites (1).",
+              "Starch concentration affects collision frequency/substrate availability, so changes could confound the pH comparison (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Heart disease and evidence",
+        "topic": "Organisation",
+        "stem": "In a study, 18 of 300 people in group A developed heart disease, compared with 45 of 300 in group B. Group A took part in an exercise programme. The groups were not randomly allocated.",
+        "parts": [
+          {
+            "q": "Calculate the percentage developing heart disease in group A.",
+            "m": 2,
+            "ms": [
+              "18 / 300 x 100 (1).",
+              "6% (1)."
+            ],
+            "answer": 6,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the study does not prove that exercise alone caused the difference.",
+            "m": 2,
+            "ms": [
+              "Groups may differ in other risk factors such as diet/smoking/age (1).",
+              "These confounding factors could explain part/all of the difference (1)."
+            ]
+          },
+          {
+            "q": "Explain how the heart and blood vessels maintain effective delivery of oxygen to body tissues.",
+            "m": 6,
+            "ms": [
+              "Double circulation sends blood to lungs and then to body.",
+              "Right ventricle pumps deoxygenated blood to lungs.",
+              "Oxygen enters blood at alveoli.",
+              "Left ventricle produces high pressure for circulation to body tissues.",
+              "Arteries carry blood away from heart and withstand high pressure.",
+              "Capillaries have thin walls enabling short diffusion distance into tissues. Accept valves preventing backflow or red cells carrying oxygen using haemoglobin as alternative relevant points."
+            ],
+            "note": "Award one mark per distinct relevant linked point, maximum 6."
+          }
+        ]
+      },
+      {
+        "title": "Infection and immunity",
+        "topic": "Infection and response",
+        "stem": "A viral infection causes symptoms in some patients. A doctor explains that antibiotics will not cure the viral infection.",
+        "parts": [
+          {
+            "q": "Explain why antibiotics are ineffective against viruses.",
+            "m": 2,
+            "ms": [
+              "Antibiotics target bacterial structures/processes (1).",
+              "Viruses reproduce inside host cells and do not have the same targets (1)."
+            ]
+          },
+          {
+            "q": "Describe three ways white blood cells defend the body against pathogens.",
+            "m": 3,
+            "ms": [
+              "Phagocytosis/engulfing pathogens (1).",
+              "Producing specific antibodies (1).",
+              "Producing antitoxins to neutralise toxins (1)."
+            ]
+          },
+          {
+            "q": "Explain how antibiotic resistance can increase in a bacterial population.",
+            "m": 3,
+            "ms": [
+              "Mutation produces a resistant bacterium/variation already exists (1).",
+              "Antibiotic kills susceptible bacteria, leaving resistant bacteria (1).",
+              "Resistant bacteria reproduce and pass on resistance, increasing its frequency (1)."
+            ]
+          },
+          {
+            "q": "Give two reasons why a new drug is tested before use in patients.",
+            "m": 2,
+            "ms": [
+              "Determine toxicity/safety (1).",
+              "Determine effectiveness or an appropriate dose (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Limiting photosynthesis",
+        "topic": "Bioenergetics",
+        "stem": "At a fixed temperature, a plant absorbs 2.4 mg of carbon dioxide in 4 minutes at light setting A and 4.8 mg in 4 minutes at setting B. Doubling the light again gives no further increase.",
+        "parts": [
+          {
+            "q": "Calculate the carbon dioxide uptake rate at setting B.",
+            "m": 2,
+            "ms": [
+              "4.8 / 4 (1).",
+              "1.2 mg/min (1)."
+            ],
+            "answer": 1.2,
+            "unit": "mg/min",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the percentage increase in uptake from A to B.",
+            "m": 2,
+            "ms": [
+              "(4.8 - 2.4) / 2.4 x 100 (1).",
+              "100% (1)."
+            ],
+            "answer": 100,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why doubling light beyond B may give no further increase.",
+            "m": 3,
+            "ms": [
+              "Light is no longer the limiting factor (1).",
+              "Carbon dioxide concentration or temperature may limit the rate (1).",
+              "Increasing that limiting factor, within a suitable range, would allow rate to increase (1)."
+            ]
+          },
+          {
+            "q": "A grower proposes heating the greenhouse all night to increase photosynthesis. Evaluate this proposal.",
+            "m": 3,
+            "ms": [
+              "No photosynthesis without light at night (1).",
+              "Heating costs money/energy and may not raise yield enough to cover costs (1).",
+              "It may be useful only with lighting and sufficient carbon dioxide, or for preventing cold damage; conclusion must link to conditions (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Metabolism and exercise",
+        "topic": "Bioenergetics",
+        "stem": "A person runs at increasing speed until oxygen delivery can no longer meet demand.",
+        "parts": [
+          {
+            "q": "Explain the relationship between respiration and metabolism.",
+            "m": 2,
+            "ms": [
+              "Respiration transfers energy from glucose (1).",
+              "This energy supports metabolic reactions such as protein synthesis or conversion of glucose to glycogen (1)."
+            ]
+          },
+          {
+            "q": "Explain why anaerobic respiration leads to muscle fatigue and an oxygen debt.",
+            "m": 3,
+            "ms": [
+              "Glucose is incompletely broken down to lactic acid (1).",
+              "Lactic acid accumulation contributes to fatigue (1).",
+              "Extra oxygen is required after exercise to react with/remove the lactic acid (1)."
+            ]
+          },
+          {
+            "q": "Describe how lactic acid is processed after exercise.",
+            "m": 3,
+            "ms": [
+              "Transported in blood from muscles to liver (1).",
+              "Converted back into glucose in the liver (1).",
+              "Oxygen/energy is required during recovery; accept some glucose stored as glycogen (1)."
+            ]
+          },
+          {
+            "q": "Compare anaerobic respiration in yeast with that in muscles.",
+            "m": 2,
+            "ms": [
+              "Yeast produces ethanol and carbon dioxide; muscles produce lactic acid (1).",
+              "Both transfer energy without oxygen/from incomplete breakdown of glucose (1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biology-2-foundation",
+    "title": "Biology Paper 2 — Foundation · Original practice",
+    "subject": "Biology",
+    "paper": 2,
+    "tier": "Foundation",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Homeostasis and response",
+      "Inheritance, variation and evolution",
+      "Ecology"
+    ],
+    "questions": [
+      {
+        "title": "Reflexes and reaction time",
+        "topic": "Homeostasis and response",
+        "stem": "Five ruler-drop distances are 16, 18, 15, 17 and 19 cm.",
+        "parts": [
+          {
+            "q": "Calculate the mean distance.",
+            "m": 2,
+            "ms": [
+              "Sum = 85 cm (1).",
+              "85 / 5 = 17 cm (1)."
+            ],
+            "answer": 17,
+            "unit": "cm",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Name the type of cell that detects a stimulus and the type of cell that carries an impulse to a muscle.",
+            "m": 2,
+            "ms": [
+              "Receptor (1).",
+              "Motor neurone (1)."
+            ]
+          },
+          {
+            "q": "Describe the route taken by an impulse in a reflex arc from a receptor to a muscle.",
+            "m": 3,
+            "ms": [
+              "Sensory neurone carries impulse to central nervous system (1).",
+              "Relay neurone passes impulse within CNS (1).",
+              "Motor neurone carries impulse to the muscle/effector (1)."
+            ]
+          },
+          {
+            "q": "Explain three controls or improvements in a ruler-drop investigation.",
+            "m": 3,
+            "ms": [
+              "Same starting position/zero aligned with fingers (1).",
+              "Same hand/person and posture when comparing conditions (1).",
+              "Repeat and calculate mean; avoid cues by varying delay before release (one valid improvement for 1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Blood glucose control",
+        "topic": "Homeostasis and response",
+        "stem": "After a meal, blood glucose concentration rises.",
+        "parts": [
+          {
+            "q": "Name the organ that produces insulin and state how insulin travels to target organs.",
+            "m": 2,
+            "ms": [
+              "Pancreas (1).",
+              "In the blood (1)."
+            ]
+          },
+          {
+            "q": "State two effects of insulin that reduce blood glucose concentration.",
+            "m": 2,
+            "ms": [
+              "Glucose moves from blood into cells (1).",
+              "Glucose is converted to glycogen in liver/muscles (1)."
+            ]
+          },
+          {
+            "q": "Compare Type 1 and Type 2 diabetes.",
+            "m": 3,
+            "ms": [
+              "Type 1 pancreas produces little/no insulin (1).",
+              "Type 2 body cells respond less effectively to insulin (1).",
+              "Type 1 often treated with insulin injections; Type 2 often managed with controlled carbohydrate diet and exercise (1)."
+            ]
+          },
+          {
+            "q": "Explain why a person with diabetes should use several blood glucose readings rather than one reading to judge control.",
+            "m": 3,
+            "ms": [
+              "Glucose changes during the day (1).",
+              "Meals/exercise affect readings (1).",
+              "Several readings reveal patterns and reduce the influence of an unusual reading (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hormones and reproduction",
+        "topic": "Homeostasis and response",
+        "stem": "Hormones coordinate the menstrual cycle.",
+        "parts": [
+          {
+            "q": "State where oestrogen is mainly produced and one of its roles in the menstrual cycle.",
+            "m": 2,
+            "ms": [
+              "Ovaries (1).",
+              "Builds/thickens uterus lining (1)."
+            ]
+          },
+          {
+            "q": "Name the hormone that causes ovulation and the hormone that stimulates egg maturation.",
+            "m": 2,
+            "ms": [
+              "LH causes ovulation (1).",
+              "FSH stimulates egg maturation (1)."
+            ]
+          },
+          {
+            "q": "Explain three ways contraception can prevent pregnancy.",
+            "m": 6,
+            "ms": [
+              "Barrier method: a condom or diaphragm forms a physical barrier.",
+              "The barrier prevents sperm reaching the egg, so fertilisation cannot occur.",
+              "Hormonal method: an oral contraceptive supplies reproductive hormones.",
+              "These can inhibit egg maturation or ovulation, so an egg is not available for fertilisation.",
+              "Intrauterine method: an IUD is placed inside the uterus. Accept sterilisation blocking sperm ducts or oviducts as an alternative method.",
+              "The IUD can prevent implantation, impair sperm/fertilisation, or release hormones that thicken cervical mucus. For sterilisation: gametes cannot meet. Award this explanation mark only with the matching method. Do not credit abortion as contraception."
+            ],
+            "note": "Award up to 2 marks for each of three distinct methods; maximum 6."
+          }
+        ]
+      },
+      {
+        "title": "Inheritance of a recessive condition",
+        "topic": "Inheritance, variation and evolution",
+        "stem": "A recessive allele d causes a condition. Both parents have genotype Dd. The parents’ gametes are already arranged in this incomplete Punnett square: <table><thead><tr><th>Gametes</th><th>D</th><th>d</th></tr></thead><tbody><tr><th>D</th><td>DD</td><td>Box A</td></tr><tr><th>d</th><td>Box B</td><td>dd</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "State the meaning of allele and genotype.",
+            "m": 2,
+            "ms": [
+              "Allele is a version of a gene (1).",
+              "Genotype is the combination of alleles an individual has (1)."
+            ]
+          },
+          {
+            "q": "Complete Box A and Box B in the provided Punnett square.",
+            "m": 2,
+            "ms": [
+              "Box A = Dd (1).",
+              "Box B = Dd (1)."
+            ]
+          },
+          {
+            "q": "Calculate the probability of an offspring having the condition. Give a percentage.",
+            "m": 2,
+            "ms": [
+              "Only dd has the condition; 1 of 4 (1).",
+              "25% (1)."
+            ],
+            "answer": 25,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why a dominant allele can be expressed in a heterozygous person, and why this does not mean it is always common in a population.",
+            "m": 4,
+            "ms": [
+              "Heterozygous means two different alleles (1).",
+              "One copy of a dominant allele is sufficient to affect phenotype (1).",
+              "Dominance describes expression, not how frequent an allele is (1).",
+              "Frequency also depends on inheritance, selection and chance/population history (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Selection and biodiversity",
+        "topic": "Inheritance, variation and evolution",
+        "stem": "Some beetles are green and some are brown. Birds find green beetles more easily on dark soil.",
+        "parts": [
+          {
+            "q": "State what is meant by variation and name one environmental cause of variation.",
+            "m": 2,
+            "ms": [
+              "Differences between individuals of a species (1).",
+              "Diet/light/exercise or another valid environmental factor (1)."
+            ]
+          },
+          {
+            "q": "Explain how the proportion of brown beetles could increase over many generations.",
+            "m": 4,
+            "ms": [
+              "There is inherited variation in colour (1).",
+              "Brown beetles are less likely to be eaten (1).",
+              "More survive to reproduce (1).",
+              "They pass alleles for brown colour to offspring, increasing frequency (1)."
+            ]
+          },
+          {
+            "q": "Give two reasons why a species may become extinct.",
+            "m": 2,
+            "ms": [
+              "Environmental change/habitat loss/new predator (one for 1).",
+              "New disease/competition/catastrophic event (a second distinct reason for 1)."
+            ]
+          },
+          {
+            "q": "State two benefits of maintaining biodiversity.",
+            "m": 2,
+            "ms": [
+              "Helps maintain stable ecosystems/interdependence (1).",
+              "Preserves genetic resources/food/medicines or other valid ecosystem service (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sampling a field",
+        "topic": "Ecology",
+        "stem": "Ten randomly placed quadrats each cover 0.25 m². A total of 60 daisies are counted. The field has area 200 m².",
+        "parts": [
+          {
+            "q": "Calculate the total area sampled.",
+            "m": 2,
+            "ms": [
+              "10 x 0.25 (1).",
+              "2.5 m² (1)."
+            ],
+            "answer": 2.5,
+            "unit": "m²",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Estimate the number of daisies in the field.",
+            "m": 3,
+            "ms": [
+              "Mean density = 60 / 2.5 (1).",
+              "24 daisies/m² (1).",
+              "24 x 200 = 4800 daisies (1)."
+            ],
+            "answer": 4800,
+            "unit": "daisies",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe how to place quadrats randomly.",
+            "m": 2,
+            "ms": [
+              "Set up numbered coordinates across the field (1).",
+              "Use random numbers to select positions (1)."
+            ]
+          },
+          {
+            "q": "Explain two limitations of this estimate.",
+            "m": 3,
+            "ms": [
+              "Daisies may be unevenly distributed (1).",
+              "Small sampled fraction may not represent the whole field (1).",
+              "Counting/identification or seasonal differences can affect the estimate (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Material cycles",
+        "topic": "Ecology",
+        "stem": "Microorganisms break down dead leaves in a woodland. Water and carbon are continually recycled.",
+        "parts": [
+          {
+            "q": "Name the process by which plants remove carbon dioxide from the atmosphere and the process by which decomposers release it.",
+            "m": 2,
+            "ms": [
+              "Photosynthesis (1).",
+              "Respiration (1)."
+            ]
+          },
+          {
+            "q": "Describe how water from the sea can return to the sea after falling on a woodland.",
+            "m": 3,
+            "ms": [
+              "Water evaporates from the sea and condenses to form clouds (1).",
+              "Precipitation/rain falls onto the woodland (1).",
+              "Water returns by surface runoff/rivers or groundwater flow (1)."
+            ]
+          },
+          {
+            "q": "Describe how carbon from a leaf can return to a new tree.",
+            "m": 3,
+            "ms": [
+              "Decomposers break down leaf material (1).",
+              "Respiration releases carbon dioxide to atmosphere (1).",
+              "New tree absorbs carbon dioxide for photosynthesis, building biomass (1)."
+            ]
+          },
+          {
+            "q": "Suggest two actions that reduce human impacts on biodiversity.",
+            "m": 2,
+            "ms": [
+              "Protect/restore habitats, such as reforestation (1).",
+              "Reduce pollution/waste, conservation breeding, or sustainable resource use (a second valid action for 1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biology-2-higher",
+    "title": "Biology Paper 2 — Higher · Original practice",
+    "subject": "Biology",
+    "paper": 2,
+    "tier": "Higher",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Homeostasis and response",
+      "Inheritance, variation and evolution",
+      "Ecology"
+    ],
+    "questions": [
+      {
+        "title": "Comparing nervous and hormonal control",
+        "topic": "Homeostasis and response",
+        "stem": "<table><thead><tr><th>Condition</th><th>Reaction time 1 / ms</th><th>Reaction time 2 / ms</th><th>Reaction time 3 / ms</th></tr></thead><tbody><tr><td>Quiet</td><td>210</td><td>220</td><td>230</td></tr><tr><td>Distraction</td><td>270</td><td>280</td><td>290</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Calculate the percentage increase in mean reaction time with distraction.",
+            "m": 3,
+            "ms": [
+              "Means 220 ms and 280 ms (1).",
+              "Increase = 60 ms; 60/220 x 100 (1).",
+              "27.3% to 3 significant figures (1)."
+            ],
+            "answer": 27.3,
+            "unit": "%",
+            "tolerance": 0.1
+          },
+          {
+            "q": "Explain how an impulse crosses a synapse.",
+            "m": 3,
+            "ms": [
+              "Impulse triggers release of a neurotransmitter (1).",
+              "Chemical diffuses across gap (1).",
+              "Binds to receptors on next neurone and triggers a new electrical impulse (1)."
+            ]
+          },
+          {
+            "q": "Compare nervous and hormonal coordination.",
+            "m": 2,
+            "ms": [
+              "Nervous signals travel along neurones; hormones are carried in blood (1).",
+              "Nervous responses generally faster/shorter lasting and more localised; hormonal responses generally slower/longer lasting (1)."
+            ]
+          },
+          {
+            "q": "Suggest two ways to improve the validity of this comparison.",
+            "m": 2,
+            "ms": [
+              "Test same people in both conditions with order randomised (1).",
+              "Control sleep/caffeine/practice and other distractions, or use more participants (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Negative feedback",
+        "topic": "Homeostasis and response",
+        "stem": "A fasting person has falling blood glucose concentration. For the thyroxine question, use this information: the pituitary releases TSH, which stimulates the thyroid gland to release thyroxine.",
+        "parts": [
+          {
+            "q": "Explain how glucagon restores blood glucose concentration.",
+            "m": 4,
+            "ms": [
+              "Pancreas detects low blood glucose/releases glucagon (1).",
+              "Glucagon travels to liver in blood (1).",
+              "Stimulates conversion of glycogen to glucose (1).",
+              "Glucose released into blood raises concentration (1)."
+            ]
+          },
+          {
+            "q": "Explain why this is negative feedback.",
+            "m": 2,
+            "ms": [
+              "Response opposes the initial fall (1).",
+              "As concentration returns to normal, stimulation/glucagon secretion decreases (1)."
+            ]
+          },
+          {
+            "q": "Explain how adrenaline prepares the body for action.",
+            "m": 2,
+            "ms": [
+              "Increases heart rate (1).",
+              "Increases delivery of oxygen and glucose to muscles for increased respiration (1)."
+            ]
+          },
+          {
+            "q": "Explain how thyroxine secretion is controlled when its concentration becomes too high.",
+            "m": 2,
+            "ms": [
+              "High thyroxine inhibits pituitary release of TSH (1).",
+              "Less TSH stimulates thyroid, reducing thyroxine secretion (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Reproductive hormone interactions",
+        "topic": "Homeostasis and response",
+        "stem": "A clinic treats some cases of infertility with hormones. Success is not guaranteed.",
+        "parts": [
+          {
+            "q": "State the roles of FSH and LH during fertility treatment.",
+            "m": 2,
+            "ms": [
+              "FSH stimulates maturation of eggs (1).",
+              "LH stimulates ovulation/release of an egg (1)."
+            ]
+          },
+          {
+            "q": "Explain how oestrogen and progesterone help regulate the menstrual cycle.",
+            "m": 4,
+            "ms": [
+              "Oestrogen stimulates rebuilding uterus lining (1).",
+              "Oestrogen inhibits FSH and stimulates LH release (1).",
+              "Progesterone maintains uterus lining (1).",
+              "Progesterone inhibits FSH and LH (1)."
+            ]
+          },
+          {
+            "q": "A clinic reports 72 births from 240 treatment cycles. Calculate its birth rate per treatment cycle as a percentage.",
+            "m": 2,
+            "ms": [
+              "72/240 x 100 (1).",
+              "30% (1)."
+            ],
+            "answer": 30,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Give one benefit and one risk or disadvantage of IVF.",
+            "m": 2,
+            "ms": [
+              "Can enable an infertile couple to have a child (1).",
+              "Multiple births/hormone side effects/emotional or financial cost; one valid disadvantage (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Meiosis and inheritance",
+        "topic": "Inheritance, variation and evolution",
+        "stem": "A recessive allele a causes a genetic condition. A carrier Aa has a child with a person aa who has the condition.",
+        "parts": [
+          {
+            "q": "Use a genetic cross to find the probability of a child having the condition. Give a decimal probability.",
+            "m": 3,
+            "ms": [
+              "Carrier gametes A and a; affected parent gamete a (1).",
+              "Offspring Aa and aa in equal proportions (1).",
+              "Probability 1/2 or 50% (1)."
+            ],
+            "answer": 0.5,
+            "unit": "probability",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how meiosis and fertilisation maintain chromosome number across generations.",
+            "m": 3,
+            "ms": [
+              "Meiosis halves chromosome number in gametes (1).",
+              "Fertilisation joins/fuses two gamete nuclei (1).",
+              "Restores the full chromosome number in the zygote (1)."
+            ]
+          },
+          {
+            "q": "Explain why siblings can have different phenotypes even with the same parents.",
+            "m": 2,
+            "ms": [
+              "Sexual reproduction produces different combinations of parental alleles (1).",
+              "Environmental differences can also affect phenotype (1)."
+            ]
+          },
+          {
+            "q": "Evaluate using the result of this cross to predict the outcomes for exactly two children.",
+            "m": 2,
+            "ms": [
+              "Probability applies independently to each conception (1).",
+              "It does not guarantee that exactly one of two children will have the condition (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Antibiotic resistance and genetic engineering",
+        "topic": "Inheritance, variation and evolution",
+        "stem": "A hospital finds that an increasing proportion of bacteria are resistant to an antibiotic.",
+        "parts": [
+          {
+            "q": "Explain how resistance becomes more common and how prescribing decisions can slow this process.",
+            "m": 6,
+            "ms": [
+              "Random mutation creates an allele giving resistance/variation already exists.",
+              "Antibiotic creates a selection pressure.",
+              "Susceptible bacteria are killed.",
+              "Resistant bacteria survive and reproduce rapidly.",
+              "Resistance allele is passed to offspring, increasing its frequency.",
+              "Prescribing antibiotics only when needed reduces selection pressure. Accept completion of the prescribed course as an alternative control, with a correct explanation."
+            ],
+            "note": "Award one mark per distinct valid linked point, maximum 6."
+          },
+          {
+            "q": "Describe how bacteria can be genetically engineered to produce human insulin.",
+            "m": 4,
+            "ms": [
+              "Human insulin gene is isolated using enzymes (1).",
+              "Gene inserted into a vector/plasmid using enzymes (1).",
+              "Vector introduces gene into bacteria (1).",
+              "Modified bacteria are grown and express the gene to produce insulin, which is collected/purified (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Interdependence and sampling",
+        "topic": "Ecology",
+        "stem": "A field has area 800 m². Twenty 0.5 m² quadrats contain a total of 150 clover plants. Fewer clover plants are found near a shaded hedge.",
+        "parts": [
+          {
+            "q": "Estimate the total number of clover plants in the field.",
+            "m": 3,
+            "ms": [
+              "Area sampled = 20 x 0.5 = 10 m² (1).",
+              "Density = 150/10 = 15 plants/m² (1).",
+              "Estimate = 15 x 800 = 12000 plants (1)."
+            ],
+            "answer": 12000,
+            "unit": "plants",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Design an investigation of the effect of distance from the hedge on clover abundance.",
+            "m": 4,
+            "ms": [
+              "Place a tape/transect perpendicular to hedge (1).",
+              "Sample quadrats at regular measured distances (1).",
+              "Count clover using a consistent inclusion rule and record light intensity/other relevant factor (1).",
+              "Repeat parallel transects and calculate mean abundance at each distance (1)."
+            ]
+          },
+          {
+            "q": "Explain why the association with shade does not prove that light is the only cause.",
+            "m": 3,
+            "ms": [
+              "Other factors may vary with distance (1).",
+              "For example water/mineral availability/trampling/competition (1).",
+              "Need control or additional measurement/manipulation of these variables to test causation (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Carbon and water cycles",
+        "topic": "Ecology",
+        "stem": "A restoration project plants 400 trees. In a simplified model, each tree removes an average of 12 kg carbon dioxide per year. In practice, the value varies with tree age and environmental conditions.",
+        "parts": [
+          {
+            "q": "Calculate the total carbon dioxide removed per year in this model.",
+            "m": 2,
+            "ms": [
+              "400 x 12 (1).",
+              "4800 kg per year (1)."
+            ],
+            "answer": 4800,
+            "unit": "kg/year",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how carbon from dead leaves can return to the atmosphere.",
+            "m": 2,
+            "ms": [
+              "Microorganisms/decomposers break down dead material (1).",
+              "Their respiration releases carbon dioxide (1)."
+            ]
+          },
+          {
+            "q": "Explain how water is continually recycled between the sea, atmosphere and land.",
+            "m": 3,
+            "ms": [
+              "Evaporation from sea/land and transpiration from plants move water into air (1).",
+              "Water vapour condenses into clouds and falls as precipitation (1).",
+              "Runoff/rivers/groundwater return water to the sea (1)."
+            ]
+          },
+          {
+            "q": "Explain how deforestation can increase atmospheric carbon dioxide.",
+            "m": 3,
+            "ms": [
+              "Fewer trees remove carbon dioxide by photosynthesis (1).",
+              "Burning felled trees releases carbon dioxide (1).",
+              "Decay/respiration of dead biomass also releases carbon dioxide (1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chemistry-1-foundation",
+    "title": "Chemistry Paper 1 — Foundation · Original practice",
+    "subject": "Chemistry",
+    "paper": 1,
+    "tier": "Foundation",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Atomic structure and the periodic table",
+      "Bonding, structure and properties",
+      "Quantitative chemistry",
+      "Chemical changes",
+      "Energy changes"
+    ],
+    "questions": [
+      {
+        "title": "Atoms and the periodic table",
+        "topic": "Atomic structure and the periodic table",
+        "stem": "An atom of sodium has atomic number 11 and mass number 23.",
+        "parts": [
+          {
+            "q": "State the numbers of protons, neutrons and electrons in this atom.",
+            "m": 3,
+            "ms": [
+              "11 protons (1).",
+              "23 - 11 = 12 neutrons (1).",
+              "11 electrons (1)."
+            ]
+          },
+          {
+            "q": "Give the electronic structure of sodium and use it to identify its group.",
+            "m": 2,
+            "ms": [
+              "2,8,1 (1).",
+              "Group 1, because it has one electron in its outer shell (1)."
+            ]
+          },
+          {
+            "q": "Explain how a sodium ion forms.",
+            "m": 2,
+            "ms": [
+              "Sodium atom loses one electron (1).",
+              "Forms Na⁺, a positive ion with charge +1 (1)."
+            ]
+          },
+          {
+            "q": "Describe and explain the trend in reactivity down Group 1.",
+            "m": 3,
+            "ms": [
+              "Reactivity increases down the group (1).",
+              "Outer electron is farther from nucleus/more shielded (1).",
+              "Outer electron is more easily lost (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Structures and properties",
+        "topic": "Bonding, structure and properties",
+        "stem": "Sodium chloride is an ionic compound. Carbon dioxide consists of small molecules.",
+        "parts": [
+          {
+            "q": "Calculate the relative formula mass of sodium chloride, NaCl. Use Aᵣ: Na = 23, Cl = 35.5.",
+            "m": 2,
+            "ms": [
+              "23 + 35.5 (1).",
+              "58.5 (1)."
+            ],
+            "answer": 58.5,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why solid sodium chloride does not conduct electricity but molten sodium chloride does.",
+            "m": 3,
+            "ms": [
+              "Solid ions are held in fixed positions (1).",
+              "Molten ions are free to move (1).",
+              "Moving ions carry charge (1)."
+            ]
+          },
+          {
+            "q": "Explain why carbon dioxide has a much lower boiling point than sodium chloride.",
+            "m": 3,
+            "ms": [
+              "Weak forces between carbon dioxide molecules (1).",
+              "Less energy needed to overcome these than the strong electrostatic attractions between ions (1).",
+              "Boiling carbon dioxide separates molecules; it does not break covalent bonds within them (1)."
+            ]
+          },
+          {
+            "q": "State two properties of most metals that make them useful for electrical wiring.",
+            "m": 2,
+            "ms": [
+              "Good electrical conductors (1).",
+              "Ductile/can be drawn into wires (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mass and solution concentration",
+        "topic": "Quantitative chemistry",
+        "stem": "A student dissolves 12 g of sodium chloride in water to make 300 cm³ of solution. A separate reaction uses 5.0 g of magnesium and 3.2 g of oxygen to form only magnesium oxide.",
+        "parts": [
+          {
+            "q": "Convert 300 cm³ to dm³.",
+            "m": 2,
+            "ms": [
+              "Divide by 1000 (1).",
+              "0.300 dm³ (1)."
+            ],
+            "answer": 0.3,
+            "unit": "dm³",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the solution concentration in g/dm³. Use concentration = mass / volume.",
+            "m": 3,
+            "ms": [
+              "Concentration = 12/0.300 (1).",
+              "40 (1).",
+              "Correct unit g/dm³ (1)."
+            ],
+            "answer": 40,
+            "unit": "g/dm³",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the mass of magnesium oxide formed if all reactants react.",
+            "m": 2,
+            "ms": [
+              "5.0 + 3.2 (1).",
+              "8.2 g (1)."
+            ],
+            "answer": 8.2,
+            "unit": "g",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why heating a metal in an open container can increase its mass without breaking conservation of mass.",
+            "m": 3,
+            "ms": [
+              "Metal reacts with oxygen (1).",
+              "Oxygen enters from the air and becomes part of the solid (1).",
+              "Total mass of metal plus oxygen is conserved when the whole system is considered (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Reactivity and extraction",
+        "topic": "Chemical changes",
+        "stem": "Iron oxide is heated with carbon. A different metal, aluminium, is more reactive than carbon. From 80 tonnes of ore, a process collects 24 tonnes of iron.",
+        "parts": [
+          {
+            "q": "Calculate the percentage of the ore mass collected as iron.",
+            "m": 3,
+            "ms": [
+              "Percentage = mass of iron collected / mass of ore x 100 (1).",
+              "24/80 x 100 (1).",
+              "30% (1)."
+            ],
+            "answer": 30,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why carbon can extract iron from iron oxide but cannot extract aluminium from aluminium oxide.",
+            "m": 2,
+            "ms": [
+              "Carbon is more reactive than iron, so removes oxygen from iron oxide (1).",
+              "Aluminium is more reactive than carbon, so carbon cannot remove oxygen from aluminium oxide (1)."
+            ]
+          },
+          {
+            "q": "Describe what happens when magnesium is added to copper sulfate solution.",
+            "m": 3,
+            "ms": [
+              "Copper forms as a brown/pink solid (1).",
+              "Blue colour fades as copper ions are removed (1).",
+              "Magnesium displaces copper because magnesium is more reactive (1)."
+            ]
+          },
+          {
+            "q": "State what oxidation and reduction mean in terms of oxygen.",
+            "m": 2,
+            "ms": [
+              "Oxidation is gain of oxygen (1).",
+              "Reduction is loss of oxygen (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Making a soluble salt",
+        "topic": "Chemical changes",
+        "stem": "A student makes copper sulfate crystals using dilute sulfuric acid and copper oxide.",
+        "parts": [
+          {
+            "q": "Name the products of a reaction between an acid and a metal oxide.",
+            "m": 2,
+            "ms": [
+              "Salt (1).",
+              "Water (1)."
+            ]
+          },
+          {
+            "q": "Describe how to make pure, dry copper sulfate crystals from these starting materials.",
+            "m": 6,
+            "ms": [
+              "Warm dilute sulfuric acid gently using suitable safe heating; wear eye protection.",
+              "Add copper oxide in small portions while stirring.",
+              "Continue adding until solid remains/no more reacts, showing excess oxide.",
+              "Filter to remove excess unreacted copper oxide.",
+              "Heat filtrate gently to evaporate some water, then allow to cool so crystals form.",
+              "Filter crystals and dry between filter papers/in a warm place. Do not credit boiling to dryness."
+            ],
+            "note": "Award one mark per distinct valid step, maximum 6."
+          },
+          {
+            "q": "Explain why an excess of copper oxide is added and then filtered off.",
+            "m": 2,
+            "ms": [
+              "Ensures all acid is reacted/neutralised (1).",
+              "Insoluble excess oxide can be removed, leaving a solution without excess acid (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Electrolysis",
+        "topic": "Chemical changes",
+        "stem": "Molten lead bromide contains Pb²⁺ and Br⁻ ions. Electrodes are connected to a direct-current supply.",
+        "parts": [
+          {
+            "q": "State which electrode attracts Pb²⁺ ions and which attracts Br⁻ ions.",
+            "m": 2,
+            "ms": [
+              "Pb²⁺ attracted to negative cathode (1).",
+              "Br⁻ attracted to positive anode (1)."
+            ]
+          },
+          {
+            "q": "Explain why electrolysis requires molten lead bromide rather than solid lead bromide.",
+            "m": 2,
+            "ms": [
+              "Ions must be able to move to electrodes (1).",
+              "Ions in solid are fixed in place; molten ions can move (1)."
+            ]
+          },
+          {
+            "q": "Name the products at the two electrodes.",
+            "m": 2,
+            "ms": [
+              "Lead at cathode (1).",
+              "Bromine at anode (1)."
+            ]
+          },
+          {
+            "q": "Explain why aluminium extraction is energy intensive and give two ways to reduce its environmental impact.",
+            "m": 4,
+            "ms": [
+              "Large electrical energy input needed for electrolysis (1).",
+              "Electricity from fossil fuels releases carbon dioxide (1).",
+              "Recycle aluminium to reduce need for extraction (1).",
+              "Use electricity from low-carbon sources/improve energy efficiency (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Energy changes in reactions",
+        "topic": "Energy changes",
+        "stem": "In an insulated cup, 25 cm³ of acid reacts with 25 cm³ of alkali. Temperature rises from 19.5 °C to 27.0 °C.",
+        "parts": [
+          {
+            "q": "Calculate the temperature rise.",
+            "m": 2,
+            "ms": [
+              "27.0 - 19.5 (1).",
+              "7.5 °C (1)."
+            ],
+            "answer": 7.5,
+            "unit": "°C",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "State whether the reaction is exothermic or endothermic and explain your answer.",
+            "m": 2,
+            "ms": [
+              "Exothermic (1).",
+              "Transfers energy to surroundings, increasing temperature (1)."
+            ]
+          },
+          {
+            "q": "Describe three precautions that improve the temperature measurement.",
+            "m": 3,
+            "ms": [
+              "Use an insulated cup with lid (1).",
+              "Stir so temperature is uniform (1).",
+              "Record the highest temperature promptly/use a temperature probe; same starting temperatures for both solutions (1)."
+            ]
+          },
+          {
+            "q": "Describe an energy profile for this exothermic reaction.",
+            "m": 3,
+            "ms": [
+              "Reactant energy level above product energy level (1).",
+              "Curve rises to a peak then falls to products (1).",
+              "Activation energy from reactant level to peak; overall energy change downward (1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chemistry-1-higher",
+    "title": "Chemistry Paper 1 — Higher · Original practice",
+    "subject": "Chemistry",
+    "paper": 1,
+    "tier": "Higher",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Atomic structure and the periodic table",
+      "Bonding, structure and properties",
+      "Quantitative chemistry",
+      "Chemical changes",
+      "Energy changes"
+    ],
+    "questions": [
+      {
+        "title": "Isotopes and electronic structure",
+        "topic": "Atomic structure and the periodic table",
+        "stem": "A sample of element X contains 75% atoms of mass 35 and 25% atoms of mass 37. Every atom of X has 17 protons.",
+        "parts": [
+          {
+            "q": "Calculate the relative atomic mass of X.",
+            "m": 3,
+            "ms": [
+              "Weighted contribution 0.75 x 35 (1).",
+              "Plus 0.25 x 37 (1).",
+              "35.5 (1)."
+            ],
+            "answer": 35.5,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why these two atom types are isotopes.",
+            "m": 2,
+            "ms": [
+              "Same number of protons/atomic number (1).",
+              "Different numbers of neutrons/mass numbers (1)."
+            ]
+          },
+          {
+            "q": "Give the electronic structure of X and explain the charge on its usual ion.",
+            "m": 3,
+            "ms": [
+              "2,8,7 (1).",
+              "Gains one electron for a full outer shell (1).",
+              "Forms X⁻ with charge -1 (1)."
+            ]
+          },
+          {
+            "q": "Explain why chlorine is more reactive than bromine.",
+            "m": 2,
+            "ms": [
+              "Chlorine has fewer shells/less shielding so incoming electron is closer to nucleus (1).",
+              "Stronger attraction means chlorine gains an electron more readily (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Comparing giant structures",
+        "topic": "Bonding, structure and properties",
+        "stem": "Diamond, graphite and silicon dioxide have giant covalent structures.",
+        "parts": [
+          {
+            "q": "Explain why diamond is hard and has a high melting point.",
+            "m": 3,
+            "ms": [
+              "Each carbon forms four covalent bonds (1).",
+              "Bonds form a rigid three-dimensional network (1).",
+              "Many strong covalent bonds require much energy to break (1)."
+            ]
+          },
+          {
+            "q": "Explain why graphite conducts electricity and is slippery.",
+            "m": 3,
+            "ms": [
+              "Each carbon has three covalent bonds, leaving delocalised electrons (1).",
+              "Electrons can move and carry charge (1).",
+              "Weak forces between layers allow layers to slide (1)."
+            ]
+          },
+          {
+            "q": "Calculate the relative formula mass of SiO₂. Use Aᵣ: Si = 28, O = 16.",
+            "m": 2,
+            "ms": [
+              "28 + (2 x 16) (1).",
+              "60 (1)."
+            ],
+            "answer": 60,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why a small molecule such as methane has a lower melting point than silicon dioxide.",
+            "m": 2,
+            "ms": [
+              "Only weak intermolecular forces need overcoming in methane (1).",
+              "Strong covalent bonds throughout silicon dioxide require much more energy to break (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Moles and reacting masses",
+        "topic": "Quantitative chemistry",
+        "stem": "Magnesium reacts: 2Mg + O₂ → 2MgO. Use Aᵣ: Mg = 24, O = 16. A 6.0 g sample of magnesium is completely burned in excess oxygen.",
+        "parts": [
+          {
+            "q": "Calculate the amount of magnesium in moles.",
+            "m": 2,
+            "ms": [
+              "n = m/Mᵣ = 6.0/24 (1).",
+              "0.25 mol (1)."
+            ],
+            "answer": 0.25,
+            "unit": "mol",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the mass of magnesium oxide formed.",
+            "m": 3,
+            "ms": [
+              "Mg:MgO mole ratio 1:1, so 0.25 mol MgO (1).",
+              "Mᵣ MgO = 40 (1).",
+              "Mass = 0.25 x 40 = 10.0 g (1)."
+            ],
+            "answer": 10,
+            "unit": "g",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the mass of oxygen that reacts.",
+            "m": 2,
+            "ms": [
+              "10.0 - 6.0 (1).",
+              "4.0 g (1)."
+            ],
+            "answer": 4,
+            "unit": "g",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "A second experiment gives a lower measured solid mass than predicted. Suggest one experimental cause and explain why it gives a lower value. Explain why this is not failure of conservation of mass.",
+            "m": 3,
+            "ms": [
+              "Some magnesium oxide escapes as smoke/product is lost (1).",
+              "Escaped product is not included in measured solid mass (1).",
+              "Total mass including escaped substances remains conserved (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Limiting reactants",
+        "topic": "Quantitative chemistry",
+        "stem": "2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O. A mixture contains 0.30 mol NaOH and 0.20 mol H₂SO₄. Use Mᵣ: Na₂SO₄ = 142.",
+        "parts": [
+          {
+            "q": "Identify the limiting reactant and justify your answer quantitatively.",
+            "m": 3,
+            "ms": [
+              "0.30 mol NaOH requires 0.15 mol H₂SO₄ (1).",
+              "0.20 mol acid is available, so acid is in excess (1).",
+              "NaOH is the limiting reactant (1)."
+            ]
+          },
+          {
+            "q": "Calculate the mass of sodium sulfate formed.",
+            "m": 3,
+            "ms": [
+              "2:1 ratio gives 0.15 mol Na₂SO₄ (1).",
+              "Mass = 0.15 x 142 (1).",
+              "21.3 g (1)."
+            ],
+            "answer": 21.3,
+            "unit": "g",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the amount of sulfuric acid left after reaction.",
+            "m": 2,
+            "ms": [
+              "0.20 - 0.15 (1).",
+              "0.050 mol (1)."
+            ],
+            "answer": 0.05,
+            "unit": "mol",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why doubling only the amount of acid does not double the mass of salt formed.",
+            "m": 2,
+            "ms": [
+              "NaOH remains limiting (1).",
+              "No additional NaOH is available to form more salt (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Acids and electrolysis",
+        "topic": "Chemical changes",
+        "stem": "An aqueous solution of copper chloride is electrolysed using inert electrodes.",
+        "parts": [
+          {
+            "q": "Predict the products and explain why they form at each electrode.",
+            "m": 4,
+            "ms": [
+              "Copper at negative cathode (1).",
+              "Copper is less reactive than hydrogen, so copper ions are discharged (1).",
+              "Chlorine at positive anode (1).",
+              "Halide ions are present, so chlorine forms rather than oxygen (1)."
+            ]
+          },
+          {
+            "q": "Write the cathode half-equation and identify whether this is oxidation or reduction.",
+            "m": 3,
+            "ms": [
+              "Cu²⁺ + 2e⁻ → Cu; correct reactants including 2 electrons (1).",
+              "Correct product/charge balance (1).",
+              "Reduction because electrons are gained (1)."
+            ]
+          },
+          {
+            "q": "Explain the difference between a concentrated acid and a strong acid.",
+            "m": 3,
+            "ms": [
+              "Concentration is the amount of dissolved acid per volume (1).",
+              "Strength describes the extent of ionisation in aqueous solution (1).",
+              "A strong acid is completely ionised, whereas a weak acid is only partly ionised (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Preparing a salt safely",
+        "topic": "Chemical changes",
+        "stem": "A technician needs crystals of zinc sulfate from zinc oxide and dilute sulfuric acid.",
+        "parts": [
+          {
+            "q": "Write a balanced symbol equation for the reaction.",
+            "m": 2,
+            "ms": [
+              "ZnO + H₂SO₄ → ZnSO₄ + H₂O; correct formulas (1).",
+              "Balanced with all coefficients 1 (1)."
+            ]
+          },
+          {
+            "q": "Describe a safe procedure that produces pure, dry zinc sulfate crystals. Explain important steps.",
+            "m": 6,
+            "ms": [
+              "Wear eye protection and warm dilute acid gently without boiling.",
+              "Add zinc oxide with stirring until some remains, ensuring all acid reacts.",
+              "Filter to remove excess insoluble zinc oxide.",
+              "Gently evaporate some water to concentrate the filtrate.",
+              "Allow solution to cool for crystals to form; do not heat to dryness.",
+              "Filter crystals and dry them between filter papers/in a warm place."
+            ],
+            "note": "Award one mark per distinct valid step/explanation, maximum 6."
+          },
+          {
+            "q": "Explain why zinc metal could also make zinc sulfate but would need an extra safety precaution.",
+            "m": 2,
+            "ms": [
+              "Zinc reacts with acid to release hydrogen (1).",
+              "Hydrogen is flammable, so avoid naked flames/ignition sources (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bond energies and reaction profiles",
+        "topic": "Energy changes",
+        "stem": "For H₂ + Cl₂ → 2HCl, bond energies are H–H = 436 kJ/mol, Cl–Cl = 242 kJ/mol and H–Cl = 431 kJ/mol.",
+        "parts": [
+          {
+            "q": "Calculate the energy needed to break the reactant bonds per mole of reaction.",
+            "m": 2,
+            "ms": [
+              "436 + 242 (1).",
+              "678 kJ/mol (1)."
+            ],
+            "answer": 678,
+            "unit": "kJ/mol",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the overall energy change per mole of reaction.",
+            "m": 3,
+            "ms": [
+              "Energy released making bonds = 2 x 431 = 862 kJ/mol (1).",
+              "Change = energy in - energy out = 678 - 862 (1).",
+              "-184 kJ/mol (1)."
+            ],
+            "answer": -184,
+            "unit": "kJ/mol",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the reaction is exothermic in terms of bonds.",
+            "m": 2,
+            "ms": [
+              "Bond breaking absorbs energy and bond making releases energy (1).",
+              "More energy is released making product bonds than absorbed breaking reactant bonds (1)."
+            ]
+          },
+          {
+            "q": "Explain how a catalyst changes the reaction profile and overall energy change.",
+            "m": 3,
+            "ms": [
+              "Provides alternative reaction pathway (1).",
+              "Lower activation energy/lower peak (1).",
+              "Reactant and product energy levels/overall energy change are unchanged (1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chemistry-2-foundation",
+    "title": "Chemistry Paper 2 — Foundation · Original practice",
+    "subject": "Chemistry",
+    "paper": 2,
+    "tier": "Foundation",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Rate and extent of chemical change",
+      "Organic chemistry",
+      "Chemical analysis",
+      "Chemistry of the atmosphere",
+      "Using resources"
+    ],
+    "questions": [
+      {
+        "title": "Measuring reaction rate",
+        "topic": "Rate and extent of chemical change",
+        "stem": "<table><thead><tr><th>Time / s</th><th>Gas volume / cm³</th></tr></thead><tbody><tr><td>0</td><td>0</td></tr><tr><td>20</td><td>24</td></tr><tr><td>40</td><td>38</td></tr><tr><td>60</td><td>44</td></tr><tr><td>80</td><td>44</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Calculate the mean rate during the first 20 seconds.",
+            "m": 2,
+            "ms": [
+              "24/20 (1).",
+              "1.2 cm³/s (1)."
+            ],
+            "answer": 1.2,
+            "unit": "cm³/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the mean rate from 20 seconds to 60 seconds.",
+            "m": 3,
+            "ms": [
+              "Volume increase = 44 - 24 = 20 cm³ (1).",
+              "Time interval = 60 - 20 = 40 s (1).",
+              "20/40 = 0.50 cm³/s (1)."
+            ],
+            "answer": 0.5,
+            "unit": "cm³/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why gas volume stops increasing after 60 seconds.",
+            "m": 2,
+            "ms": [
+              "Reaction has finished (1).",
+              "A reactant has been used up/limiting reactant exhausted (1)."
+            ]
+          },
+          {
+            "q": "Explain why smaller pieces of the same total mass of a solid react faster with acid.",
+            "m": 3,
+            "ms": [
+              "Greater total surface area (1).",
+              "More solid particles exposed to acid (1).",
+              "More frequent successful collisions each second (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Investigating concentration",
+        "topic": "Rate and extent of chemical change",
+        "stem": "A student reacts magnesium with dilute hydrochloric acid and collects hydrogen in a gas syringe.",
+        "parts": [
+          {
+            "q": "State the test for hydrogen and the positive result.",
+            "m": 2,
+            "ms": [
+              "Apply a lit splint to a small sample (1).",
+              "Squeaky pop (1)."
+            ]
+          },
+          {
+            "q": "Plan an investigation of how acid concentration affects the initial rate. Include controls and safety.",
+            "m": 6,
+            "ms": [
+              "Use a range of measured acid concentrations of equal volume.",
+              "Use identical magnesium mass/length and cleaned surface.",
+              "Keep temperature constant.",
+              "Connect an airtight flask to gas syringe and start timing promptly on mixing.",
+              "Measure gas volume at short fixed intervals; compare volume/time or initial slopes.",
+              "Repeat each concentration and calculate means; wear eye protection and keep hydrogen away from flames. Safety must be included for full 6 marks."
+            ],
+            "note": "Award one mark per distinct valid point, maximum 6."
+          },
+          {
+            "q": "Explain why adding a catalyst can make a reaction faster.",
+            "m": 2,
+            "ms": [
+              "Provides a pathway with lower activation energy (1).",
+              "More collisions have sufficient energy to react (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Crude oil and fuels",
+        "topic": "Organic chemistry",
+        "stem": "A fuel molecule is propane, C₃H₈. Complete combustion is C₃H₈ + 5O₂ → 3CO₂ + 4H₂O. Use Aᵣ: C = 12, H = 1, O = 16.",
+        "parts": [
+          {
+            "q": "Calculate the relative formula mass of propane.",
+            "m": 2,
+            "ms": [
+              "3 x 12 + 8 x 1 (1).",
+              "44 (1)."
+            ],
+            "answer": 44,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the relative formula mass of carbon dioxide.",
+            "m": 2,
+            "ms": [
+              "12 + 2 x 16 (1).",
+              "44 (1)."
+            ],
+            "answer": 44,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how fractional distillation separates crude oil.",
+            "m": 3,
+            "ms": [
+              "Oil is heated/vaporised and enters a column with a temperature gradient (1).",
+              "Hydrocarbons have different boiling points (1).",
+              "Fractions condense at different heights/temperatures (1)."
+            ]
+          },
+          {
+            "q": "Describe three trends as hydrocarbon chain length increases.",
+            "m": 3,
+            "ms": [
+              "Boiling point increases (1).",
+              "Viscosity increases (1).",
+              "Flammability decreases (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cracking hydrocarbons",
+        "topic": "Organic chemistry",
+        "stem": "Large hydrocarbon molecules can be cracked. One reaction is C₁₀H₂₂ → C₈H₁₈ + C₂H₄.",
+        "parts": [
+          {
+            "q": "State why cracking is useful.",
+            "m": 2,
+            "ms": [
+              "Produces smaller hydrocarbons that are useful fuels (1).",
+              "Produces alkenes used to make polymers/other useful chemicals (1)."
+            ]
+          },
+          {
+            "q": "State the conditions for catalytic cracking.",
+            "m": 2,
+            "ms": [
+              "Vaporise hydrocarbons and heat to a high temperature (1).",
+              "Pass vapour over a hot catalyst (1)."
+            ]
+          },
+          {
+            "q": "Name the test that distinguishes ethene from an alkane and give the positive result for ethene.",
+            "m": 2,
+            "ms": [
+              "Add/shake with bromine water (1).",
+              "Orange bromine water becomes colourless with ethene (1)."
+            ]
+          },
+          {
+            "q": "Explain how bromine water distinguishes the cracked alkene from an alkane, and explain why cracking is a chemical change.",
+            "m": 4,
+            "ms": [
+              "The alkene decolourises bromine water.",
+              "The alkane does not decolourise bromine water under the test conditions.",
+              "Bonds are broken and new bonds are formed during cracking.",
+              "New substances with different molecules are produced."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chromatography",
+        "topic": "Chemical analysis",
+        "stem": "A spot moves 3.6 cm from the baseline while the solvent front moves 6.0 cm. A chromatogram of a different sample shows three separate spots.",
+        "parts": [
+          {
+            "q": "Calculate the Rf value of the first spot.",
+            "m": 2,
+            "ms": [
+              "Distance moved by substance / distance moved by solvent (1).",
+              "3.6 / 6.0 = 0.60 (1)."
+            ],
+            "answer": 0.6,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the baseline is drawn in pencil and above the solvent surface.",
+            "m": 2,
+            "ms": [
+              "Pencil does not dissolve/run with solvent (1).",
+              "Above surface prevents sample dissolving directly into solvent reservoir (1)."
+            ]
+          },
+          {
+            "q": "State what three spots suggest and explain why comparing Rf values requires the same solvent.",
+            "m": 3,
+            "ms": [
+              "Sample is a mixture/contains at least three substances (1).",
+              "Substances have different attractions/solubilities in different solvents (1).",
+              "Their travel distances/Rf values therefore depend on solvent (1)."
+            ]
+          },
+          {
+            "q": "Describe the test for carbon dioxide and its positive result.",
+            "m": 3,
+            "ms": [
+              "Collect/pass gas into limewater (1).",
+              "Bubble the gas through it (1).",
+              "Limewater becomes milky/cloudy (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Our atmosphere",
+        "topic": "Chemistry of the atmosphere",
+        "stem": "In a simplified model, 1000 cm³ of dry air contains 780 cm³ nitrogen and 210 cm³ oxygen.",
+        "parts": [
+          {
+            "q": "Calculate the percentage of the air that is oxygen.",
+            "m": 2,
+            "ms": [
+              "210 / 1000 x 100 (1).",
+              "21% (1)."
+            ],
+            "answer": 21,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the total volume of gases other than nitrogen and oxygen.",
+            "m": 2,
+            "ms": [
+              "1000 - 780 - 210 (1).",
+              "10 cm³ (1)."
+            ],
+            "answer": 10,
+            "unit": "cm³",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how photosynthesis changed the early atmosphere.",
+            "m": 3,
+            "ms": [
+              "Algae/plants used carbon dioxide (1).",
+              "Released oxygen (1).",
+              "Carbon became stored in biomass/fossil fuels, contributing to falling atmospheric carbon dioxide (1)."
+            ]
+          },
+          {
+            "q": "Explain how increased carbon dioxide contributes to warming.",
+            "m": 3,
+            "ms": [
+              "Earth emits infrared radiation (1).",
+              "Carbon dioxide absorbs some outgoing infrared (1).",
+              "Re-emits radiation, reducing net energy loss and warming surface/lower atmosphere (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Water and resources",
+        "topic": "Using resources",
+        "stem": "A treatment works takes in 5000 litres of water and supplies 4200 litres of potable water. An alternative desalination process uses much more electrical energy.",
+        "parts": [
+          {
+            "q": "Calculate the percentage of input water supplied as potable water.",
+            "m": 2,
+            "ms": [
+              "4200 / 5000 x 100 (1).",
+              "84% (1)."
+            ],
+            "answer": 84,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe how fresh water is treated to make it potable.",
+            "m": 3,
+            "ms": [
+              "Choose a suitable fresh-water source (1).",
+              "Filter to remove solid particles (1).",
+              "Sterilise using chlorine/ozone/ultraviolet to kill microorganisms (1)."
+            ]
+          },
+          {
+            "q": "Explain why potable water is not necessarily pure water.",
+            "m": 2,
+            "ms": [
+              "Potable means safe to drink (1).",
+              "Can contain safe levels of dissolved substances/minerals (1)."
+            ]
+          },
+          {
+            "q": "Evaluate using desalination instead of fresh-water treatment in a dry coastal area.",
+            "m": 3,
+            "ms": [
+              "Seawater provides a plentiful local water source (1).",
+              "Distillation/reverse osmosis requires substantial energy/cost (1).",
+              "Reasoned judgement balancing limited fresh water against energy/environmental impacts (1)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chemistry-2-higher",
+    "title": "Chemistry Paper 2 — Higher · Original practice",
+    "subject": "Chemistry",
+    "paper": 2,
+    "tier": "Higher",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Rate and extent of chemical change",
+      "Organic chemistry",
+      "Chemical analysis",
+      "Chemistry of the atmosphere",
+      "Using resources"
+    ],
+    "questions": [
+      {
+        "title": "Rates from data",
+        "topic": "Rate and extent of chemical change",
+        "stem": "A tangent to a gas-volume curve at 30 s passes through (10 s, 22 cm³) and (50 s, 62 cm³). The final volume is 90 cm³ after 120 s.",
+        "parts": [
+          {
+            "q": "Calculate the instantaneous rate at 30 s using the tangent.",
+            "m": 3,
+            "ms": [
+              "Change in volume = 62 - 22 = 40 cm³ (1).",
+              "Change in time = 50 - 10 = 40 s (1).",
+              "Gradient = 1.0 cm³/s (1)."
+            ],
+            "answer": 1,
+            "unit": "cm³/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the mean rate over the whole 120 s.",
+            "m": 2,
+            "ms": [
+              "90 / 120 (1).",
+              "0.75 cm³/s (1)."
+            ],
+            "answer": 0.75,
+            "unit": "cm³/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the instantaneous rate is higher than the overall mean.",
+            "m": 2,
+            "ms": [
+              "Reactant concentration decreases as reaction proceeds (1).",
+              "Fewer successful collisions per second later in reaction lower the mean (1)."
+            ]
+          },
+          {
+            "q": "Explain the effect of increasing temperature on reaction rate.",
+            "m": 3,
+            "ms": [
+              "Particles move faster/have greater kinetic energy (1).",
+              "Collisions are more frequent (1).",
+              "A greater fraction of collisions have energy at least equal to activation energy (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Reversible reactions and equilibrium",
+        "topic": "Rate and extent of chemical change",
+        "stem": "A sealed system reaches equilibrium for A(g) + B(g) ⇌ C(g). The forward reaction is exothermic. Initially, equilibrium contains 0.60 mol C. After a change, it contains 0.45 mol C.",
+        "parts": [
+          {
+            "q": "Calculate the percentage decrease in amount of C.",
+            "m": 2,
+            "ms": [
+              "(0.60 - 0.45) / 0.60 x 100 (1).",
+              "25% (1)."
+            ],
+            "answer": 25,
+            "unit": "%",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain what is meant by dynamic equilibrium in this system.",
+            "m": 3,
+            "ms": [
+              "Closed system with no matter entering/leaving (1).",
+              "Forward and reverse reactions continue (1).",
+              "Equal rates keep concentrations constant, not necessarily equal (1)."
+            ]
+          },
+          {
+            "q": "Predict and explain how increasing temperature affects the equilibrium amount of C.",
+            "m": 3,
+            "ms": [
+              "Amount of C decreases (1).",
+              "Equilibrium shifts in endothermic/reverse direction (1).",
+              "This opposes the temperature increase (1)."
+            ]
+          },
+          {
+            "q": "Predict and explain the effect of increasing pressure on the equilibrium position.",
+            "m": 2,
+            "ms": [
+              "Shifts to C/right (1).",
+              "Right side has fewer gas molecules, opposing pressure rise (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Fuels and cracking",
+        "topic": "Organic chemistry",
+        "stem": "A hydrocarbon fuel is C₆H₁₄. In a complete combustion experiment, 8.6 g of fuel produces 26.4 g CO₂. Use Aᵣ: C = 12, H = 1, O = 16.",
+        "parts": [
+          {
+            "q": "Write a balanced equation for complete combustion of C₆H₁₄ using whole-number coefficients.",
+            "m": 3,
+            "ms": [
+              "Correct formulas C₆H₁₄ + O₂ → CO₂ + H₂O (1).",
+              "Carbon/hydrogen balance gives 6CO₂ and 7H₂O per fuel molecule (1).",
+              "2C₆H₁₄ + 19O₂ → 12CO₂ + 14H₂O (1)."
+            ]
+          },
+          {
+            "q": "Calculate the mass of CO₂ made per gram of fuel in this experiment.",
+            "m": 2,
+            "ms": [
+              "26.4 / 8.6 (1).",
+              "3.07 g CO₂ per g fuel; accept 3.1 (1)."
+            ],
+            "answer": 3.0697674418604652,
+            "unit": "g/g",
+            "tolerance": 0.04
+          },
+          {
+            "q": "Explain why incomplete combustion is dangerous.",
+            "m": 2,
+            "ms": [
+              "Forms carbon monoxide (1).",
+              "Toxic because it reduces blood ability to carry oxygen (1)."
+            ]
+          },
+          {
+            "q": "Explain how cracking changes the usefulness and composition of a long-chain alkane feedstock.",
+            "m": 3,
+            "ms": [
+              "Breaks large molecules into smaller molecules by thermal decomposition (1).",
+              "Produces shorter-chain fuel alkanes (1).",
+              "Produces alkenes with C=C bonds used as chemical feedstocks/making polymers (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Chromatographic evidence",
+        "topic": "Chemical analysis",
+        "stem": "<table><thead><tr><th>Substance</th><th>Distance from baseline / mm</th></tr></thead><tbody><tr><td>Solvent front</td><td>80</td></tr><tr><td>Standard P</td><td>24</td></tr><tr><td>Standard Q</td><td>52</td></tr><tr><td>Mixture spot 1</td><td>24</td></tr><tr><td>Mixture spot 2</td><td>52</td></tr><tr><td>Mixture spot 3</td><td>64</td></tr></tbody></table>",
+        "parts": [
+          {
+            "q": "Calculate the Rf of mixture spot 3.",
+            "m": 2,
+            "ms": [
+              "64 / 80 (1).",
+              "0.80 (1)."
+            ],
+            "answer": 0.8,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Evaluate the claim that the mixture contains only P and Q.",
+            "m": 3,
+            "ms": [
+              "Spots at 24 and 52 mm match P and Q under these conditions (1).",
+              "Third spot suggests at least one additional substance (1).",
+              "Matching Rf supports identity but is not definitive; different substances may share an Rf (1)."
+            ]
+          },
+          {
+            "q": "Explain separation in paper chromatography in terms of the two phases.",
+            "m": 3,
+            "ms": [
+              "Paper is stationary phase; solvent is mobile phase (1).",
+              "Different substances distribute differently between phases/have different solubilities and attractions (1).",
+              "Substances with stronger attraction to mobile phase move farther (1)."
+            ]
+          },
+          {
+            "q": "A formulated product contains several components. Explain why a formulation can still have consistent properties.",
+            "m": 2,
+            "ms": [
+              "Components are chosen in carefully measured proportions (1).",
+              "Their combined properties are designed for a particular purpose (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Atmospheric chemistry",
+        "topic": "Chemistry of the atmosphere",
+        "stem": "A manufacturer emits 24000 tonnes CO₂ per year. A change cuts emissions by 15%. Burning its fuel can also produce sulfur dioxide, nitrogen oxides and particulates.",
+        "parts": [
+          {
+            "q": "Calculate the new annual CO₂ emissions.",
+            "m": 3,
+            "ms": [
+              "Reduction = 0.15 x 24000 = 3600 tonnes (1).",
+              "24000 - 3600 (1).",
+              "20400 tonnes/year (1)."
+            ],
+            "answer": 20400,
+            "unit": "tonnes/year",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how sulfur dioxide and nitrogen oxides arise during combustion.",
+            "m": 3,
+            "ms": [
+              "Sulfur impurities in fuel burn to form sulfur dioxide (1).",
+              "Nitrogen and oxygen from air react (1).",
+              "High engine/furnace temperatures enable their reaction (1)."
+            ]
+          },
+          {
+            "q": "Describe two environmental or health effects of these pollutants, other than enhanced greenhouse warming.",
+            "m": 2,
+            "ms": [
+              "Sulfur dioxide/nitrogen oxides cause acid rain/respiratory problems (1).",
+              "Particulates cause respiratory harm/global dimming (1)."
+            ]
+          },
+          {
+            "q": "Explain why uncertainty in climate predictions does not mean increasing greenhouse gases have no effect.",
+            "m": 2,
+            "ms": [
+              "Models contain uncertainties about future emissions/complex interactions (1).",
+              "Physical absorption of infrared and multiple lines of evidence still support a warming effect (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Treating water",
+        "topic": "Using resources",
+        "stem": "A town considers a freshwater plant and a reverse-osmosis desalination plant. Freshwater treatment uses 0.60 kWh per m³; desalination uses 3.6 kWh per m³. Each must supply 12000 m³ per day.",
+        "parts": [
+          {
+            "q": "Calculate the extra daily electrical energy used by desalination.",
+            "m": 3,
+            "ms": [
+              "Extra energy per m³ = 3.6 - 0.60 = 3.0 kWh (1).",
+              "3.0 x 12000 (1).",
+              "36000 kWh per day (1)."
+            ],
+            "answer": 36000,
+            "unit": "kWh/day",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how reverse osmosis produces potable water from seawater.",
+            "m": 3,
+            "ms": [
+              "Seawater is forced through membranes (1).",
+              "High pressure is applied (1).",
+              "Membranes allow water through but remove most dissolved salts (1)."
+            ]
+          },
+          {
+            "q": "Describe the main stages of sewage treatment.",
+            "m": 4,
+            "ms": [
+              "Screening/grit removal removes large solids (1).",
+              "Sedimentation separates sludge from effluent (1).",
+              "Anaerobic digestion treats sludge (1).",
+              "Aerobic biological treatment treats liquid effluent (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Choosing materials over a life cycle",
+        "topic": "Using resources",
+        "stem": "A retailer compares a single-use glass bottle with a reusable plastic bottle. The plastic bottle is reused 20 times, but washing uses energy and water.",
+        "parts": [
+          {
+            "q": "State two stages, other than manufacture, considered in a life cycle assessment.",
+            "m": 2,
+            "ms": [
+              "Raw material extraction/processing (1).",
+              "Transport/use/disposal or recycling (a second distinct stage for 1)."
+            ]
+          },
+          {
+            "q": "Explain how recycling a metal reduces demand for finite resources.",
+            "m": 2,
+            "ms": [
+              "Recovered metal replaces metal from newly mined ore (1).",
+              "Reduces extraction and associated waste/energy demand (1)."
+            ]
+          },
+          {
+            "q": "Evaluate the claim that the reusable plastic bottle must always have less environmental impact than glass. Use a life-cycle approach.",
+            "m": 6,
+            "ms": [
+              "Consider energy/materials needed to extract raw materials and manufacture both bottles.",
+              "Plastic may be lighter, reducing transport energy.",
+              "Glass and plastic have different recycling options and disposal impacts.",
+              "Repeated use shares manufacturing impacts across many uses.",
+              "Washing adds water, detergent and energy use each time.",
+              "A justified conclusion depends on actual reuse, transport, energy sources and disposal data; no universal winner without quantities. Credit other valid linked factors, not unsupported slogans."
+            ],
+            "note": "Award one mark per distinct reasoned point, maximum 6."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physics-1-foundation",
+    "title": "Physics Paper 1 — Foundation · Original practice",
+    "subject": "Physics",
+    "paper": 1,
+    "tier": "Foundation",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Energy",
+      "Electricity",
+      "Particle model of matter",
+      "Atomic structure"
+    ],
+    "questions": [
+      {
+        "title": "Energy on a playground",
+        "topic": "Energy",
+        "stem": "A 30 kg child travels at 4.0 m/s and is then lifted 1.5 m vertically. Take gravitational field strength g = 10 N/kg. Use Eₖ = 0.5mv² and Eₚ = mgh.",
+        "parts": [
+          {
+            "q": "Calculate the kinetic energy at 4.0 m/s.",
+            "m": 3,
+            "ms": [
+              "Eₖ = 0.5 x 30 x 4.0² (1).",
+              "Speed squared = 16 (1).",
+              "240 J (1)."
+            ],
+            "answer": 240,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the increase in gravitational potential energy when lifted.",
+            "m": 3,
+            "ms": [
+              "Eₚ = 30 x 10 x 1.5 (1).",
+              "Correct multiplication (1).",
+              "450 J (1)."
+            ],
+            "answer": 450,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe the energy transfers as the child slides down a rough slide.",
+            "m": 2,
+            "ms": [
+              "Gravitational potential store decreases and kinetic store initially increases (1).",
+              "Friction transfers energy to thermal stores of child/slide/surroundings (1)."
+            ]
+          },
+          {
+            "q": "Explain why the total energy is still conserved even when the slide becomes warm.",
+            "m": 2,
+            "ms": [
+              "Energy is transferred between stores, not destroyed (1).",
+              "Thermal energy spreads to surroundings and becomes less useful for further transfers (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Heating water",
+        "topic": "Energy",
+        "stem": "A heater transfers 42000 J to 0.50 kg of water. The specific heat capacity of water is 4200 J/(kg °C). Use E = mcΔθ.",
+        "parts": [
+          {
+            "q": "Calculate the temperature rise of the water.",
+            "m": 2,
+            "ms": [
+              "Temperature rise = 42000/(0.50 x 4200) (1).",
+              "20 degrees Celsius (1)."
+            ],
+            "answer": 20,
+            "unit": "°C",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "The transfer takes 100 s. Calculate the mean power transferred to the water. Use P = E/t.",
+            "m": 2,
+            "ms": [
+              "42000/100 (1).",
+              "420 W (1)."
+            ],
+            "answer": 420,
+            "unit": "W",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe a safe method to determine the specific heat capacity of water. Include the measurements, calculation and how to reduce energy loss.",
+            "m": 6,
+            "ms": [
+              "Measure the mass of water with a balance.",
+              "Measure its initial temperature using a thermometer or temperature probe.",
+              "Use an immersion heater with a measured energy input from a joulemeter, or measured power and time.",
+              "Stir the water and measure its temperature rise after heating.",
+              "Calculate c = E/(mass x temperature rise).",
+              "Insulate the container and use a lid; keep electrical connections dry and handle hot water carefully. Safety and an energy-loss precaution are both needed for full 6 marks."
+            ],
+            "note": "Award one mark per distinct valid point, maximum 6."
+          }
+        ]
+      },
+      {
+        "title": "Current and charge",
+        "topic": "Electricity",
+        "stem": "A lamp has current 0.40 A and potential difference 6.0 V. It is on for 50 s. Use Q = It, E = QV and P = VI.",
+        "parts": [
+          {
+            "q": "Calculate the charge passing through the lamp.",
+            "m": 2,
+            "ms": [
+              "0.40 x 50 (1).",
+              "20 C (1)."
+            ],
+            "answer": 20,
+            "unit": "C",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the energy transferred to the lamp.",
+            "m": 2,
+            "ms": [
+              "20 x 6.0 (1).",
+              "120 J (1)."
+            ],
+            "answer": 120,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the power of the lamp.",
+            "m": 2,
+            "ms": [
+              "6.0 x 0.40 (1).",
+              "2.4 W (1)."
+            ],
+            "answer": 2.4,
+            "unit": "W",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe how to connect an ammeter and voltmeter to measure the lamp current and potential difference.",
+            "m": 2,
+            "ms": [
+              "Ammeter in series with lamp (1).",
+              "Voltmeter in parallel across lamp (1)."
+            ]
+          },
+          {
+            "q": "State what current is and what potential difference measures.",
+            "m": 2,
+            "ms": [
+              "Current is the rate of flow of charge (1).",
+              "Potential difference is energy transferred per unit charge (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Resistance in circuits",
+        "topic": "Electricity",
+        "stem": "Two resistors of 4 Ω and 8 Ω are connected in series to a 6.0 V supply. Use R = V/I.",
+        "parts": [
+          {
+            "q": "Calculate the total resistance.",
+            "m": 2,
+            "ms": [
+              "Series resistances add: 4 + 8 (1).",
+              "12 Ω (1)."
+            ],
+            "answer": 12,
+            "unit": "Ω",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the current from the supply.",
+            "m": 3,
+            "ms": [
+              "I = V/R (1).",
+              "6.0/12 (1).",
+              "0.50 A (1)."
+            ],
+            "answer": 0.5,
+            "unit": "A",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the potential difference across the 8 Ω resistor.",
+            "m": 2,
+            "ms": [
+              "V = IR = 0.50 x 8 (1).",
+              "4.0 V (1)."
+            ],
+            "answer": 4,
+            "unit": "V",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Compare this series circuit with connecting the resistors in parallel to the same supply.",
+            "m": 3,
+            "ms": [
+              "Each parallel branch has full 6.0 V (1).",
+              "Total parallel resistance is less than either individual resistance (1).",
+              "Total supply current is greater in parallel (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Particles and changes of state",
+        "topic": "Particle model of matter",
+        "stem": "A metal block has mass 540 g and volume 200 cm³. A separate sample of ice has mass 0.20 kg. Its specific latent heat of fusion is 330000 J/kg. Use density = mass/volume and E = mL.",
+        "parts": [
+          {
+            "q": "Calculate the density of the metal block.",
+            "m": 2,
+            "ms": [
+              "540/200 (1).",
+              "2.7 g/cm³ (1)."
+            ],
+            "answer": 2.7,
+            "unit": "g/cm³",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the energy needed to melt all the ice at its melting point.",
+            "m": 2,
+            "ms": [
+              "0.20 x 330000 (1).",
+              "66000 J (1)."
+            ],
+            "answer": 66000,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why temperature stays constant while ice melts, although energy is transferred to it.",
+            "m": 3,
+            "ms": [
+              "Energy increases internal energy (1).",
+              "Used to overcome forces/bonds between particles rather than increase kinetic energy (1).",
+              "Temperature measures average particle kinetic energy, so it does not rise (1)."
+            ]
+          },
+          {
+            "q": "Compare particle arrangements and motion in a solid and a gas.",
+            "m": 3,
+            "ms": [
+              "Solid particles close together in fixed/regular arrangement; gas particles far apart/random (1).",
+              "Solid particles vibrate about fixed positions (1).",
+              "Gas particles move rapidly in random directions (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Radiation and half-life",
+        "topic": "Atomic structure",
+        "stem": "A radioactive source has background-corrected count rate 160 counts/s. Its half-life is 4 hours.",
+        "parts": [
+          {
+            "q": "Calculate the count rate after 12 hours.",
+            "m": 3,
+            "ms": [
+              "12/4 = 3 half-lives (1).",
+              "160 → 80 → 40 → 20 (1).",
+              "20 counts/s (1)."
+            ],
+            "answer": 20,
+            "unit": "counts/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "A detector records 65 counts/s near another source and 15 counts/s without it. Calculate the corrected source count rate.",
+            "m": 2,
+            "ms": [
+              "65 - 15 (1).",
+              "50 counts/s (1)."
+            ],
+            "answer": 50,
+            "unit": "counts/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Compare the penetration of alpha, beta and gamma radiation.",
+            "m": 3,
+            "ms": [
+              "Alpha stopped by paper/skin/few cm of air (1).",
+              "Beta stopped by thin aluminium (1).",
+              "Gamma most penetrating; intensity reduced by thick lead/concrete (1)."
+            ]
+          },
+          {
+            "q": "Explain why irradiation does not necessarily make an object radioactive.",
+            "m": 2,
+            "ms": [
+              "Irradiation is exposure to radiation from an external source (1).",
+              "No radioactive material has necessarily been transferred to the object (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Electricity at home",
+        "topic": "Electricity",
+        "stem": "A 2.0 kW kettle runs for 3 minutes. Electricity costs 30 pence per kWh. Use energy in kWh = power in kW × time in hours.",
+        "parts": [
+          {
+            "q": "Calculate the electrical energy used in kWh.",
+            "m": 3,
+            "ms": [
+              "3 min = 3/60 = 0.050 h (1).",
+              "2.0 x 0.050 (1).",
+              "0.10 kWh (1)."
+            ],
+            "answer": 0.1,
+            "unit": "kWh",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the cost of using the kettle once.",
+            "m": 2,
+            "ms": [
+              "0.10 x 30 (1).",
+              "3.0 pence (1)."
+            ],
+            "answer": 3,
+            "unit": "pence",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how an earth wire and fuse protect someone if a live wire touches a metal case.",
+            "m": 3,
+            "ms": [
+              "Earth provides low-resistance path to ground (1).",
+              "Large fault current flows (1).",
+              "Fuse melts/breaks circuit so case is disconnected from live supply (1)."
+            ]
+          },
+          {
+            "q": "State the approximate UK mains potential difference and frequency.",
+            "m": 2,
+            "ms": [
+              "230 V (1).",
+              "50 Hz (1)."
+            ]
+          }
+        ]
+      }
+    ],
+    "equationURL": "https://www.aqa.org.uk/filestore/science/AQA-GCSE-Science-8464-8465-INS-AI-V2.2.pdf"
+  },
+  {
+    "id": "physics-1-higher",
+    "title": "Physics Paper 1 — Higher · Original practice",
+    "subject": "Physics",
+    "paper": 1,
+    "tier": "Higher",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Energy",
+      "Electricity",
+      "Particle model of matter",
+      "Atomic structure"
+    ],
+    "questions": [
+      {
+        "title": "Energy and efficiency",
+        "topic": "Energy",
+        "stem": "A 120 kg trolley starts from rest and descends 5.0 m. It reaches 8.0 m/s. Take g = 9.8 N/kg. Use Eₚ = mgh and Eₖ = 0.5mv².",
+        "parts": [
+          {
+            "q": "Calculate the decrease in gravitational potential energy.",
+            "m": 2,
+            "ms": [
+              "120 x 9.8 x 5.0 (1).",
+              "5880 J (1)."
+            ],
+            "answer": 5880,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the kinetic energy at the bottom.",
+            "m": 2,
+            "ms": [
+              "0.5 x 120 x 8.0² (1).",
+              "3840 J (1)."
+            ],
+            "answer": 3840,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the percentage of the lost gravitational potential energy transferred to kinetic energy.",
+            "m": 3,
+            "ms": [
+              "Efficiency = useful/total (1).",
+              "3840/5880 x 100 (1).",
+              "65.3%; accept 65% (1)."
+            ],
+            "answer": 65.3061224489796,
+            "unit": "%",
+            "tolerance": 0.4
+          },
+          {
+            "q": "Explain why the trolley speed is lower than predicted by a model with no friction.",
+            "m": 3,
+            "ms": [
+              "Friction/air resistance do work (1).",
+              "Energy transferred to thermal stores of trolley/track/air (1).",
+              "Less of the gravitational potential energy is available as kinetic energy; total energy still conserved (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Measuring specific heat capacity",
+        "topic": "Energy",
+        "stem": "An insulated 0.80 kg metal block is heated by a 24 W heater for 300 s. Its temperature rises by 10.0 °C. Use E = Pt and E = mcΔθ.",
+        "parts": [
+          {
+            "q": "Calculate the electrical energy supplied.",
+            "m": 2,
+            "ms": [
+              "24 x 300 (1).",
+              "7200 J (1)."
+            ],
+            "answer": 7200,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the experimental specific heat capacity.",
+            "m": 3,
+            "ms": [
+              "c = E/(mΔθ) (1).",
+              "7200/(0.80 x 10.0) (1).",
+              "900 J/(kg °C) (1)."
+            ],
+            "answer": 900,
+            "unit": "J/(kg °C)",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how energy loss to the surroundings affects this calculated value.",
+            "m": 3,
+            "ms": [
+              "Some supplied energy does not heat the block (1).",
+              "Measured temperature rise is smaller than without losses (1).",
+              "Using all supplied energy in E/(mΔθ) makes calculated c too high (1)."
+            ]
+          },
+          {
+            "q": "Suggest two practical steps to reduce this error.",
+            "m": 2,
+            "ms": [
+              "Improve insulation/use a lid (1).",
+              "Good heater/thermometer contact with block using oil in holes, or start below room temperature and end equally above it (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Electrical networks",
+        "topic": "Electricity",
+        "stem": "A 6 Ω resistor and a 12 Ω resistor are connected in parallel across an ideal 12 V supply. Use V = IR and P = VI.",
+        "parts": [
+          {
+            "q": "Calculate the current in each branch.",
+            "m": 3,
+            "ms": [
+              "Both branches have 12 V (1).",
+              "6 Ω branch: 12/6 = 2.0 A (1).",
+              "12 Ω branch: 12/12 = 1.0 A (1)."
+            ]
+          },
+          {
+            "q": "Calculate the total resistance of the combination.",
+            "m": 3,
+            "ms": [
+              "Total current = 2.0 + 1.0 = 3.0 A (1).",
+              "R = 12/3.0 (1).",
+              "4.0 Ω (1)."
+            ],
+            "answer": 4,
+            "unit": "Ω",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the total power transferred.",
+            "m": 2,
+            "ms": [
+              "12 x 3.0 (1).",
+              "36 W (1)."
+            ],
+            "answer": 36,
+            "unit": "W",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why adding another parallel resistor increases the current supplied.",
+            "m": 2,
+            "ms": [
+              "Adds another path for charge so total resistance decreases (1).",
+              "At fixed supply potential difference, lower resistance means greater total current (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Resistance, temperature and safety",
+        "topic": "Electricity",
+        "stem": "A 230 V heater transfers 1840 W. Use P = VI. A student also investigates a filament lamp using a variable supply.",
+        "parts": [
+          {
+            "q": "Calculate the normal operating current of the heater.",
+            "m": 2,
+            "ms": [
+              "I = P/V = 1840/230 (1).",
+              "8.0 A (1)."
+            ],
+            "answer": 8,
+            "unit": "A",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Choose the smallest suitable fuse from 3 A, 5 A and 13 A and justify the choice.",
+            "m": 2,
+            "ms": [
+              "13 A (1).",
+              "Above normal current so it does not melt in normal use, but breaks circuit at excessive current (1)."
+            ]
+          },
+          {
+            "q": "Describe a safe investigation of the current-potential difference characteristic of a filament lamp. Explain the shape expected and how to check both current directions.",
+            "m": 6,
+            "ms": [
+              "Connect lamp, variable low-voltage supply/variable resistor and ammeter in series, with voltmeter in parallel across lamp.",
+              "Vary potential difference in small steps and record pairs of current and potential difference.",
+              "Reverse supply connections to obtain readings for the opposite direction; repeat readings where needed.",
+              "Limit current/voltage to safe lamp ratings and avoid touching a hot filament bulb.",
+              "Plot current against potential difference: curve becomes less steep as the magnitude of potential difference increases.",
+              "Higher current heats the filament; increased ion vibrations cause more electron collisions, so resistance increases."
+            ],
+            "note": "Award one mark per distinct valid linked point, maximum 6."
+          }
+        ]
+      },
+      {
+        "title": "Latent heat and the particle model",
+        "topic": "Particle model of matter",
+        "stem": "A heater of power 60 W melts 0.18 kg of ice at 0 °C in 1100 s. In the model, all supplied energy melts the ice. Use E = Pt and E = mL.",
+        "parts": [
+          {
+            "q": "Calculate the experimental specific latent heat of fusion.",
+            "m": 3,
+            "ms": [
+              "E = 60 x 1100 = 66000 J (1).",
+              "L = E/m = 66000/0.18 (1).",
+              "3.67 x 10⁵ J/kg; accept 367000 (1)."
+            ],
+            "answer": 366666.6666666667,
+            "unit": "J/kg",
+            "tolerance": 500
+          },
+          {
+            "q": "Explain why including energy used to warm the container would bias this value.",
+            "m": 2,
+            "ms": [
+              "Not all supplied energy melts ice (1).",
+              "Dividing total energy by melted mass overestimates true latent heat (1)."
+            ]
+          },
+          {
+            "q": "Explain the constant temperature during melting using kinetic energy and potential energy.",
+            "m": 3,
+            "ms": [
+              "Internal energy increases (1).",
+              "Energy raises particle potential energy/overcomes interactions rather than raising average kinetic energy (1).",
+              "Average kinetic energy/temperature therefore remains constant (1)."
+            ]
+          },
+          {
+            "q": "Explain why gas pressure rises when a gas is heated in a sealed rigid container.",
+            "m": 2,
+            "ms": [
+              "Particles move faster and collide more often/more forcefully with walls (1).",
+              "Greater total force on a fixed area increases pressure (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nuclear changes and half-life",
+        "topic": "Atomic structure",
+        "stem": "A source gives 820 counts/min initially, including background of 20 counts/min. After 18 hours the total count rate is 120 counts/min.",
+        "parts": [
+          {
+            "q": "Determine the half-life of the source.",
+            "m": 4,
+            "ms": [
+              "Initial corrected count = 800 counts/min (1).",
+              "Final corrected count = 100 counts/min (1).",
+              "800 → 400 → 200 → 100 is 3 half-lives (1).",
+              "18/3 = 6 hours (1)."
+            ],
+            "answer": 6,
+            "unit": "h",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "A nucleus has atomic number 84 and mass number 212. State the atomic and mass numbers after alpha decay.",
+            "m": 2,
+            "ms": [
+              "Atomic number 82 (1).",
+              "Mass number 208 (1)."
+            ]
+          },
+          {
+            "q": "Describe the changes in a nucleus during beta-minus decay.",
+            "m": 2,
+            "ms": [
+              "A neutron changes into a proton (1).",
+              "An electron/beta particle is emitted; atomic number rises by 1 and mass number unchanged (1)."
+            ]
+          },
+          {
+            "q": "Explain why a precise decay time cannot be assigned to an individual nucleus.",
+            "m": 2,
+            "ms": [
+              "Radioactive decay is random/spontaneous (1).",
+              "Half-life predicts a statistical pattern for many nuclei, not when a particular nucleus decays (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Generating electricity and national supply",
+        "topic": "Energy",
+        "stem": "A wind turbine transfers 1.8 MJ of useful electrical energy in 30 s. The energy transferred from wind during that time is 4.5 MJ.",
+        "parts": [
+          {
+            "q": "Calculate the useful electrical power in kW.",
+            "m": 3,
+            "ms": [
+              "1.8 MJ = 1800000 J (1).",
+              "P = 1800000/30 = 60000 W (1).",
+              "60 kW (1)."
+            ],
+            "answer": 60,
+            "unit": "kW",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the efficiency as a decimal.",
+            "m": 2,
+            "ms": [
+              "1.8/4.5 (1).",
+              "0.40 (1)."
+            ],
+            "answer": 0.4,
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the National Grid transmits electricity at high potential difference.",
+            "m": 3,
+            "ms": [
+              "For a given power, higher voltage means lower current (1).",
+              "Lower current causes less heating/energy loss in transmission wires (1).",
+              "Makes transfer over long distances more efficient (1)."
+            ]
+          },
+          {
+            "q": "Evaluate one advantage and one limitation of wind power compared with gas-fired generation.",
+            "m": 2,
+            "ms": [
+              "Renewable/no fuel combustion emissions during operation (1).",
+              "Intermittent output depends on wind, whereas gas generation is controllable; credit another correctly compared limitation (1)."
+            ]
+          }
+        ]
+      }
+    ],
+    "equationURL": "https://www.aqa.org.uk/filestore/science/AQA-GCSE-Science-8464-8465-INS-AI-V2.2.pdf"
+  },
+  {
+    "id": "physics-2-foundation",
+    "title": "Physics Paper 2 — Foundation · Original practice",
+    "subject": "Physics",
+    "paper": 2,
+    "tier": "Foundation",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Forces",
+      "Waves",
+      "Magnetism and electromagnetism"
+    ],
+    "questions": [
+      {
+        "title": "Motion of a cyclist",
+        "topic": "Forces",
+        "stem": "A cyclist travels 240 m in 40 s at constant speed, then speeds up from 6 m/s to 10 m/s in 4 s. Use speed = distance/time and a = (v-u)/t.",
+        "parts": [
+          {
+            "q": "Calculate the initial constant speed.",
+            "m": 2,
+            "ms": [
+              "240/40 (1).",
+              "6.0 m/s (1)."
+            ],
+            "answer": 6,
+            "unit": "m/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the acceleration during the next 4 s.",
+            "m": 3,
+            "ms": [
+              "Change in velocity = 10 - 6 = 4 m/s (1).",
+              "a = 4/4 (1).",
+              "1.0 m/s² (1)."
+            ],
+            "answer": 1,
+            "unit": "m/s²",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Describe the appearance of a distance–time graph during the initial constant-speed motion.",
+            "m": 2,
+            "ms": [
+              "Straight line (1).",
+              "Constant positive gradient (1)."
+            ]
+          },
+          {
+            "q": "Explain what happens to speed when the forward driving force equals the total resistive force.",
+            "m": 3,
+            "ms": [
+              "Resultant force is zero (1).",
+              "No acceleration (1).",
+              "Cyclist continues at constant speed in a straight line (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Forces on a lift",
+        "topic": "Forces",
+        "stem": "A package has mass 12 kg. Take g = 10 N/kg. Two horizontal forces act on a different trolley: 80 N right and 35 N left. Use W = mg.",
+        "parts": [
+          {
+            "q": "Calculate the weight of the package.",
+            "m": 2,
+            "ms": [
+              "12 x 10 (1).",
+              "120 N (1)."
+            ],
+            "answer": 120,
+            "unit": "N",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the resultant horizontal force on the trolley and state its direction.",
+            "m": 3,
+            "ms": [
+              "80 - 35 (1).",
+              "45 N (1).",
+              "To the right (1)."
+            ],
+            "answer": 45,
+            "unit": "N right",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain the difference between mass and weight.",
+            "m": 3,
+            "ms": [
+              "Mass is amount of matter; measured in kg (1).",
+              "Weight is gravitational force; measured in N (1).",
+              "Weight changes with gravitational field strength but mass does not (1)."
+            ]
+          },
+          {
+            "q": "Name one contact force and one non-contact force.",
+            "m": 2,
+            "ms": [
+              "Friction/air resistance/tension/normal contact force (1).",
+              "Gravitational/electrostatic/magnetic force (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Stretching springs",
+        "topic": "Forces",
+        "stem": "A spring extends by 0.040 m when a force of 8.0 N is applied. It has not passed its limit of proportionality. Use F = ke and E = 0.5ke².",
+        "parts": [
+          {
+            "q": "Calculate the spring constant.",
+            "m": 3,
+            "ms": [
+              "k = F/e (1).",
+              "8.0/0.040 (1).",
+              "200 N/m (1)."
+            ],
+            "answer": 200,
+            "unit": "N/m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the elastic potential energy stored.",
+            "m": 3,
+            "ms": [
+              "E = 0.5 x 200 x 0.040² (1).",
+              "Extension squared = 0.0016 m² (1).",
+              "0.16 J (1)."
+            ],
+            "answer": 0.16,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "State what is meant by elastic deformation.",
+            "m": 2,
+            "ms": [
+              "Object changes shape when force applied (1).",
+              "Returns to its original shape when force removed (1)."
+            ]
+          },
+          {
+            "q": "Describe how a force–extension graph changes beyond the limit of proportionality.",
+            "m": 2,
+            "ms": [
+              "No longer a straight line through the origin (1).",
+              "Force is no longer directly proportional to extension (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Water waves",
+        "topic": "Waves",
+        "stem": "A wave has frequency 5.0 Hz and wavelength 0.24 m. Use v = fλ and T = 1/f.",
+        "parts": [
+          {
+            "q": "Calculate the wave speed.",
+            "m": 2,
+            "ms": [
+              "5.0 x 0.24 (1).",
+              "1.2 m/s (1)."
+            ],
+            "answer": 1.2,
+            "unit": "m/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the period.",
+            "m": 2,
+            "ms": [
+              "1/5.0 (1).",
+              "0.20 s (1)."
+            ],
+            "answer": 0.2,
+            "unit": "s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain the difference between transverse and longitudinal waves.",
+            "m": 3,
+            "ms": [
+              "In transverse waves oscillations are perpendicular to energy transfer (1).",
+              "In longitudinal waves oscillations are parallel (1).",
+              "Valid examples: electromagnetic/water waves transverse and sound longitudinal (1)."
+            ]
+          },
+          {
+            "q": "Describe how to measure wavelength accurately in a ripple tank.",
+            "m": 3,
+            "ms": [
+              "Freeze pattern using strobe/photograph or project onto a screen (1).",
+              "Measure distance across several complete wavelengths (1).",
+              "Divide by number of wavelengths to reduce percentage measurement error (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Electromagnetic radiation",
+        "topic": "Waves",
+        "stem": "Electromagnetic waves travel at 300000000 m/s in a vacuum. A radio wave has frequency 100000000 Hz. Use v = fλ.",
+        "parts": [
+          {
+            "q": "Calculate the radio wavelength.",
+            "m": 3,
+            "ms": [
+              "λ = v/f (1).",
+              "300000000/100000000 (1).",
+              "3.0 m (1)."
+            ],
+            "answer": 3,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Put infrared, ultraviolet, radio and visible light in increasing order of frequency.",
+            "m": 3,
+            "ms": [
+              "Radio before infrared (1).",
+              "Infrared before visible (1).",
+              "Visible before ultraviolet, giving radio → infrared → visible → ultraviolet (1)."
+            ]
+          },
+          {
+            "q": "Give one use and one hazard of ultraviolet radiation.",
+            "m": 2,
+            "ms": [
+              "Security marking/fluorescent lamps/sterilisation (1).",
+              "Skin damage/skin cancer/eye damage (1)."
+            ]
+          },
+          {
+            "q": "State two features shared by all electromagnetic waves.",
+            "m": 2,
+            "ms": [
+              "Transverse waves (1).",
+              "Same speed in vacuum/can transfer energy through vacuum (a second valid feature for 1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Measuring waves on a string",
+        "topic": "Waves",
+        "stem": "A vibrator produces waves along a string. The wavelength is measured as 0.80 m and the frequency is 12 Hz. Use v = fλ.",
+        "parts": [
+          {
+            "q": "Calculate the wave speed.",
+            "m": 2,
+            "ms": [
+              "12 x 0.80 (1).",
+              "9.6 m/s (1)."
+            ],
+            "answer": 9.6,
+            "unit": "m/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "State why measuring across several wavelengths is better than measuring one.",
+            "m": 2,
+            "ms": [
+              "Reduces relative/percentage uncertainty in total length (1).",
+              "Dividing the length by number of wavelengths gives a better estimate of mean wavelength (1)."
+            ]
+          },
+          {
+            "q": "Describe a safe method to investigate how changing frequency affects wavelength when wave speed is kept approximately constant.",
+            "m": 6,
+            "ms": [
+              "Use a vibrator connected to a signal generator with a string under fixed tension.",
+              "Keep the same string and tension/attached load for all readings.",
+              "Set and record a range of frequencies from the signal generator.",
+              "Measure a clearly defined distance across several wavelengths using a ruler.",
+              "Divide measured distance by number of wavelengths, repeat and calculate mean wavelength.",
+              "Keep electrical apparatus dry/secure the apparatus and prevent falling masses; compare fλ values or plot wavelength against frequency. Safety must be included for full 6 marks."
+            ],
+            "note": "Award one mark per distinct valid point, maximum 6."
+          }
+        ]
+      },
+      {
+        "title": "Magnets and electromagnets",
+        "topic": "Magnetism and electromagnetism",
+        "stem": "A coil of insulated wire is wrapped around an iron nail and connected to a low-voltage supply.",
+        "parts": [
+          {
+            "q": "State how magnetic field lines are directed outside a bar magnet and where the field is strongest.",
+            "m": 2,
+            "ms": [
+              "From north pole to south pole (1).",
+              "Strongest near poles/where lines are closest (1)."
+            ]
+          },
+          {
+            "q": "Describe how a compass can be used to plot a magnetic field.",
+            "m": 3,
+            "ms": [
+              "Place compass at a point and mark needle direction (1).",
+              "Move along that direction and repeat to form a field line (1).",
+              "Repeat from different starting positions and add arrows (1)."
+            ]
+          },
+          {
+            "q": "Describe three factors that affect the strength of an electromagnet.",
+            "m": 3,
+            "ms": [
+              "A larger current, within safe limits, makes it stronger (1).",
+              "More turns in the coil make it stronger (1).",
+              "A soft iron core makes the field stronger than the same coil without a core (1)."
+            ]
+          },
+          {
+            "q": "Explain why an electromagnet is useful in a scrapyard crane.",
+            "m": 2,
+            "ms": [
+              "Can attract/lift iron or steel objects (1).",
+              "Can be switched off to release them (1)."
+            ]
+          }
+        ]
+      }
+    ],
+    "equationURL": "https://www.aqa.org.uk/filestore/science/AQA-GCSE-Science-8464-8465-INS-AI-V2.2.pdf"
+  },
+  {
+    "id": "physics-2-higher",
+    "title": "Physics Paper 2 — Higher · Original practice",
+    "subject": "Physics",
+    "paper": 2,
+    "tier": "Higher",
+    "minutes": 75,
+    "marks": 70,
+    "coverage": [
+      "Forces",
+      "Waves",
+      "Magnetism and electromagnetism"
+    ],
+    "questions": [
+      {
+        "title": "Acceleration and force",
+        "topic": "Forces",
+        "stem": "A 950 kg car accelerates uniformly from 8.0 m/s to 20.0 m/s in 6.0 s. Use a = (v-u)/t, F = ma and distance = average speed × time for uniform acceleration.",
+        "parts": [
+          {
+            "q": "Calculate the acceleration.",
+            "m": 2,
+            "ms": [
+              "(20.0 - 8.0)/6.0 (1).",
+              "2.0 m/s² (1)."
+            ],
+            "answer": 2,
+            "unit": "m/s²",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the resultant force.",
+            "m": 2,
+            "ms": [
+              "950 x 2.0 (1).",
+              "1900 N (1)."
+            ],
+            "answer": 1900,
+            "unit": "N",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the distance travelled during the acceleration.",
+            "m": 3,
+            "ms": [
+              "Mean speed = (8.0 + 20.0)/2 = 14.0 m/s (1).",
+              "Distance = 14.0 x 6.0 (1).",
+              "84 m (1)."
+            ],
+            "answer": 84,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain how increasing passenger mass affects acceleration if the same resultant force acts.",
+            "m": 3,
+            "ms": [
+              "Total mass increases (1).",
+              "a = F/m (1).",
+              "Acceleration decreases in inverse proportion to mass at constant force (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Stopping a vehicle",
+        "topic": "Forces",
+        "stem": "A driver travels at 24 m/s. Their reaction time is 0.75 s. Braking then reduces speed uniformly to zero over 48 m. Use distance = speed × time for thinking distance and v² - u² = 2as for braking.",
+        "parts": [
+          {
+            "q": "Calculate the thinking distance.",
+            "m": 2,
+            "ms": [
+              "24 x 0.75 (1).",
+              "18 m (1)."
+            ],
+            "answer": 18,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the magnitude of the deceleration during braking.",
+            "m": 3,
+            "ms": [
+              "0² - 24² = 2 x a x 48 (1).",
+              "a = -576/96 = -6.0 m/s² (1).",
+              "Magnitude = 6.0 m/s² (1)."
+            ],
+            "answer": 6,
+            "unit": "m/s²",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate total stopping distance.",
+            "m": 2,
+            "ms": [
+              "18 + 48 (1).",
+              "66 m (1)."
+            ],
+            "answer": 66,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain one factor affecting thinking distance and one affecting braking distance.",
+            "m": 3,
+            "ms": [
+              "Alcohol/tiredness/distraction increases reaction time (1).",
+              "So thinking distance increases at the same speed (1).",
+              "Wet/icy roads reduce friction, increasing braking distance, or worn brakes/tyres reduce braking force (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Momentum in a collision",
+        "topic": "Forces",
+        "stem": "A 0.80 kg trolley moving at 3.0 m/s collides with a stationary 1.20 kg trolley. They join together. External horizontal forces are negligible. Use p = mv.",
+        "parts": [
+          {
+            "q": "Calculate the total momentum before collision.",
+            "m": 2,
+            "ms": [
+              "0.80 x 3.0 + 1.20 x 0 (1).",
+              "2.40 kg m/s (1)."
+            ],
+            "answer": 2.4,
+            "unit": "kg m/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate the common speed after collision.",
+            "m": 3,
+            "ms": [
+              "Momentum is conserved (1).",
+              "Combined mass = 2.00 kg and v = 2.40/2.00 (1).",
+              "1.20 m/s (1)."
+            ],
+            "answer": 1.2,
+            "unit": "m/s",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why momentum conservation does not mean kinetic energy must also be conserved in this collision.",
+            "m": 3,
+            "ms": [
+              "Momentum is conserved for an isolated system/no external resultant force (1).",
+              "Joining/deformation transfers some kinetic energy to thermal/internal stores and sound (1).",
+              "Total energy conserved, but kinetic energy after collision is lower (1)."
+            ]
+          },
+          {
+            "q": "Explain, using acceleration and force, why a car crumple zone reduces force on passengers in a crash.",
+            "m": 2,
+            "ms": [
+              "Increases stopping time/distance, reducing deceleration for the same velocity change (1).",
+              "F = ma: lower magnitude of acceleration means lower force for the same mass (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wave speed and refraction",
+        "topic": "Waves",
+        "stem": "A wave of frequency 8.0 Hz travels in deep water at 2.4 m/s, then enters shallow water where speed is 1.6 m/s. Use v = fλ.",
+        "parts": [
+          {
+            "q": "Calculate its wavelength in deep water.",
+            "m": 2,
+            "ms": [
+              "λ = 2.4/8.0 (1).",
+              "0.30 m (1)."
+            ],
+            "answer": 0.3,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Calculate its wavelength in shallow water.",
+            "m": 2,
+            "ms": [
+              "Frequency remains 8.0 Hz, so λ = 1.6/8.0 (1).",
+              "0.20 m (1)."
+            ],
+            "answer": 0.2,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why the wave changes direction when it enters shallow water at an angle.",
+            "m": 3,
+            "ms": [
+              "Wave speed decreases (1).",
+              "Part of wavefront enters shallow water and slows before the rest (1).",
+              "Wave bends towards the normal (1)."
+            ]
+          },
+          {
+            "q": "Describe how to measure the speed of ripples experimentally.",
+            "m": 3,
+            "ms": [
+              "Measure wavelength over several waves and divide (1).",
+              "Measure frequency from number passing a point per measured time (1).",
+              "Calculate speed fλ; repeat measurements to reduce random uncertainty (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Radiation and communication",
+        "topic": "Waves",
+        "stem": "A microwave link operates at 6.0 × 10⁹ Hz. Electromagnetic wave speed in air is 3.0 × 10⁸ m/s. Use v = fλ.",
+        "parts": [
+          {
+            "q": "Calculate the microwave wavelength.",
+            "m": 3,
+            "ms": [
+              "λ = v/f (1).",
+              "3.0 x 10⁸ / (6.0 x 10⁹) (1).",
+              "0.050 m (1)."
+            ],
+            "answer": 0.05,
+            "unit": "m",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain why electromagnetic waves can communicate with a satellite through space but sound cannot.",
+            "m": 2,
+            "ms": [
+              "Electromagnetic waves can travel through a vacuum (1).",
+              "Sound is a mechanical wave and needs particles/a medium (1)."
+            ]
+          },
+          {
+            "q": "Explain why X-rays can be more hazardous to living tissue than microwaves.",
+            "m": 3,
+            "ms": [
+              "X-rays are higher-frequency radiation (1).",
+              "Can ionise atoms/molecules and damage DNA/cells (1).",
+              "May cause mutations/cancer; microwaves principally cause heating at sufficiently high intensity (1)."
+            ]
+          },
+          {
+            "q": "State a use of infrared and explain a related hazard.",
+            "m": 2,
+            "ms": [
+              "Thermal imaging/remote control/electrical heating (one valid use for 1).",
+              "Absorption can heat tissue/cause burns (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Force on a current-carrying conductor",
+        "topic": "Magnetism and electromagnetism",
+        "stem": "A straight wire of length 0.12 m lies perpendicular to a uniform magnetic field of flux density 0.25 T. Current is 3.0 A. Use F = BIl.",
+        "parts": [
+          {
+            "q": "Calculate the force on the wire.",
+            "m": 3,
+            "ms": [
+              "F = 0.25 x 3.0 x 0.12 (1).",
+              "Correct multiplication (1).",
+              "0.090 N (1)."
+            ],
+            "answer": 0.09,
+            "unit": "N",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Explain the effect of reversing the current and of reversing both current and field.",
+            "m": 3,
+            "ms": [
+              "Reversing current alone reverses force (1).",
+              "Reversing field alone also reverses force (1).",
+              "Reversing both leaves original force direction unchanged (1)."
+            ]
+          },
+          {
+            "q": "State the direction of force relative to the field and current.",
+            "m": 2,
+            "ms": [
+              "Perpendicular to magnetic field (1).",
+              "Perpendicular to current (1)."
+            ]
+          },
+          {
+            "q": "Explain why the wire has no motor-effect force when it is parallel to the field.",
+            "m": 2,
+            "ms": [
+              "Force depends on component of current/length perpendicular to field (1).",
+              "For parallel alignment this component is zero (1)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Investigating a spring",
+        "topic": "Forces",
+        "stem": "A spring obeys F = ke up to 6.0 N. Its extension at 6.0 N is 0.030 m. Use E = 0.5ke².",
+        "parts": [
+          {
+            "q": "Calculate the energy stored at 6.0 N.",
+            "m": 4,
+            "ms": [
+              "k = F/e = 6.0/0.030 (1).",
+              "k = 200 N/m (1).",
+              "E = 0.5 x 200 x 0.030² (1).",
+              "0.090 J (1)."
+            ],
+            "answer": 0.09,
+            "unit": "J",
+            "tolerance": 1e-06
+          },
+          {
+            "q": "Design an investigation to determine the spring constant and identify the limit of proportionality. Include measurements, processing and safety.",
+            "m": 6,
+            "ms": [
+              "Clamp spring securely next to a vertical ruler and measure unloaded length.",
+              "Add known weights in small increments and allow spring to settle.",
+              "Measure loaded length at eye level and calculate extension by subtraction.",
+              "Repeat readings/unload to check reproducibility and whether original length is recovered.",
+              "Plot force against extension; gradient of initial straight-line region gives k and departure marks limit of proportionality.",
+              "Secure stand/use eye protection and prevent masses falling on feet; avoid excessive loads. Safety must be included for full 6 marks."
+            ],
+            "note": "Award one mark per distinct valid linked point, maximum 6."
+          }
+        ]
+      }
+    ],
+    "equationURL": "https://www.aqa.org.uk/filestore/science/AQA-GCSE-Science-8464-8465-INS-AI-V2.2.pdf"
+  }
+]

@@ -1,0 +1,758 @@
+{
+  "framework": {
+    "repository": "prodigyai-app/GCSEChemistry",
+    "source_sha256": "c3e146e562e2ec3e6c709ef23d4319b3139eb4b30b3f981588c61efe39ff5c9f"
+  },
+  "reused_lessons": [
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at1",
+      "name": "Atoms, elements, compounds and equations",
+      "group": "a",
+      "lvl": "5.1.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at2",
+      "name": "Mixtures and separating them",
+      "group": "a",
+      "lvl": "5.1.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at3",
+      "name": "The development of the atomic model",
+      "group": "b",
+      "lvl": "5.1.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at4",
+      "name": "Subatomic particles and isotopes",
+      "group": "b",
+      "lvl": "5.1.1 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at5",
+      "name": "Electronic structure",
+      "group": "b",
+      "lvl": "5.1.1 \u00b7 Lesson 5",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at6",
+      "name": "The periodic table",
+      "group": "c",
+      "lvl": "5.1.2 \u00b7 Lesson 6",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at7",
+      "name": "Group 0 and Group 1",
+      "group": "c",
+      "lvl": "5.1.2 \u00b7 Lesson 7",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atoms",
+      "id": "chem-at8",
+      "name": "Group 7: the halogens",
+      "group": "c",
+      "lvl": "5.1.2 \u00b7 Lesson 8",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo1",
+      "name": "Ionic bonding",
+      "group": "a",
+      "lvl": "5.2.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo2",
+      "name": "Ionic compounds",
+      "group": "a",
+      "lvl": "5.2.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo3",
+      "name": "Covalent bonding",
+      "group": "a",
+      "lvl": "5.2.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo4",
+      "name": "Metallic bonding",
+      "group": "a",
+      "lvl": "5.2.1 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo5",
+      "name": "States of matter",
+      "group": "b",
+      "lvl": "5.2.2 \u00b7 Lesson 5",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo6",
+      "name": "Ionic compounds, small molecules and polymers",
+      "group": "b",
+      "lvl": "5.2.2 \u00b7 Lesson 6",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo7",
+      "name": "Giant covalent structures and comparing structures",
+      "group": "b",
+      "lvl": "5.2.2 \u00b7 Lesson 7",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-bonding",
+      "id": "chem-bo8",
+      "name": "Diamond, graphite, graphene and fullerenes",
+      "group": "c",
+      "lvl": "5.2.3 \u00b7 Lesson 8",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-quant",
+      "id": "chem-qc1",
+      "name": "Conservation of mass and relative formula mass",
+      "group": "a",
+      "lvl": "5.3.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-quant",
+      "id": "chem-qc2",
+      "name": "Mass changes and uncertainty",
+      "group": "a",
+      "lvl": "5.3.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-quant",
+      "id": "chem-qc3",
+      "name": "Moles",
+      "group": "b",
+      "lvl": "5.3.2 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-quant",
+      "id": "chem-qc4",
+      "name": "Reacting masses and limiting reactants",
+      "group": "b",
+      "lvl": "5.3.2 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-quant",
+      "id": "chem-qc5",
+      "name": "Concentration of solutions",
+      "group": "b",
+      "lvl": "5.3.2 \u00b7 Lesson 5",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc1",
+      "name": "Metal oxides and the reactivity series",
+      "group": "a",
+      "lvl": "5.4.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc2",
+      "name": "Extraction of metals and displacement",
+      "group": "a",
+      "lvl": "5.4.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc3",
+      "name": "Oxidation and reduction in terms of electrons",
+      "group": "a",
+      "lvl": "5.4.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc4",
+      "name": "Reactions of acids",
+      "group": "b",
+      "lvl": "5.4.2 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc5",
+      "name": "Making soluble salts",
+      "group": "b",
+      "lvl": "5.4.2 \u00b7 Lesson 5",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc7",
+      "name": "Strong and weak acids",
+      "group": "b",
+      "lvl": "5.4.2 \u00b7 Lesson 7",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc8",
+      "name": "Electrolysis of molten compounds",
+      "group": "c",
+      "lvl": "5.4.3 \u00b7 Lesson 8",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc9",
+      "name": "Electrolysis of aqueous solutions",
+      "group": "c",
+      "lvl": "5.4.3 \u00b7 Lesson 9",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-changes",
+      "id": "chem-cc10",
+      "name": "Extracting aluminium",
+      "group": "c",
+      "lvl": "5.4.3 \u00b7 Lesson 10",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-energy",
+      "id": "chem-en1",
+      "name": "Exothermic and endothermic reactions",
+      "group": "a",
+      "lvl": "5.5.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-energy",
+      "id": "chem-en2",
+      "name": "Reaction profiles",
+      "group": "a",
+      "lvl": "5.5.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-energy",
+      "id": "chem-en3",
+      "name": "Bond energies",
+      "group": "a",
+      "lvl": "5.5.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-rates",
+      "id": "chem-ra1",
+      "name": "Calculating rates of reaction",
+      "group": "a",
+      "lvl": "5.6.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-rates",
+      "id": "chem-ra2",
+      "name": "Factors affecting rate and collision theory",
+      "group": "a",
+      "lvl": "5.6.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-rates",
+      "id": "chem-ra3",
+      "name": "Catalysts and the disappearing cross",
+      "group": "a",
+      "lvl": "5.6.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-rates",
+      "id": "chem-ra4",
+      "name": "Reversible reactions",
+      "group": "b",
+      "lvl": "5.6.2 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-rates",
+      "id": "chem-ra5",
+      "name": "Equilibrium and Le Chatelier's principle",
+      "group": "b",
+      "lvl": "5.6.2 \u00b7 Lesson 5",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-organic",
+      "id": "chem-or1",
+      "name": "Crude oil, hydrocarbons and alkanes",
+      "group": "a",
+      "lvl": "5.7.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-organic",
+      "id": "chem-or2",
+      "name": "Fractional distillation and petrochemicals",
+      "group": "a",
+      "lvl": "5.7.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-organic",
+      "id": "chem-or3",
+      "name": "Cracking and alkenes",
+      "group": "a",
+      "lvl": "5.7.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-analysis",
+      "id": "chem-an1",
+      "name": "Pure substances and formulations",
+      "group": "a",
+      "lvl": "5.8.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-analysis",
+      "id": "chem-an2",
+      "name": "Chromatography",
+      "group": "a",
+      "lvl": "5.8.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-analysis",
+      "id": "chem-an3",
+      "name": "Tests for gases",
+      "group": "a",
+      "lvl": "5.8.2 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atmos",
+      "id": "chem-am1",
+      "name": "The Earth's atmosphere",
+      "group": "a",
+      "lvl": "5.9.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atmos",
+      "id": "chem-am2",
+      "name": "Greenhouse gases and climate change",
+      "group": "b",
+      "lvl": "5.9.2 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atmos",
+      "id": "chem-am3",
+      "name": "Carbon footprint",
+      "group": "b",
+      "lvl": "5.9.2 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-atmos",
+      "id": "chem-am4",
+      "name": "Atmospheric pollutants",
+      "group": "b",
+      "lvl": "5.9.3 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-resources",
+      "id": "chem-ur1",
+      "name": "Sustainable development and potable water",
+      "group": "a",
+      "lvl": "5.10.1 \u00b7 Lesson 1",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-resources",
+      "id": "chem-ur2",
+      "name": "Waste water treatment",
+      "group": "a",
+      "lvl": "5.10.1 \u00b7 Lesson 2",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-resources",
+      "id": "chem-ur3",
+      "name": "Alternative methods of extracting metals",
+      "group": "a",
+      "lvl": "5.10.1 \u00b7 Lesson 3",
+      "subject": "chem"
+    },
+    {
+      "unit": "chem-resources",
+      "id": "chem-ur4",
+      "name": "Life cycle assessment and recycling",
+      "group": "b",
+      "lvl": "5.10.2 \u00b7 Lesson 4",
+      "subject": "chem"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en1",
+      "name": "Energy stores and systems",
+      "group": "a",
+      "lvl": "6.1.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en2",
+      "name": "Kinetic and gravitational potential energy",
+      "group": "a",
+      "lvl": "6.1.1 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en3",
+      "name": "Elastic potential energy",
+      "group": "a",
+      "lvl": "6.1.1 \u00b7 Lesson 3",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en4",
+      "name": "Specific heat capacity",
+      "group": "a",
+      "lvl": "6.1.1 \u00b7 Lesson 4",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en5",
+      "name": "Power",
+      "group": "a",
+      "lvl": "6.1.1 \u00b7 Lesson 5",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en6",
+      "name": "Conservation, dissipation and efficiency",
+      "group": "b",
+      "lvl": "6.1.2 \u00b7 Lesson 6",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en7",
+      "name": "Thermal conductivity and insulation",
+      "group": "b",
+      "lvl": "6.1.2 \u00b7 Lesson 7",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-energy",
+      "id": "phys-en8",
+      "name": "Energy resources",
+      "group": "c",
+      "lvl": "6.1.3 \u00b7 Lesson 8",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
+      "id": "phys-el1",
+      "name": "Circuit symbols, charge and current",
+      "group": "a",
+      "lvl": "6.2.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
+      "id": "phys-el2",
+      "name": "Resistance and V = IR",
+      "group": "a",
+      "lvl": "6.2.1 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
+      "id": "phys-el3",
+      "name": "I\u2013V characteristics",
+      "group": "a",
+      "lvl": "6.2.1 \u00b7 Lesson 3",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
+      "id": "phys-el4",
+      "name": "Series and parallel circuits",
+      "group": "b",
+      "lvl": "6.2.2 \u00b7 Lesson 4",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
+      "id": "phys-el5",
+      "name": "Mains electricity",
+      "group": "c",
+      "lvl": "6.2.3 \u00b7 Lesson 5",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
+      "id": "phys-el6",
+      "name": "Power and energy transfers",
+      "group": "c",
+      "lvl": "6.2.4 \u00b7 Lesson 6",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-particle",
+      "id": "phys-pm1",
+      "name": "Density and states of matter",
+      "group": "a",
+      "lvl": "6.3.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-particle",
+      "id": "phys-pm2",
+      "name": "Internal energy and changes of state",
+      "group": "b",
+      "lvl": "6.3.2 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-particle",
+      "id": "phys-pm3",
+      "name": "Specific latent heat",
+      "group": "b",
+      "lvl": "6.3.2 \u00b7 Lesson 3",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-particle",
+      "id": "phys-pm4",
+      "name": "Gas pressure and temperature",
+      "group": "c",
+      "lvl": "6.3.3 \u00b7 Lesson 4",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-atomic",
+      "id": "phys-at1",
+      "name": "Atoms and isotopes",
+      "group": "a",
+      "lvl": "6.4.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-atomic",
+      "id": "phys-at2",
+      "name": "Developing the model of the atom",
+      "group": "a",
+      "lvl": "6.4.1 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-atomic",
+      "id": "phys-at3",
+      "name": "Radioactive decay and nuclear radiation",
+      "group": "b",
+      "lvl": "6.4.2 \u00b7 Lesson 3",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-atomic",
+      "id": "phys-at4",
+      "name": "Nuclear equations",
+      "group": "b",
+      "lvl": "6.4.2 \u00b7 Lesson 4",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-atomic",
+      "id": "phys-at5",
+      "name": "Half-life",
+      "group": "b",
+      "lvl": "6.4.2 \u00b7 Lesson 5",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo1",
+      "name": "Scalars, vectors and types of force",
+      "group": "a",
+      "lvl": "6.5.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo2",
+      "name": "Gravity, weight and mass",
+      "group": "a",
+      "lvl": "6.5.1 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo3",
+      "name": "Resultant forces",
+      "group": "a",
+      "lvl": "6.5.1 \u00b7 Lesson 3",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo4",
+      "name": "Work done and energy transfer",
+      "group": "a",
+      "lvl": "6.5.2 \u00b7 Lesson 4",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo5",
+      "name": "Forces and elasticity",
+      "group": "a",
+      "lvl": "6.5.3 \u00b7 Lesson 5",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo8",
+      "name": "Speed and distance\u2013time graphs",
+      "group": "c",
+      "lvl": "6.5.4 \u00b7 Lesson 8",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo9",
+      "name": "Acceleration and velocity\u2013time graphs",
+      "group": "c",
+      "lvl": "6.5.4 \u00b7 Lesson 9",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo10",
+      "name": "Newton\u2019s laws of motion",
+      "group": "c",
+      "lvl": "6.5.4 \u00b7 Lesson 10",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-forces",
+      "id": "phys-fo11",
+      "name": "Stopping distances",
+      "group": "c",
+      "lvl": "6.5.4 \u00b7 Lesson 11",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-waves",
+      "id": "phys-wa1",
+      "name": "Transverse and longitudinal waves",
+      "group": "a",
+      "lvl": "6.6.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-waves",
+      "id": "phys-wa2",
+      "name": "Wave speed",
+      "group": "a",
+      "lvl": "6.6.1 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-waves",
+      "id": "phys-wa5",
+      "name": "The electromagnetic spectrum",
+      "group": "b",
+      "lvl": "6.6.2 \u00b7 Lesson 5",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-waves",
+      "id": "phys-wa6",
+      "name": "Uses and dangers of electromagnetic waves",
+      "group": "b",
+      "lvl": "6.6.2 \u00b7 Lesson 6",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-magnet",
+      "id": "phys-mg1",
+      "name": "Magnets and magnetic fields",
+      "group": "a",
+      "lvl": "6.7.1 \u00b7 Lesson 1",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-magnet",
+      "id": "phys-mg2",
+      "name": "Electromagnetism",
+      "group": "a",
+      "lvl": "6.7.2 \u00b7 Lesson 2",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-magnet",
+      "id": "phys-mg3",
+      "name": "The motor effect",
+      "group": "a",
+      "lvl": "6.7.2 \u00b7 Lesson 3",
+      "subject": "phys"
+    }
+  ],
+  "sources": [
+    {
+      "title": "AQA GCSE Biology 8461 specification",
+      "url": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification"
+    },
+    {
+      "title": "AQA Combined Science Trilogy biology content",
+      "url": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/biology-subject-content"
+    },
+    {
+      "title": "AQA Biology required practicals",
+      "url": "https://www.aqa.org.uk/subjects/biology/gcse/biology-8461/specification/practical-assessment"
+    },
+    {
+      "title": "AQA Trilogy chemistry specification",
+      "url": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/chemistry-subject-content"
+    },
+    {
+      "title": "AQA Trilogy physics specification",
+      "url": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content"
+    }
+  ]
+}
