@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="numeric-tools.js"></script>
+<script>window.ALP_SITE="gcse-combined";</script>
+<script src="lab-notebook.js"></script>
 <title>GCSE Combined Science</title>
 <meta name="description" content="AQA Combined Science: Trilogy (8464): interactive revision, practical skills, quick checks and original practice papers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -804,6 +806,7 @@ ${cfg.mid||""}
 ${cfg.work!==false?`<div class="card"><div class="card-h"><h3>${cfg.workTitle||"Worked calculation"}</h3><span class="muted" style="font-size:.85rem">${cfg.workSub||"Uses your own readings"}</span></div><div id="${cfg.id}-work"><p class="empty">${cfg.workEmpty||"Take some readings and the calculation will appear here."}</p></div></div>`:""}
 ${info(cfg.info)}`;
   $(".wrap").appendChild(s);
+  LabNotebook.attach(cfg,s);
   return s;
 }
 
@@ -7021,6 +7024,8 @@ attach("phys-mg7",{title:T,intro:I,qs:[
 <script src="practical-labs.js"></script>
 <script src="biology-labs.js"></script>
 <script src="course-data.js"></script>
+<script src="investigation-engine.js"></script>
+<script src="rates-methods.js"></script>
 <script src="learning.js"></script>
 <style>
 .co-tag{display:inline-block;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--data);color:var(--data);border-radius:999px;padding:1px 8px;vertical-align:1px}
@@ -7369,6 +7374,7 @@ function stats(d){ d=d||{}; const done=new Set((d["learn-gcse-combined-motion-do
   Object.entries(cs).forEach(([k,v])=>{ const lid=k.split(":")[0]; const u=unitOf(lid); if(v==="ok"){ R.cok++; if(u) R.unit[u.key].cok++; } });
   Object.values(EXAM.PARTS).forEach(p=>{ const v=partScore(p,ex[p.id]); if(v==null) return; const lid=partLesson[p.id], u=unitOf(lid);
     if(PIDS.has(lid)){ const pp=R.paper[lid]=R.paper[lid]||{g:0,m:0}; pp.g+=v; pp.m+=p.m; } else { R.em+=v; R.emk+=p.m; if(u){ R.unit[u.key].em+=v; R.unit[u.key].emk+=p.m; } } });
+  R.labs=LabNotebook.summary(d);
   return R; }
 const pc=(a,b)=>b?Math.round(a/b*100):null;
 const pcell=(a,b)=>{ const p=pc(a,b); return p==null?`<span class="muted">–</span>`:`<span class="td-pc ${p<50?"lo":p<70?"mid":"hi"}">${p} %</span>`; };
@@ -7392,8 +7398,10 @@ function renderDash(){ const c=classes.find(x=>x.id===cur);
 function detail(id){ sel=id; const s=students.find(x=>x.id===id), p=prog[id]||{st:stats({})}, S=p.st;
   const ur=units.map(u=>{ const x=S.unit[u.key]; return `<tr><td>${esc(x.title)}</td><td class="num">${x.done} / ${x.n}</td><td class="num">${pcell(x.cok,x.cq)}</td><td class="num">${pcell(x.em,x.emk)}</td></tr>`; }).join("");
   const pr=PAPERS.map(x=>{ const q=S.paper[x.id]; return `<tr><td>${esc(x.set?x.set+" · ":"")}${esc(x.name)}</td><td class="num">${q?`${q.g} / ${q.m}`:"–"}</td><td class="num">${q?pcell(q.g,q.m):"<span class=\"muted\">not started</span>"}</td></tr>`; }).join("");
+  const labrows=LAB.list.filter(p=>!p.unit&&!p.group?.startsWith("papers:")).map(p=>{const q=S.labs.reviews.find(r=>r.id===p.id);return `<tr><td>${esc(p.name)}</td><td>${q?.complete?"Complete":q?"Started":"Not started"}</td><td>${q?.score==null?"–":q.score+" / 2"}</td><td>${esc(q?.reflection||"")}</td></tr>`;}).join("");
   const opts=classes.filter(c=>c.id!==cur).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join("");
   $("#td-d").innerHTML=`<div class="lcard"><h3>${esc(s.display_name||s.username)} <span class="muted" style="font-weight:400;font-size:.95rem">${esc(s.username)} · ${S.days} day${S.days===1?"":"s"} active · ${hm(S.time)}</span></h3>
+   <h4>Practical reviews · ${S.labs.complete} complete</h4><div class="tbl-wrap"><table class="tbl-mini"><thead><tr><th>Practical</th><th>Review</th><th>Skills check</th><th>Conclusion and evaluation (student written)</th></tr></thead><tbody>${labrows}</tbody></table></div>
    <div class="td-two"><div class="tbl-wrap"><table class="tbl-mini"><tr><th>Unit</th><th>Lessons</th><th>Checks</th><th>Exam Qs</th></tr>${ur}</table></div><div class="tbl-wrap"><table class="tbl-mini"><tr><th>Full paper</th><th>Marks</th><th>Score</th></tr>${pr}</table></div></div>
    <div class="td-actions" style="margin-top:14px"><button class="btn" id="td-pw">Reset password</button>${opts?`<select id="td-mv" aria-label="Move to class"><option value="">Move to class…</option>${opts}</select>`:""}<button class="btn" id="td-out">Remove from class</button><button class="btn" id="td-rm">Delete account</button></div></div>`;
   $("#td-d").scrollIntoView({behavior:"smooth",block:"nearest"}); }

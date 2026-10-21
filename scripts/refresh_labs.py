@@ -34,6 +34,11 @@ def adapt(code, subject, name, rp):
         return f'register({{id:"{lab}",group:"rp-{subject}",num:{new},lvl:"RP {new}",'
     code, n = re.subn(r'register\(\{id:"([a-z]+)",group:"gcse",num:\d+,', reg, code)
     assert n == 1, 'register call not found'
+    # Restore recorded datasets before the lab first renders them.
+    if 'LabNotebook.observe(' not in code:
+        lab = next(i for i, _ in rp.values() if 'id:"'+i+'"' in code)
+        code, n = re.subn(r'(const st=\{[\s\S]*?\};)', lambda m: m[0] + '\nLabNotebook.observe("' + lab + '",st);', code, count=1)
+        assert n == 1, 'state binding not found'
     return code
 
 
@@ -49,7 +54,10 @@ def build():
         for _, (lab, _new) in sorted(rp.items()):
             found = [c for c in src if re.search(r'register\(\{id:"' + lab + '"', c)]
             assert len(found) == 1, f'{repo}: lab {lab} found {len(found)} times'
-            out.append(adapt(found[0], subject, name, rp))
+            # Course-specific lab overrides are versioned separately so refreshing
+            # shared source lessons cannot reintroduce separate-Chemistry content.
+            override = PROJECT / 'lab-overrides' / (lab + '.js')
+            out.append(override.read_text(encoding='utf-8') if override.exists() else adapt(found[0], subject, name, rp))
     text = '\n'.join(out)
     assert '</script' not in text.lower()
     (PROJECT / 'practical-labs.js').write_text(text, encoding='utf-8')

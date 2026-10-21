@@ -37,3 +37,17 @@ The Practical Lab unit has interactive versions of all 21 Trilogy required pract
 - `biology-labs.js`: required practicals 1–7 (microscopy, osmosis, food tests, enzymes and pH, photosynthesis, reaction time, field investigations), written for this course.
 - `practical-labs.js`: required practicals 8–21, generated from the GCSE Chemistry and GCSE Physics labs by `python scripts/refresh_labs.py` (reads the pinned pages in `sources/` that `refresh_sciences.py` downloads). Do not edit it by hand.
 - Each required-practical method page links to its lab (`RP_LAB` in `learning.js`).
+
+## Practical labs and saved evidence
+
+`lab-notebook.js` preserves recorded practical evidence and reviews under course-scoped
+`learn-<site>-lab-*` keys, which use the existing progress account sync. Apparatus animations
+restart after a reload; completed readings, reconstructed graphs, student conclusions and
+practical review scores remain. Results can be downloaded as CSV. Teacher student details
+show completion, the 2-mark skills check and student-written evaluation. No database schema
+or account permissions are changed. Authenticated sync depends on the existing account/backend
+configuration; local saving works without signing in.
+
+Biology investigations use simplified teaching models with units, controls, safety guidance,
+repeats and uncertainty analysis. They do not replace real practical assessment or certify
+the OCR Practical Endorsement. PAG 12 research activities are outside this update.

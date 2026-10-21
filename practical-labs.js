@@ -31,24 +31,24 @@ const burette=(x,ty,len,r,col,id)=>{ const s0=ty+20, s1=ty+len-30, k=(s1-s0)/50,
 return {beaker,flask,tube,bunsen,tripod,basin,burette};
 })();
 
-
 /* RP8 Making salts */
 (()=>{
 const {$,C,W,fx,gauss,bars,rows,build,register}=LAB;
 const MR=249.5, NA=0.025, NEED=5;
 const st={step:0,n:0,warm:false,dry:false,data:[]};
+LabNotebook.observe("salt",st);
 const stage=`<svg id="salt-svg" viewBox="0 0 900 470" role="img" aria-label="Making copper(II) sulfate crystals">${C.room()}<g id="salt-g"></g></svg>`;
 const panel=`<div class="btnrow" style="flex-wrap:wrap"><button class="btn" id="salt-warm">Warm the acid</button><button class="btn" id="salt-add">Add a spatula of CuO</button><button class="btn" id="salt-fil">Filter</button><button class="btn" id="salt-ev">Heat to evaporate</button><button class="btn" id="salt-cr">Leave to crystallise</button><button class="btn primary" id="salt-wt">Dry and weigh crystals</button><button class="btn" id="salt-new">Start a new attempt</button></div>
 <div class="readout"><div><span>Stage</span><b id="salt-s">—</b></div><div><span>CuO added</span><b id="salt-n">0</b></div></div><p class="note" id="salt-h"></p>`;
 build({id:"salt",eyebrow:"AQA GCSE Combined Science · Chemistry · Required practical 8 · Chemical changes",title:"Making a soluble salt",
- intro:"Prepare a pure, dry sample of copper(II) sulfate crystals from copper(II) oxide and dilute sulfuric acid, then calculate your percentage yield.",
- stage,bar:`<span>25.0 cm³ of 1.0 mol/dm³ H₂SO₄</span><span>1 spatula ≈ 0.40 g CuO</span>`,panel,
- results:`<div class="tbl-wrap"><table><thead><tr><th>Attempt</th><th>CuO added / g</th><th>Crystals / g</th><th>Yield / %</th><th>Notes</th><th></th></tr></thead><tbody id="salt-tbody"></tbody></table></div>`,
- graphTitle:"Percentage yield of each attempt",graphSub:"Theoretical maximum: 6.24 g",
- info:{method:["Measure 25 cm³ of dilute sulfuric acid into a beaker and warm it gently on a tripod and gauze (do not boil).","Add copper(II) oxide a spatula at a time, stirring, until some remains undissolved: the base is in excess, so all the acid has reacted.","Filter the warm mixture to remove the excess copper(II) oxide. Collect the blue filtrate in an evaporating basin.","Heat the filtrate over a water bath or gently until about half the water has evaporated and crystals start to form at the edge.","Leave to cool and crystallise. Filter off the crystals and dry them between filter papers.","Weigh the crystals and calculate the percentage yield."],
+ intro:"Prepare a pure, dry sample of copper(II) sulfate crystals from copper(II) oxide and dilute sulfuric acid. Compare your method, crystal mass and sample purity.",
+ stage,bar:`<span>25.0 cm³ of dilute sulfuric acid</span><span>1 spatula ≈ 0.40 g CuO</span>`,panel,
+ results:`<div class="tbl-wrap"><table><thead><tr><th>Attempt</th><th>CuO added / g</th><th>Crystals / g</th><th>Notes</th><th></th></tr></thead><tbody id="salt-tbody"></tbody></table></div>`,
+ graphTitle:"Crystal mass from each attempt",graphSub:"Use method and purity notes when comparing masses",
+ info:{method:["Measure 25 cm³ of dilute sulfuric acid into a beaker and warm it gently on a tripod and gauze (do not boil).","Add copper(II) oxide a spatula at a time, stirring, until some remains undissolved: the base is in excess, so all the acid has reacted.","Filter the warm mixture to remove the excess copper(II) oxide. Collect the blue filtrate in an evaporating basin.","Heat the filtrate over a water bath or gently until about half the water has evaporated and crystals start to form at the edge.","Leave to cool and crystallise. Filter off the crystals and dry them between filter papers.","Weigh the crystals and compare the crystal mass and quality."],
  vars:["(Preparation, not an investigation)","Mass of crystals obtained","Volume and concentration of acid; method of crystallisation"],
  safety:["Wear eye protection: sulfuric acid and copper(II) sulfate are irritants.","Do not boil the acid; heat gently to avoid spitting.","Copper(II) oxide powder is harmful: avoid raising dust."],
- qa:[["Why is copper(II) oxide added until some is left over?","So that all the sulfuric acid reacts. Excess base can be filtered off; excess acid could not be removed and would contaminate the crystals."],["Why is the acid warmed?","To increase the rate of reaction so the oxide dissolves faster."],["Why is the filtrate not heated to dryness?","Heating to dryness removes the water of crystallisation, giving white anhydrous powder instead of blue crystals, and can decompose the salt."],["Calculate the theoretical maximum mass of CuSO₄·5H₂O from 25.0 cm³ of 1.0 mol/dm³ H₂SO₄.","0.0250 mol H₂SO₄ → 0.0250 mol CuSO₄·5H₂O; 0.0250 × 249.5 = 6.24 g."],["Give two reasons why the yield is less than 100%.","Some solution remains in the filter paper and apparatus; some copper sulfate stays dissolved in the remaining solution; some crystals are lost on transfer."]]}});
+ qa:[["Why is copper(II) oxide added until some is left over?","So that all the sulfuric acid reacts. Excess base can be filtered off; excess acid could not be removed and would contaminate the crystals."],["Why is the acid warmed?","To increase the rate of reaction so the oxide dissolves faster."],["Why is the filtrate not heated to dryness?","Heating to dryness removes the water of crystallisation, giving white anhydrous powder instead of blue crystals, and can decompose the salt."], ["Why might some crystals be lost?","Some salt remains dissolved and some crystals or solution can be lost during transfer. A larger measured mass does not necessarily mean greater purity."]]}});
 function draw(){ const d=st.step; let s="";
   if(d<=1){ const blue=Math.min(st.n,NEED)/NEED; s+=GL.tripod(420,300,400,150)+GL.bunsen(420,400,st.warm)+GL.beaker(420,296,130,140,.42,`rgb(${Math.round(160-130*blue)},${Math.round(200-80*blue)},${Math.round(225)})`);
     for(let i=0;i<Math.max(0,st.n-NEED)*8;i++) s+=`<circle cx="${370+(i*23)%100}" cy="${290-(i%3)*3}" r="3" fill="#151515"/>`;
@@ -64,16 +64,18 @@ $("#salt-fil").onclick=()=>{ if(st.step!==1) return; if(st.n<=NEED) hint("Warnin
 $("#salt-ev").onclick=()=>{ if(st.step===2){ st.step=3; hint("Heat until crystals start to form, then stop. Pressing again heats to dryness."); } else if(st.step===3){ st.dry=true; hint("You have heated it to dryness: the water of crystallisation has been driven off."); } draw(); };
 $("#salt-cr").onclick=()=>{ if(st.step===3){ st.step=4; hint("Crystals have formed. Dry and weigh them."); draw(); } };
 $("#salt-wt").onclick=()=>{ if(st.step!==4) return; const used=Math.min(st.n,NEED)/NEED; let y=(0.72+0.08*Math.random())*used; let note="good blue crystals"; if(!st.excess){ y*=.85; note="acid left: sticky, impure crystals"; } if(st.dry){ y*=160/249.5; note="white anhydrous powder (water lost)"; }
-  const m=+(NA*MR*y).toFixed(2); st.data.push({cu:+(st.n*.4).toFixed(1),m,pc:m/(NA*MR)*100,note}); refresh(); hint("Recorded. Start a new attempt to compare."); };
+  const m=+(NA*MR*y).toFixed(2); st.data.push({cu:+(st.n*.4).toFixed(1),m,note}); refresh(); hint("Recorded. Start a new attempt to compare."); };
 $("#salt-new").onclick=()=>{ Object.assign(st,{step:0,n:0,warm:false,dry:false,excess:false}); hint("Measure 25 cm³ of acid into the beaker, then warm it."); draw(); };
 $("#salt-tbody").addEventListener("click",e=>{ const b=e.target.closest(".x"); if(!b) return; st.data.splice(+b.dataset.i,1); refresh(); });
-function refresh(){ rows($("#salt-tbody"),st.data.map((r,i)=>[i+1,fx(r.cu,1),fx(r.m,2),fx(r.pc,0),r.note]),"Make some crystals to record a result.",5,true); graph(); work(); }
-function graph(){ bars($("#salt-graph"),{ylabel:"Yield / %",items:st.data.map((r,i)=>({label:`Attempt ${i+1}`,v:r.pc,vl:fx(r.pc,0)+"%"})),empty:"Yields will appear here"}); }
-function work(){ const el=$("#salt-work"), {fr,res,step,chips}=W; if(!st.data.length){ el.innerHTML=`<p class="empty">Weigh some crystals and the calculation will appear here.</p>`; return; } const r=st.data[st.data.length-1];
-  el.innerHTML=chips([["Theoretical yield","6.24 g",1],["Your crystals",`${fx(r.m,2)} g`],["Percentage yield",`${fx(r.pc,0)}%`]])+`<div class="work" style="margin-top:14px">`+step(1,"Moles of acid","moles = concentration × volume",[`0.0250 dm³ × 1.0 mol/dm³ = 0.0250 mol H₂SO₄`])+step(2,"Maximum mass of crystals","CuO + H₂SO₄ → CuSO₄ + H₂O, then 1 CuSO₄ crystallises with 5 H₂O",[`M<sub>r</sub> CuSO₄·5H₂O = 63.5 + 32 + 64 + 5 × 18 = 249.5`,`0.0250 × 249.5 = ${res("6.24 g")}`])+step(3,"Percentage yield",null,[`${fr(fx(r.m,2),"6.24")} × 100 = ${res(fx(r.pc,0)+"%")}`])+`</div>`; }
+function refresh(){ rows($("#salt-tbody"),st.data.map((r,i)=>[i+1,fx(r.cu,1),fx(r.m,2),r.note]),"Make some crystals to record a result.",4,true); graph(); work(); }
+function graph(){ bars($("#salt-graph"),{ylabel:"Crystal mass / g",items:st.data.map((r,i)=>({label:`Attempt ${i+1}`,v:r.m,vl:fx(r.m,2)+" g"})),empty:"Record a crystal sample"}); }
+function work(){ const el=$("#salt-work"),r=st.data.at(-1);el.innerHTML=r?`<p><b>Crystal mass:</b> ${fx(r.m,2)} g. <b>Observation:</b> ${r.note}.</p><p>Excess insoluble copper oxide can be removed by filtration. Gently concentrate the filtrate, allow it to cool and dry the crystals. Explain how contamination, overheating, incomplete drying and transfer losses affect the sample. Mass alone does not measure purity.</p>`:'<p class="empty">Prepare and weigh a sample to evaluate the method.</p>'; }
+
 hint("Measure 25 cm³ of acid into the beaker, then warm it."); draw(); refresh();
 register({id:"salt",group:"rp-chem",num:8,lvl:"RP 8",name:"Making salts",icon:"rp-salt",onShow:()=>{draw();graph();}});
 })();
+
+
 
 
 /* RP9 Electrolysis */
@@ -85,6 +87,7 @@ const S=[{n:"copper(II) chloride",liq:"#5fb3a8",cat:["copper","solid",0,"pink-br
  {n:"potassium bromide",liq:"#9cc8e8",cat:["hydrogen","gas",1,"squeaky pop"],an:["bromine","sol",0,"orange-brown colour around the anode"],why:"Potassium is more reactive than hydrogen; bromide is a halide (bromine dissolves)."},
  {n:"sodium sulfate",liq:"#9cc8e8",cat:["hydrogen","gas",1,"squeaky pop"],an:["oxygen","gas",0.5,"relights a glowing splint"],why:"Sodium is more reactive than hydrogen; no halide, so oxygen."}];
 const st={k:0,on:false,t:0,last:0,data:[],trace:[]};
+LabNotebook.observe("elec",st);
 const stage=`<svg id="elec-svg" viewBox="0 0 900 470" role="img" aria-label="Electrolysis cell with gas collecting tubes">${C.room()}${C.psu(640,250,"elec-psu",{max:12})}<g id="elec-g"></g>${C.stopwatch(40,180,"elec-sw")}</svg>`;
 const panel=`<div class="field"><div class="lbl">Solution</div><select id="elec-s">${S.map((s,i)=>`<option value="${i}">${s.n}</option>`).join("")}</select></div>
 <div class="btnrow"><button class="btn primary" id="elec-on">Switch on</button><button class="btn" id="elec-reset">Empty and refill</button></div>
@@ -131,6 +134,7 @@ register({id:"elec",group:"rp-chem",num:9,lvl:"RP 9",name:"Electrolysis",icon:"r
 (()=>{
 const {$,C,W,fx,gauss,plot,rows,build,register,linfit,RUNCOL}=LAB;
 const st={c:+(1.4+Math.random()*0.5).toFixed(2),V:0,T0:+(19+Math.random()*3).toFixed(1),data:[],shown:0};
+LabNotebook.observe("temp",st);
 const Tof=V=>{ const na=0.025*st.c, nb=0.002*V, n=Math.min(na,nb); return st.T0+n*57100/(4.18*(25+V))*0.93; };
 const stage=`<svg id="temp-svg" viewBox="0 0 900 470" role="img" aria-label="Polystyrene cup with thermometer">${C.room()}${C.thermo(450,40,300,"temp-th",{tMin:0,tMax:50})}<g id="temp-g"></g>${C.mag(720,170,90,"temp-mag")}</svg>`;
 const panel=`<div class="readout"><div><span>Total NaOH added</span><b id="temp-v">0 cm³</b></div><div><span>Thermometer</span><b id="temp-t">—</b></div></div>
@@ -168,6 +172,7 @@ register({id:"temp",group:"rp-chem",num:10,lvl:"RP 10",name:"Temperature changes
 const {$,C,W,fx,gauss,plot,rows,build,register,RUNCOL}=LAB;
 const VF=96;
 const st={c:1.0,run:false,t:0,pts:[],runs:[]};
+LabNotebook.observe("rate",st);
 const k=c=>0.04*c;
 const stage=`<svg id="rate-svg" viewBox="0 0 900 470" role="img" aria-label="Conical flask connected to a gas syringe">${C.room()}<g id="rate-g"></g>${C.stopwatch(60,190,"rate-sw")}</svg>`;
 const panel=`<div class="field"><div class="lbl">Concentration of hydrochloric acid</div><div class="seg c2" id="rate-c">${[0.5,1.0,1.5,2.0].map(v=>`<label class="opt"><input type="radio" name="rate-c" value="${v}" ${v===1?"checked":""}><span>${v.toFixed(1)} mol/dm³</span></label>`).join("")}</div></div>
@@ -209,6 +214,7 @@ const {$,C,W,fx,gauss,bars,rows,build,register}=LAB;
 const DY={E:[["yellow",.78,"#e3b81f"]],R:[["red",.52,"#d63a8a"]],B:[["blue",.30,"#3a7bd6"]],G:[["yellow",.78,"#e3b81f"],["blue",.30,"#3a7bd6"]],S:[["red",.52,"#d63a8a"],["blue",.30,"#3a7bd6"],["orange",.64,"#ef7d22"]]};
 const LN=[["E","Yellow"],["R","Red"],["B","Blue"],["G","Green"],["S","Sweet coating"]];
 const st={p:0,run:false,data:[]};
+LabNotebook.observe("chrom",st);
 const F=230, Y0=380, X0=300;
 const stage=`<svg id="chrom-svg" viewBox="0 0 900 470" role="img" aria-label="Chromatography paper in a beaker of water">${C.room()}<g id="chrom-g"></g></svg>`;
 const panel=`<div class="btnrow"><button class="btn primary" id="chrom-go">Place paper in the solvent</button><button class="btn" id="chrom-re">New paper</button></div><div class="readout"><div><span>Solvent front</span><b id="chrom-sf">—</b></div><div><span>Status</span><b id="chrom-s">Ready</b></div></div><p class="note">When the solvent is near the top, the run stops. Click any spot to measure it with the ruler and record its R<sub>f</sub> value.</p>`;
@@ -246,6 +252,7 @@ register({id:"chrom",group:"rp-chem",num:12,lvl:"RP 12",name:"Chromatography",ic
 const {$,C,W,fx,gauss,bars,rows,build,register}=LAB;
 const SM={tap:["Tap water",7.2,0.30],rain:["Rain water",5.6,0.03],river:["River water",7.6,0.60],sea:["Sea water",8.1,35.0],dist:["Distilled sea water",7.0,0.0]};
 const st={k:"sea",basin:+(48+Math.random()*6).toFixed(2),stage:0,data:{},ph:null,mass:null};
+LabNotebook.observe("water",st);
 const stage=`<svg id="water-svg" viewBox="0 0 900 470" role="img" aria-label="Analysing a water sample">${C.room()}${C.balance(620,300,"water-bal")}<g id="water-g"></g></svg>`;
 const panel=`<div class="field"><div class="lbl">Sample</div><select id="water-s">${Object.entries(SM).map(([k,v])=>`<option value="${k}" ${k==="sea"?"selected":""}>${v[0]}</option>`).join("")}</select></div>
 <div class="btnrow" style="flex-wrap:wrap"><button class="btn" id="water-ph">Measure pH</button><button class="btn" id="water-w0">Weigh empty basin</button><button class="btn" id="water-ev">Evaporate 50.0 cm³ to dryness</button><button class="btn" id="water-w1">Weigh basin again</button><button class="btn" id="water-dis">Distil the sea water</button></div>
@@ -290,6 +297,7 @@ const MAT={al:{name:"Aluminium",c:900,grad:"g-alu",top:"#d9dfe3",sw:"linear-grad
            fe:{name:"Steel",c:450,grad:"g-steelBlk",top:"#9ba4ab",sw:"linear-gradient(90deg,#3f464c,#a8b1b8,#353b40)"}};
 const RH=2.90, RI=0.18, M=1.00;
 const st={mat:"al",V:12,lag:true,oil:true,dur:600,speed:30,stage:"ready",t:0,Tb:20,Th:20,Tth:20,Ta:20,next:0,data:[],runs:store.get("pl-shc-runs")||[],vr:0,ir:0};
+LabNotebook.observe("shc",st);
 st.Ta=20+Math.round(Math.random()*10)/10; st.Tb=st.Th=st.Tth=st.Ta;
 
 /* ---------- scene ---------- */
@@ -509,6 +517,7 @@ const WIRES={c30:{name:"Constantan 0.32 mm",r:0.0612,col:"#c9b39a"},c26:{name:"C
 const RVALS=[10,22,47], BANDS={10:["#7b3f00","#111","#111"],22:["#c62828","#c62828","#111"],47:["#e6b800","#7b2fa8","#111"]};
 const actual={}; RVALS.forEach(v=>actual[v]=v*(1+(Math.random()-.5)*.04));
 const st={mode:"wire",wire:"c30",L:50,closed:false,r1:10,r2:22,arr:"series",dataA:[],dataB:[],E:1.55,rint:0.35};
+LabNotebook.observe("rs",st);
 const X0=70, PX=7.6, WY=386;
 const xOf=L=>X0+L*PX;
 
@@ -740,6 +749,7 @@ const {$,C,W,fmt,fx,gauss,linfit,plot,rows,build,register,setPsu,clamp}=LAB;
 const COMP={res:{name:"Fixed resistor"},lamp:{name:"Filament lamp"},diode:{name:"Diode"}};
 const RVAL=10*(1+(Math.random()-.5)*.02), RP=100, RINT=0.3;
 const st={comp:"lamp",Vs:3,rev:false,on:true,data:{res:[],lamp:[],diode:[]}};
+LabNotebook.observe("iv",st);
 
 /* models: return {V across component, I} for supply Vs (signed) */
 function lampI(V){ return Math.sign(V)*0.1024*Math.pow(Math.abs(V),0.6); }
@@ -940,6 +950,7 @@ Object.values(IRR).forEach(r=>{ r.Vt=r.V+(Math.random()-.5)*.6; r.m=r.Vt*r.rho; 
 const CYL_MASS=92.37+Math.random()*2;
 
 const st={mode:"reg",reg:"al",irr:"peb",liq:"oil",vol:50,done:{},meas:{},bal:0,tare:0,data:[],busy:false};
+LabNotebook.observe("de",st);
 
 /* ---------- scene ---------- */
 const magCx=812, magCy=112;
@@ -1183,6 +1194,7 @@ const {$,C,W,fmt,fx,gauss,linfit,plot,rows,build,register,clamp}=LAB;
 const SPR={A:{name:"Spring A (soft)",k:24,lop:4.9,el:5.4},B:{name:"Spring B (stiff)",k:42,lop:7.0,el:7.5}};
 const G=9.8, MAXM=800;
 const st={spr:"A",m:0,fmax:0,R0:10+Math.round((Math.random()-.5)*6)/10,y:0,y0:0,target:0,t:0,data:[]};
+LabNotebook.observe("sp",st);
 const RY0=60, PX=5.6, SX=360, RULEX=284;
 const yOf=cm=>RY0+cm*PX;
 
@@ -1349,6 +1361,7 @@ register({id:"sp",group:"rp-phys",num:18,lvl:"RP 18",name:"Force and extension",
 const {$,C,W,fmt,fx,gauss,linfit,plot,rows,build,register,clamp}=LAB;
 const G=9.8, MT=0.500, SLOT=0.020, CARD=0.050, K=500, X0=120, G1=0.30, G2=0.80, DROP=0.90, SEND=1.20;
 const st={mode:"force",n:3,extra:0,comp:true,speed:1,run:null,dataF:[],dataM:[]};
+LabNotebook.observe("ac",st);
 const gx=s=>X0+s*K;
 
 function sys(){
@@ -1546,6 +1559,7 @@ register({id:"ac",group:"rp-phys",num:19,lvl:"RP 19",name:"Acceleration",icon:"a
 (()=>{
 const {$,W,fmt,fx,gauss,linfit,plot,rows,build,register,clamp}=LAB;
 const st={mode:"ripple",f:10,depth:8,frozen:false,mA:200,mB:400,fs:40,mass:200,data:{ripple:[],string:[]},t:0};
+LabNotebook.observe("wv",st);
 const VW=900, VH=500;
 /* ripple tank: interior 80..680 px = 30 cm */
 const TX0=80, TX1=680, TY0=70, TY1=390, PXCM=20, DIP=100;
@@ -1768,6 +1782,7 @@ const {$,C,W,fmt,fx,gauss,bars,rows,build,register,clamp,setThermo}=LAB;
 const SURF=[{k:"mb",name:"Matt black",e:.95},{k:"sb",name:"Shiny black",e:.80},{k:"mw",name:"Matt white",e:.88},{k:"ss",name:"Shiny silver",e:.07}];
 const TA=20.5;
 const st={face:0,phi:40,d:10,T:TA,filled:false,t:0,data:[],busy:false};
+LabNotebook.observe("ir",st);
 const CX=470, CY=300, H=62, EL=0.42;
 
 const stage=`<svg id="ir-svg" viewBox="0 0 900 470" role="img" aria-label="A Leslie cube filled with hot water, with an infrared detector connected to a meter pointing at one face">

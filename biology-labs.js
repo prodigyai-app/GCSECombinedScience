@@ -22,6 +22,7 @@ const SPEC={
  onion:{name:"Onion epidermis",stain:"iodine solution",what:"cell length"},
  cheek:{name:"Cheek cells",stain:"methylene blue",what:"cell diameter"}};
 const st={sp:"onion",obj:4,coarse:20,fine:50,target:44+Math.random()*16,stained:true,dx:0,warned:false,data:[],cells:{}};
+LabNotebook.observe("bmic",st);
 const umPerDiv=o=>100/o;                      /* eyepiece graticule: 100 divisions, calibrated per objective */
 const pxPerUm=o=>0.03*o;                      /* 100 divisions span 300 px at every magnification */
 const focusPos=()=>st.coarse+(st.fine-50)/10;
@@ -174,6 +175,7 @@ register({id:"bmic",group:"rp-bio",num:1,lvl:"RP 1",name:"Microscopy",icon:"rp-m
 const {$,C,W,fx,gauss,clamp,plot,rows,build,register,RUNCOL}=LAB;
 const CONC=[0,0.2,0.4,0.6,0.8,1.0];
 const st={c:0,m0:null,blot:true,sap:+(0.24+Math.random()*0.1).toFixed(2),busy:false,data:[],shown:0,inTube:-1};
+LabNotebook.observe("bosm",st);
 const pct=c=>22*Math.tanh((st.sap-c)/0.35);
 const TX=i=>150+i*62;
 
@@ -274,6 +276,7 @@ const FOOD={glucose:{name:"Glucose solution",c:{sugar:2}},starch:{name:"Starch s
 const TEST={ben:{name:"Benedictâ€™s",nut:"sugar",what:"reducing sugars",col:"#3d7fd6"},iod:{name:"Iodine",nut:"starch",what:"starch",col:"#c08a3e"},
  biu:{name:"Biuret",nut:"protein",what:"protein",col:"#4f86d9"},sud:{name:"Sudan III",nut:"lipid",what:"lipids",col:"#d2452e"}};
 const st={food:"glucose",test:"ben",added:false,heated:false,data:[]};
+LabNotebook.observe("bfood",st);
 
 function result(){ const f=FOOD[st.food].c, t=st.test;
   if(!st.added) return {col:st.food==="milk"?"#f4f1ea":st.food==="oil"?"#e8cf62":st.food==="egg"?"#ece9da":st.food==="starch"?"#eeeee6":"#dfeef7",obs:"No reagent added yet",pos:null};
@@ -375,6 +378,7 @@ const PH=[4,5,6,7,8,9];
 const opt=6.4+Math.random()*0.6;
 const tDone=pH=>{ const a=Math.exp(-Math.pow((pH-opt)/1.2,2)); return 48/a*(1+gauss()*0.06); };
 const st={pH:7,int:30,speed:10,run:false,t:0,tc:null,wells:[],data:[],found:null};
+LabNotebook.observe("benz",st);
 
 const stage=`<svg id="benz-svg" viewBox="0 0 900 470" role="img" aria-label="A spotting tile with drops of iodine, a test tube of starch and amylase in a water bath, and a stopwatch">
 ${C.room(318)}${C.benchFront(440)}
@@ -464,6 +468,7 @@ register({id:"benz",group:"rp-bio",num:4,lvl:"RP 4",name:"Enzymes and pH",icon:"
 (()=>{
 const {$,C,W,fx,gauss,plot,rows,build,register,clamp,RUNCOL}=LAB;
 const st={d:20,shield:true,ready:false,busy:false,data:[],count:0,axis:"d",bubbles:[]};
+LabNotebook.observe("bphot",st);
 const PX=12, TX=640;                       /* px per cm along the bench; tube position */
 const temp=()=>st.shield?20:20+Math.min(14,140/st.d);
 const rateOf=d=>{ const I=1/Math.pow(d/100,2); return 70*I/(I+30)*(1+0.05*(temp()-20)); };
@@ -557,6 +562,7 @@ const {$,C,W,fx,bars,rows,build,register,RUNCOL}=LAB;
 const COND=["Dominant hand","Other hand","Distracted (counting backwards aloud)"];
 const PXCM=6, TOP=52, LEN=50;                 /* 50 cm ruler, 6 px per cm */
 const st={cond:0,phase:"idle",t0:0,timer:null,fall:0,data:[]};
+LabNotebook.observe("breac",st);
 
 const stage=`<svg id="breac-svg" viewBox="0 0 900 470" role="img" aria-label="A 50 cm ruler held above an open finger and thumb, ready to be dropped and caught">
 ${C.room(400)}
@@ -647,6 +653,7 @@ const dens=(x,y)=>12*(1-Math.exp(-Math.max(0,dist(x,y)-2)/6)); /* daisies per mÂ
 const plants=[]; (()=>{ const max=12; for(let k=0;k<FW*FH*max*1.1;k++){ const x=Math.random()*FW, y=Math.random()*FH; if(Math.random()*max<dens(x,y)) plants.push([x,y]); } })();
 const lux=d=>Math.round((18000*(1-0.85*Math.exp(-d/5)))/100)*100;
 const st={mode:"rand",q:null,tdist:2,data:[]};
+LabNotebook.observe("bfield",st);
 const countIn=(x,y)=>plants.filter(p=>p[0]>=x&&p[0]<x+Q&&p[1]>=y&&p[1]<y+Q).length;
 
 const stage=`<svg id="bfield-svg" viewBox="0 0 900 470" role="img" aria-label="A field with a tree on one side, daisies scattered across it, and a quadrat with a close-up view">
