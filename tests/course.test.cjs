@@ -43,3 +43,11 @@ test('Assessment coverage and timing match the course specification',()=>{
  }else if(id==='gcse-biology'){assert.equal(course.units.length,7);assert.equal(papers.length,4);for(const p of papers){assert.equal(p.marks,100);assert.equal(p.minutes,105);}}
  else{assert.equal(course.units.length,6);assert.deepEqual(papers.map(p=>[p.marks,p.minutes]),[[100,135],[100,135],[70,90]]);assert.ok(course.lessons.some(l=>l.title.toLowerCase().includes('endorsement'))||JSON.stringify(course).includes('Practical Endorsement'));}
 });
+test('Practical Lab has exactly the 21 Trilogy required practicals',()=>{
+ const id=html.match(/window\.ALP_SITE="([^"]+)"/)[1];if(id!=='gcse-combined')return;
+ const labs=['practical-labs.js','biology-labs.js'].map(f=>{const s=fs.readFileSync(path.join(root,f),'utf8');new vm.Script(s);assert.ok(html.includes('<script src="'+f+'"></script>'),f);return s;}).join('\n');
+ const reg=[...labs.matchAll(/register\(\{id:"([a-z]+)",group:"rp-(bio|chem|phys)",num:(\d+),lvl:"RP (\d+)"/g)];
+ assert.deepEqual(reg.map(m=>+m[3]).sort((a,b)=>a-b),Array.from({length:21},(_,i)=>i+1));
+ for(const m of reg){assert.equal(m[3],m[4]);const n=+m[3];assert.equal(m[2],n<=7?'bio':n<=13?'chem':'phys',m[1]);}
+ for(const sep of ['titr','ions','insulation','lt'])assert.ok(!reg.some(m=>m[1]===sep),'separate-science practical included: '+sep);
+});

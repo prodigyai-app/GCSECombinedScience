@@ -29,3 +29,11 @@ Curriculum sources are listed in `course.json` and on the site. `provenance.json
 - Re-run tests and browser checks after either refresh. The adapters correct nitric-acid/metal predictions, remove unsupported alkene formula recall, label Higher content and remap specification/practical references.
 
 The twelve practice papers form one complete six-component set at each tier. They sample the specified topic groups; they do not test every subsection or every required practical in one set.
+
+## Practical Lab
+
+The Practical Lab unit has interactive versions of all 21 Trilogy required practicals.
+
+- `biology-labs.js`: required practicals 1–7 (microscopy, osmosis, food tests, enzymes and pH, photosynthesis, reaction time, field investigations), written for this course.
+- `practical-labs.js`: required practicals 8–21, generated from the GCSE Chemistry and GCSE Physics labs by `python scripts/refresh_labs.py` (reads the pinned pages in `sources/` that `refresh_sciences.py` downloads). Do not edit it by hand.
+- Each required-practical method page links to its lab (`RP_LAB` in `learning.js`).

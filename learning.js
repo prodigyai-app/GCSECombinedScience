@@ -7,7 +7,8 @@
  const ICON='<path d="M6 3c0 8 12 10 12 18M18 3c0 8-12 10-12 18M7 6h10M9 10h6M9 14h6M7 18h10"/>';
  LAB.ICONS['l-bio']=ICON;
  const qsToExam=items=>items.map((p,i)=>({stem:p.stem||'',parts:[{q:p.q,m:p.m,lines:Math.max(2,p.m),ms:p.ms.map((x,j)=>[''+(j+1),x]),...(p.answer!==undefined?{ans:{a:p.answer,unit:p.unit||'',tol:p.tolerance!==undefined?0:0.02,atol:p.tolerance??0}}:{})}]}));
- function practical(p){return B.practical(`<p><b>${p.title}</b></p><ol>${p.method.map(x=>`<li>${x}</li>`).join('')}</ol><p><b>Variables and controls</b></p><ul>${(p.variables||[]).map(x=>`<li>${x}</li>`).join('')}</ul><p><b>Safety and ethics</b></p><ul>${(p.safety||[]).map(x=>`<li>${x}</li>`).join('')}</ul><p><b>Analysis:</b> ${p.analysis}</p>`,'Practical method and analysis');}
+ const RP_LAB={'b-microscopy':'bmic','b-osmosis':'bosm','b-foodtests':'bfood','b-enzymes':'benz','b-photo-rate':'bphot','b-reaction':'breac','b-sampling':'bfield','chem-practical-salt':'salt','chem-practical-elec':'elec','chem-practical-temp':'temp','chem-practical-rate':'rate','chem-practical-chrom':'chrom','chem-practical-water':'water','phys-practical-shc':'shc','phys-practical-rs':'rs','phys-practical-iv':'iv','phys-practical-de':'de','phys-practical-sp':'sp','phys-practical-ac':'ac','phys-practical-wv':'wv','phys-practical-ir':'ir'};
+ function practical(p,id){const lab=RP_LAB[id],link=lab&&LAB.list.some(x=>x.id===lab)?`<p><a class="btn primary" href="#${lab}">Open the virtual lab</a></p>`:'';return B.practical(link+`<p><b>${p.title}</b></p><ol>${p.method.map(x=>`<li>${x}</li>`).join('')}</ol><p><b>Variables and controls</b></p><ul>${(p.variables||[]).map(x=>`<li>${x}</li>`).join('')}</ul><p><b>Safety and ethics</b></p><ul>${(p.safety||[]).map(x=>`<li>${x}</li>`).join('')}</ul><p><b>Analysis:</b> ${p.analysis}</p>`,'Practical method and analysis');}
  function simHTML(id,type){
   const labels={enzyme:['Temperature / °C',0,70,35],osmosis:['External sucrose concentration / mol dm⁻³',0,1,0.1],genetics:['Cross',0,2,0],population:['Time / model generations',0,40,10],photosynthesis:['Light intensity / arbitrary units',0,100,30],sampling:['Number of quadrats sampled',1,20,5],magnification:['Image size / mm',1,100,40]};
   const [label,min,max,value]=labels[type]||labels.enzyme;
@@ -76,7 +77,7 @@
   if(!diagramUnits.has(l.unit)){const unit=COURSE.units.find(u=>u.id===l.unit);if(unit){const fig=overviewDiagram(unit);if(fig)blocks.unshift(fig);}diagramUnits.add(l.unit);}
   if(l.sim)blocks.splice(1,0,simHTML('bio-model-'+l.id,l.sim));
   if(l.example)blocks.push(B.example(l.example.title,l.example.q,l.example.steps));
-  if(l.practical)blocks.push(practical(l.practical));
+  if(l.practical)blocks.push(practical(l.practical,l.id));
   blocks.push(B.check(l.checks),B.keypoints(l.keypoints),B.mistakes(l.mistakes));
   lesson({id:l.id,group:'lessons',num:i+1,lvl:l.spec,name:l.title,icon:'bio',tag:[l.tier==='higher'?'Higher':null,l.separate?'Biology only':null].filter(Boolean).join(' · '),eyebrow:meta.sub+' · '+l.spec,title:l.title,intro:l.summary,outcomes:l.keypoints.slice(0,3).map(k=>[k,l.spec]),blocks});
   if(l.exam?.length)EXAM.attach(l.id,{title:'Apply your understanding',intro:'Write your response, then use each marking point to award your marks. Equivalent scientifically correct wording is acceptable.',qs:qsToExam(l.exam)});
@@ -118,6 +119,9 @@
  units.forEach(u=>LAB.ICONS[u.icon]=ICON);
  if(PAPERS.length)units.push({key:'papers',title:'Practice papers',kind:'Exam practice',sub:meta.id==='gcse-combined'?'Six papers per tier · 70 marks · 75 minutes':'Full papers, timers and printable mark schemes',desc:'Original Prodigy papers with saved answers, a timer and self-marking. These are independent practice resources.',intro:'Choose a paper. Answer the questions, then mark against the scheme. You can print a question paper or a separate mark scheme.',icon:'u-papers',noun:'papers',listLabel:'Practice papers',done,groups:[['papers:foundation','Foundation'],['papers:higher','Higher'],['papers:ocr','OCR A Level']].filter(([g])=>LAB.list.some(x=>x.group===g))});
  LAB.ICONS['u-papers']='<path d="M6 2h9l4 4v16H6zM9 10h7M9 14h7M9 18h5"/>';
+ // Practical Lab: the interactive required-practical labs, when this course has any.
+ const RPG=[['rp-bio','Biology · required practicals 1–7'],['rp-chem','Chemistry · required practicals 8–13'],['rp-phys','Physics · required practicals 14–21']].filter(([g])=>LAB.list.some(x=>x.group===g));
+ if(RPG.length)units.push({key:'lab',title:'Practical Lab',kind:'Required practicals',sub:`${LAB.list.filter(x=>RPG.some(([g])=>g===x.group)).length} required practicals as virtual labs`,desc:'Virtual versions of the required practicals: set up the apparatus, take readings, plot graphs and work out the result.',intro:'Choose a practical to open it; use Next to work through them in order.',icon:'u-lab',noun:'practicals',listLabel:'All practicals',groups:RPG});
  LAB.list.forEach(p=>{if(!LAB.ICONS[p.icon])LAB.ICONS[p.icon]=p.unit?.startsWith('phys-')?'<path d="M2 12c3-10 7-10 10 0s7 10 10 0"/>':p.unit?.startsWith('chem-')?'<path d="M9 3h6M10 3v6l-6 11h16L14 9V3"/>':ICON;});
  window.HUB_UNITS=units;
  LAB.boot({list:true,units,groups:units.flatMap(u=>u.groups),hubIntro:meta.intro,onRoute:()=>queueMicrotask(filterTier)});LEARN.mark();
