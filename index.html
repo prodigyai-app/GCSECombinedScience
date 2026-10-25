@@ -5733,9 +5733,9 @@ lesson({id:"phys-at3",group:"b",num:3,lvl:"6.4.2 · Lesson 3",name:"Radioactive 
  ],onShow:()=>draw()});
 
 function draw(){ const s=$("#phys-at3"); if(!s) return; const [n,R0,col]=SRC[st.s], px=40+st.d*24+80, r=rate();
-  let g=`<rect x="20" y="90" width="50" height="50" rx="6" class="fsunk ink" stroke-width="2"/><text x="45" y="160" text-anchor="middle" font-size="11" class="tm">source</text><circle cx="62" cy="115" r="6" style="fill:${col}"/>`;
-  if(st.ab!=="none"){ const w=st.ab==="paper"?3:st.ab==="al"?8:30, c=st.ab==="paper"?"#f2efe6":st.ab==="al"?"#b7c0c8":"#6c7480"; g+=`<rect x="${(px-50-w/2).toFixed(0)}" y="60" width="${w}" height="110" style="fill:${c}" class="ink" stroke-width="1"/><text x="${px-50}" y="190" text-anchor="middle" font-size="11" class="tm">${ABS[st.ab][0]}</text>`; }
-  g+=`<rect x="${px}" y="100" width="90" height="30" rx="6" class="fpan ink" stroke-width="2"/><text x="${px+45}" y="120" text-anchor="middle" font-size="11" class="tm">G–M tube</text><path d="M${px+90} 115 H${px+130}" class="ink" stroke-width="2"/><rect x="${px+130}" y="85" width="150" height="60" rx="6" class="fpan ink" stroke-width="2"/><text x="${px+205}" y="122" text-anchor="middle" font-size="20" font-weight="700" class="tm">${Math.round(st.counts)}</text><text x="${px+205}" y="160" text-anchor="middle" font-size="11" class="tmut">counts</text>`;
+  let g=(LAB.C&&LAB.C.room?LAB.C.room(180,230):"")+`<rect x="14" y="96" width="44" height="38" rx="3" fill="#5d646a"/><rect x="18" y="100" width="40" height="30" rx="2" fill="#7b838a"/><rect x="56" y="108" width="10" height="14" rx="2" fill="#b9a24a"/><circle cx="66" cy="115" r="4" style="fill:${col}"/><path d="M36 134V178M20 178h32" stroke="#4a5258" stroke-width="5"/><text x="36" y="200" text-anchor="middle" font-size="11" fill="#c9d2d5">sealed source</text><text x="36" y="214" text-anchor="middle" font-size="10" fill="#c9d2d5">(handle with tongs)</text>`;
+  if(st.ab!=="none"){ const w=st.ab==="paper"?3:st.ab==="al"?8:30, c=st.ab==="paper"?"#f2efe6":st.ab==="al"?"#b7c0c8":"#6c7480"; g+=`<rect x="${(px-50-w/2).toFixed(0)}" y="64" width="${w}" height="104" style="fill:${c}" stroke="#555" stroke-width=".8"/><rect x="${(px-50-14)}" y="168" width="28" height="12" rx="2" fill="#4a5258"/><text x="${px-50}" y="200" text-anchor="middle" font-size="11" fill="#c9d2d5">${ABS[st.ab][0]}</text>`; }
+  g+=`<rect x="${px}" y="104" width="96" height="22" rx="4" fill="url(#g-alu)" stroke="#6b7076"/><rect x="${px-4}" y="106" width="6" height="18" rx="1" fill="#c9a24a"/><rect x="${px+96}" y="108" width="14" height="14" rx="2" fill="#2b3034"/><path d="M${px+48} 126V178M${px+30} 178h36" stroke="#4a5258" stroke-width="5"/><text x="${px+48}" y="200" text-anchor="middle" font-size="11" fill="#c9d2d5">G–M tube (thin window faces source)</text><path d="M${px+110} 115C${px+130} 115 ${px+130} 130 ${px+150} 130" fill="none" stroke="#1b1f22" stroke-width="4"/><rect x="${px+150}" y="84" width="150" height="92" rx="8" fill="url(#g-plastic)" stroke="#a7aba4"/><rect x="${px+162}" y="96" width="126" height="38" rx="3" fill="#15191b"/><rect x="${px+165}" y="99" width="120" height="32" rx="2" fill="url(#g-lcd)"/><text x="${px+278}" y="124" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="20" font-weight="700" style="fill:#1f2a18">${Math.round(st.counts)}</text><text x="${px+225}" y="152" text-anchor="middle" font-size="9" style="fill:#4b5258">COUNTER</text><circle cx="${px+178}" cy="160" r="5" fill="#c4531a"/><circle cx="${px+272}" cy="160" r="5" fill="#5a6168"/>`;
   const f=ABS[st.ab][1][st.s]*(st.s==="a"&&st.d>5?0:1);
   for(let i=0;i<10;i++){ const life=((st.ph*0.9+i*0.1)%1); let x=70+life*(px-70), y=115+(i%5-2)*6*life; const stopAbs=st.ab!=="none"&&ABS[st.ab][1][st.s]<0.5&&x>px-60&&(i/10)>=ABS[st.ab][1][st.s], stopAir=st.s==="a"&&x>70+5*24+30; if(stopAbs||stopAir) continue; g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${st.s==="a"?4.5:st.s==="b"?3:2.5}" style="fill:${col}"/>`; }
   s.innerHTML=g;
@@ -5794,9 +5794,9 @@ function draw(){ const box=$("#phys-at4-eq"); if(!box) return; const [name,Z,A]=
   const s=$("#phys-at4"), N=A-Z, N2=A2-Z2, x=z=>300+(z-Z)*60, y=n=>110-(n-N)*30;
   let g=""; for(let z=Z-3;z<=Z+2;z++) for(let n=N-3;n<=N+2;n++){ if(x(z)<20||x(z)>580||y(n)<10||y(n)>210) continue; g+=`<rect x="${x(z)-26}" y="${y(n)-13}" width="52" height="26" rx="3" class="fpan ln"/>`; }
   g+=`<text x="300" y="232" text-anchor="middle" font-size="11" class="tmut">proton number Z →</text><text x="12" y="110" font-size="11" class="tmut" transform="rotate(-90 12 110)" text-anchor="middle">neutron number N →</text>`;
+  if(st.t!=="g") g+=`<path d="M${x(Z)} ${y(N)} L${x(Z2)} ${y(N2)}" class="ink" stroke-width="1.5" stroke-dasharray="4 3"/>`;
   g+=`<rect x="${x(Z)-26}" y="${y(N)-13}" width="52" height="26" rx="3" class="fdat"/><text x="${x(Z)}" y="${y(N)+5}" text-anchor="middle" font-size="12" style="fill:#fff">${S}-${A}</text>`;
-  if(st.t!=="g"){ g+=`<rect x="${x(Z2)-26}" y="${y(N2)-13}" width="52" height="26" rx="3" class="facc"/><text x="${x(Z2)}" y="${y(N2)+5}" text-anchor="middle" font-size="12" style="fill:var(--on-accent)">${S2}-${A2}</text>`;
-    g+=`<path d="M${x(Z)} ${y(N)} L${x(Z2)} ${y(N2)}" class="ink" stroke-width="1.5" stroke-dasharray="4 3"/>`; }
+  if(st.t!=="g"){ g+=`<rect x="${x(Z2)-26}" y="${y(N2)-13}" width="52" height="26" rx="3" class="facc"/><text x="${x(Z2)}" y="${y(N2)+5}" text-anchor="middle" font-size="12" style="fill:var(--on-accent)">${S2}-${A2}</text>`; }
   s.innerHTML=g;
   $("#phys-at4-dA").textContent=dA?`${dA}`:"0"; $("#phys-at4-dZ").textContent=dZ>0?`+${dZ}`:`${dZ}`;
   const usual={a:"alpha",b:"beta",g:"gamma"}[NUC[st.i][3]];
@@ -6393,7 +6393,7 @@ function draw(){ const s=$("#phys-fo11"); if(!s) return; const [n,a]=ROAD[st.r],
   if(st.r==="wet") g+=`<rect x="0" y="70" width="900" height="70" fill="#5a9be6" opacity=".2"/>`; if(st.r==="icy") g+=`<rect x="0" y="70" width="900" height="70" fill="#e8f4ff" opacity=".45"/>`;
   const x0=40; g+=`<rect x="${x0}" y="40" width="${th*sc}" height="16" class="fdat"/><rect x="${x0+th*sc}" y="40" width="${br*sc}" height="16" class="fbd"/>`;
   g+=`<text x="${x0+th*sc/2}" y="32" text-anchor="middle" font-size="12" class="tdat">${fx(th,1)} m</text><text x="${x0+th*sc+br*sc/2}" y="32" text-anchor="middle" font-size="12" class="tbd">${fx(br,1)} m</text>`;
-  g+=`<rect x="${x0-30}" y="80" width="46" height="22" rx="5" class="facc"/><rect x="${x0+tot*sc-30}" y="112" width="46" height="22" rx="5" class="facc" opacity=".5"/><path d="M${x0+tot*sc+20} 60 V150" class="ink" stroke-dasharray="4 3"/>`;
+  g+=`<g transform="translate(${x0-36} 76)" opacity="1"><path d="M0 18 L4 8 Q8 2 16 2 H34 Q40 2 44 8 L52 10 Q56 11 56 16 V22 H0Z" fill="#e8862a"/><path d="M12 8 Q15 4 20 4 H26 V10 H11Z M29 4 H34 Q38 4 41 10 H29Z" fill="#cfe6f5"/><circle cx="13" cy="22" r="5.5" fill="#1b1f22"/><circle cx="13" cy="22" r="2.2" fill="#9aa0a6"/><circle cx="44" cy="22" r="5.5" fill="#1b1f22"/><circle cx="44" cy="22" r="2.2" fill="#9aa0a6"/><rect x="52" y="12" width="4" height="4" fill="#fff6b0"/></g><g transform="translate(${x0+tot*sc-36} 108)" opacity="0.55"><path d="M0 18 L4 8 Q8 2 16 2 H34 Q40 2 44 8 L52 10 Q56 11 56 16 V22 H0Z" fill="#e8862a"/><path d="M12 8 Q15 4 20 4 H26 V10 H11Z M29 4 H34 Q38 4 41 10 H29Z" fill="#cfe6f5"/><circle cx="13" cy="22" r="5.5" fill="#1b1f22"/><circle cx="13" cy="22" r="2.2" fill="#9aa0a6"/><circle cx="44" cy="22" r="5.5" fill="#1b1f22"/><circle cx="44" cy="22" r="2.2" fill="#9aa0a6"/><rect x="52" y="12" width="4" height="4" fill="#fff6b0"/></g><rect x="0" y="68" width="900" height="3" fill="#d8d2c2"/><rect x="0" y="139" width="900" height="3" fill="#d8d2c2"/><path d="M${x0+tot*sc+20} 60 V150" class="ink" stroke-dasharray="4 3"/>`;
   g+=`<text x="${x0}" y="170" font-size="12" class="tm">0 m</text><text x="${x0+tot*sc}" y="170" text-anchor="middle" font-size="12" font-weight="700">${fx(tot,1)} m</text>`;
   s.innerHTML=g;
   $("#phys-fo11-vl").textContent=`${st.v} m/s (${fx(st.v*2.237,0)} mph)`; $("#phys-fo11-rl").textContent=`${fx(st.rt,1)} s`; $("#phys-fo11-th").textContent=`${fx(th,1)} m`; $("#phys-fo11-br").textContent=`${fx(br,1)} m`; $("#phys-fo11-st").textContent=`${fx(tot,1)} m`; $("#phys-fo11-F").textContent=`${fx(st.m*a,0)} N`; }
@@ -7028,7 +7028,7 @@ attach("phys-mg7",{title:T,intro:I,qs:[
 <script src="practical-labs.js"></script>
 <script src="biology-labs.js"></script>
 <script src="course-data.js"></script>
-<script src="investigation-engine.js?v=20261025-diagrams"></script>
+<script src="investigation-engine.js?v=20261025-labs"></script>
 <script src="rates-methods.js"></script>
 <script src="learning.js?v=20261025-diagrams"></script>
 <style>
@@ -7333,7 +7333,7 @@ window.ALP_ACCOUNTS={sb,merge,stats,get user(){ return user; },get profile(){ re
 <script src="assessment-core.js?v=20261023-ks3"></script>
 <script src="assignments.js?v=20261023-ks3"></script>
 <link rel="stylesheet" href="simple-layout.css?v=20261024-desktop">
-<link rel="stylesheet" href="diagram-fit.css?v=20261025-diagrams">
+<link rel="stylesheet" href="diagram-fit.css?v=20261025-labs">
 <script src="simple-layout.js?v=20261024-all"></script>
 <script src="diagram-fit.js?v=20261025-diagrams"></script>
 </body></html>
