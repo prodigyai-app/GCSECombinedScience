@@ -883,8 +883,16 @@ function route(){ const h=(location.hash||"").slice(1); const on=!!h&&list.some(
   if(typeof opts_onroute==="function") opts_onroute(on?h:null);
   if(on) show(h); else { list.forEach(p=>{ const sec=$("#lab-"+p.id); if(sec) sec.hidden=true; }); current=null; }
   window.scrollTo(0,0); }
-function renderHub(){ $("#hub-cards").innerHTML=UNITS.map(u=>
-  `<button class="unit u-${u.key}" data-go="u-${u.key}"><span class="u-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">${ICONS[u.icon]||""}</svg></span><span class="u-t">${u.title}${/^Year/.test(u.kind||"")&&/Optional/.test(u.kind||"")?" (optional)":""}</span></button>`).join(""); }
+function renderHub(){
+  const card=u=>`<button class="unit u-${u.key}" data-go="u-${u.key}"><span class="u-ico" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">${ICONS[u.icon]||""}</svg></span><span class="u-t">${u.title}</span></button>`;
+  const subjects=['Biology','Chemistry','Physics'];
+  const groups=subjects.map(subject=>{
+    const id='combined-'+subject.toLowerCase();
+    return `<section class="combined-subject" aria-labelledby="${id}"><h2 id="${id}">${subject}</h2><div class="combined-subject-units">${UNITS.filter(u=>u.kind===subject).map(card).join('')}</div></section>`;
+  });
+  const other=UNITS.filter(u=>!subjects.includes(u.kind));
+  $('#hub-cards').innerHTML=groups.join('')+`<div class="combined-secondary">${other.map(card).join('')}</div>`;
+}
 
 function go(id){ try{ history.pushState(null,"",id?"#"+id:location.pathname+location.search); }catch(_){ try{ location.hash=id||""; }catch(__){} } route(); }
 function boot(opts={}){
@@ -7333,6 +7341,7 @@ window.ALP_ACCOUNTS={sb,merge,stats,get user(){ return user; },get profile(){ re
 <script src="assessment-core.js?v=20261023-ks3"></script>
 <script src="assignments.js?v=20261023-ks3"></script>
 <link rel="stylesheet" href="simple-layout.css?v=20261024-desktop">
+<link rel="stylesheet" href="combined-home.css?v=20261031-subjects">
 <link rel="stylesheet" href="diagram-fit.css?v=20261025-labs">
 <link rel="stylesheet" href="flow-diagrams.css?v=20261026-electrons">
 <script src="simple-layout.js?v=20261024-all"></script>

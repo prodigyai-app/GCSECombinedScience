@@ -1,0 +1,11 @@
+/* Three clearly named sciences, using the same lesson buttons and routes. */
+#hub-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.combined-subject{min-width:0;--subject-colour:#79cc9a}
+.combined-subject:nth-child(2){--subject-colour:#85b9f4}
+.combined-subject:nth-child(3){--subject-colour:#edbe74}
+.combined-subject>h2{margin:0 0 14px;padding:0 0 12px;border-bottom:3px solid var(--subject-colour);font-family:var(--f-display);font-size:1.6rem;line-height:1.2;color:var(--ink)}
+.combined-subject-units{display:grid;gap:10px}
+.combined-subject-units>.unit{min-height:64px;align-items:center;width:100%}
+.combined-subject-units>.unit .u-t{line-height:1.25}
+.combined-secondary{display:none}
+@media(max-width:900px){#hub-cards{grid-template-columns:1fr;gap:28px}.combined-subject-units{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}}
