@@ -27,7 +27,8 @@
  window.LAB_HIDE=p=>(previousHide?.(p)||false)||(select.value==='foundation'&&higher(p))||(select.value==='higher'&&foundation(p));
  window.TIER_HID=el=>select.value==='foundation'&&!!el?.closest('.gcse-higher-only');
  // Mark bounded content blocks, never a whole mixed lesson or a whole mixed question.
- function mark(){
+ function mark(scope=document){
+  const $$=(sel,r=scope)=>[...r.querySelectorAll(sel)].concat(r!==document&&r.matches?.(sel)?[r]:[]);
   $$('.htbox,.hi-only').forEach(n=>n.classList.add('gcse-higher-only'));
   $$('.qi').forEach(n=>{if(n.querySelector('.ht')||/\(Higher\)|^\s*Higher\b/i.test(n.querySelector('.qq')?.textContent||''))n.classList.add('gcse-higher-only');});
   $$('.xp').forEach(n=>{if(n.querySelector('.xpq .ht'))n.classList.add('gcse-higher-only');});
@@ -45,13 +46,18 @@
   $$('.prac[data-id]').forEach(b=>{const p=pages.find(p=>p.id===b.dataset.id);b.classList.toggle('gcse-tier-excluded',!!p&&window.LAB_HIDE(p));});
   $$('.navgroup').forEach(g=>g.classList.toggle('gcse-tier-empty',!!g.querySelector('.prac')&&$$('.prac',g).every(b=>b.classList.contains('gcse-tier-excluded'))));
   const page=pages.find(p=>p.id===location.hash.slice(1));
+  route();
+  if(!existing)try{localStorage.setItem(key,select.value);}catch{}
+  window.dispatchEvent(new Event('prodigy-tier-change'));
+ }
+ // Opening a page only needs the tier check for that page, not a whole-site re-mark.
+ function route(){
+  const page=pages.find(p=>p.id===location.hash.slice(1));
   if(page&&window.LAB_HIDE(page)){
    const unit=(window.HUB_UNITS||[]).find(u=>u.groups.some(([g])=>g===page.group));
    history.replaceState(null,'','#'+(unit?'u-'+unit.key:''));LAB.reroute?.();
   }
   if(document.body.classList.contains('in-prac'))LAB.refreshNav?.();
-  if(!existing)try{localStorage.setItem(key,select.value);}catch{}
-  window.dispatchEvent(new Event('prodigy-tier-change'));
  }
  function refreshScores(){
   if(existing)return;
@@ -63,9 +69,11 @@
   });
  }
  select.addEventListener('change',()=>{apply();refreshScores();});
- window.addEventListener('hashchange',apply);window.addEventListener('popstate',apply);
- document.addEventListener('click',e=>{if(e.target.closest('[data-go],.prac'))queueMicrotask(apply);});
+ window.addEventListener('hashchange',route);window.addEventListener('popstate',route);
+ document.addEventListener('click',e=>{if(e.target.closest('[data-go],.prac'))queueMicrotask(route);});
  // Written-answer cards redraw after marking. Only watch new nodes, not our class changes.
- new MutationObserver(ms=>{if(ms.some(m=>m.addedNodes.length))mark();}).observe(document.querySelector('.wrap'),{childList:true,subtree:true});
+ // Mark only the new nodes, once per frame.
+ let added=[],queued=false;
+ new MutationObserver(ms=>{ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===1)added.push(n);}));if(added.length&&!queued){queued=true;requestAnimationFrame(()=>{queued=false;const ns=added;added=[];ns.forEach(n=>{if(n.isConnected)mark(n);});});}}).observe(document.querySelector('.wrap'),{childList:true,subtree:true});
  apply();refreshScores();
 })();
