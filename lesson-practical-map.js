@@ -62,5 +62,44 @@ window.LESSON_PRACTICALS={
   ],
   "phys-practical-ir": [
     "ir"
+  ],
+  "phys-en4": [
+    "shc"
+  ],
+  "phys-el2": [
+    "rs"
+  ],
+  "phys-el3": [
+    "iv"
+  ],
+  "phys-pm1": [
+    "de"
+  ],
+  "phys-fo5": [
+    "sp"
+  ],
+  "phys-fo10": [
+    "ac"
+  ],
+  "phys-wa2": [
+    "wv"
+  ],
+  "chem-cc5": [
+    "salt"
+  ],
+  "chem-cc9": [
+    "elec"
+  ],
+  "chem-en1": [
+    "temp"
+  ],
+  "chem-ra2": [
+    "rate"
+  ],
+  "chem-an2": [
+    "chrom"
+  ],
+  "chem-ur1": [
+    "water"
   ]
 };

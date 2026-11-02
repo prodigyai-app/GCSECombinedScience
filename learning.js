@@ -93,7 +93,7 @@
  COURSE.lessons.forEach((l,i)=>{
   LEARN.unit=l.unit;
   const blocks=l.notes.map(n=>B.text(n.title,n.html));
-  if(!diagramUnits.has(l.unit)){const unit=COURSE.units.find(u=>u.id===l.unit);if(unit){const fig=overviewDiagram(unit);if(fig)blocks.unshift(fig);}diagramUnits.add(l.unit);}
+  if(!diagramUnits.has(l.unit)){const unit=COURSE.units.find(u=>u.id===l.unit);if(unit&&(!unit.subject||unit.subject==='Biology')){const fig=overviewDiagram(unit);if(fig)blocks.unshift(fig);}diagramUnits.add(l.unit);}
   if(l.sim)blocks.splice(1,0,simHTML('bio-model-'+l.id,l.sim));
   if(l.example)blocks.push(B.example(l.example.title,l.example.q,l.example.steps));
   if(l.practical)blocks.push(practical(l.practical,l.id));
