@@ -136,6 +136,7 @@
   const units=COURSE.units.map(u=>({key:u.id,title:u.title,kind:u.subject||'Revision lessons',sub:u.subtitle||'',desc:u.description||'',icon:'u-'+u.id,noun:'lessons',listLabel:u.title+' lessons',done,intro:'Read, explore and check your understanding. A lesson is completed when all its quick checks are correct.',groups:[[u.id+':lessons',u.title]]}));
  for(const row of COURSE.imports||[]){const u=units.find(u=>u.key===row.unit);if(u&&!u.groups.some(([g])=>g===row.unit+':'+row.group))u.groups.push([row.unit+':'+row.group,row.lvl.split(' · ')[0]]);}
  units.forEach(u=>LAB.ICONS[u.icon]=ICON);
+ if(window.GCSESkills){const su=GCSESkills.build('combined');if(su)units.push(su);}
  if(PAPERS.length)units.push({key:'papers',title:'Practice papers',kind:'Exam practice',sub:meta.id==='gcse-combined'?'Six papers per tier · 70 marks · 75 minutes':'Full papers, timers and printable mark schemes',desc:'Original Prodigy papers with saved answers, a timer and self-marking. These are independent practice resources.',intro:'Choose a paper. Answer the questions, then mark against the scheme. You can print a question paper or a separate mark scheme.',icon:'u-papers',noun:'papers',listLabel:'Practice papers',done,groups:[['papers:foundation','Foundation'],['papers:higher','Higher'],['papers:ocr','OCR A Level']].filter(([g])=>LAB.list.some(x=>x.group===g))});
  LAB.ICONS['u-papers']='<path d="M6 2h9l4 4v16H6zM9 10h7M9 14h7M9 18h5"/>';
  // Practical Lab: the interactive required-practical labs, when this course has any.
