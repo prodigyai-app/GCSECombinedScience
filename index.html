@@ -3530,20 +3530,20 @@ const {$}=LAB, {B,lesson}=LEARN, {f,eb,set,sl,val}=CH;
 const yieldOf=(T,P)=>{ const k=Math.exp(5300/(T+273)-13.48)*P; return k/(1+k)*100; };
 const stage=`<svg id="chem-ra5-svg" class="chsvg" viewBox="0 0 560 300" role="img" aria-label="Equilibrium yield of ammonia"></svg>`;
 const panel=sl("chem-ra5-T","Temperature",300,600,10,450,"Temperature in degrees Celsius")+sl("chem-ra5-P","Pressure",50,400,10,200,"Pressure in atmospheres")+CH.ro([["chem-ra5-y","Equilibrium yield of ammonia"],["chem-ra5-s","Shift compared with 450 °C, 200 atm"]])+`<p class="note">Model values for illustration. N₂ + 3H₂ ⇌ 2NH₃ ; the forward reaction is exothermic.</p>`;
-lesson({id:"chem-ra5",group:"b",num:5,lvl:"5.6.2 · Lesson 5",name:"Equilibrium and Le Chatelier's principle",icon:"eq",tag:"Higher tier",
- eyebrow:eb("5.6.2.3–5.6.2.7 Equilibrium; the effect of changing conditions (HT only)",5),title:"Dynamic equilibrium and changing conditions",
+lesson({id:"chem-ra5",group:"b",num:5,lvl:"5.6.2 · Lesson 5",name:"Equilibrium and Le Chatelier's principle",icon:"eq",
+ eyebrow:eb("5.6.2.3 Equilibrium (all tiers); 5.6.2.4–5.6.2.7 changing conditions (HT only)",5),title:"Dynamic equilibrium and changing conditions",
  intro:"In a sealed container a reversible reaction reaches a balance where the forward and reverse reactions happen at exactly the same rate. Change the conditions and the balance shifts to counteract the change.",
  outcomes:[["Describe dynamic equilibrium in a closed system","5.6.2.3"],["Use Le Chatelier's principle to predict the effect of changing concentration, temperature and pressure","5.6.2.4–5.6.2.7"],["Explain the effect of conditions on the position of equilibrium for the Haber process","5.6.2.7"]],
  blocks:[
-  B.text("Dynamic equilibrium",`<p>When a reversible reaction occurs in apparatus which prevents the escape of reactants and products (a <b>closed system</b>), equilibrium is reached when the forward and reverse reactions occur at <b>exactly the same rate</b>. The concentrations of reactants and products then stay constant, although both reactions are still happening.</p><p>The relative amounts of all the substances at equilibrium depend on the conditions. <b>Le Chatelier's principle</b>: if a system is at equilibrium and a change is made to any of the conditions, the system responds to <b>counteract the change</b>.</p><table class="tbl-mini"><tr><th>Change</th><th>Equilibrium shifts…</th></tr><tr><td>increase concentration of a reactant</td><td>to the right: more products form until equilibrium is reached again</td></tr><tr><td>increase temperature</td><td>in the endothermic direction</td></tr><tr><td>decrease temperature</td><td>in the exothermic direction</td></tr><tr><td>increase pressure (gases)</td><td>to the side with fewer molecules (as shown by the equation)</td></tr><tr><td>decrease pressure</td><td>to the side with more molecules</td></tr></table>`),
-  B.sim("chem-ra5-sim","Shifting the Haber equilibrium",stage,panel,`<span>4 molecules ⇌ 2 molecules</span><span>Forward: exothermic</span>`),
+  B.text("Dynamic equilibrium",`<p>When a reversible reaction occurs in apparatus which prevents the escape of reactants and products (a <b>closed system</b>), equilibrium is reached when the forward and reverse reactions occur at <b>exactly the same rate</b>. The concentrations of reactants and products then stay constant, although both reactions are still happening.</p><div class="htbox"><p><span class="ht">Higher</span> The relative amounts of all the substances at equilibrium depend on the conditions. <b>Le Chatelier's principle</b>: if a system is at equilibrium and a change is made to any of the conditions, the system responds to <b>counteract the change</b>.</p><table class="tbl-mini"><tr><th>Change</th><th>Equilibrium shifts…</th></tr><tr><td>increase concentration of a reactant</td><td>to the right: more products form until equilibrium is reached again</td></tr><tr><td>increase temperature</td><td>in the endothermic direction</td></tr><tr><td>decrease temperature</td><td>in the exothermic direction</td></tr><tr><td>increase pressure (gases)</td><td>to the side with fewer molecules (as shown by the equation)</td></tr><tr><td>decrease pressure</td><td>to the side with more molecules</td></tr></table></div>`),
+  B.sim("chem-ra5-sim","<span class=\"ht\">Higher</span> Shifting the Haber equilibrium",stage,panel,`<span>4 molecules ⇌ 2 molecules</span><span>Forward: exothermic</span>`).replace('class="lcard sim"','class="lcard sim hi-only"'),
   B.check([
    {q:"What is true at dynamic equilibrium?",opts:["The forward and reverse rates are equal","The reactions have stopped","There are equal amounts of reactants and products","Only the forward reaction happens"],a:0,why:"Both continue at the same rate."},
-   {q:"N₂ + 3H₂ ⇌ 2NH₃ (forward exothermic). What happens to the yield of ammonia if the temperature is increased?",opts:["Increases","Decreases","No change"],a:1,why:"Equilibrium shifts in the endothermic (reverse) direction."},
-   {q:"For the same reaction, what is the effect of increasing pressure on the yield of ammonia?",opts:["Decreases","No change","Increases"],a:2,why:"4 molecules on the left, 2 on the right: shifts to fewer molecules."},
-   {q:"H₂ + I₂ ⇌ 2HI. What effect does increasing pressure have on the position of equilibrium?",opts:["No effect","Shifts right","Shifts left"],a:0,why:"2 molecules on each side."},
-   {q:"In a closed system, more reactant is added. What happens?",opts:["The reaction stops, since there is no more reactant to be used up","The reverse reaction speeds up only, so the position moves left","Nothing happens, since the system is already at equilibrium","More products form until a new equilibrium is reached"],a:3,why:"The system counteracts the change."}]),
-  B.keypoints(["Equilibrium: closed system; forward rate = reverse rate.","Le Chatelier: the system counteracts any change.","Higher T → endothermic direction. Higher P → fewer gas molecules."]),
+   {q:"<span class=\"ht\">Higher</span> N₂ + 3H₂ ⇌ 2NH₃ (forward exothermic). What happens to the yield of ammonia if the temperature is increased?",opts:["Increases","Decreases","No change"],a:1,why:"Equilibrium shifts in the endothermic (reverse) direction."},
+   {q:"<span class=\"ht\">Higher</span> For the same reaction, what is the effect of increasing pressure on the yield of ammonia?",opts:["Decreases","No change","Increases"],a:2,why:"4 molecules on the left, 2 on the right: shifts to fewer molecules."},
+   {q:"<span class=\"ht\">Higher</span> H₂ + I₂ ⇌ 2HI. What effect does increasing pressure have on the position of equilibrium?",opts:["No effect","Shifts right","Shifts left"],a:0,why:"2 molecules on each side."},
+   {q:"<span class=\"ht\">Higher</span> In a closed system, more reactant is added. What happens?",opts:["The reaction stops, since there is no more reactant to be used up","The reverse reaction speeds up only, so the position moves left","Nothing happens, since the system is already at equilibrium","More products form until a new equilibrium is reached"],a:3,why:"The system counteracts the change."}]),
+  B.keypoints(["Equilibrium: closed system; forward rate = reverse rate.","<span class=\"ht\">Higher</span> Le Chatelier: the system counteracts any change.","<span class=\"ht\">Higher</span> Higher T → endothermic direction. Higher P → fewer gas molecules."]),
   B.mistakes(["Saying equal amounts of reactants and products at equilibrium.","Saying the reactions stop at equilibrium.","Applying pressure arguments when there are equal numbers of gas molecules on each side."])
  ],onShow:()=>draw()});
 function draw(){ const T=val("chem-ra5-T"), P=val("chem-ra5-P"), y=yieldOf(T,P), y0=yieldOf(450,200);
@@ -3582,10 +3582,10 @@ attach("chem-ra4",{title:T,intro:I,qs:[
   {q:"Give the colour change when hydrated copper(II) sulfate is heated.",m:1,lines:1,ms:[["1","blue to white"]]},
   {q:"Water is added to the white solid. Describe what happens to the temperature and explain why.",m:2,lines:2,ms:[["1","temperature increases"],["1","the reverse reaction is exothermic (releases the same energy as taken in by the forward reaction)"]]}]}]});
 attach("chem-ra5",{title:T,intro:I,qs:[
- {stem:`<p><span class="ht">Higher</span> Hydrogen and iodine react in a closed container: H₂(g) + I₂(g) ⇌ 2HI(g). The forward reaction is exothermic.</p>`,parts:[
+ {stem:`<p>Hydrogen and iodine react in a closed container: H₂(g) + I₂(g) ⇌ 2HI(g). The forward reaction is exothermic.</p>`,parts:[
   {q:"Explain what is meant by dynamic equilibrium.",m:2,lines:2,ms:[["1","forward and reverse reactions continue"],["1","at the same rate (so concentrations stay constant)"]]},
-  {q:"Predict the effect of increasing the temperature on the amount of HI at equilibrium. Explain your answer.",m:2,lines:3,ms:[["1","less HI"],["1","equilibrium shifts in the endothermic direction (to the left) to counteract the increase in temperature"]]},
-  {q:"Explain why changing the pressure has no effect on the position of equilibrium.",m:1,lines:2,ms:[["1","same number of (gas) molecules on each side (2 and 2)"]]}]}]});
+  {q:"<span class=\"ht\">Higher</span> Predict the effect of increasing the temperature on the amount of HI at equilibrium. Explain your answer.",ht:true,m:2,lines:3,ms:[["1","less HI"],["1","equilibrium shifts in the endothermic direction (to the left) to counteract the increase in temperature"]]},
+  {q:"<span class=\"ht\">Higher</span> Explain why changing the pressure has no effect on the position of equilibrium.",ht:true,m:1,lines:2,ms:[["1","same number of (gas) molecules on each side (2 and 2)"]]}]}]});
 attach("chem-ra6",{title:T,intro:I,qs:[
  {stem:`<p>Hydrogen peroxide decomposes slowly: 2H₂O₂ → 2H₂O + O₂. Manganese(IV) oxide speeds this up.</p>`,parts:[
   {q:"In 50 s, 40 cm³ of oxygen is collected. Calculate the mean rate.",m:1,ans:{a:0.8,unit:"cm³/s",tol:0.0001},ms:[["1","40 ÷ 50 = 0.80 cm³/s"]]},
@@ -7357,24 +7357,37 @@ window.ALP_ACCOUNTS={sb,merge,stats,get user(){ return user; },get profile(){ re
 
 
 <script src="gcse-depth.js?v=20261115"></script>
-<script src="depth-bio-s1.js?v=20261115"></script>
-<script src="depth-bio-s2.js?v=20261115"></script>
-<script src="depth-bio-s3.js?v=20261115"></script>
-<script src="depth-chem-ex1.js?v=20261115"></script>
-<script src="depth-chem-s1.js?v=20261115"></script>
-<script src="depth-chem-s2.js?v=20261115"></script>
-<script src="depth-chem-s3.js?v=20261115"></script>
-<script src="depth-phys-l1.js?v=20261115"></script>
-<script src="depth-phys-o1.js?v=20261115"></script>
-<script src="depth-phys-o2.js?v=20261115"></script>
-<script src="depth-phys-s1.js?v=20261115"></script>
-<script src="depth-phys-s2.js?v=20261115"></script>
-<script src="depth-phys-s3.js?v=20261115"></script>
-<script src="depth-phys-s4.js?v=20261115"></script>
-<script src="depth-phys-s5.js?v=20261115"></script>
-<script src="depth-phys-x1.js?v=20261115"></script>
-<script src="depth-phys-x2.js?v=20261115"></script>
-<script src="depth-phys-x3.js?v=20261115"></script>
+<script src="depth-bio-f1.js?v=20261115b"></script>
+<script src="depth-bio-o1.js?v=20261115b"></script>
+<script src="depth-bio-o2.js?v=20261115b"></script>
+<script src="depth-bio-o3.js?v=20261115b"></script>
+<script src="depth-bio-o4.js?v=20261115b"></script>
+<script src="depth-bio-o5.js?v=20261115b"></script>
+<script src="depth-bio-s1.js?v=20261115b"></script>
+<script src="depth-bio-s2.js?v=20261115b"></script>
+<script src="depth-bio-s3.js?v=20261115b"></script>
+<script src="depth-chem-ex1.js?v=20261115b"></script>
+<script src="depth-chem-o1.js?v=20261115b"></script>
+<script src="depth-chem-o2.js?v=20261115b"></script>
+<script src="depth-chem-o3.js?v=20261115b"></script>
+<script src="depth-chem-o4.js?v=20261115b"></script>
+<script src="depth-chem-o5.js?v=20261115b"></script>
+<script src="depth-chem-o6.js?v=20261115b"></script>
+<script src="depth-chem-o7.js?v=20261115b"></script>
+<script src="depth-chem-s1.js?v=20261115b"></script>
+<script src="depth-chem-s2.js?v=20261115b"></script>
+<script src="depth-chem-s3.js?v=20261115b"></script>
+<script src="depth-phys-l1.js?v=20261115b"></script>
+<script src="depth-phys-o1.js?v=20261115b"></script>
+<script src="depth-phys-o2.js?v=20261115b"></script>
+<script src="depth-phys-s1.js?v=20261115b"></script>
+<script src="depth-phys-s2.js?v=20261115b"></script>
+<script src="depth-phys-s3.js?v=20261115b"></script>
+<script src="depth-phys-s4.js?v=20261115b"></script>
+<script src="depth-phys-s5.js?v=20261115b"></script>
+<script src="depth-phys-x1.js?v=20261115b"></script>
+<script src="depth-phys-x2.js?v=20261115b"></script>
+<script src="depth-phys-x3.js?v=20261115b"></script>
 <script>GcseDepth.apply();</script>
 <script src="subject-icons.js?v=20261023-ks3"></script>
 <script src="maths-keyboard.js?v=20261031-fast"></script>

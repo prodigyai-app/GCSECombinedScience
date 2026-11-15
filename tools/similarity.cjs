@@ -9,8 +9,10 @@ const jac = (a, b) => { let n = 0; for (const x of a) if (b.has(x)) n++; return 
 function check(th = 0.45) {
   const cat = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'assessment-catalog.json'), 'utf8'));
   const old = [];
-  for (const [pid, p] of Object.entries(cat.pages)) for (const q of p.questions) if (!q.id.startsWith('check:')) old.push([pid + ' ' + q.id, grams(q.prompt)]);
   const { prompts } = verify(), fresh = prompts.map(([t, s]) => [t, grams(s), s]), hits = [];
+  // the catalog also lists the depth parts themselves once they are added, so skip catalog prompts identical to a depth prompt
+  const key = s => norm(s).replace(/[^a-z0-9]/g, ''), own = new Set(prompts.map(([, s]) => key(s)));
+  for (const [pid, p] of Object.entries(cat.pages)) for (const q of p.questions) if (!q.id.startsWith('check:') && !own.has(key(q.prompt))) old.push([pid + ' ' + q.id, grams(q.prompt)]);
   // the shared stem repeats across parts of one question, so compare part text when the stems match
   for (const [t, g] of fresh) for (const [o, h] of old) { const s = jac(g, h); if (s >= th) hits.push([s, t, o]); }
   for (let i = 0; i < fresh.length; i++) for (let j = i + 1; j < fresh.length; j++) { if (fresh[i][0].split(' exam ')[0] + fresh[i][0].split(' exam ')[1].slice(0, 3) === fresh[j][0].split(' exam ')[0] + fresh[j][0].split(' exam ')[1].slice(0, 3)) continue; const s = jac(fresh[i][1], fresh[j][1]); if (s >= th) hits.push([s, fresh[i][0], fresh[j][0]]); }

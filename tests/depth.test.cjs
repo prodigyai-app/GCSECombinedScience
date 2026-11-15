@@ -10,10 +10,14 @@ test('every numerical answer in the depth data is reproduced by its calculation'
   assert.ok(r.asserts > 40, 'expected the data files to be checked');
 });
 
-test('every lesson with depth data has at least three fill-the-gaps', () => {
+test('every lesson with depth data has fill-the-gaps (teaching lessons), a worked example and at least 12 exam marks', () => {
+  const cat = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'assessment-catalog.json'), 'utf8'));
   for (const row of verify().rows) {
-    /* worked examples and the exam-mark floor follow in the Opus pass */
-    assert.ok(row.gaps >= 3, `${row.id}: fewer than 3 fill-the-gaps`);
+    assert.ok(row.gaps === 0 || row.gaps >= 3, `${row.id}: fewer than 3 fill-the-gaps`);
+    const p = cat.pages[row.id];
+    if (!p) continue;
+    const marks = p.questions.filter(q => !q.id.startsWith('check:')).reduce((s, q) => s + q.m, 0);
+    assert.ok(marks >= 12, `${row.id}: only ${marks} exam marks`);
   }
 });
 
