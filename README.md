@@ -26,6 +26,7 @@ Curriculum sources are listed in `course.json` and on the site. `provenance.json
 
 - Run `python scripts/refresh_sciences.py` to regenerate the embedded Chemistry/Physics lessons from those pinned commits. To adopt new source revisions, change the corresponding commit refs first and review the curriculum differences.
 - Run `node scripts/refresh_biology.cjs` to refresh shared Biology from the Biology repository, excluding `separate: true` lessons. The script preserves Combined-specific adaptations and remaps practical numbers.
+- Depth data (worked examples, fill-the-gaps, extra exam parts) comes from the `depth-*.js` files in each source repo. Run `SCIENCE_SOURCES=<folder of local clones> python scripts/refresh_sciences.py` and `BIOLOGY_SOURCE=<GCSEBiology clone> node scripts/refresh_biology.cjs` to build from local clones instead of downloading; they write `depth-chem-*.js`, `depth-phys-*.js` and `depth-bio-*.js`, which are loaded by `index.html` through `gcse-depth.js`. After a refresh, re-sync the catalog choice questions and run `node tools/verify-depth.cjs`.
 - Re-run tests and browser checks after either refresh. The adapters correct nitric-acid/metal predictions, remove unsupported alkene formula recall, label Higher content and remap specification/practical references.
 
 The twelve practice papers form one complete six-component set at each tier. They sample the specified topic groups; they do not test every subsection or every required practical in one set.

@@ -255,65 +255,67 @@
         {
           "q": "Which structure makes proteins?",
           "opts": [
-            "Ribosome",
             "Mitochondrion",
-            "Cell wall"
+            "Ribosome",
+            "Cell wall",
+            "Cell membrane"
           ],
-          "a": 0,
-          "why": "Ribosome"
+          "a": 1,
+          "why": "Ribosomes join amino acids together to make proteins. Mitochondria release energy, the cell wall supports the cell and the membrane controls what enters and leaves."
         },
         {
           "q": "Where is the main bacterial DNA?",
           "opts": [
-            "Free in cytoplasm",
-            "Inside a nucleus",
-            "Inside a chloroplast"
+            "Free in the cytoplasm as a single loop",
+            "Inside a nucleus surrounded by a membrane",
+            "Inside a chloroplast in the middle of the cell",
+            "Packed inside a vacuole in the cytoplasm"
           ],
           "a": 0,
-          "why": "Free in cytoplasm"
+          "why": "Bacteria are prokaryotes, so their main DNA is a single loop lying free in the cytoplasm rather than inside a nucleus."
         },
         {
           "q": "Which structure is found in plant cells but not in animal cells?",
           "opts": [
-            "Ribosome",
-            "Cell membrane",
-            "Cell wall made of cellulose",
-            "Mitochondrion"
+            "A cell membrane that controls what enters the cell",
+            "A ribosome where proteins are made in the cytoplasm",
+            "A cell wall made of cellulose that strengthens the cell",
+            "A mitochondrion where respiration releases energy"
           ],
           "a": 2,
-          "why": "Plant cells have cellulose cell walls; animal cells do not."
+          "why": "Plant cells have a cellulose cell wall; animal cells do not. The other structures are found in both."
         },
         {
           "q": "What is a plasmid?",
           "opts": [
-            "A protein-making organelle",
-            "A small ring of DNA in a bacterium",
-            "The fluid inside a vacuole",
-            "A type of cell wall"
+            "A protein-making organelle found in the cytoplasm of cells",
+            "The fluid-filled space inside a large plant cell vacuole",
+            "A type of cell wall made of cellulose in plant cells",
+            "A small ring of DNA found in many bacterial cells"
           ],
-          "a": 1,
-          "why": "Plasmids are small extra rings of DNA found in many bacteria."
+          "a": 3,
+          "why": "Plasmids are small extra rings of DNA in many bacteria, separate from the main loop of DNA."
         },
         {
           "q": "Bacteria are described as prokaryotic because…",
           "opts": [
-            "they have no cell membrane",
-            "they contain chloroplasts",
-            "their genetic material is not in a nucleus",
-            "they are always pathogens"
+            "they have no cell membrane around the cytoplasm",
+            "they contain chloroplasts, which plant cells also have",
+            "their genetic material is not enclosed in a nucleus",
+            "they always cause disease when they enter the body"
           ],
           "a": 2,
-          "why": "Prokaryotic cells have no nucleus."
+          "why": "Prokaryotic cells have no nucleus; their DNA lies free in the cytoplasm."
         },
         {
           "q": "Which organelle releases most of the energy from aerobic respiration?",
           "opts": [
             "Nucleus",
+            "Mitochondrion",
             "Permanent vacuole",
-            "Ribosome",
-            "Mitochondrion"
+            "Ribosome"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Aerobic respiration takes place mainly in mitochondria."
         }
       ],
@@ -418,22 +420,23 @@
         {
           "q": "What distinguishes two close organelles?",
           "opts": [
-            "Darker labels",
             "High resolution",
-            "A larger print alone"
+            "Bright staining dyes",
+            "A larger printed image",
+            "A lower magnification"
           ],
-          "a": 1,
-          "why": "High resolution"
+          "a": 0,
+          "why": "Resolution is the ability to distinguish two close objects as separate. Magnification only makes an image larger."
         },
         {
           "q": "An image is 12 mm long. The real object is 0.03 mm long. What is the magnification?",
           "opts": [
             "× 36",
             "× 0.0025",
-            "× 400",
-            "× 4000"
+            "× 4000",
+            "× 400"
           ],
-          "a": 2,
+          "a": 3,
           "why": "12 ÷ 0.03 = 400."
         },
         {
@@ -451,22 +454,22 @@
           "q": "Which of these can only be seen clearly with an electron microscope?",
           "opts": [
             "Nucleus",
-            "Ribosomes",
             "Cell wall",
+            "Ribosomes",
             "Chloroplasts"
           ],
-          "a": 1,
+          "a": 2,
           "why": "Ribosomes are too small to resolve with a light microscope."
         },
         {
           "q": "Write 0.000 005 m in standard form.",
           "opts": [
             "5 × 10⁻⁵ m",
+            "5 × 10⁻⁶ m",
             "5 × 10⁶ m",
-            "0.5 × 10⁻⁵ m",
-            "5 × 10⁻⁶ m"
+            "0.5 × 10⁻⁵ m"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Move the decimal point 6 places: 5 × 10⁻⁶ m."
         }
       ],
@@ -582,66 +585,68 @@
         {
           "q": "What is differentiation?",
           "opts": [
-            "All cells losing DNA",
-            "Fusion of gametes",
-            "Developing specialised cell structures"
+            "Developing specialised cell structures so a cell can do a particular job",
+            "All of the cells in an organism losing their DNA as they develop",
+            "Fusion of a sperm and an egg cell to form a zygote cell",
+            "Division of one cell into two genetically identical daughter cells"
           ],
-          "a": 2,
-          "why": "Developing specialised cell structures"
+          "a": 0,
+          "why": "Differentiation is how a cell gains the structures it needs to do one job."
         },
         {
           "q": "Why is a root hair useful?",
           "opts": [
-            "It makes the root photosynthesise",
-            "It prevents mineral uptake",
-            "It increases absorbing area"
+            "It makes the root surface photosynthesise in the soil",
+            "It increases the surface area for absorbing water and minerals",
+            "It prevents mineral ions from being taken up by the root",
+            "It stores starch for the plant to use in the winter"
           ],
-          "a": 2,
-          "why": "It increases absorbing area"
+          "a": 1,
+          "why": "Root hair cells have a large surface area, so water and mineral ions are absorbed faster."
         },
         {
           "q": "Why does a sperm cell contain many mitochondria?",
           "opts": [
-            "To store food for the embryo",
-            "To make the cell wall",
-            "To carry genetic material",
-            "To release energy for the tail to swim"
+            "To release energy by respiration so that the tail can swim",
+            "To store food for the embryo after the sperm has fused",
+            "To make the cell wall that surrounds the sperm nucleus",
+            "To carry the genetic material that is passed to the egg"
           ],
-          "a": 3,
-          "why": "Respiration in mitochondria releases energy for swimming."
+          "a": 0,
+          "why": "Respiration in mitochondria releases the energy a sperm needs to swim to the egg."
         },
         {
           "q": "Why do root hair cells usually lack chloroplasts?",
           "opts": [
-            "They are too small",
-            "They are underground and receive no light",
-            "They are dead cells",
-            "Chloroplasts would block water"
+            "They are too small to contain any organelles at all",
+            "They are dead cells, so they have no organelles inside them",
+            "Chloroplasts would block the movement of water into the cell",
+            "They are underground and receive no light"
           ],
-          "a": 1,
-          "why": "No light reaches roots, so chloroplasts would be no use."
+          "a": 3,
+          "why": "No light reaches roots, so chloroplasts would be of no use there."
         },
         {
           "q": "Which describes differentiation?",
           "opts": [
-            "A cell divides into two identical cells",
-            "A cell loses its nucleus",
-            "A cell takes in water by osmosis",
-            "A cell gains new structures to do a particular job"
+            "A cell divides into two cells that are genetically identical",
+            "A cell loses its nucleus so that it can carry more oxygen",
+            "A cell gains new structures so that it can do a particular job",
+            "A cell takes in water across its membrane by osmosis alone"
           ],
-          "a": 3,
-          "why": "Differentiation is the process of a cell becoming specialised."
+          "a": 2,
+          "why": "Differentiation is the process of a cell becoming specialised for a job."
         },
         {
           "q": "What do the branched dendrites of a nerve cell do?",
           "opts": [
-            "Store fat",
-            "Contract to move bones",
-            "Connect with many other nerve cells",
-            "Absorb mineral ions"
+            "Store fat that the cell can use as a source of energy",
+            "Contract to move bones when an impulse arrives at the cell",
+            "Absorb mineral ions from the soil for the nerve cell to use",
+            "Connect with many other nerve cells so impulses are passed on"
           ],
-          "a": 2,
-          "why": "Branched endings let a neurone receive impulses from many cells."
+          "a": 3,
+          "why": "Branched dendrites let a neurone receive impulses from many other cells."
         }
       ],
       "exam": [
@@ -745,56 +750,57 @@
         {
           "q": "What happens before mitosis?",
           "opts": [
-            "DNA is copied",
-            "Chromosomes halve",
-            "Gametes fuse"
+            "DNA is copied so there are two sets of genetic material",
+            "Chromosomes halve in number to make two gamete cells",
+            "Gametes fuse together to form a new fertilised egg cell",
+            "The cell wall breaks down so that the nucleus can escape"
           ],
           "a": 0,
-          "why": "DNA is copied"
+          "why": "Before mitosis the cell grows and copies its DNA, so each daughter cell can receive a full set of chromosomes."
         },
         {
           "q": "How many chromosomes are in a human skin cell after mitosis?",
           "opts": [
             "23",
-            "92",
             "46",
+            "92",
             "12"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Mitosis keeps the chromosome number the same."
         },
         {
           "q": "Why must DNA be copied before mitosis?",
           "opts": [
-            "So the cell can grow a cell wall",
-            "To halve the chromosome number",
-            "To make the cell specialised",
+            "So the cell can grow a new cell wall around itself",
+            "To halve the chromosome number ready for fertilisation",
+            "To make the cell specialised for one particular job",
             "So each daughter cell receives a full set of chromosomes"
           ],
           "a": 3,
-          "why": "Each new cell needs complete genetic information."
+          "why": "Each new cell needs complete genetic information, so the DNA must be copied first."
         },
         {
           "q": "Which is NOT a use of mitosis?",
           "opts": [
+            "Producing gametes",
             "Growth",
             "Repair of damaged tissue",
-            "Producing gametes",
             "Asexual reproduction"
           ],
-          "a": 2,
+          "a": 0,
           "why": "Gametes are produced by meiosis."
         },
         {
           "q": "One cell divides by mitosis five times. How many cells result?",
           "opts": [
             "10",
+            "32",
             "25",
-            "16",
-            "32"
+            "16"
           ],
-          "a": 3,
-          "why": "2⁵ = 32."
+          "a": 1,
+          "why": "Each division doubles the number of cells, so five divisions give 2⁵ = 32 cells."
         }
       ],
       "exam": [
@@ -891,30 +897,32 @@
         {
           "q": "Where are adult human stem cells found?",
           "opts": [
-            "Mature red blood cells",
-            "Bone marrow",
-            "Tooth enamel"
+            "Mature red blood cells in the circulation",
+            "Tooth enamel on the surface of the teeth",
+            "Bone marrow, where blood cells are made",
+            "The outer layers of the skin that are shed"
           ],
-          "a": 1,
-          "why": "Bone marrow"
+          "a": 2,
+          "why": "Adult stem cells are found in places such as bone marrow, where they make new blood cells."
         },
         {
           "q": "Why use genetically matched stem cells?",
           "opts": [
-            "To remove every protein",
-            "To reduce rejection",
-            "To prevent all cell division"
+            "To reduce the chance that the body rejects the cells",
+            "To remove every protein from the transplanted tissue",
+            "To prevent all of the cells from dividing again",
+            "To make the transplanted cells grow more slowly"
           ],
-          "a": 1,
-          "why": "To reduce rejection"
+          "a": 0,
+          "why": "Genetically matched cells carry the patient's own markers, so the immune system does not attack them."
         },
         {
           "q": "Where are meristems found in a plant?",
           "opts": [
-            "Only in leaves",
-            "Root and shoot tips",
-            "Only in flowers",
-            "In xylem"
+            "Only in the leaves where photosynthesis takes place",
+            "At the tips of the roots and the shoots of a plant",
+            "Only in the flowers where the seeds are produced",
+            "In the xylem vessels that carry water upwards"
           ],
           "a": 1,
           "why": "Meristems are regions of active cell division at root and shoot tips."
@@ -922,34 +930,34 @@
         {
           "q": "What is the main advantage of therapeutic cloning?",
           "opts": [
-            "Stem cells match the patient so are not rejected",
-            "It is cheap",
-            "It never involves embryos",
-            "It produces gametes"
+            "The stem cells match the patient, so they are not rejected",
+            "It is cheap, because no equipment or laboratory is needed",
+            "It never involves embryos, so there are no ethical concerns",
+            "It produces gametes that can be used for fertility treatment"
           ],
           "a": 0,
-          "why": "The cells have the patient's genes."
+          "why": "Cells made by therapeutic cloning carry the patient's own genes, so the body does not reject them."
         },
         {
           "q": "Which is a risk of stem-cell treatment?",
           "opts": [
             "Cells always die",
             "Treatment cannot be repeated",
-            "Transfer of viral infection",
-            "Cells are too large to inject"
+            "Cells are too large to inject",
+            "Transfer of viral infection"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Contaminated cultures could transfer viruses."
         },
         {
           "q": "Which cell type can adult bone marrow stem cells form?",
           "opts": [
-            "Blood cells",
             "Nerve cells only",
             "Any cell type",
+            "Blood cells",
             "Plant cells"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Bone marrow stem cells produce a limited range, including blood cells."
         }
       ],
@@ -1058,12 +1066,13 @@
         {
           "q": "Which change speeds diffusion?",
           "opts": [
-            "A thicker barrier",
-            "A smaller area",
-            "A steeper gradient"
+            "A steeper concentration gradient",
+            "A thicker barrier between the two sides",
+            "A smaller surface area for the exchange",
+            "A lower temperature of the surroundings"
           ],
-          "a": 2,
-          "why": "A steeper gradient"
+          "a": 0,
+          "why": "A steeper concentration gradient gives a faster net movement of particles."
         },
         {
           "q": "What is the SA:V of a 3 cm cube?",
@@ -1079,35 +1088,35 @@
         {
           "q": "How do fish gills maintain a steep concentration gradient?",
           "opts": [
-            "Gills are thick",
-            "Water does not move",
-            "Blood flows in the opposite direction to water",
-            "Gills have no blood supply"
+            "The gills are thick, which keeps the oxygen in",
+            "The water does not move over the gills at all",
+            "Blood flows in the opposite direction to the water",
+            "The gills have no blood supply, so oxygen builds up"
           ],
           "a": 2,
-          "why": "Counter-current flow keeps a gradient along the whole gill."
+          "why": "Counter-current flow keeps a concentration gradient along the whole length of the gill."
         },
         {
           "q": "Which change would halve the rate of diffusion across a membrane?",
           "opts": [
             "Doubling the surface area",
             "Doubling the concentration difference",
-            "Doubling the membrane thickness",
-            "Raising the temperature"
+            "Raising the temperature",
+            "Doubling the membrane thickness"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Rate is inversely proportional to the diffusion distance."
         },
         {
           "q": "Why do single-celled organisms not need a gas exchange system?",
           "opts": [
-            "They do not respire",
             "They have a large surface area to volume ratio",
-            "They are too small to need oxygen",
-            "They use active transport only"
+            "They do not respire, so they do not need any oxygen",
+            "They are too small to need any oxygen to survive",
+            "They use active transport only, because it is faster"
           ],
-          "a": 1,
-          "why": "Diffusion across the membrane meets their needs."
+          "a": 0,
+          "why": "A large surface area to volume ratio means diffusion across the membrane meets their needs."
         }
       ],
       "exam": [
@@ -1212,56 +1221,57 @@
         {
           "q": "When does water enter a cell by osmosis?",
           "opts": [
-            "Outside is more dilute than inside",
-            "Outside is more concentrated",
-            "Water cannot cross any membrane"
+            "The solution outside is more concentrated than the cell contents",
+            "The solution outside is more dilute than the cell contents",
+            "Water can never cross a partially permeable membrane",
+            "The cell contents have exactly the same concentration as outside"
           ],
-          "a": 0,
-          "why": "Outside is more dilute than inside"
+          "a": 1,
+          "why": "Water moves by osmosis from a dilute solution to a more concentrated one, so it enters when the outside is more dilute."
         },
         {
           "q": "A potato piece goes from 2.50 g to 2.00 g. What is the percentage change?",
           "opts": [
             "−25%",
-            "−20%",
             "+20%",
+            "−20%",
             "−0.5%"
           ],
-          "a": 1,
+          "a": 2,
           "why": "(2.00 − 2.50) ÷ 2.50 × 100 = −20%."
         },
         {
           "q": "Why might a red blood cell burst in pure water?",
           "opts": [
-            "It loses water",
-            "It gains water by osmosis and has no cell wall",
-            "It actively pumps in water",
-            "It has a cellulose wall"
+            "It loses water by osmosis and shrinks until it breaks up",
+            "It actively pumps in water, using energy from respiration",
+            "It has a cellulose wall which is too weak to hold the cell",
+            "It gains water by osmosis and has no cell wall to stop it"
           ],
-          "a": 1,
-          "why": "Animal cells have no wall to resist swelling."
+          "a": 3,
+          "why": "Animal cells have no wall to resist swelling, so they can burst when water enters."
         },
         {
           "q": "Why is percentage change in mass calculated rather than change in mass?",
           "opts": [
-            "It is quicker",
-            "It removes the need for repeats",
-            "The pieces had different starting masses",
-            "It gives a bigger number"
+            "It is quicker to calculate than the change in mass in grams",
+            "The pieces started with different masses",
+            "It removes the need to repeat the experiment several times",
+            "It always gives a bigger number that is easier to plot"
           ],
-          "a": 2,
-          "why": "Percentages allow fair comparison."
+          "a": 1,
+          "why": "Percentage change allows pieces with different starting masses to be compared fairly."
         },
         {
           "q": "What describes a plant cell that has lost a lot of water?",
           "opts": [
-            "Turgid",
-            "Flaccid",
-            "Burst",
-            "Lysed"
+            "Turgid, because it has lost water and is full and firm",
+            "Burst, because the cell wall is torn open by the loss of water",
+            "Flaccid, because it has lost water and is no longer firm",
+            "Lysed, because the cell membrane is destroyed when water leaves"
           ],
-          "a": 1,
-          "why": "Cells that lose water become flaccid."
+          "a": 2,
+          "why": "A plant cell that has lost a lot of water becomes flaccid; turgid cells are full of water."
         }
       ],
       "exam": [
@@ -1379,65 +1389,67 @@
         {
           "q": "Which process requires energy from respiration?",
           "opts": [
-            "Osmosis",
-            "Active transport",
-            "Diffusion"
+            "Osmosis, which uses energy from respiration to move water",
+            "Diffusion, which uses energy from respiration to move solutes",
+            "Evaporation, which uses energy from respiration to lose water",
+            "Active transport, which uses energy from respiration"
           ],
-          "a": 1,
-          "why": "Active transport"
+          "a": 3,
+          "why": "Active transport needs energy from respiration; osmosis and diffusion are passive."
         },
         {
           "q": "Mineral concentration is lower in soil than a root cell. Uptake uses…",
           "opts": [
-            "Diffusion down the gradient",
-            "Active transport",
-            "Osmosis of ions"
+            "Active transport, using energy to move ions against the gradient",
+            "Diffusion, as ions move down the concentration gradient",
+            "Osmosis of ions, as water moves into the more dilute region",
+            "Evaporation of the ions from the surface of the root"
           ],
-          "a": 1,
-          "why": "Active transport"
+          "a": 0,
+          "why": "Minerals are moved from a low concentration in the soil to a higher one in the root, which needs energy."
         },
         {
           "q": "What do carrier proteins do in active transport?",
           "opts": [
-            "Digest particles",
-            "Make the membrane thicker",
-            "Store water",
-            "Move particles across the membrane using energy"
+            "Digest particles so that they can pass through the membrane",
+            "Move particles across the membrane using energy from respiration",
+            "Make the membrane thicker so that the particles cannot escape",
+            "Store water so that the cell does not lose any by osmosis"
           ],
-          "a": 3,
-          "why": "Carrier proteins transport substances against the gradient."
+          "a": 1,
+          "why": "Carrier proteins move substances across a membrane against the concentration gradient."
         },
         {
           "q": "Why do plants need nitrate ions?",
           "opts": [
             "To make chlorophyll only",
             "To make glucose",
-            "To make proteins",
-            "To make cellulose"
+            "To make cellulose",
+            "To make proteins"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Nitrate supplies nitrogen for amino acids and proteins."
         },
         {
           "q": "Glucose is absorbed from the gut when its concentration in the gut is lower than in the blood. This uses…",
           "opts": [
-            "osmosis",
-            "active transport",
-            "diffusion",
-            "filtration"
+            "osmosis, because it moves water across a membrane",
+            "diffusion, because it moves particles down a gradient",
+            "active transport, because it moves against the gradient",
+            "filtration, because it removes solid particles from a liquid"
           ],
-          "a": 1,
-          "why": "Movement against the gradient requires active transport."
+          "a": 2,
+          "why": "Movement against the concentration gradient requires active transport."
         },
         {
           "q": "Which process involves water moving through a partially permeable membrane?",
           "opts": [
+            "Osmosis",
             "Active transport",
             "Respiration",
-            "Translocation",
-            "Osmosis"
+            "Translocation"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Osmosis is specific to water."
         }
       ],
@@ -1531,78 +1543,78 @@
         {
           "q": "Which structure controls what enters and leaves a cell?",
           "opts": [
-            "Cell wall",
-            "Nucleus",
-            "Cell membrane",
-            "Ribosome"
+            "The cell membrane, which is partially permeable",
+            "The cell wall, which is made of cellulose in plants",
+            "The nucleus, which contains the genetic material",
+            "The ribosome, which is where proteins are made"
           ],
-          "a": 2,
-          "why": "The membrane is partially permeable."
+          "a": 0,
+          "why": "The membrane controls what enters and leaves the cell."
         },
         {
           "q": "An image is 4.8 mm long at × 400. What is the real length?",
           "opts": [
             "1920 μm",
+            "12 μm",
             "0.12 μm",
-            "120 μm",
-            "12 μm"
+            "120 μm"
           ],
-          "a": 3,
+          "a": 1,
           "why": "4.8 ÷ 400 = 0.012 mm = 12 μm."
         },
         {
           "q": "Which cell type is specialised to carry impulses?",
           "opts": [
-            "Nerve cell",
             "Sperm cell",
             "Root hair cell",
-            "Xylem"
+            "Xylem",
+            "Nerve cell"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Nerve cells have long axons."
         },
         {
           "q": "What is the main function of mitosis in adults?",
           "opts": [
-            "Making gametes",
-            "Repair and replacement of cells",
-            "Producing variation",
-            "Digestion"
+            "Making gametes that are genetically different from each other",
+            "Producing variation so that the cells are all different",
+            "Repair and replacement of damaged or worn-out cells",
+            "Digestion of food molecules inside the cells of the gut"
           ],
-          "a": 1,
-          "why": "Mitosis gives identical cells."
+          "a": 2,
+          "why": "Mitosis produces genetically identical cells for growth, repair and replacement."
         },
         {
           "q": "Stem cells from embryos can…",
           "opts": [
-            "only make blood cells",
-            "not divide",
-            "only form plant tissue",
-            "differentiate into most cell types"
+            "only make blood cells and no other kind of cell",
+            "differentiate into most types of body cell",
+            "not divide, because they are already specialised",
+            "only form plant tissue and not animal tissue"
           ],
-          "a": 3,
-          "why": "Embryonic stem cells are very versatile."
+          "a": 1,
+          "why": "Embryonic stem cells are unspecialised and can become most cell types."
         },
         {
           "q": "Which process moves glucose from a low concentration in the gut into the blood?",
           "opts": [
-            "Diffusion",
-            "Active transport",
-            "Osmosis",
-            "Transpiration"
+            "Diffusion, which moves particles down a concentration gradient",
+            "Osmosis, which is the movement of water across a membrane",
+            "Transpiration, which is the loss of water from the leaves",
+            "Active transport, which uses energy to move against a gradient"
           ],
-          "a": 1,
-          "why": "Against a gradient requires energy."
+          "a": 3,
+          "why": "Moving glucose from a low to a high concentration is against the gradient, so it needs active transport."
         },
         {
           "q": "A cube of side 4 cm has SA:V of…",
           "opts": [
-            "6 : 1",
             "1.5 : 1",
+            "6 : 1",
             "4 : 1",
             "0.67 : 1"
           ],
-          "a": 1,
+          "a": 0,
           "why": "96 ÷ 64 = 1.5."
         },
         {
@@ -1632,10 +1644,10 @@
           "opts": [
             "Ribosomes",
             "Cell membrane",
-            "Cytoplasm",
-            "Mitochondria"
+            "Mitochondria",
+            "Cytoplasm"
           ],
-          "a": 3,
+          "a": 2,
           "why": "Prokaryotes lack mitochondria."
         }
       ],
@@ -1718,52 +1730,54 @@
         {
           "q": "Protein digestion produces…",
           "opts": [
-            "Amino acids",
-            "Starch",
-            "Only fatty acids"
+            "Starch, which is stored in the liver as a food reserve",
+            "Amino acids, which are absorbed into the blood",
+            "Only fatty acids, which are absorbed into the lymph",
+            "Glucose, which is then used in respiration by the cells"
           ],
-          "a": 0,
-          "why": "Amino acids"
+          "a": 1,
+          "why": "Proteases break proteins down into amino acids."
         },
         {
           "q": "Where is bile made?",
           "opts": [
-            "Liver",
-            "Gall bladder",
-            "Stomach"
+            "The liver, which stores the bile in the gall bladder",
+            "The gall bladder, which releases the bile into the gut",
+            "The stomach, which mixes the bile with the food",
+            "The pancreas, which releases the bile into the small intestine"
           ],
           "a": 0,
-          "why": "Liver"
+          "why": "Bile is made in the liver and stored in the gall bladder until it is released."
         },
         {
           "q": "Which organ produces lipase, protease and amylase?",
           "opts": [
             "Liver",
             "Gall bladder",
-            "Pancreas",
-            "Large intestine"
+            "Large intestine",
+            "Pancreas"
           ],
-          "a": 2,
+          "a": 3,
           "why": "The pancreas secretes all three."
         },
         {
           "q": "Why does the stomach contain hydrochloric acid?",
           "opts": [
-            "To digest fat",
-            "To emulsify fat",
-            "To absorb water",
-            "To kill microorganisms and give the low pH for pepsin"
+            "To digest fat so that it can be absorbed in the small intestine",
+            "To emulsify fat so that lipase has a larger surface area",
+            "To kill microorganisms and give the low pH that pepsin needs",
+            "To absorb water from the food before it reaches the intestine"
           ],
-          "a": 3,
-          "why": "Acid kills pathogens and suits stomach protease."
+          "a": 2,
+          "why": "Acid kills pathogens that are swallowed with food and gives the stomach protease the low pH it works best at."
         },
         {
           "q": "What are the products of lipid digestion?",
           "opts": [
-            "Amino acids",
+            "Amino acids, which are released when proteases act on the lipids",
             "Fatty acids and glycerol",
-            "Sugars",
-            "Glycogen"
+            "Simple sugars, which are made when carbohydrases act on the lipids",
+            "Glycogen, which is stored in the liver after the lipids are digested"
           ],
           "a": 1,
           "why": "Lipase breaks lipids into fatty acids and glycerol."
@@ -1771,13 +1785,13 @@
         {
           "q": "Where is most water absorbed?",
           "opts": [
-            "Stomach",
-            "Oesophagus",
-            "Mouth",
-            "Large intestine"
+            "The stomach, which absorbs most of the water that is swallowed",
+            "The oesophagus, which absorbs water as the food passes through",
+            "The mouth, which absorbs water from the saliva that is produced",
+            "The large intestine"
           ],
           "a": 3,
-          "why": "The large intestine absorbs water from undigested material."
+          "why": "The large intestine absorbs water from the undigested material that is left, leaving the faeces."
         }
       ],
       "exam": [
@@ -1881,56 +1895,57 @@
         {
           "q": "Why is a denatured enzyme less effective?",
           "opts": [
-            "It creates extra oxygen",
+            "It creates extra oxygen, which blocks the reaction",
+            "It becomes starch, which is not an enzyme",
             "Its active site no longer fits the substrate",
-            "It becomes starch"
+            "Its substrate becomes too large to fit into the cell"
           ],
-          "a": 1,
-          "why": "Its active site no longer fits the substrate"
+          "a": 2,
+          "why": "When an enzyme is denatured the shape of its active site changes, so the substrate cannot bind."
         },
         {
           "q": "What happens to an enzyme's active site when it denatures?",
           "opts": [
-            "It gets bigger and works faster",
-            "It becomes a substrate",
-            "Nothing changes",
-            "It changes shape so the substrate no longer fits"
+            "It gets bigger and so works faster than before",
+            "It changes shape, so the substrate no longer fits",
+            "It becomes a substrate, which is then digested by the enzyme",
+            "Nothing changes, because the active site is made of strong bonds"
           ],
-          "a": 3,
-          "why": "Denaturing alters the active site shape."
+          "a": 1,
+          "why": "Denaturing alters the shape of the active site, so the substrate no longer fits."
         },
         {
           "q": "Starch was all digested after 120 s. What is the relative rate as 1000/time?",
           "opts": [
-            "0.12 s⁻¹",
             "8.3 s⁻¹",
+            "0.12 s⁻¹",
             "120 s⁻¹",
             "12 s⁻¹"
           ],
-          "a": 1,
+          "a": 0,
           "why": "1000 ÷ 120 = 8.3."
         },
         {
           "q": "In the amylase practical, what does a blue-black colour with iodine show?",
           "opts": [
-            "Starch is still present",
             "All starch has been digested",
+            "Starch is still present",
             "Sugar is present",
             "Protein is present"
           ],
-          "a": 0,
+          "a": 1,
           "why": "Iodine turns blue-black with starch."
         },
         {
           "q": "Why are buffer solutions used in the pH practical?",
           "opts": [
-            "To speed the reaction",
-            "To kill bacteria",
-            "To keep each pH constant",
-            "To stain starch"
+            "To speed up the reaction by providing extra enzyme molecules",
+            "To kill bacteria that would otherwise digest the starch",
+            "To keep each pH constant so that only one factor changes",
+            "To stain the starch so that it can be seen more clearly"
           ],
           "a": 2,
-          "why": "Buffers resist pH change."
+          "why": "A buffer resists changes in pH, so the pH is the only thing that differs between tubes."
         }
       ],
       "exam": [
@@ -2048,66 +2063,68 @@
         {
           "q": "Which indicates protein?",
           "opts": [
-            "Orange iodine",
-            "Blue Benedict’s after heating",
-            "Lilac Biuret result"
+            "An orange iodine result",
+            "A blue Benedict's result after heating",
+            "A black iodine result with starch present",
+            "A lilac Biuret result"
           ],
-          "a": 2,
-          "why": "Lilac Biuret result"
+          "a": 3,
+          "why": "The Biuret test turns lilac or purple when protein is present."
         },
         {
           "q": "Which test requires a hot water bath?",
           "opts": [
-            "Iodine",
-            "A ruler measurement",
-            "Benedict’s"
+            "Benedict's",
+            "Iodine, which is warmed in a water bath before it is added",
+            "A ruler measurement, which needs the sample to be heated",
+            "Biuret, which is heated in a water bath until it is violet"
           ],
-          "a": 2,
-          "why": "Benedict’s"
+          "a": 0,
+          "why": "Benedict's solution has to be warmed in a hot water bath for the colour change to happen."
         },
         {
           "q": "What is the positive result for the Biuret test?",
           "opts": [
             "Blue-black",
             "Brick-red",
-            "Lilac/purple",
-            "Red layer on top"
+            "Red layer on top",
+            "Lilac/purple"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Biuret turns lilac with protein."
         },
         {
           "q": "Which test must be heated?",
           "opts": [
-            "Biuret",
+            "Biuret, which is heated in a water bath",
             "Benedict's",
-            "Iodine",
-            "Sudan III"
+            "Iodine, which is heated in a water bath",
+            "Sudan III, which is heated in a water bath"
           ],
           "a": 1,
-          "why": "Benedict's is heated in a water bath."
+          "why": "Only Benedict's needs heating; the other tests work at room temperature."
         },
         {
           "q": "Which Benedict's colour shows the most reducing sugar?",
           "opts": [
-            "Green",
-            "Yellow",
-            "Brick-red",
-            "Blue"
+            "Green, which shows the highest concentration of sugar",
+            "Yellow, which shows the highest concentration of sugar",
+            "Brick-red, which shows the highest concentration",
+            "Blue, which shows the highest concentration of sugar"
           ],
           "a": 2,
-          "why": "Red indicates the highest concentration."
+          "why": "The colour goes from blue through green and yellow to brick-red as more reducing sugar is present."
         },
         {
           "q": "Why is the food ground and filtered before testing?",
           "opts": [
-            "To kill bacteria",
-            "To add enzymes",
-            "To heat the sample",
-            "To make a clear solution of the food"
+            "To make a clear solution of the food that can be tested",
+            "To kill bacteria so that the food is safe to handle",
+            "To add enzymes that start to break down the food",
+            "To heat the sample so that it will react with the test"
           ],
-          "a": 3,
-          "why": "A clear solution makes colour changes visible."
+          "a": 0,
+          "why": "A clear solution makes any colour changes easier to see."
         }
       ],
       "exam": [
@@ -2206,7 +2223,7 @@
         },
         {
           "title": "Go deeper",
-          "html": "<p><b>Double circulation.</b> Blood passes through the heart twice in each circuit: the right side pumps deoxygenated blood to the lungs; the left side pumps oxygenated blood to the body. This keeps blood pressure high for the body circuit.</p><p><b>Heart rate and output.</b> Cardiac output = stroke volume × heart rate. For example, 75 cm³ × 70 beats/min = 5250 cm³/min (5.25 dm³/min). The natural pacemaker is a group of cells in the right atrium; artificial pacemakers correct irregular rhythms.</p><p><b>Vessels in exam answers.</b> Arteries: thick muscular, elastic walls to withstand and smooth high pressure; narrow lumen. Veins: thinner walls, wide lumen, valves to stop backflow. Capillaries: one cell thick to allow diffusion. Rate of blood flow = volume ÷ time.</p>"
+          "html": "<p><b>Double circulation.</b> Blood passes through the heart twice during each complete circuit of the body: the right side pumps deoxygenated blood to the lungs; the left side pumps oxygenated blood to the body. This keeps blood pressure high for the body circuit.</p><p><b>Heart rate and output.</b> Cardiac output = stroke volume × heart rate. For example, 75 cm³ × 70 beats/min = 5250 cm³/min (5.25 dm³/min). The natural pacemaker is a group of cells in the right atrium; artificial pacemakers correct irregular rhythms.</p><p><b>Vessels in exam answers.</b> Arteries: thick muscular, elastic walls to withstand and smooth high pressure; narrow lumen. Veins: thinner walls, wide lumen, valves to stop backflow. Capillaries: one cell thick to allow diffusion. Rate of blood flow = volume ÷ time.</p>"
         }
       ],
       "keypoints": [
@@ -2221,12 +2238,13 @@
         {
           "q": "Which vessel carries blood to lungs?",
           "opts": [
-            "Pulmonary artery",
-            "Pulmonary vein",
-            "Aorta"
+            "The pulmonary vein, which takes blood from the heart to the lungs",
+            "The pulmonary artery",
+            "The aorta, which takes blood from the heart to the lungs",
+            "The vena cava, which takes blood from the heart to the lungs"
           ],
-          "a": 0,
-          "why": "Pulmonary artery"
+          "a": 1,
+          "why": "The pulmonary artery carries deoxygenated blood from the right ventricle to the lungs."
         },
         {
           "q": "70 cm³ per beat at 80 beats/min gives what flow?",
@@ -2239,44 +2257,44 @@
           "q": "Which chamber pumps blood into the aorta?",
           "opts": [
             "Right ventricle",
-            "Left ventricle",
             "Left atrium",
+            "Left ventricle",
             "Right atrium"
           ],
-          "a": 1,
+          "a": 2,
           "why": "The left ventricle pumps oxygenated blood to the body."
         },
         {
           "q": "Why do veins have valves?",
           "opts": [
-            "To prevent backflow of low-pressure blood",
-            "To pump blood",
-            "To allow diffusion",
-            "To filter blood"
+            "To pump blood towards the heart as the vein contracts",
+            "To allow diffusion of oxygen into the nearby cells",
+            "To filter the blood as it flows through the vein",
+            "To prevent the backflow of low-pressure blood"
           ],
-          "a": 0,
-          "why": "Valves keep blood moving towards the heart."
+          "a": 3,
+          "why": "Veins carry blood at low pressure, so valves keep it moving towards the heart."
         },
         {
           "q": "Why are capillary walls one cell thick?",
           "opts": [
-            "To withstand high pressure",
-            "To give a short diffusion distance",
-            "To stop backflow",
-            "To store oxygen"
+            "To give a short diffusion distance for rapid exchange",
+            "To withstand the high pressure of the blood in the vessel",
+            "To stop the backflow of blood as it moves along",
+            "To store oxygen so that it can be released later"
           ],
-          "a": 1,
-          "why": "Thin walls allow rapid exchange."
+          "a": 0,
+          "why": "Thin walls allow substances to diffuse quickly between the blood and the cells."
         },
         {
           "q": "Stroke volume 70 cm³, heart rate 72 beats/min. Cardiac output is…",
           "opts": [
             "142 cm³/min",
             "1.03 cm³/min",
-            "504 cm³/min",
-            "5040 cm³/min"
+            "5040 cm³/min",
+            "504 cm³/min"
           ],
-          "a": 3,
+          "a": 2,
           "why": "70 × 72 = 5040."
         }
       ],
@@ -2374,66 +2392,68 @@
         {
           "q": "Which component helps clot blood?",
           "opts": [
-            "Red cells",
-            "Platelets",
-            "Glucose"
+            "Red blood cells, which help the blood to clot",
+            "Platelets, which help the blood to clot",
+            "Glucose, which helps the blood to clot",
+            "Plasma proteins, which carry oxygen to the tissues"
           ],
           "a": 1,
-          "why": "Platelets"
+          "why": "Platelets are small fragments of cells that help the blood to clot at a wound."
         },
         {
           "q": "What does a coronary stent do?",
           "opts": [
-            "Replaces every valve",
-            "Keeps a narrowed artery open",
-            "Makes insulin"
+            "It replaces every valve in the heart with a new one",
+            "It makes insulin to control the level of glucose in the blood",
+            "It removes cholesterol from the blood as it passes through",
+            "It keeps a narrowed artery open so that blood can flow"
           ],
-          "a": 1,
-          "why": "Keeps a narrowed artery open"
+          "a": 3,
+          "why": "A stent is a tube placed in a narrowed artery to keep it open."
         },
         {
           "q": "Why do red blood cells have no nucleus?",
           "opts": [
-            "To divide quickly",
-            "More space for haemoglobin",
-            "To make antibodies",
-            "To clot blood"
+            "It leaves more space for haemoglobin to carry oxygen",
+            "It lets the cell divide more quickly to replace lost cells",
+            "It allows the cell to make antibodies to fight pathogens",
+            "It helps the cell to clot the blood at a wound"
           ],
-          "a": 1,
-          "why": "This lets them carry more oxygen."
+          "a": 0,
+          "why": "With no nucleus, a red blood cell has more room for haemoglobin, so it can carry more oxygen."
         },
         {
           "q": "What do statins do?",
           "opts": [
-            "Dissolve stents",
-            "Reduce blood cholesterol",
-            "Kill pathogens",
-            "Increase heart rate"
+            "Dissolve stents that have been put in an artery",
+            "Reduce blood cholesterol levels in the body",
+            "Kill pathogens that have entered the bloodstream",
+            "Increase the heart rate to push blood faster"
           ],
           "a": 1,
-          "why": "Statins lower LDL cholesterol."
+          "why": "Statins lower the level of LDL cholesterol in the blood."
         },
         {
           "q": "Which part of blood transports urea?",
           "opts": [
             "Red blood cells",
             "Platelets",
-            "Plasma",
-            "White blood cells"
+            "White blood cells",
+            "Plasma"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Urea is dissolved in plasma."
         },
         {
           "q": "A disadvantage of mechanical valves is that…",
           "opts": [
-            "they wear out in a few years",
-            "they come from animals",
-            "patients need drugs to prevent blood clots",
-            "they cannot open"
+            "they come from animals and so are often rejected",
+            "they cannot open and close as the blood pressure changes",
+            "patients need drugs to prevent blood clots forming",
+            "they wear out in a few years and have to be replaced"
           ],
           "a": 2,
-          "why": "Mechanical valves increase clot risk."
+          "why": "Mechanical valves increase the risk of clots, so patients have to take anticoagulant drugs."
         }
       ],
       "exam": [
@@ -2532,66 +2552,68 @@
         {
           "q": "A risk factor…",
           "opts": [
-            "Guarantees disease",
-            "Must always be inherited",
-            "Increases disease probability"
+            "Increases the probability of getting a disease",
+            "Guarantees that a person will get the disease",
+            "Must always be inherited from a parent",
+            "Only affects the old and never the young"
           ],
-          "a": 2,
-          "why": "Increases disease probability"
+          "a": 0,
+          "why": "A risk factor raises the chance of disease but does not guarantee it."
         },
         {
           "q": "A malignant tumour can…",
           "opts": [
-            "Never divide",
-            "Only cause an infectious disease",
-            "Invade tissues and spread"
+            "Never divide, so that it stays in one place in the body",
+            "Invade neighbouring tissues and spread to other parts of the body",
+            "Only cause an infectious disease that spreads between people",
+            "Be removed without needing any treatment afterwards"
           ],
-          "a": 2,
-          "why": "Invade tissues and spread"
+          "a": 1,
+          "why": "Malignant tumour cells can invade other tissues and spread through the blood to form secondary tumours."
         },
         {
           "q": "Which is a non-communicable disease?",
           "opts": [
-            "Measles",
-            "Salmonellosis",
-            "Malaria",
-            "Type 2 diabetes"
+            "Measles, which is passed from person to person in the air",
+            "Salmonellosis, which is passed on in contaminated food",
+            "Type 2 diabetes",
+            "Malaria, which is passed on by the bite of a mosquito"
           ],
-          "a": 3,
-          "why": "Type 2 diabetes is not passed between people."
+          "a": 2,
+          "why": "Type 2 diabetes is not caused by a pathogen, so it cannot be passed on."
         },
         {
           "q": "What is a carcinogen?",
           "opts": [
-            "A pathogen",
-            "Something that increases the risk of cancer",
-            "A benign tumour",
-            "A medicine"
+            "A type of pathogen that causes a cancer in the body",
+            "A tumour that does not spread to other parts of the body",
+            "A medicine that is used to shrink a tumour in the body",
+            "Something that increases the risk of getting cancer"
           ],
-          "a": 1,
-          "why": "Carcinogens, such as tar, increase cancer risk."
+          "a": 3,
+          "why": "Carcinogens, such as tar in tobacco smoke, increase the risk of cancer."
         },
         {
           "q": "Benign tumours…",
           "opts": [
+            "stay in one place in a membrane",
             "spread in the blood",
             "are always fatal",
-            "are caused only by viruses",
-            "stay in one place in a membrane"
+            "are caused only by viruses"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Benign tumours do not invade other tissues."
         },
         {
           "q": "Which is an example of diseases interacting?",
           "opts": [
-            "Smoking causing coughing",
-            "Exercise improving fitness",
-            "HPV infection triggering cervical cancer",
-            "Vaccination preventing measles"
+            "Smoking causing coughing in the lungs",
+            "Exercise improving the fitness of the heart",
+            "Vaccination preventing the spread of measles",
+            "A HPV infection that triggers cervical cancer"
           ],
-          "a": 2,
-          "why": "Some viruses can trigger cancer."
+          "a": 3,
+          "why": "Some viruses can trigger cancer, so one disease can lead to another."
         }
       ],
       "exam": [
@@ -2688,66 +2710,68 @@
         {
           "q": "Which tissue transports sugars?",
           "opts": [
-            "Phloem",
-            "Xylem",
-            "Epidermis only"
+            "Xylem, which carries dissolved sugars around the plant",
+            "The epidermis, which carries dissolved sugars around the plant",
+            "Phloem, which carries dissolved sugars around the plant",
+            "Palisade mesophyll, which carries sugars around the plant"
           ],
-          "a": 0,
-          "why": "Phloem"
+          "a": 2,
+          "why": "Phloem transports dissolved sugars (translocation); xylem transports water and minerals."
         },
         {
           "q": "Why does high humidity reduce transpiration?",
           "opts": [
-            "It reduces the water-vapour gradient",
-            "It removes all stomata",
-            "It turns xylem into phloem"
+            "It reduces the water-vapour concentration gradient out of the leaf",
+            "It removes all of the stomata from the leaf surface",
+            "It turns the xylem vessels into phloem vessels in the stem",
+            "It makes the guard cells close permanently in the light"
           ],
           "a": 0,
-          "why": "It reduces the water-vapour gradient"
+          "why": "Humid air already contains a lot of water vapour, so there is a smaller gradient and less diffusion out of the leaf."
         },
         {
           "q": "What happens to stomata when guard cells lose water?",
           "opts": [
             "They open wider",
-            "They divide",
             "They close",
+            "They divide",
             "They photosynthesise more"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Flaccid guard cells close the stoma."
         },
         {
           "q": "Which tissue contains the most chloroplasts?",
           "opts": [
-            "Spongy mesophyll",
-            "Epidermis",
-            "Xylem",
-            "Palisade mesophyll"
+            "Palisade mesophyll, which is packed with chloroplasts",
+            "Spongy mesophyll, which is packed with chloroplasts",
+            "The upper epidermis, which is packed with chloroplasts",
+            "Xylem, which is packed with chloroplasts for photosynthesis"
           ],
-          "a": 3,
-          "why": "Palisade cells are packed with chloroplasts."
+          "a": 0,
+          "why": "Palisade cells are tightly packed near the top of the leaf and contain the most chloroplasts."
         },
         {
           "q": "Translocation is the movement of…",
           "opts": [
             "water in xylem",
-            "oxygen in stomata",
             "dissolved sugars in phloem",
+            "oxygen in stomata",
             "mineral ions by diffusion only"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Phloem moves sugars from sources to sinks."
         },
         {
           "q": "Why are xylem walls strengthened with lignin?",
           "opts": [
-            "To support the plant and withstand water pressure",
-            "To store sugar",
-            "To make chlorophyll",
-            "To allow photosynthesis"
+            "To store sugar so that the plant can use it in the winter",
+            "To make chlorophyll so that the vessel can absorb light",
+            "To allow photosynthesis to take place inside the vessel",
+            "To support the plant and withstand the pressure of the water"
           ],
-          "a": 0,
-          "why": "Lignin makes hollow tubes strong."
+          "a": 3,
+          "why": "Lignin makes the hollow xylem tubes strong, so they do not collapse."
         }
       ],
       "exam": [
@@ -2844,33 +2868,33 @@
           "opts": [
             "Amylase",
             "Lipase",
-            "Carbohydrase",
-            "Protease"
+            "Protease",
+            "Carbohydrase"
           ],
-          "a": 3,
+          "a": 2,
           "why": "Proteases break proteins into amino acids."
         },
         {
           "q": "Which vessel carries oxygenated blood from the lungs?",
           "opts": [
+            "Pulmonary vein",
             "Pulmonary artery",
             "Vena cava",
-            "Aorta",
-            "Pulmonary vein"
+            "Aorta"
           ],
-          "a": 3,
+          "a": 0,
           "why": "The pulmonary vein returns blood to the heart."
         },
         {
           "q": "Which food test needs heating?",
           "opts": [
-            "Biuret",
-            "Iodine",
-            "Sudan III",
+            "Biuret, which is heated in a water bath",
+            "Iodine, which is heated in a water bath",
+            "Sudan III, which is heated in a water bath",
             "Benedict's"
           ],
           "a": 3,
-          "why": "Benedict's test requires a water bath."
+          "why": "Only Benedict's needs a water bath; the other tests work at room temperature."
         },
         {
           "q": "A risk factor for type 2 diabetes is…",
@@ -2881,73 +2905,73 @@
             "low cholesterol"
           ],
           "a": 2,
-          "why": "Obesity raises the risk."
+          "why": "Obesity raises the risk of type 2 diabetes; the other options are not risk factors."
         },
         {
           "q": "What do platelets do?",
           "opts": [
             "Carry oxygen",
-            "Make antibodies",
             "Help blood clot",
+            "Make antibodies",
             "Carry urea"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Platelets help form clots."
         },
         {
           "q": "Where are stomata mostly found?",
           "opts": [
-            "Roots",
-            "Xylem",
-            "Lower surface of leaves",
-            "Upper epidermis only"
+            "On the lower surface of the leaf",
+            "In the roots, where the water is taken up",
+            "In the xylem vessels, where the water is carried",
+            "On the upper surface of the leaf only"
           ],
-          "a": 2,
-          "why": "The lower surface is cooler."
+          "a": 0,
+          "why": "Stomata are mostly on the lower surface, which is cooler, so less water is lost."
         },
         {
           "q": "Which factor increases transpiration?",
           "opts": [
-            "Higher humidity",
-            "Lower light",
-            "Higher temperature",
-            "Less wind"
+            "Higher humidity, because the air is full of water vapour",
+            "Lower light, because the stomata close when it is dim",
+            "A higher temperature",
+            "Less wind, because the air around the leaf stays still"
           ],
           "a": 2,
-          "why": "Warmer air increases evaporation."
+          "why": "Warmer air increases evaporation and diffusion from the leaf."
         },
         {
           "q": "At 70 °C an enzyme stops working because…",
           "opts": [
-            "it is too cold",
-            "it has more substrate",
-            "it becomes a substrate",
-            "its active site has changed shape"
+            "its active site has changed shape so the substrate does not fit",
+            "it is too cold, so its molecules move too slowly to react",
+            "it has more substrate than it can bind to its active site",
+            "it becomes a substrate itself and is then broken down"
           ],
-          "a": 3,
-          "why": "High temperature denatures it."
+          "a": 0,
+          "why": "High temperature denatures the enzyme by changing the shape of its active site."
         },
         {
           "q": "Which tissue carries water up a plant?",
           "opts": [
             "Phloem",
+            "Xylem",
             "Palisade",
-            "Epidermis",
-            "Xylem"
+            "Epidermis"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Xylem carries water and minerals."
         },
         {
           "q": "A stent is used to…",
           "opts": [
-            "lower cholesterol",
-            "replace a valve",
-            "keep a coronary artery open",
-            "pace the heart"
+            "lower cholesterol so that the arteries are not narrowed",
+            "replace a faulty valve so blood does not flow backwards",
+            "pace the heart so that it beats at a steady rate",
+            "keep a coronary artery open so blood can reach the heart muscle"
           ],
-          "a": 2,
-          "why": "Stents hold arteries open."
+          "a": 3,
+          "why": "A stent holds a narrowed artery open."
         }
       ],
       "exam": [
@@ -3029,66 +3053,68 @@
         {
           "q": "What causes malaria?",
           "opts": [
-            "A fungus",
-            "A protist",
-            "The mosquito itself as a bacterium"
+            "A protist, which is spread by mosquitoes",
+            "A fungus, which is spread by mosquitoes",
+            "A bacterium, which is spread by mosquitoes",
+            "A virus, which is spread by mosquitoes"
           ],
-          "a": 1,
-          "why": "A protist"
+          "a": 0,
+          "why": "Malaria is caused by a protist; the mosquito is the vector that carries it."
         },
         {
           "q": "Why can TMV reduce growth?",
           "opts": [
-            "It makes animal hormones",
-            "Leaf damage reduces photosynthesis",
-            "It creates extra chlorophyll"
+            "It makes animal hormones that slow down the plant",
+            "Leaf damage reduces the amount of photosynthesis",
+            "It creates extra chlorophyll that blocks the light",
+            "It stops the roots from taking up water from the soil"
           ],
           "a": 1,
-          "why": "Leaf damage reduces photosynthesis"
+          "why": "Mosaic patterns on leaves mean there is less chlorophyll, so less photosynthesis and slower growth."
         },
         {
           "q": "Which disease is caused by a fungus?",
           "opts": [
-            "Measles",
-            "Gonorrhoea",
-            "Rose black spot",
-            "Malaria"
+            "Measles, which is a fungal disease of children",
+            "Gonorrhoea, which is a fungal disease of the body",
+            "Rose black spot, which is a fungal disease of plants",
+            "Malaria, which is a fungal disease spread by mosquitoes"
           ],
           "a": 2,
-          "why": "Rose black spot is a fungal disease."
+          "why": "Rose black spot is a fungal disease; measles is viral, gonorrhoea is bacterial and malaria is caused by a protist."
         },
         {
           "q": "How is measles spread?",
           "opts": [
-            "Mosquito bites",
-            "Inhalation of droplets from sneezes and coughs",
-            "Contaminated food",
-            "Sexual contact"
+            "By mosquito bites which pass the virus into the blood",
+            "By contaminated food which carries the virus to the gut",
+            "By sexual contact between an infected and a healthy person",
+            "By inhaling droplets from sneezes and coughs"
           ],
-          "a": 1,
-          "why": "Measles is airborne in droplets."
+          "a": 3,
+          "why": "The measles virus is spread in droplets from the nose and throat."
         },
         {
           "q": "Why do viruses damage cells?",
           "opts": [
-            "They release antibiotics",
-            "They photosynthesise",
-            "They reproduce inside cells and burst them",
-            "They block light"
+            "They release antibiotics that kill the cells around them",
+            "They photosynthesise using the cells' chloroplasts and starve them",
+            "They reproduce inside cells and burst them as new viruses are released",
+            "They block the light from reaching the cells beneath them"
           ],
           "a": 2,
-          "why": "New viruses are released when cells burst."
+          "why": "Viruses take over the cell's machinery, reproduce, and then the cell bursts."
         },
         {
           "q": "A vector is…",
           "opts": [
-            "a type of virus",
-            "an organism that carries a pathogen between hosts",
-            "a medicine",
-            "a white blood cell"
+            "a type of virus that causes disease in a number of hosts",
+            "an organism that carries a pathogen from one host to another",
+            "a medicine that is used to kill the pathogens in a host",
+            "a white blood cell that engulfs the pathogens in a host"
           ],
           "a": 1,
-          "why": "The mosquito is a vector for malaria."
+          "why": "A vector such as the mosquito carries a pathogen between hosts without necessarily being ill."
         }
       ],
       "exam": [
@@ -3188,32 +3214,34 @@
         {
           "q": "What neutralises bacterial toxins?",
           "opts": [
-            "Red-cell nuclei",
-            "Insulin",
-            "Antitoxins"
+            "Antitoxins, which are made by white blood cells",
+            "Insulin, which is made by the pancreas",
+            "The nuclei of red blood cells, which are broken down",
+            "Platelets, which stick together to form a clot"
           ],
-          "a": 2,
-          "why": "Antitoxins"
+          "a": 0,
+          "why": "Antitoxins neutralise the toxins that bacteria release."
         },
         {
           "q": "Why does vaccination help on later exposure?",
           "opts": [
-            "All antibiotics become unnecessary",
-            "It guarantees no transmission ever",
-            "A faster specific immune response occurs"
+            "All antibiotics become unnecessary for any later infection",
+            "It guarantees that no pathogen can ever be transmitted again",
+            "The white blood cells are made permanently inactive by the dose",
+            "A faster, specific immune response happens on later exposure"
           ],
-          "a": 2,
-          "why": "A faster specific immune response occurs"
+          "a": 3,
+          "why": "Memory cells recognise the antigen, so antibodies are made more quickly the second time."
         },
         {
           "q": "What is phagocytosis?",
           "opts": [
-            "Making antibodies",
-            "A white blood cell engulfing a pathogen",
-            "Making antitoxins",
-            "Clotting blood"
+            "A white blood cell making antibodies to bind to the pathogen",
+            "A white blood cell making antitoxins to neutralise toxins",
+            "A white blood cell engulfing a pathogen and digesting it",
+            "Platelets sealing a wound to stop pathogens entering the body"
           ],
-          "a": 1,
+          "a": 2,
           "why": "Phagocytes ingest and digest pathogens."
         },
         {
@@ -3231,23 +3259,23 @@
           "q": "How do cilia help defend the body?",
           "opts": [
             "They move mucus and trapped pathogens up to the throat",
-            "They kill bacteria with acid",
-            "They make antibodies",
-            "They clot blood"
+            "They kill the bacteria with acid that they release",
+            "They make the antibodies that are carried in the blood",
+            "They clot the blood so that bacteria cannot get through"
           ],
           "a": 0,
-          "why": "Ciliated cells sweep mucus out of airways."
+          "why": "Ciliated cells sweep mucus containing trapped pathogens out of the airways."
         },
         {
           "q": "Why are antibodies specific?",
           "opts": [
-            "They kill all pathogens",
-            "Their shape fits only one antigen",
-            "They are made in the stomach",
-            "They are carbohydrates"
+            "They kill every pathogen that enters the body at once",
+            "They are made in the stomach, where the pathogens are",
+            "They are carbohydrates which stick to any pathogen cell",
+            "Their shape fits only one antigen, like a lock and key"
           ],
-          "a": 1,
-          "why": "Each antibody is complementary to one antigen."
+          "a": 3,
+          "why": "Each antibody has a binding site that is complementary to one particular antigen."
         }
       ],
       "exam": [
@@ -3344,66 +3372,68 @@
         {
           "q": "Why do antibiotics not treat viral infections?",
           "opts": [
-            "Viruses lack the bacterial targets and reproduce inside host cells",
-            "Viruses are bigger than all bacteria",
-            "Antibiotics only act on plants"
+            "Viruses reproduce inside host cells and lack the bacterial targets",
+            "Viruses are bigger than every bacterium and so cannot be reached",
+            "Antibiotics only act on plants and have no effect on animals",
+            "Viruses have a cell wall that antibiotics cannot get through"
           ],
           "a": 0,
-          "why": "Viruses lack the bacterial targets and reproduce inside host cells"
+          "why": "Antibiotics target bacterial structures, which viruses lack, and viruses live inside the host's cells."
         },
         {
           "q": "Double-blind means…",
           "opts": [
-            "Neither participants nor assessors know treatment allocation",
-            "Only participants know",
-            "Everyone receives two drugs"
+            "Neither the participants nor the assessors know who has the drug",
+            "Only the participants know whether they have the real drug",
+            "Everyone receives two different drugs at the same time",
+            "The doctors know who has the drug but the patients do not"
           ],
           "a": 0,
-          "why": "Neither participants nor assessors know treatment allocation"
+          "why": "In a double-blind trial neither participants nor assessors know the allocation, which prevents bias."
         },
         {
           "q": "What is tested in phase 1 of a clinical trial?",
           "opts": [
-            "Effectiveness in thousands of patients",
-            "Toxicity in cells",
+            "Effectiveness in thousands of patients who have the disease",
             "Safety and side effects in healthy volunteers at low doses",
-            "Price"
+            "Toxicity in cells and tissues in the laboratory",
+            "How much the drug will cost to manufacture"
           ],
-          "a": 2,
-          "why": "Phase 1 uses low doses in healthy volunteers."
+          "a": 1,
+          "why": "Phase 1 uses low doses in healthy volunteers to check safety."
         },
         {
           "q": "Which drug came from foxgloves?",
           "opts": [
             "Aspirin",
             "Penicillin",
-            "Paracetamol",
-            "Digitalis"
+            "Digitalis",
+            "Paracetamol"
           ],
-          "a": 3,
+          "a": 2,
           "why": "Digitalis is a heart drug from foxgloves."
         },
         {
           "q": "Which action helps reduce antibiotic resistance?",
           "opts": [
-            "Using antibiotics for colds",
-            "Completing the full course of antibiotics",
-            "Stopping when you feel better",
-            "Using antibiotics in all animal feed"
+            "Using antibiotics whenever a person has a cold or a cough",
+            "Stopping the course as soon as the person feels better",
+            "Using antibiotics in the feed of all farm animals",
+            "Completing the full course of antibiotics that were prescribed"
           ],
-          "a": 1,
-          "why": "Finishing the course kills more bacteria."
+          "a": 3,
+          "why": "Finishing the course kills all of the bacteria, so fewer resistant ones survive."
         },
         {
           "q": "Who discovered penicillin?",
           "opts": [
-            "Louis Pasteur",
-            "Alexander Fleming",
-            "Charles Darwin",
-            "Gregor Mendel"
+            "Alexander Fleming, who saw mould killing bacteria in 1928",
+            "Louis Pasteur, who saw mould killing bacteria in 1928",
+            "Charles Darwin, who saw mould killing bacteria in 1928",
+            "Gregor Mendel, who saw mould killing bacteria in 1928"
           ],
-          "a": 1,
-          "why": "Fleming observed mould killing bacteria in 1928."
+          "a": 0,
+          "why": "Fleming noticed that mould on a plate had killed the bacteria around it."
         }
       ],
       "exam": [
@@ -3496,57 +3526,57 @@
         {
           "q": "Which disease is caused by a protist?",
           "opts": [
-            "Malaria",
             "Measles",
             "HIV",
+            "Malaria",
             "Gonorrhoea"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Malaria is caused by a protist."
         },
         {
           "q": "Tobacco mosaic virus affects…",
           "opts": [
-            "plants",
             "humans",
+            "plants",
             "fish",
             "bacteria"
           ],
-          "a": 0,
+          "a": 1,
           "why": "TMV infects tobacco and tomato plants."
         },
         {
           "q": "What do antitoxins do?",
           "opts": [
+            "Neutralise toxins",
             "Kill viruses inside cells",
             "Make antigens",
-            "Clot blood",
-            "Neutralise toxins"
+            "Clot blood"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Antitoxins counteract bacterial toxins."
         },
         {
           "q": "Why is a placebo used?",
           "opts": [
+            "To make the patients ill so that the drug can be tested",
             "To compare the drug with no active treatment",
-            "To make patients ill",
-            "To test toxicity in animals",
-            "To reduce cost"
+            "To test whether the drug is toxic in animals",
+            "To reduce the cost of carrying out a clinical trial"
           ],
-          "a": 0,
-          "why": "It controls for psychological effects."
+          "a": 1,
+          "why": "A placebo controls for the psychological effects of taking a tablet."
         },
         {
           "q": "Which disease is spread by sexual contact and treated with antibiotics?",
           "opts": [
-            "Measles",
             "Gonorrhoea",
+            "Measles",
             "Rose black spot",
             "Malaria"
           ],
-          "a": 1,
-          "why": "Gonorrhoea is bacterial."
+          "a": 0,
+          "why": "Gonorrhoea is a bacterial sexually transmitted infection, so it is treated with antibiotics."
         },
         {
           "q": "Which body defence uses acid?",
@@ -3562,46 +3592,46 @@
         {
           "q": "A vaccine causes the body to make…",
           "opts": [
-            "antibiotics",
-            "antibodies and memory cells",
-            "toxins",
-            "viruses"
+            "antibiotics, which kill the pathogens in the blood",
+            "toxins, which make the pathogens inactive",
+            "viruses, which replace the ones that are already there",
+            "antibodies and memory cells"
           ],
-          "a": 1,
-          "why": "Memory cells give long-term immunity."
+          "a": 3,
+          "why": "Memory cells give long-term immunity to the pathogen."
         },
         {
           "q": "Why is it hard to develop drugs against viruses?",
           "opts": [
-            "Viruses are too big",
-            "Viruses live inside cells, so drugs may damage body tissue",
-            "Viruses have no DNA",
-            "Viruses are bacteria"
+            "Viruses live inside cells",
+            "Viruses are too big for any drug to get close to them",
+            "Viruses have no DNA or RNA that a drug could target",
+            "Viruses are bacteria, which no drug can kill"
           ],
-          "a": 1,
-          "why": "Damaging the virus may damage the host cell."
+          "a": 0,
+          "why": "A drug that damages the virus inside a cell may also damage the host cell."
         },
         {
           "q": "What does a double-blind trial prevent?",
           "opts": [
-            "Bias from patients and doctors",
-            "Side effects",
-            "Low doses",
-            "Peer review"
+            "Any side effects that the drug might have",
+            "Bias from the patients and the doctors",
+            "Low doses of the drug being used by mistake",
+            "Review by other scientists before publication"
           ],
-          "a": 0,
-          "why": "Neither group knows who gets the drug."
+          "a": 1,
+          "why": "Neither the patients nor the doctors know who has the drug, so their expectations cannot affect the results."
         },
         {
           "q": "Which statement about painkillers is correct?",
           "opts": [
-            "They kill bacteria",
-            "They kill viruses",
-            "They are vaccines",
-            "They treat symptoms but do not kill pathogens"
+            "They kill bacteria that are in the blood",
+            "They kill viruses that are in the cells",
+            "They treat symptoms but do not kill the pathogens",
+            "They are vaccines that give long-term immunity"
           ],
-          "a": 3,
-          "why": "Painkillers relieve symptoms only."
+          "a": 2,
+          "why": "Painkillers relieve symptoms only; they do not cure the disease."
         }
       ],
       "exam": [
@@ -3684,65 +3714,67 @@
         {
           "q": "Which gas enters for photosynthesis?",
           "opts": [
-            "Carbon dioxide",
-            "Oxygen only",
-            "Nitrogen gas directly"
+            "Oxygen, which diffuses in through the stomata",
+            "Nitrogen, which diffuses in through the stomata",
+            "Hydrogen, which diffuses in through the stomata",
+            "Carbon dioxide"
           ],
-          "a": 0,
-          "why": "Carbon dioxide"
+          "a": 3,
+          "why": "Carbon dioxide enters the leaf through stomata and is one of the reactants of photosynthesis."
         },
         {
           "q": "Why are nitrates needed?",
           "opts": [
-            "For amino acid and protein synthesis",
-            "To prevent all respiration",
-            "To turn leaves into roots"
+            "For the synthesis of amino acids and proteins",
+            "To prevent all respiration inside the leaf cells",
+            "To turn the cells of the leaves into root cells",
+            "To make the chlorophyll that absorbs the light"
           ],
           "a": 0,
-          "why": "For amino acid and protein synthesis"
+          "why": "Nitrate ions are used to make amino acids, which are joined to form proteins."
         },
         {
           "q": "What is the chemical formula of glucose?",
           "opts": [
-            "C₆H₁₂O₆",
             "CO₂",
+            "C₆H₁₂O₆",
             "H₂O",
             "C₁₂H₂₂O₁₁"
           ],
-          "a": 0,
-          "why": "Glucose is C₆H₁₂O₆."
+          "a": 1,
+          "why": "Glucose has the formula C₆H₁₂O₆: six carbon, twelve hydrogen and six oxygen atoms."
         },
         {
           "q": "Why is photosynthesis endothermic?",
           "opts": [
-            "Energy is transferred from the environment (light) to the reaction",
-            "It releases heat",
-            "It produces oxygen",
-            "It happens at night"
+            "It releases heat energy to the surroundings as it takes place",
+            "It produces oxygen, which then takes in energy from the air",
+            "It happens at night, when the surroundings are at their coolest",
+            "Energy is transferred from the environment (light) to the reaction"
           ],
-          "a": 0,
-          "why": "Light energy is taken in."
+          "a": 3,
+          "why": "Photosynthesis takes in light energy, so it is endothermic."
         },
         {
           "q": "Why is a leaf warmed in ethanol before testing for starch?",
           "opts": [
-            "To kill bacteria",
-            "To add starch",
-            "To remove chlorophyll so the colour change can be seen",
-            "To make glucose"
+            "To kill bacteria on the surface of the leaf before testing",
+            "To add starch to the leaf so that it can be tested",
+            "To remove chlorophyll so that the iodine colour can be seen",
+            "To make glucose from the starch that is in the cells"
           ],
           "a": 2,
-          "why": "Ethanol decolourises the leaf."
+          "why": "Ethanol removes the green colour so that a blue-black colour with iodine is clear."
         },
         {
           "q": "Which substance is made from glucose to strengthen cell walls?",
           "opts": [
-            "Starch",
             "Cellulose",
+            "Starch",
             "Protein",
             "Lipid"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Cellulose forms plant cell walls."
         }
       ],
@@ -3847,55 +3879,56 @@
         {
           "q": "What does a horizontal oxygen-rate curve indicate?",
           "opts": [
-            "No respiration",
-            "A constant rate",
-            "No photosynthesis"
+            "No respiration is taking place in the leaf",
+            "A constant rate of oxygen production at that point",
+            "No photosynthesis is taking place in the leaf",
+            "The oxygen is all being used up in the leaf"
           ],
           "a": 1,
-          "why": "A constant rate"
+          "why": "A flat line means the rate is no longer changing."
         },
         {
           "q": "Why is sodium hydrogencarbonate added to the water?",
           "opts": [
-            "To supply carbon dioxide",
             "To supply oxygen",
             "To kill bacteria",
-            "To keep temperature constant"
+            "To keep temperature constant",
+            "To supply carbon dioxide"
           ],
-          "a": 0,
+          "a": 3,
           "why": "It releases CO₂ for photosynthesis."
         },
         {
           "q": "Why is the pondweed left for a few minutes before each reading?",
           "opts": [
-            "To grow",
-            "To use up oxygen",
-            "To cool down",
-            "To adjust to the new light intensity"
+            "To grow, so that the plant can use up the carbon dioxide",
+            "To use up the oxygen that was made before the readings",
+            "To adjust to the new light intensity so that the rate is steady",
+            "To cool down, since the lamp has made the water hot"
           ],
-          "a": 3,
-          "why": "This lets the rate become steady."
+          "a": 2,
+          "why": "The plant needs time to settle at the new light intensity."
         },
         {
           "q": "What is the independent variable in this practical?",
           "opts": [
-            "Light intensity (distance from lamp)",
-            "Volume of oxygen",
-            "Temperature",
-            "Type of plant"
+            "The volume of oxygen that is collected in the syringe",
+            "The temperature of the water that the pondweed is in",
+            "The type of plant that is used in the investigation",
+            "The light intensity"
           ],
-          "a": 0,
-          "why": "Distance is changed deliberately."
+          "a": 3,
+          "why": "The distance of the lamp is the variable that is deliberately changed."
         },
         {
           "q": "Why is counting bubbles less accurate than collecting gas?",
           "opts": [
-            "Bubbles may be different sizes",
             "Bubbles contain no oxygen",
             "Counting is too slow",
+            "Bubbles may be different sizes",
             "Bubbles are invisible"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Volume is measured directly by gas collection."
         }
       ],
@@ -4019,12 +4052,13 @@
         {
           "q": "Revenue rises £600 and costs rise £750. Profit changes by…",
           "opts": [
-            "A £150 increase",
-            "A £1350 increase",
-            "A £150 decrease"
+            "A £150 decrease, because costs rose by more than revenue",
+            "A £150 increase, because revenue rose by £600",
+            "A £1350 increase, because revenue and costs are added",
+            "No change, because the revenue and cost rises cancel out"
           ],
-          "a": 2,
-          "why": "A £150 decrease"
+          "a": 0,
+          "why": "Profit = revenue − costs: 600 − 750 = −150."
         },
         {
           "q": "Light intensity at 10 cm is 100 units. What is it at 50 cm?",
@@ -4040,34 +4074,34 @@
         {
           "q": "On the steep rising part of a light-intensity curve, what limits the rate?",
           "opts": [
-            "Light intensity",
             "CO₂ concentration",
             "Temperature",
-            "Chlorophyll"
+            "Chlorophyll",
+            "Light intensity"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Increasing light still increases rate there."
         },
         {
           "q": "Why does a paraffin heater help two ways in a greenhouse?",
           "opts": [
-            "It produces light and water",
-            "It adds oxygen and nitrate",
-            "It kills pests and cools",
-            "It warms the air and releases carbon dioxide"
+            "It produces light and water vapour for the plants",
+            "It warms the air and releases carbon dioxide",
+            "It adds oxygen and nitrate to the air around the plants",
+            "It kills pests and cools the air in the greenhouse"
           ],
-          "a": 3,
-          "why": "Burning paraffin gives heat and CO₂."
+          "a": 1,
+          "why": "Burning paraffin releases heat and carbon dioxide, which both help photosynthesis."
         },
         {
           "q": "Why can very high temperatures reduce the rate of photosynthesis?",
           "opts": [
             "There is too much CO₂",
             "Light is absorbed",
-            "Stomata open",
-            "Enzymes denature"
+            "Enzymes denature",
+            "Stomata open"
           ],
-          "a": 3,
+          "a": 2,
           "why": "Photosynthesis is enzyme controlled."
         }
       ],
@@ -4167,22 +4201,24 @@
         {
           "q": "Aerobic respiration produces…",
           "opts": [
-            "Carbon dioxide and water",
-            "Glucose and oxygen",
-            "Ethanol and oxygen"
+            "Carbon dioxide and water, with a lot of energy released",
+            "Glucose and oxygen, with very little energy released",
+            "Ethanol and carbon dioxide, with a small amount of energy",
+            "Lactic acid and water, with a small amount of energy released"
           ],
           "a": 0,
-          "why": "Carbon dioxide and water"
+          "why": "Aerobic respiration: glucose + oxygen → carbon dioxide + water."
         },
         {
           "q": "Why is less energy transferred anaerobically?",
           "opts": [
-            "Glucose breakdown is incomplete",
-            "Extra oxygen is made",
-            "No living cells are involved"
+            "Extra oxygen is made, which reduces the energy transferred",
+            "Glucose is broken down incompletely, so less energy is released",
+            "No living cells are involved in the process of fermentation",
+            "The mitochondria make more carbon dioxide than they would otherwise"
           ],
-          "a": 0,
-          "why": "Glucose breakdown is incomplete"
+          "a": 1,
+          "why": "Anaerobic respiration does not break glucose down fully, so much less energy is transferred."
         },
         {
           "q": "Where does most aerobic respiration take place?",
@@ -4198,35 +4234,35 @@
         {
           "q": "What are the products of fermentation in yeast?",
           "opts": [
-            "Lactic acid",
-            "Glucose and oxygen",
-            "Water and oxygen",
+            "Lactic acid, which is made in the muscles without oxygen",
+            "Glucose and oxygen, which are made in the leaves",
+            "Water and oxygen, which are made in the mitochondria",
             "Ethanol and carbon dioxide"
           ],
           "a": 3,
-          "why": "Yeast produces ethanol and CO₂ anaerobically."
+          "why": "Yeast produces ethanol and carbon dioxide when it respires anaerobically."
         },
         {
           "q": "Which is NOT a use of energy from respiration?",
           "opts": [
-            "Muscle contraction",
-            "Keeping warm",
             "Absorbing oxygen by diffusion",
-            "Building proteins"
+            "Muscle contraction, which needs energy to be supplied",
+            "Keeping warm, which needs energy to be transferred",
+            "Building proteins from amino acids, which needs energy"
           ],
-          "a": 2,
-          "why": "Diffusion is passive."
+          "a": 0,
+          "why": "Diffusion is passive and needs no energy from respiration."
         },
         {
           "q": "Respiration is exothermic. This means it…",
           "opts": [
-            "takes in light",
-            "only happens in animals",
-            "needs oxygen",
+            "takes in light energy from the surroundings",
+            "only happens in animal cells, not in plants",
+            "needs oxygen, so it cannot happen in anaerobic conditions",
             "transfers energy to the surroundings"
           ],
           "a": 3,
-          "why": "Exothermic reactions release energy."
+          "why": "Exothermic reactions release energy to the surroundings."
         }
       ],
       "exam": [
@@ -4323,44 +4359,46 @@
         {
           "q": "Why does heart rate rise in exercise?",
           "opts": [
-            "To turn oxygen into lactic acid",
-            "To deliver oxygen and glucose faster",
-            "To stop muscle blood flow"
+            "To turn the oxygen in the blood into lactic acid faster",
+            "To stop the blood flowing to the muscles so they can rest",
+            "To deliver oxygen and glucose to the muscles more quickly",
+            "To make the blood vessels in the skin get narrower"
           ],
-          "a": 1,
-          "why": "To deliver oxygen and glucose faster"
+          "a": 2,
+          "why": "A faster heart rate supplies more oxygen and glucose and removes carbon dioxide faster."
         },
         {
           "q": "Metabolism means…",
           "opts": [
-            "Only stomach digestion",
-            "All reactions in a cell or organism",
-            "Only breathing"
+            "All of the chemical reactions that take place in a cell or organism",
+            "Only the digestion of food in the stomach and the small intestine",
+            "Only the movement of air into and out of the lungs",
+            "The speed at which an organism moves around its habitat"
           ],
-          "a": 1,
-          "why": "All reactions in a cell or organism"
+          "a": 0,
+          "why": "Metabolism is the sum of all reactions in a cell or the body."
         },
         {
           "q": "Resting breathing rate 14/min rises to 21/min. Percentage increase?",
           "opts": [
-            "50%",
             "7%",
+            "50%",
             "33%",
             "150%"
           ],
-          "a": 0,
+          "a": 1,
           "why": "7 ÷ 14 × 100 = 50%."
         },
         {
           "q": "Why does breath volume increase during exercise?",
           "opts": [
-            "Less oxygen is needed",
-            "To cool the lungs",
-            "To slow the heart",
-            "More oxygen enters and more CO₂ is removed"
+            "More oxygen enters the blood and more CO₂ is removed",
+            "Less oxygen is needed by the muscles that are working",
+            "The lungs have to be cooled by the extra air flow",
+            "The heart rate has to be slowed by the deeper breaths"
           ],
-          "a": 3,
-          "why": "Deeper breaths increase gas exchange."
+          "a": 0,
+          "why": "Deeper breaths increase gas exchange to meet the greater demand for respiration."
         },
         {
           "q": "What forms when excess amino acids are broken down?",
@@ -4376,12 +4414,12 @@
         {
           "q": "A fitter person usually…",
           "opts": [
-            "returns to resting heart rate faster",
             "has a higher resting heart rate",
             "produces more lactic acid",
+            "returns to resting heart rate faster",
             "cannot exercise anaerobically"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Recovery time indicates fitness."
         }
       ],
@@ -4488,56 +4526,57 @@
         {
           "q": "Where is lactic acid converted back to glucose?",
           "opts": [
-            "Alveoli",
-            "Bladder",
-            "Liver"
+            "The alveoli, which exchange gases with the blood",
+            "The liver, which converts lactic acid back to glucose",
+            "The bladder, which stores waste before it is removed",
+            "The kidneys, which remove urea from the blood"
           ],
-          "a": 2,
-          "why": "Liver"
+          "a": 1,
+          "why": "The liver converts lactic acid back to glucose or breaks it down using oxygen."
         },
         {
           "q": "What is converted to glucose in the liver after exercise?",
           "opts": [
-            "Urea",
             "Lactic acid",
+            "Urea",
             "Ethanol",
             "Glycogen"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Liver converts lactic acid back to glucose."
         },
         {
           "q": "Why does breathing remain fast after exercise?",
           "opts": [
-            "Because of low CO₂",
-            "To make lactic acid",
-            "To cool the body",
-            "To supply oxygen to repay the oxygen debt"
+            "Because the level of CO₂ in the blood is low",
+            "To supply the extra oxygen needed to repay the oxygen debt",
+            "To make lactic acid from the glucose in the muscles",
+            "To cool the body down after the exercise has finished"
           ],
-          "a": 3,
-          "why": "Extra oxygen removes lactic acid."
+          "a": 1,
+          "why": "Extra oxygen is needed to break down the lactic acid made during exercise."
         },
         {
           "q": "Extra uptake is 1.5 L/min for 4 minutes. Oxygen debt is…",
           "opts": [
             "5.5 L",
-            "6 L",
             "2.7 L",
-            "0.375 L"
+            "0.375 L",
+            "6 L"
           ],
-          "a": 1,
+          "a": 3,
           "why": "1.5 × 4 = 6 L."
         },
         {
           "q": "What causes muscle fatigue during intense exercise?",
           "opts": [
             "Too much oxygen",
-            "Build-up of lactic acid",
             "Too much glucose",
+            "Build-up of lactic acid",
             "Excess water"
           ],
-          "a": 1,
-          "why": "Lactic acid accumulates."
+          "a": 2,
+          "why": "Lactic acid builds up in the muscles during anaerobic respiration and causes fatigue."
         }
       ],
       "exam": [
@@ -4630,56 +4669,56 @@
         {
           "q": "What are the reactants of photosynthesis?",
           "opts": [
-            "Glucose and oxygen",
             "Carbon dioxide and water",
+            "Glucose and oxygen",
             "Oxygen and water",
             "Glucose and carbon dioxide"
           ],
-          "a": 1,
+          "a": 0,
           "why": "CO₂ + H₂O → glucose + O₂."
         },
         {
           "q": "Which substance stores glucose in plants?",
           "opts": [
             "Glycogen",
-            "Starch",
             "Cellulose",
-            "Protein"
+            "Protein",
+            "Starch"
           ],
-          "a": 1,
+          "a": 3,
           "why": "Starch is insoluble storage."
         },
         {
           "q": "Fermentation in yeast produces…",
           "opts": [
-            "lactic acid",
+            "lactic acid, which causes cramp in the muscles",
             "ethanol and carbon dioxide",
-            "oxygen and water",
-            "glucose"
+            "oxygen and water, which are released into the air",
+            "glucose, which is then used for respiration in the cell"
           ],
           "a": 1,
-          "why": "Used in brewing and baking."
+          "why": "Yeast fermentation produces ethanol and carbon dioxide."
         },
         {
           "q": "Why does heart rate increase during exercise?",
           "opts": [
-            "To reduce CO₂ in muscles only",
-            "To slow respiration",
-            "To cool the body",
-            "To supply more oxygen and glucose to muscles"
+            "To reduce the CO₂ that builds up in the muscles only",
+            "To slow down respiration so that less lactic acid is made",
+            "To supply more oxygen and glucose to the muscles",
+            "To cool the body, since the blood flows through the skin"
           ],
-          "a": 3,
-          "why": "Muscles respire faster."
+          "a": 2,
+          "why": "The muscles respire faster, so they need more oxygen and glucose."
         },
         {
           "q": "Which is a limiting factor of photosynthesis?",
           "opts": [
-            "Oxygen",
             "Temperature",
+            "Oxygen",
             "Nitrogen",
             "Glycogen"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Temperature, light and CO₂ are limiting factors."
         },
         {
@@ -4697,33 +4736,33 @@
           "q": "Respiration is described as exothermic because…",
           "opts": [
             "it transfers energy to the surroundings",
-            "it takes in light",
-            "it needs oxygen",
-            "it makes glucose"
+            "it takes in light energy from the surroundings",
+            "it needs oxygen, which cools the cells down",
+            "it makes glucose from carbon dioxide and water"
           ],
           "a": 0,
-          "why": "Energy is released."
+          "why": "Exothermic reactions transfer energy to the surroundings."
         },
         {
           "q": "In the pondweed practical, the volume of gas measures…",
           "opts": [
             "carbon dioxide used",
             "water lost",
-            "glucose made",
-            "oxygen produced"
+            "oxygen produced",
+            "glucose made"
           ],
-          "a": 3,
-          "why": "Oxygen is a product."
+          "a": 2,
+          "why": "Oxygen is a product of photosynthesis, so the volume of gas collected measures its rate."
         },
         {
           "q": "Which molecule is made from glucose and nitrate ions?",
           "opts": [
             "Starch",
-            "Protein",
             "Cellulose",
-            "Lipid"
+            "Lipid",
+            "Protein"
           ],
-          "a": 1,
+          "a": 3,
           "why": "Nitrogen is needed for amino acids."
         },
         {
@@ -4818,65 +4857,67 @@
         {
           "q": "Which neurone carries information towards the CNS?",
           "opts": [
-            "Sensory",
-            "Motor",
-            "A red blood cell"
+            "The sensory neurone",
+            "The motor neurone, which carries impulses towards the CNS",
+            "A relay neurone, which carries impulses to the muscles",
+            "A red blood cell, which carries impulses in the blood"
           ],
           "a": 0,
-          "why": "Sensory"
+          "why": "Sensory neurones carry impulses from receptors to the central nervous system."
         },
         {
           "q": "An effector is…",
           "opts": [
-            "A muscle or gland producing a response",
-            "Only a receptor",
-            "The stimulus itself"
+            "Only a receptor that detects the stimulus and sends an impulse",
+            "The stimulus itself, such as light or heat from the surroundings",
+            "A relay neurone in the spinal cord that passes on the impulse",
+            "A muscle or a gland that produces a response to a stimulus"
           ],
-          "a": 0,
-          "why": "A muscle or gland producing a response"
+          "a": 3,
+          "why": "Effectors, such as muscles and glands, carry out the response."
         },
         {
           "q": "How does an impulse cross a synapse?",
           "opts": [
-            "Electricity jumps across",
-            "Blood carries it",
-            "A chemical diffuses across the gap",
-            "Sound waves"
+            "Electricity jumps across the gap between the neurones",
+            "Blood carries the impulse across the gap",
+            "A chemical diffuses across the gap between the neurones",
+            "Sound waves carry the signal across the gap"
           ],
           "a": 2,
-          "why": "Neurotransmitters diffuse across the synapse."
+          "why": "Neurotransmitters diffuse across the synapse and bind to receptors on the next neurone."
         },
         {
           "q": "Which is an effector?",
           "opts": [
             "The retina",
-            "A sensory neurone",
             "A muscle",
+            "A sensory neurone",
             "The spinal cord"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Effectors are muscles or glands."
         },
         {
           "q": "Why are reflexes important?",
           "opts": [
+            "They are fast and protect the body",
             "They need conscious thought",
             "They are learned",
-            "They are fast and protect the body",
             "They use hormones"
           ],
-          "a": 2,
+          "a": 0,
           "why": "Reflexes respond rapidly to danger."
         },
         {
           "q": "Where are relay neurones found?",
           "opts": [
-            "In the CNS (spinal cord)",
             "In muscles",
             "In skin receptors",
-            "In the blood"
+            "In the blood",
+            "In the CNS (spinal cord)"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Relay neurones link sensory and motor neurones in the CNS."
         }
       ],
@@ -4981,55 +5022,56 @@
         {
           "q": "Which reduces order bias?",
           "opts": [
-            "Deleting slow trials",
-            "Randomising condition order",
-            "Always testing distraction last"
+            "Deleting any slow trials so that the data are neater",
+            "Randomising the order of the conditions between participants",
+            "Always testing the distraction condition last for everyone",
+            "Using only one participant for every one of the trials"
           ],
           "a": 1,
-          "why": "Randomising condition order"
+          "why": "Changing the order randomly stops practice or tiredness from affecting one condition."
         },
         {
           "q": "What is the dependent variable in a ruler-drop test?",
           "opts": [
-            "The person dropping it",
-            "The type of ruler",
-            "Distance the ruler falls before being caught",
-            "Time of day"
+            "The person who is dropping the ruler each time",
+            "The type of ruler that is used for the test",
+            "The distance that the ruler falls before it is caught",
+            "The time of day at which the test is carried out"
           ],
           "a": 2,
-          "why": "Catch distance is measured."
+          "why": "The distance the ruler falls is the measurement taken, so it is the dependent variable."
         },
         {
           "q": "Why should the dropper give no warning?",
           "opts": [
-            "To make it harder",
-            "To save time",
-            "To measure distance",
-            "So the catcher reacts to sight, not anticipation"
+            "So that the catcher reacts to the sight of the ruler, not to a warning",
+            "To make the test harder for the people who take part",
+            "To save time because there is no need to give a signal",
+            "To measure the distance that the ruler falls in the test"
           ],
-          "a": 3,
-          "why": "Warnings allow prediction."
+          "a": 0,
+          "why": "A warning would allow the catcher to predict the drop and so reduce the reaction time."
         },
         {
           "q": "Why should several practice trials be allowed?",
           "opts": [
-            "To tire participants",
+            "To make the participants tired before the real test",
             "To reduce the effect of learning during the test",
-            "To increase reaction time",
-            "To change the variable"
+            "To increase the reaction time that is measured",
+            "To change the independent variable for each person"
           ],
           "a": 1,
-          "why": "Practice effects can bias results."
+          "why": "Practice trials let participants learn the task first, so improvement does not bias the results."
         },
         {
           "q": "Catch distances of 15, 17, 16 and 32 cm. Which is anomalous?",
           "opts": [
-            "32 cm",
             "15 cm",
             "16 cm",
-            "17 cm"
+            "17 cm",
+            "32 cm"
           ],
-          "a": 0,
+          "a": 3,
           "why": "32 cm is far from the others."
         }
       ],
@@ -5147,65 +5189,67 @@
         {
           "q": "Which gland secretes insulin?",
           "opts": [
-            "Gall bladder",
-            "Pancreas",
-            "Thyroid"
+            "The gall bladder, which stores bile from the liver",
+            "The thyroid, which controls the metabolic rate",
+            "The pituitary, which controls the other glands",
+            "The pancreas, which also makes digestive enzymes"
           ],
-          "a": 1,
-          "why": "Pancreas"
+          "a": 3,
+          "why": "The pancreas secretes insulin when blood glucose is high."
         },
         {
           "q": "Glycogen is…",
           "opts": [
-            "An enzyme",
-            "A storage carbohydrate",
-            "A hormone"
+            "An enzyme that breaks down starch in the mouth and small intestine",
+            "A hormone that is made in the pancreas and that raises blood glucose",
+            "A storage carbohydrate made from glucose in the liver and muscles",
+            "A protein that carries oxygen in the red blood cells of the blood"
           ],
-          "a": 1,
-          "why": "A storage carbohydrate"
+          "a": 2,
+          "why": "Glycogen is the carbohydrate that stores glucose; glucagon is the hormone."
         },
         {
           "q": "Which gland is known as the master gland?",
           "opts": [
             "Thyroid",
-            "Adrenal",
             "Pituitary",
+            "Adrenal",
             "Pancreas"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Pituitary hormones control other glands."
         },
         {
           "q": "Type 2 diabetes is mainly treated by…",
           "opts": [
+            "diet and exercise",
             "insulin injections only",
             "antibiotics",
-            "surgery",
-            "diet and exercise"
+            "surgery"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Lifestyle change is first-line treatment."
         },
         {
           "q": "What is a risk factor for type 2 diabetes?",
           "opts": [
-            "Obesity",
             "Low insulin from birth",
             "Viral infection",
-            "Too much exercise"
+            "Too much exercise",
+            "Obesity"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Obesity is strongly linked."
         },
         {
           "q": "How do hormones travel to target organs?",
           "opts": [
             "Along neurones",
-            "Through the air",
             "In the blood",
+            "Through the air",
             "In lymph only"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Endocrine glands secrete into the blood."
         }
       ],
@@ -5303,65 +5347,67 @@
         {
           "q": "Which raises low blood glucose?",
           "opts": [
-            "Insulin",
-            "Amylase",
-            "Glucagon"
+            "Glucagon, which makes the liver release glucose",
+            "Insulin, which makes the liver store glucose",
+            "Amylase, which breaks starch down into sugars",
+            "Adrenaline, which stops the pancreas making insulin"
           ],
-          "a": 2,
-          "why": "Glucagon"
+          "a": 0,
+          "why": "Glucagon causes the liver to convert glycogen to glucose, raising blood glucose."
         },
         {
           "q": "Negative feedback…",
           "opts": [
-            "Always lowers everything",
-            "Requires conscious control",
-            "Opposes the original change"
+            "Always lowers every variable in the body towards zero",
+            "Requires conscious control by the brain at each stage",
+            "Opposes the original change and so keeps conditions steady",
+            "Increases the change until a limit is reached in the body"
           ],
           "a": 2,
-          "why": "Opposes the original change"
+          "why": "Negative feedback reverses the change and returns the variable towards the normal level."
         },
         {
           "q": "Glucagon causes the liver to…",
           "opts": [
             "store glucose as glycogen",
             "make insulin",
-            "convert glycogen to glucose",
-            "make urea"
+            "make urea",
+            "convert glycogen to glucose"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Glucagon raises blood glucose."
         },
         {
           "q": "Which hormone increases heart rate in a fight-or-flight response?",
           "opts": [
+            "Adrenaline",
             "Thyroxine",
             "Insulin",
-            "FSH",
-            "Adrenaline"
+            "FSH"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Adrenaline prepares the body for action."
         },
         {
           "q": "Which hormone stimulates the thyroid gland?",
           "opts": [
             "ADH",
-            "TSH",
             "LH",
-            "Oestrogen"
+            "Oestrogen",
+            "TSH"
           ],
-          "a": 1,
+          "a": 3,
           "why": "Thyroid-stimulating hormone from the pituitary."
         },
         {
           "q": "Thyroxine mainly controls…",
           "opts": [
             "blood glucose",
-            "water balance",
             "basal metabolic rate",
+            "water balance",
             "ovulation"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Thyroxine regulates metabolic rate."
         }
       ],
@@ -5461,65 +5507,67 @@
         {
           "q": "Which triggers ovulation?",
           "opts": [
-            "Insulin",
-            "Thyroxine",
-            "LH"
+            "Insulin, which is made by the pancreas",
+            "Thyroxine, which is made by the thyroid gland",
+            "Progesterone, which is made by the ovary",
+            "LH, which is made by the pituitary gland"
           ],
-          "a": 2,
-          "why": "LH"
+          "a": 3,
+          "why": "A surge in LH causes the release of an egg (ovulation)."
         },
         {
           "q": "Which can also reduce STI transmission?",
           "opts": [
-            "Hormone implant alone",
-            "Sterilisation alone",
-            "Condom"
+            "A hormone implant alone, which stops ovulation",
+            "A condom, which acts as a barrier between the partners",
+            "Sterilisation alone, which prevents the gametes meeting",
+            "A contraceptive pill alone, which stops ovulation"
           ],
-          "a": 2,
-          "why": "Condom"
+          "a": 1,
+          "why": "Barrier methods such as condoms also reduce the chance of passing on sexually transmitted infections."
         },
         {
           "q": "Which hormone causes the uterus lining to grow?",
           "opts": [
+            "Oestrogen",
             "LH",
             "FSH",
-            "Testosterone",
-            "Oestrogen"
+            "Testosterone"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Oestrogen rebuilds the lining."
         },
         {
           "q": "Where is FSH made?",
           "opts": [
-            "Ovaries",
-            "Pituitary gland",
-            "Uterus",
-            "Testes"
+            "The ovaries, which also make oestrogen and progesterone",
+            "The uterus, which makes the lining that is lost in a period",
+            "The pituitary gland, which is at the base of the brain",
+            "The testes, which also make testosterone in males"
           ],
-          "a": 1,
-          "why": "FSH comes from the pituitary."
+          "a": 2,
+          "why": "FSH is made by the pituitary gland."
         },
         {
           "q": "How does the combined pill prevent pregnancy?",
           "opts": [
-            "It kills sperm",
-            "It blocks the cervix",
-            "Oestrogen inhibits FSH so eggs do not mature",
-            "It removes the uterus lining"
+            "It kills the sperm before they reach the egg cell",
+            "It blocks the cervix so that the sperm cannot pass",
+            "It removes the lining of the uterus each month",
+            "Oestrogen inhibits FSH, so eggs do not mature"
           ],
-          "a": 2,
-          "why": "Inhibiting FSH stops egg maturation."
+          "a": 3,
+          "why": "The combined pill keeps FSH low, so no eggs mature."
         },
         {
           "q": "Which method is permanent?",
           "opts": [
             "Implant",
+            "Sterilisation",
             "Condom",
-            "Spermicide",
-            "Sterilisation"
+            "Spermicide"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Sterilisation cuts or ties tubes."
         }
       ],
@@ -5619,44 +5667,46 @@
         {
           "q": "What stimulates the LH surge in the model?",
           "opts": [
-            "Increased oestrogen",
-            "Increased insulin",
-            "Permanent absence of FSH"
+            "Increased insulin, which is released by the pancreas",
+            "The permanent absence of FSH from the blood",
+            "A fall in progesterone from the uterus lining",
+            "Increased oestrogen, which is released by the ovary"
           ],
-          "a": 0,
-          "why": "Increased oestrogen"
+          "a": 3,
+          "why": "Rising oestrogen levels stimulate the pituitary to release a surge of LH."
         },
         {
           "q": "Where does fertilisation happen in IVF?",
           "opts": [
-            "Laboratory",
-            "Bladder",
-            "Pituitary"
+            "In the laboratory, where eggs and sperm are mixed in a dish",
+            "In the bladder, where the egg is stored before release",
+            "In the pituitary gland, where hormones are made",
+            "In the uterus, after the eggs have been implanted"
           ],
           "a": 0,
-          "why": "Laboratory"
+          "why": "In IVF the eggs are fertilised outside the body, in the laboratory."
         },
         {
           "q": "Which hormone maintains the uterus lining after ovulation?",
           "opts": [
-            "Progesterone",
             "FSH",
             "LH",
+            "Progesterone",
             "Testosterone"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Progesterone keeps the lining."
         },
         {
           "q": "In IVF, why are women given FSH and LH?",
           "opts": [
-            "To stimulate several eggs to mature",
-            "To stop ovulation",
-            "To thicken sperm",
-            "To prevent implantation"
+            "To stop ovulation so that the cycle can be controlled",
+            "To thicken the sperm so that they can reach the egg",
+            "To prevent implantation of the embryo in the uterus",
+            "To stimulate several eggs to mature at the same time"
           ],
-          "a": 0,
-          "why": "More eggs can be collected."
+          "a": 3,
+          "why": "FSH and LH make several eggs mature so more can be collected."
         },
         {
           "q": "Which is a risk of IVF?",
@@ -5673,12 +5723,12 @@
           "q": "What inhibits FSH after an egg matures?",
           "opts": [
             "LH",
+            "Oestrogen",
             "Insulin",
-            "Glucagon",
-            "Oestrogen"
+            "Glucagon"
           ],
-          "a": 3,
-          "why": "Oestrogen inhibits FSH."
+          "a": 1,
+          "why": "Oestrogen from the maturing follicle inhibits FSH, which stops more eggs maturing."
         }
       ],
       "exam": [
@@ -5774,33 +5824,33 @@
           "q": "Which neurone carries impulses to an effector?",
           "opts": [
             "Sensory neurone",
-            "Relay neurone",
             "Motor neurone",
+            "Relay neurone",
             "Receptor"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Motor neurones connect to muscles or glands."
         },
         {
           "q": "What does the pancreas release when blood glucose is high?",
           "opts": [
+            "Insulin",
             "Glucagon",
             "Adrenaline",
-            "Thyroxine",
-            "Insulin"
+            "Thyroxine"
           ],
-          "a": 3,
-          "why": "Insulin lowers glucose."
+          "a": 0,
+          "why": "When blood glucose is high the pancreas releases insulin, which lowers glucose."
         },
         {
           "q": "What is the role of a receptor?",
           "opts": [
-            "Detect a stimulus",
             "Contract a muscle",
             "Release a hormone",
-            "Store glucose"
+            "Store glucose",
+            "Detect a stimulus"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Receptors detect changes."
         },
         {
@@ -5817,13 +5867,13 @@
         {
           "q": "Type 1 diabetes is caused by…",
           "opts": [
+            "cells no longer responding to the insulin that is made",
+            "the pancreas producing too much glucagon",
             "the pancreas producing too little insulin",
-            "cells not responding to insulin",
-            "too much glucagon",
-            "eating sugar"
+            "eating too much sugar over many years"
           ],
-          "a": 0,
-          "why": "Type 1 involves little insulin."
+          "a": 2,
+          "why": "In Type 1 diabetes the pancreas makes little or no insulin."
         },
         {
           "q": "Which is a barrier method of contraception?",
@@ -5839,12 +5889,12 @@
         {
           "q": "Which gland releases adrenaline?",
           "opts": [
-            "Adrenal gland",
             "Pituitary",
             "Thyroid",
+            "Adrenal gland",
             "Ovary"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Adrenal glands are above the kidneys."
         },
         {
@@ -5852,33 +5902,33 @@
           "opts": [
             "neurones",
             "the lymph only",
-            "the blood",
-            "air"
+            "air",
+            "the blood"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Endocrine glands secrete into blood."
         },
         {
           "q": "Which hormone causes ovulation?",
           "opts": [
             "FSH",
-            "Progesterone",
             "LH",
+            "Progesterone",
             "Insulin"
           ],
-          "a": 2,
+          "a": 1,
           "why": "An LH surge releases the egg."
         },
         {
           "q": "A reflex is faster than a voluntary action because…",
           "opts": [
-            "it does not involve the conscious brain",
-            "it uses hormones",
-            "it is learned",
-            "it uses more neurones"
+            "it does not involve the conscious part of the brain",
+            "it uses hormones, which travel quickly in the blood",
+            "it is learned by practice, so it becomes faster over time",
+            "it uses more neurones than a voluntary action does"
           ],
           "a": 0,
-          "why": "The pathway is shorter."
+          "why": "A reflex arc is shorter and bypasses the conscious brain."
         }
       ],
       "exam": [
@@ -5967,33 +6017,34 @@
         {
           "q": "What restores the full chromosome number?",
           "opts": [
-            "Fertilisation",
-            "Meiosis alone",
-            "Diffusion"
+            "Meiosis alone, which halves the chromosome number",
+            "Diffusion of the genetic material between the gametes",
+            "Mitosis of the zygote after it has been formed",
+            "Fertilisation, when the gametes fuse together"
           ],
-          "a": 0,
-          "why": "Fertilisation"
+          "a": 3,
+          "why": "Gametes have half the chromosome number; fertilisation restores the full number."
         },
         {
           "q": "How many cells are produced from one cell by meiosis?",
           "opts": [
-            "Four",
             "Two",
             "Eight",
+            "Four",
             "One"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Meiosis involves two divisions."
         },
         {
           "q": "Where does meiosis take place in humans?",
           "opts": [
-            "Skin",
             "Testes and ovaries",
+            "Skin",
             "Liver",
             "Bone marrow"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Gametes are made in the reproductive organs."
         },
         {
@@ -6016,7 +6067,7 @@
             "budding"
           ],
           "a": 0,
-          "why": "Growth uses mitosis."
+          "why": "After fertilisation the zygote divides by mitosis, and growth continues by mitosis."
         }
       ],
       "exam": [
@@ -6113,22 +6164,24 @@
         {
           "q": "A genome is…",
           "opts": [
-            "One protein",
-            "One chromosome only",
-            "All genetic material of an organism"
+            "All of the genetic material of an organism",
+            "One protein that is made from a single gene in a cell",
+            "One chromosome only, from either the mother or the father",
+            "The sequence of the bases in one gene of a species"
           ],
-          "a": 2,
-          "why": "All genetic material of an organism"
+          "a": 0,
+          "why": "A genome is the entire genetic material of an organism."
         },
         {
           "q": "A gene codes for…",
           "opts": [
-            "A mineral ion",
-            "A whole organ directly",
+            "A mineral ion that the plant takes in through its root hairs",
+            "A whole organ, which is built directly from the single gene",
+            "The number of chromosomes that are found in a body cell",
             "An amino acid sequence in a protein"
           ],
-          "a": 2,
-          "why": "An amino acid sequence in a protein"
+          "a": 3,
+          "why": "A gene is a section of DNA that codes for a sequence of amino acids, which makes a protein."
         },
         {
           "q": "What shape is a DNA molecule?",
@@ -6144,13 +6197,13 @@
         {
           "q": "DNA is described as a polymer because it…",
           "opts": [
-            "contains protein",
-            "is made of many repeating units",
-            "is in the nucleus",
-            "is a carbohydrate"
+            "contains protein as well as the sugar and the bases",
+            "is made of many repeating units called nucleotides",
+            "is found in the nucleus of the cells of eukaryotes",
+            "is a carbohydrate made from sugar molecules only"
           ],
           "a": 1,
-          "why": "DNA is made of many nucleotides."
+          "why": "A polymer is made of many repeating units, in this case nucleotides."
         },
         {
           "q": "Which is a use of genome knowledge?",
@@ -6166,13 +6219,13 @@
         {
           "q": "Which is a concern about genetic testing?",
           "opts": [
-            "It makes people taller",
-            "It always cures disease",
-            "Insurance discrimination based on results",
-            "It changes genes"
+            "It makes people taller than they would have been",
+            "It always cures the disease that has been found in the person",
+            "It changes the genes of the person who is tested",
+            "Insurance companies might discriminate based on the results"
           ],
-          "a": 2,
-          "why": "Personal genetic data raise ethical issues."
+          "a": 3,
+          "why": "Personal genetic information raises ethical issues about privacy and discrimination."
         }
       ],
       "exam": [
@@ -6273,44 +6326,46 @@
         {
           "q": "Heterozygous means…",
           "opts": [
-            "Two identical alleles",
-            "No chromosomes",
-            "Two different alleles"
+            "Two identical alleles for the same gene",
+            "No chromosomes at all in the cells of the body",
+            "Only one allele for each gene in the body cells",
+            "Two different alleles for the same gene"
           ],
-          "a": 2,
-          "why": "Two different alleles"
+          "a": 3,
+          "why": "A heterozygous individual has two different alleles for a gene, such as Aa."
         },
         {
           "q": "Why can a recessive carrier be unaffected?",
           "opts": [
-            "The recessive allele disappears",
-            "The person has no DNA",
-            "A dominant allele masks the recessive effect"
+            "The recessive allele disappears when the person is an adult",
+            "The person has no DNA in their body cells at all",
+            "A dominant allele masks the effect of the recessive allele",
+            "The recessive allele is only found on the sex chromosomes"
           ],
           "a": 2,
-          "why": "A dominant allele masks the recessive effect"
+          "why": "A carrier has one dominant allele, which masks the effect of the recessive one."
         },
         {
           "q": "A person with genotype Dd has polydactyly. The allele is…",
           "opts": [
             "recessive",
             "sex-linked",
-            "dominant",
-            "a mutation in mitochondria"
+            "a mutation in mitochondria",
+            "dominant"
           ],
-          "a": 2,
+          "a": 3,
           "why": "One copy is enough to show a dominant trait."
         },
         {
           "q": "What are the sex chromosomes of a human male?",
           "opts": [
-            "XY",
             "XX",
+            "XY",
             "YY",
             "X only"
           ],
-          "a": 0,
-          "why": "Males are XY."
+          "a": 1,
+          "why": "A human male has one X and one Y chromosome, so his sex chromosomes are XY."
         },
         {
           "q": "Phenotype means…",
@@ -6326,13 +6381,13 @@
         {
           "q": "Why can two healthy parents have a child with cystic fibrosis?",
           "opts": [
-            "Both are carriers of the recessive allele",
-            "The allele is dominant",
-            "It is caused by a virus",
-            "Only one parent passes it on"
+            "Both parents are carriers of the recessive allele",
+            "The allele is dominant, so one parent must have the disease",
+            "It is caused by a virus that the child caught",
+            "Only one parent passes on the allele to the child"
           ],
           "a": 0,
-          "why": "Each passes a recessive allele."
+          "why": "Each carrier parent passes on a recessive allele to the child."
         }
       ],
       "exam": [
@@ -6456,23 +6511,23 @@
         {
           "q": "AA × aa: what genotype are all offspring?",
           "opts": [
-            "Aa",
             "AA",
+            "Aa",
             "aa",
             "A"
           ],
-          "a": 0,
+          "a": 1,
           "why": "Every offspring receives one A and one a."
         },
         {
           "q": "Aa × Aa produces 120 offspring. About how many show the dominant phenotype?",
           "opts": [
-            "30",
             "90",
+            "30",
             "60",
             "120"
           ],
-          "a": 1,
+          "a": 0,
           "why": "3/4 × 120 = 90."
         },
         {
@@ -6480,10 +6535,10 @@
           "opts": [
             "AA",
             "aa",
-            "cannot be known",
-            "Aa"
+            "Aa",
+            "cannot be known"
           ],
-          "a": 3,
+          "a": 2,
           "why": "It must carry a recessive allele."
         }
       ],
@@ -6582,66 +6637,68 @@
         {
           "q": "New genetic variants originate through…",
           "opts": [
-            "A need automatically changing genes",
-            "Mutation",
-            "An organism deciding to change"
+            "A need that automatically changes the genes",
+            "Mutation, which produces new alleles",
+            "An organism deciding to change its own characteristics",
+            "Natural selection, which makes the alleles appear in the offspring"
           ],
           "a": 1,
-          "why": "Mutation"
+          "why": "New alleles appear through mutation; selection then acts on them."
         },
         {
           "q": "A risk of inbreeding is…",
           "opts": [
-            "No shared alleles",
-            "More inherited defects and reduced diversity",
-            "Guaranteed immunity"
+            "No shared alleles between the parents, so every offspring is different",
+            "Guaranteed immunity to all diseases because the parents are healthy",
+            "More inherited defects and reduced genetic diversity in the offspring",
+            "A faster rate of growth, because every gene in the offspring is dominant"
           ],
-          "a": 1,
-          "why": "More inherited defects and reduced diversity"
+          "a": 2,
+          "why": "Closely related parents are more likely to pass on the same harmful recessive alleles and the gene pool shrinks."
         },
         {
           "q": "What is the original source of new variation?",
           "opts": [
-            "Selective breeding",
             "Mutation",
+            "Selective breeding",
             "Environment",
             "Inbreeding"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Mutations create new alleles."
         },
         {
           "q": "Which is an example of environmental variation?",
           "opts": [
             "Blood group",
-            "A scar",
             "Eye colour",
-            "Natural hair colour"
+            "Natural hair colour",
+            "A scar"
           ],
-          "a": 1,
+          "a": 3,
           "why": "Scars are caused by the environment."
         },
         {
           "q": "In selective breeding, who chooses which organisms reproduce?",
           "opts": [
-            "Humans",
             "The environment",
             "Predators",
+            "Humans",
             "Pathogens"
           ],
-          "a": 0,
-          "why": "Humans select parents."
+          "a": 2,
+          "why": "In selective breeding, humans choose which organisms reproduce, not nature."
         },
         {
           "q": "A new species has formed when populations…",
           "opts": [
-            "look different",
+            "look different from each other, such as in size and colour",
             "can no longer interbreed to produce fertile offspring",
-            "live in different places",
-            "eat different food"
+            "live in different places, although they could still interbreed",
+            "eat different food, although they could still interbreed"
           ],
           "a": 1,
-          "why": "Reproductive isolation defines a species."
+          "why": "A new species has formed when two populations are reproductively isolated."
         }
       ],
       "exam": [
@@ -6738,33 +6795,35 @@
         {
           "q": "Which is genetic engineering?",
           "opts": [
-            "Choosing high-yield parents only",
-            "Water entering roots",
-            "Giving bacteria a human insulin gene"
+            "Choosing only the highest-yielding parents to breed together",
+            "Water entering the root hairs of a plant by osmosis",
+            "Crossing two varieties of wheat and picking the best seeds",
+            "Giving bacteria a human insulin gene so they make insulin"
           ],
-          "a": 2,
-          "why": "Giving bacteria a human insulin gene"
+          "a": 3,
+          "why": "Genetic engineering moves a gene from one organism to another."
         },
         {
           "q": "Why can pest resistance raise yield?",
           "opts": [
-            "Plants never need water",
-            "Respiration stops",
-            "Less tissue is lost to pests"
+            "Less of the plant tissue is lost to pests",
+            "Plants never need any water if they are resistant to pests",
+            "The plants stop respiring so that they use less glucose",
+            "The plants grow taller and so receive more light than weeds"
           ],
-          "a": 2,
-          "why": "Less tissue is lost to pests"
+          "a": 0,
+          "why": "A pest-resistant crop loses less tissue, so the yield is higher."
         },
         {
           "q": "What is genetic engineering?",
           "opts": [
-            "Choosing parents with good traits",
-            "Cloning a plant",
+            "Choosing parents with good characteristics to breed together",
             "Modifying an organism's genome by adding a gene from another organism",
-            "Crossing two species"
+            "Cloning a plant by taking a cutting from the parent",
+            "Crossing two different species to produce a hybrid"
           ],
-          "a": 2,
-          "why": "A gene is transferred."
+          "a": 1,
+          "why": "A gene is transferred from one organism to another."
         },
         {
           "q": "Golden rice was modified to contain…",
@@ -6780,23 +6839,23 @@
         {
           "q": "What is gene therapy?",
           "opts": [
-            "Adding working alleles to treat inherited disorders",
-            "Using drugs to kill bacteria",
-            "Selective breeding",
-            "Using antibiotics"
+            "Using drugs to kill the bacteria that cause a disease",
+            "Selective breeding of a crop for a desired feature",
+            "Adding working alleles to treat an inherited disorder",
+            "Using antibiotics to treat a bacterial infection"
           ],
-          "a": 0,
-          "why": "It targets genetic disorders."
+          "a": 2,
+          "why": "Gene therapy targets genetic disorders by adding working alleles."
         },
         {
           "q": "Which is a concern about GM crops?",
           "opts": [
             "They grow too slowly",
             "They cannot be eaten",
-            "Genes may spread to wild plants",
-            "They always reduce yields"
+            "They always reduce yields",
+            "Genes may spread to wild plants"
           ],
-          "a": 2,
+          "a": 3,
           "why": "Gene flow is a possible risk."
         }
       ],
@@ -6896,65 +6955,67 @@
         {
           "q": "A vector…",
           "opts": [
-            "Carries a gene into a recipient cell",
-            "Provides all energy",
-            "Destroys every gene"
+            "Carries a gene into a recipient cell so it can be expressed",
+            "Provides all of the energy that the new cell needs to grow",
+            "Destroys every other gene in the cell once it has entered",
+            "Cuts the DNA at a specific base sequence at its recognition site"
           ],
           "a": 0,
-          "why": "Carries a gene into a recipient cell"
+          "why": "A vector, such as a plasmid or virus, carries the gene into the recipient cell."
         },
         {
           "q": "Genes are isolated using…",
           "opts": [
-            "Enzymes",
-            "Quadrats",
-            "Only a ruler"
+            "Enzymes, which cut the gene out of the DNA",
+            "Quadrats, which are used to count plants in a habitat",
+            "Only a ruler, which is used to cut the DNA at the gene",
+            "Antibodies, which are used to bind to the gene in the DNA"
           ],
           "a": 0,
-          "why": "Enzymes"
+          "why": "Restriction enzymes cut DNA at specific sequences to isolate a gene."
         },
         {
           "q": "Which enzymes cut DNA at specific sequences?",
           "opts": [
-            "Restriction enzymes",
-            "Ligases",
-            "Amylases",
-            "Proteases"
+            "Ligases, which join pieces of DNA together after the cut",
+            "Amylases, which break down starch into sugars",
+            "Proteases, which break down proteins into amino acids",
+            "Restriction enzymes"
           ],
-          "a": 0,
-          "why": "Restriction enzymes cut DNA."
+          "a": 3,
+          "why": "Restriction enzymes cut DNA at specific sequences."
         },
         {
           "q": "Which enzymes join DNA fragments?",
           "opts": [
             "Restriction enzymes",
+            "Ligases",
             "Lipases",
-            "Carbohydrases",
-            "Ligases"
+            "Carbohydrases"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Ligase joins sugar-phosphate backbones."
         },
         {
           "q": "Why are genes put into animal cells at an early stage of development?",
           "opts": [
-            "To make cells divide faster",
-            "So all cells of the organism get the gene",
-            "To avoid using vectors",
-            "So they become bacteria"
+            "So that all of the cells of the organism contain the gene",
+            "To make the cells divide faster so the animal grows more",
+            "To avoid having to use a vector to carry the gene",
+            "So that the cells become bacteria that make the protein"
           ],
-          "a": 1,
-          "why": "Every later cell inherits it."
+          "a": 0,
+          "why": "Every cell that develops from the early cell inherits the gene."
         },
         {
           "q": "A plasmid is used as a…",
           "opts": [
             "host",
-            "vector",
             "enzyme",
+            "vector",
             "marker only"
           ],
-          "a": 1,
+          "a": 2,
           "why": "Plasmids carry genes into cells."
         }
       ],
@@ -7052,65 +7113,67 @@
         {
           "q": "Why is the fossil record incomplete?",
           "opts": [
-            "Many organisms decayed without fossilising",
-            "Every organism fossilises",
-            "Rocks only preserve living cells"
+            "Every organism that has ever lived has formed a fossil",
+            "Many organisms decayed completely without fossilising",
+            "Rocks only preserve the remains of living cells and tissue",
+            "Fossils can only form in the rocks of the deep ocean"
           ],
-          "a": 0,
-          "why": "Many organisms decayed without fossilising"
+          "a": 1,
+          "why": "Soft-bodied organisms and many others decayed before fossils could form, so the record is incomplete."
         },
         {
           "q": "A resistant survivor may…",
           "opts": [
-            "Reproduce and pass resistance on",
-            "Lose all DNA",
-            "Become a virus"
+            "Reproduce and pass resistance on to its offspring",
+            "Lose all of its DNA so that it can no longer be killed",
+            "Become a virus that is not affected by antibiotics at all",
+            "Change its DNA when it is exposed to the antibiotic"
           ],
           "a": 0,
-          "why": "Reproduce and pass resistance on"
+          "why": "Resistant survivors reproduce and pass on the resistance allele."
         },
         {
           "q": "Which of these is a fossil trace?",
           "opts": [
+            "Footprint in rock",
             "A living tree",
             "A bone in a museum cupboard last week",
-            "DNA in blood",
-            "Footprint in rock"
+            "DNA in blood"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Traces include footprints and burrows."
         },
         {
           "q": "Why are there few fossils of early life?",
           "opts": [
-            "Early organisms were soft-bodied",
             "Early organisms were too big",
             "There was too much oxygen",
-            "They were all eaten"
+            "They were all eaten",
+            "Early organisms were soft-bodied"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Soft tissue decays quickly."
         },
         {
           "q": "Which is a cause of extinction?",
           "opts": [
+            "A new disease",
             "Selective breeding",
             "Cloning",
-            "A new disease",
             "Vaccination"
           ],
-          "a": 2,
+          "a": 0,
           "why": "New diseases can wipe out species."
         },
         {
           "q": "Why is it hard to develop new antibiotics?",
           "opts": [
             "Bacteria do not reproduce",
+            "It is slow and expensive",
             "Antibiotics are natural",
-            "They are not needed",
-            "It is slow and expensive"
+            "They are not needed"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Development takes many years."
         }
       ],
@@ -7208,66 +7271,68 @@
         {
           "q": "Which is broadest?",
           "opts": [
-            "Species",
-            "Kingdom",
-            "Genus"
+            "Species, which includes only one type of organism",
+            "Genus, which includes only closely related species",
+            "Kingdom, which includes every phylum",
+            "Family, which includes only a few related genera"
           ],
-          "a": 1,
-          "why": "Kingdom"
+          "a": 2,
+          "why": "Kingdom is the broadest group in the classification system."
         },
         {
           "q": "Which shows closest relationship?",
           "opts": [
-            "The longest names",
-            "The most recent common ancestor",
-            "Names printed side by side"
+            "The most recent common ancestor that they share",
+            "The longest names, because they contain the most Latin words",
+            "The names being printed side by side in a reference book",
+            "The greatest number of features that look similar in the adults"
           ],
-          "a": 1,
-          "why": "The most recent common ancestor"
+          "a": 0,
+          "why": "The more recent the shared ancestor, the closer the relationship."
         },
         {
           "q": "Which is the correct order?",
           "opts": [
             "Kingdom, class, phylum, order, genus, family, species",
+            "Kingdom, phylum, class, order, family, genus, species",
             "Phylum, kingdom, class, family, order, genus, species",
-            "Species, genus, family, order, class, phylum, kingdom",
-            "Kingdom, phylum, class, order, family, genus, species"
+            "Species, genus, family, order, class, phylum, kingdom"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Kingdom is broadest; species is narrowest."
         },
         {
           "q": "Who proposed the three-domain system?",
           "opts": [
             "Carl Linnaeus",
-            "Carl Woese",
             "Charles Darwin",
-            "Gregor Mendel"
+            "Gregor Mendel",
+            "Carl Woese"
           ],
-          "a": 1,
+          "a": 3,
           "why": "Woese used chemical analysis."
         },
         {
           "q": "Which domain includes fungi and animals?",
           "opts": [
             "Archaea",
-            "Eukaryota",
             "Bacteria",
+            "Eukaryota",
             "Prokaryota"
           ],
-          "a": 1,
-          "why": "Eukaryotes have nuclei."
+          "a": 2,
+          "why": "Fungi and animals have nuclei, so they belong in the domain Eukaryota."
         },
         {
           "q": "In a binomial name, the first part is the…",
           "opts": [
+            "genus",
             "species",
             "family",
-            "genus",
             "kingdom"
           ],
-          "a": 2,
-          "why": "Genus comes first."
+          "a": 0,
+          "why": "In a binomial name the genus comes first, and the species name comes second."
         }
       ],
       "exam": [
@@ -7361,23 +7426,23 @@
           "q": "How many chromosomes are in a human gamete?",
           "opts": [
             "46",
+            "23",
             "92",
-            "12",
-            "23"
+            "12"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Gametes have half the number."
         },
         {
           "q": "A gene is…",
           "opts": [
-            "a whole chromosome",
-            "a type of cell",
+            "a whole chromosome that carries many different proteins",
+            "a type of cell that is found in the testes and ovaries",
             "a small section of DNA that codes for a protein",
-            "a protein"
+            "a protein that is made on the ribosomes in the cell"
           ],
           "a": 2,
-          "why": "Genes code for proteins."
+          "why": "A gene is a short section of DNA that codes for a protein."
         },
         {
           "q": "Bb × bb: probability of bb?",
@@ -7393,24 +7458,24 @@
         {
           "q": "Which sex chromosomes does a human egg contain?",
           "opts": [
-            "Y",
             "X",
+            "Y",
             "XY",
             "XX"
           ],
-          "a": 1,
-          "why": "All eggs carry an X."
+          "a": 0,
+          "why": "A human egg cell carries one sex chromosome, and this is always an X chromosome."
         },
         {
           "q": "What is selective breeding?",
           "opts": [
-            "Nature choosing survivors",
-            "Adding a gene",
-            "Cloning",
-            "Humans choosing parents with desired traits"
+            "Nature choosing the individuals that survive and breed",
+            "Humans choosing parents with the desired characteristics",
+            "Adding a gene from another species to an organism",
+            "Cloning an organism from a cell that is taken from it"
           ],
-          "a": 3,
-          "why": "Also called artificial selection."
+          "a": 1,
+          "why": "Selective breeding is also called artificial selection."
         },
         {
           "q": "Antibiotic resistance spreads because…",
@@ -7437,35 +7502,35 @@
         {
           "q": "Cystic fibrosis is caused by…",
           "opts": [
-            "a dominant allele",
             "a recessive allele",
+            "a dominant allele",
             "a virus",
             "a bacterium"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Two recessive alleles are needed."
         },
         {
           "q": "Which bases pair together?",
           "opts": [
             "A with C, G with T",
-            "A with G, C with T",
             "A with T, C with G",
+            "A with G, C with T",
             "All pair randomly"
           ],
-          "a": 2,
+          "a": 1,
           "why": "Complementary base pairing."
         },
         {
           "q": "Why are fossils useful evidence for evolution?",
           "opts": [
-            "They show how organisms changed over time",
-            "They are alive",
-            "They contain modern DNA",
-            "They are always complete"
+            "They are alive today, so they can be studied in the laboratory",
+            "They contain modern DNA, which can be compared with ours",
+            "They show how organisms have changed over time",
+            "They are always complete, so the whole animal can be seen"
           ],
-          "a": 0,
-          "why": "Fossils show change through time."
+          "a": 2,
+          "why": "Fossils show how organisms have changed through time."
         }
       ],
       "exam": [
@@ -7547,65 +7612,67 @@
         {
           "q": "Which is abiotic?",
           "opts": [
-            "Predator abundance",
-            "A pathogen",
-            "Soil pH"
+            "Predator abundance, which depends on living organisms",
+            "A pathogen, which is a living organism that causes disease",
+            "The amount of food that is available to a consumer",
+            "Soil pH, which is a non-living factor in the ecosystem"
           ],
-          "a": 2,
-          "why": "Soil pH"
+          "a": 3,
+          "why": "Abiotic factors are non-living, such as soil pH."
         },
         {
           "q": "Which is a population?",
           "opts": [
-            "Every meadow species",
-            "Soil plus all organisms",
-            "All rabbits in a meadow"
+            "All of the rabbits living in one meadow",
+            "Every one of the species that live in a meadow",
+            "The soil plus all the organisms that live in it",
+            "All of the animals and plants in a pond or a wood"
           ],
-          "a": 2,
-          "why": "All rabbits in a meadow"
+          "a": 0,
+          "why": "A population is all the organisms of one species in an area."
         },
         {
           "q": "Which is a biotic factor?",
           "opts": [
             "Soil pH",
-            "A new pathogen",
             "Light intensity",
+            "A new pathogen",
             "Temperature"
           ],
-          "a": 1,
-          "why": "Pathogens are living."
+          "a": 2,
+          "why": "Biotic factors are living factors, such as a new pathogen, a predator or competition."
         },
         {
           "q": "What do animals compete for?",
           "opts": [
             "Light and CO₂",
+            "Food, mates and territory",
             "Minerals from soil",
-            "Chlorophyll",
-            "Food, mates and territory"
+            "Chlorophyll"
           ],
-          "a": 3,
+          "a": 1,
           "why": "Animals compete for these resources."
         },
         {
           "q": "An ecosystem is…",
           "opts": [
-            "the community and its non-living environment",
-            "one species",
-            "all animals in an area",
-            "the soil only"
+            "the community of organisms and their non-living environment",
+            "one species and the habitat that it lives in",
+            "all of the animals that live in an area",
+            "the soil only, with its minerals and water"
           ],
           "a": 0,
-          "why": "Ecosystems include abiotic parts."
+          "why": "An ecosystem includes both the biotic and the abiotic parts."
         },
         {
           "q": "Which is an example of interdependence?",
           "opts": [
+            "Bees pollinating flowers",
             "A rock weathering",
             "Rain falling",
-            "Sun heating soil",
-            "Bees pollinating flowers"
+            "Sun heating soil"
           ],
-          "a": 3,
+          "a": 0,
           "why": "Species depend on each other."
         }
       ],
@@ -7703,66 +7770,68 @@
         {
           "q": "Which is behavioural?",
           "opts": [
-            "Nocturnal activity",
-            "A waxy cuticle",
-            "A long root"
+            "A waxy cuticle that reduces water loss in a desert plant",
+            "A long root that reaches water deep underground",
+            "A thick layer of fat that insulates a polar animal",
+            "Nocturnal activity"
           ],
-          "a": 0,
-          "why": "Nocturnal activity"
+          "a": 3,
+          "why": "Behavioural adaptations are about what the organism does, such as being nocturnal."
         },
         {
           "q": "Why may desert leaves be small?",
           "opts": [
-            "To reduce water loss area",
-            "To stop respiration",
-            "To absorb sunlight as water"
+            "To stop respiration so that less water is needed",
+            "To absorb sunlight to be converted into water",
+            "To reduce the surface area from which water is lost",
+            "To keep the leaves cool by letting in more air"
           ],
-          "a": 0,
-          "why": "To reduce water loss area"
+          "a": 2,
+          "why": "A smaller leaf surface area means less water is lost by transpiration."
         },
         {
           "q": "Which is a functional adaptation?",
           "opts": [
-            "Producing concentrated urine",
-            "Thick fur",
-            "Migration",
-            "Long legs"
+            "Thick fur that traps a layer of warm air",
+            "Producing concentrated urine to save water",
+            "Migration to a warmer place in the winter months",
+            "Long legs that keep the body away from hot sand"
           ],
-          "a": 0,
-          "why": "Functional adaptations are processes."
+          "a": 1,
+          "why": "A functional adaptation is a process inside the body, such as producing concentrated urine."
         },
         {
           "q": "Why do Arctic animals often have small ears?",
           "opts": [
+            "To reduce heat loss",
             "To hear better",
             "To lose water",
-            "To reduce heat loss",
             "To attract mates"
           ],
-          "a": 2,
+          "a": 0,
           "why": "Small ears reduce surface area for heat loss."
         },
         {
           "q": "An extremophile is an organism that…",
           "opts": [
-            "eats only meat",
-            "lives in extreme conditions",
-            "has no DNA",
-            "is extinct"
+            "eats only meat and so lives at the top of the food chain",
+            "has no DNA, so it is not affected by the extreme conditions",
+            "is extinct and is only known from the fossil record",
+            "lives in extreme conditions such as high temperature or salinity"
           ],
-          "a": 1,
+          "a": 3,
           "why": "Extremophiles tolerate extreme environments."
         },
         {
           "q": "Why do cacti have spines instead of leaves?",
           "opts": [
-            "To photosynthesise more",
-            "To reduce water loss and deter animals",
-            "To absorb water",
-            "To attract insects"
+            "To reduce water loss and to deter animals from eating them",
+            "To photosynthesise more, since spines contain chlorophyll",
+            "To absorb water from the air through their surface",
+            "To attract insects that pollinate the flower"
           ],
-          "a": 1,
-          "why": "Spines reduce surface area and protect."
+          "a": 0,
+          "why": "Spines have a small surface area, so less water is lost, and they protect the cactus."
         }
       ],
       "exam": [
@@ -7859,66 +7928,68 @@
         {
           "q": "Grass → rabbit → fox: the rabbit is…",
           "opts": [
-            "A tertiary consumer",
-            "A primary consumer",
-            "A producer"
+            "A tertiary consumer, because it eats the fox",
+            "A primary consumer, because it eats the producer",
+            "A producer, because it makes its own food",
+            "A secondary consumer, because it eats another animal"
           ],
           "a": 1,
-          "why": "A primary consumer"
+          "why": "The rabbit eats grass, the producer, so it is a primary consumer."
         },
         {
           "q": "Why can predator peaks follow prey peaks?",
           "opts": [
-            "Axes always run backwards",
+            "Axes on the graph always run backwards for predators and prey",
+            "Predators photosynthesise when there is a lot of sunlight available",
             "Extra prey first supports predator survival and reproduction",
-            "Predators photosynthesise"
+            "Prey animals stop reproducing as soon as the predators start to feed"
           ],
-          "a": 1,
-          "why": "Extra prey first supports predator survival and reproduction"
+          "a": 2,
+          "why": "More prey means more food, so predators survive and reproduce, but the rise lags behind the prey peak."
         },
         {
           "q": "What do arrows in a food chain show?",
           "opts": [
-            "Direction of biomass transfer",
             "Who eats whom backwards",
             "Water movement",
-            "Oxygen transfer"
+            "Oxygen transfer",
+            "Direction of biomass transfer"
           ],
-          "a": 0,
+          "a": 3,
           "why": "Arrows point from food to the feeder."
         },
         {
           "q": "Which is a producer?",
           "opts": [
-            "Seaweed",
             "Crab",
             "Seagull",
+            "Seaweed",
             "Fish"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Producers photosynthesise."
         },
         {
           "q": "Why are predator populations usually smaller than prey populations?",
           "opts": [
-            "Predators breed more",
-            "Predators eat plants",
-            "Biomass is lost at each trophic level",
-            "Prey eat predators"
+            "Predators breed more slowly, so there are always fewer of them",
+            "Predators eat plants as well, so they can survive on less meat",
+            "Prey eat the predators when they are young, so there are fewer",
+            "Biomass is lost at each trophic level"
           ],
-          "a": 2,
-          "why": "Less biomass is available higher up."
+          "a": 3,
+          "why": "Less biomass is available at each level, so fewer predators can be supported."
         },
         {
           "q": "What is an apex predator?",
           "opts": [
-            "A herbivore",
-            "A decomposer",
-            "A carnivore with no predators",
-            "A producer"
+            "A herbivore that eats only the producers in the chain",
+            "A carnivore with no predators of its own",
+            "A decomposer that breaks down the dead material",
+            "A producer that makes its own food by photosynthesis"
           ],
-          "a": 2,
-          "why": "Apex predators are at the top."
+          "a": 1,
+          "why": "Apex predators are at the top of the food chain."
         }
       ],
       "exam": [
@@ -8023,56 +8094,57 @@
         {
           "q": "Why use random quadrat coordinates?",
           "opts": [
-            "To force identical counts",
-            "To avoid repeats",
-            "To reduce selection bias"
+            "To reduce selection bias in the sample",
+            "To force the counts to be identical each time",
+            "To avoid repeating the same square in the sample",
+            "To make sure that every kind of plant is counted"
           ],
-          "a": 2,
-          "why": "To reduce selection bias"
+          "a": 0,
+          "why": "Random coordinates stop the experimenter choosing areas that give the result they expect."
         },
         {
           "q": "Why is a transect used rather than random quadrats?",
           "opts": [
-            "To count every organism",
-            "To avoid measuring abiotic factors",
-            "To make results random",
-            "To study how distribution changes across a habitat"
+            "To count every organism that lives in the habitat",
+            "To avoid having to measure abiotic factors in the field",
+            "To make the results more random than random quadrats do",
+            "To study how the distribution changes across a habitat"
           ],
           "a": 3,
-          "why": "Transects follow a gradient."
+          "why": "A transect follows a gradient, such as from the shore to the land."
         },
         {
           "q": "Mean 5 per 0.5 m² quadrat; field 400 m². Estimate population.",
           "opts": [
-            "4000",
             "2000",
+            "4000",
             "200",
             "1000"
           ],
-          "a": 0,
+          "a": 1,
           "why": "(400 ÷ 0.5) × 5 = 4000."
         },
         {
           "q": "What does percentage cover measure?",
           "opts": [
-            "Number of individuals",
-            "Light intensity",
-            "Proportion of the quadrat area covered by a species",
-            "Soil pH"
+            "The proportion of the quadrat area that is covered by a species",
+            "The number of individuals of the species in the quadrat",
+            "The light intensity at the surface of the soil",
+            "The pH of the soil beneath the quadrat"
           ],
-          "a": 2,
-          "why": "Useful when individuals are hard to count."
+          "a": 0,
+          "why": "Percentage cover is useful when individuals are too small or too numerous to count."
         },
         {
           "q": "Why should many quadrats be used?",
           "opts": [
-            "To make it random",
-            "To speed it up",
-            "To change the area",
-            "To give a more representative mean"
+            "To make the sampling more random than the earlier trials",
+            "To speed up the investigation by using several people",
+            "To give a more representative mean of the whole area",
+            "To change the area of the quadrat that is being used"
           ],
-          "a": 3,
-          "why": "More samples reduce sampling error."
+          "a": 2,
+          "why": "More samples reduce the effect of sampling error."
         }
       ],
       "exam": [
@@ -8190,32 +8262,34 @@
         {
           "q": "Which removes atmospheric carbon dioxide?",
           "opts": [
+            "Combustion, which takes carbon dioxide from the air",
             "Photosynthesis",
-            "Combustion",
-            "Respiration"
+            "Respiration, which takes carbon dioxide from the air",
+            "Decay, which takes carbon dioxide from the air"
           ],
-          "a": 0,
-          "why": "Photosynthesis"
+          "a": 1,
+          "why": "Photosynthesis removes carbon dioxide from the atmosphere; combustion, respiration and decay release it."
         },
         {
           "q": "Decomposers return to soil…",
           "opts": [
-            "Mineral ions",
-            "Sunlight",
-            "Newly created atoms"
+            "Sunlight, which plants need for photosynthesis",
+            "Newly created atoms, which plants build into biomass",
+            "Water, which is then absorbed by the leaves",
+            "Mineral ions"
           ],
-          "a": 0,
-          "why": "Mineral ions"
+          "a": 3,
+          "why": "Decomposers release minerals from dead material back into the soil."
         },
         {
           "q": "Which process releases CO₂ by burning?",
           "opts": [
-            "Photosynthesis",
             "Combustion",
+            "Photosynthesis",
             "Precipitation",
             "Condensation"
           ],
-          "a": 1,
+          "a": 0,
           "why": "Burning fuels releases carbon dioxide."
         },
         {
@@ -8232,24 +8306,24 @@
         {
           "q": "Transpiration is…",
           "opts": [
-            "rainfall",
-            "water soaking into soil",
-            "clouds forming",
-            "evaporation of water from leaves"
+            "Rainfall, which returns water to the ground",
+            "The evaporation of water from the leaves of plants",
+            "The soaking of water into the soil after rain",
+            "The formation of clouds from water vapour in the air"
           ],
-          "a": 3,
-          "why": "Plants lose water through stomata."
+          "a": 1,
+          "why": "Plants lose water by evaporation through the stomata."
         },
         {
           "q": "Why are fossil fuels a carbon store?",
           "opts": [
-            "They contain water",
-            "They formed from organisms that did not decay",
-            "They are made by photosynthesis today",
-            "They are minerals"
+            "They formed from organisms that did not decay and so locked the carbon away",
+            "They contain water that is held in the structure of the rocks",
+            "They are made by photosynthesis today in the leaves of plants",
+            "They are minerals that were formed from volcanic gases"
           ],
-          "a": 1,
-          "why": "Carbon was locked away for millions of years."
+          "a": 0,
+          "why": "Carbon was locked away for millions of years in organisms that did not fully decay."
         }
       ],
       "exam": [
@@ -8346,44 +8420,46 @@
         {
           "q": "Biodiversity means…",
           "opts": [
-            "Amount of rainfall",
-            "Variety of species",
-            "Count of only one species"
+            "The amount of rainfall that falls in the area in a year",
+            "The count of only one species in the habitat",
+            "The variety of different species in an area",
+            "The number of individuals of the commonest species"
           ],
-          "a": 1,
-          "why": "Variety of species"
+          "a": 2,
+          "why": "Biodiversity is the variety of living organisms in an ecosystem."
         },
         {
           "q": "Why can peat extraction increase carbon dioxide?",
           "opts": [
-            "It stops every organism respiring",
-            "Stored carbon is released during decay or burning",
-            "Peat contains no carbon"
+            "It stops every organism in the bog from respiring at all",
+            "Peat contains no carbon, so it makes the soil less acidic",
+            "It increases the rate of photosynthesis in the plants nearby",
+            "Stored carbon is released as carbon dioxide during decay or burning"
           ],
-          "a": 1,
-          "why": "Stored carbon is released during decay or burning"
+          "a": 3,
+          "why": "Peat stores carbon; draining and burning it releases carbon dioxide."
         },
         {
           "q": "Which gas causes acid rain?",
           "opts": [
             "Oxygen",
-            "Nitrogen",
             "Sulfur dioxide",
+            "Nitrogen",
             "Argon"
           ],
-          "a": 2,
+          "a": 1,
           "why": "SO₂ dissolves in rain to form acids."
         },
         {
           "q": "Why does deforestation increase atmospheric CO₂?",
           "opts": [
-            "More photosynthesis",
-            "Trees absorb CO₂ when cut",
-            "It adds oxygen",
-            "Less photosynthesis and trees burnt or decayed"
+            "There is less photosynthesis and the trees are burnt or decay",
+            "There is more photosynthesis, which releases CO₂ into the air",
+            "The trees absorb CO₂ when they are cut and so release it",
+            "It adds oxygen to the air, which then reacts with the CO₂"
           ],
-          "a": 3,
-          "why": "Removing trees removes a carbon sink."
+          "a": 0,
+          "why": "Removing trees removes a carbon sink, and burning or decay releases carbon dioxide."
         },
         {
           "q": "Why is peat-free compost better for the environment?",
@@ -8399,13 +8475,13 @@
         {
           "q": "High biodiversity helps an ecosystem because…",
           "opts": [
-            "it increases pollution",
-            "it removes predators",
-            "it stops evolution",
-            "it reduces dependence on any one species"
+            "it reduces dependence on any one species",
+            "it increases pollution, since there are more organisms",
+            "it removes predators, so there is more prey for each species",
+            "it stops evolution, since all the species are in balance"
           ],
-          "a": 3,
-          "why": "Many species make food webs more stable."
+          "a": 0,
+          "why": "With many species, food webs are more stable when one species is lost."
         }
       ],
       "exam": [
@@ -8504,66 +8580,68 @@
         {
           "q": "Which supports habitat connectivity?",
           "opts": [
-            "Removing every field margin",
-            "Draining ponds",
-            "Restoring hedgerows"
+            "Removing every field margin in the farmland",
+            "Draining ponds, so that the land can be cultivated",
+            "Building roads that split the woodland into parts",
+            "Restoring hedgerows, which link the habitats"
           ],
-          "a": 2,
-          "why": "Restoring hedgerows"
+          "a": 3,
+          "why": "Hedgerows provide corridors that connect habitats."
         },
         {
           "q": "Why does one cold day not disprove warming?",
           "opts": [
-            "Temperature cannot be measured",
-            "All thermometers fail",
-            "Weather varies while climate uses long-term data"
+            "Weather varies from day to day, while climate uses long-term data",
+            "Temperature cannot be measured accurately enough to compare days",
+            "All of the thermometers fail when the weather is very cold",
+            "Cold days are caused by a different greenhouse gas"
           ],
-          "a": 2,
-          "why": "Weather varies while climate uses long-term data"
+          "a": 0,
+          "why": "Climate is the average pattern over many years, so a single cold day does not disprove warming."
         },
         {
           "q": "Which can maintain biodiversity on farms?",
           "opts": [
-            "Reintroducing hedgerows",
             "Removing all weeds",
             "Using larger fields",
+            "Reintroducing hedgerows",
             "More pesticide"
           ],
-          "a": 0,
+          "a": 2,
           "why": "Hedgerows provide habitats."
         },
         {
           "q": "Why might species move further north as climate warms?",
           "opts": [
-            "Their original range becomes too warm",
-            "They follow humans",
-            "They need more light",
-            "They are being hunted"
+            "They follow humans that are moving to the north",
+            "They need more light, which is only found further north",
+            "They are being hunted by predators in the south",
+            "Their original range becomes too warm for them to survive"
           ],
-          "a": 0,
-          "why": "Distribution shifts with temperature."
+          "a": 3,
+          "why": "As the climate warms, the range of suitable temperatures shifts towards the poles."
         },
         {
           "q": "A breeding programme helps conservation by…",
           "opts": [
-            "killing pests",
-            "increasing numbers of endangered species",
-            "removing habitats",
-            "stopping migration"
+            "increasing the numbers of endangered species",
+            "killing the pests that eat the endangered species",
+            "removing habitats so that the species can spread",
+            "stopping the migration of the species to other areas"
           ],
-          "a": 1,
-          "why": "Captive breeding can boost populations."
+          "a": 0,
+          "why": "Captive breeding can boost the populations of endangered species."
         },
         {
           "q": "Why can conservation conflict with human needs?",
           "opts": [
-            "Land is also needed for food and housing",
-            "Conservation is free",
-            "Animals need no space",
-            "It always creates jobs"
+            "Conservation is free, so it takes no money from other uses",
+            "Land is also needed for food and housing by the people",
+            "Animals need no space, so the land can be shared",
+            "It always creates jobs, so the local people agree with it"
           ],
-          "a": 0,
-          "why": "Land use involves trade-offs."
+          "a": 1,
+          "why": "Land use involves trade-offs between conservation and human needs."
         }
       ],
       "exam": [
@@ -8657,11 +8735,11 @@
           "q": "Which is an abiotic factor?",
           "opts": [
             "Predators",
-            "Soil pH",
             "Competition",
+            "Soil pH",
             "Pathogens"
           ],
-          "a": 1,
+          "a": 2,
           "why": "Abiotic factors are non-living."
         },
         {
@@ -8669,10 +8747,10 @@
           "opts": [
             "producer",
             "primary consumer",
-            "secondary consumer",
-            "decomposer"
+            "decomposer",
+            "secondary consumer"
           ],
-          "a": 2,
+          "a": 3,
           "why": "It eats a primary consumer."
         },
         {
@@ -8695,73 +8773,73 @@
             "Decay"
           ],
           "a": 1,
-          "why": "Plants absorb CO₂."
+          "why": "Plants take in carbon dioxide from the air during photosynthesis."
         },
         {
           "q": "What is biodiversity?",
           "opts": [
-            "The number of one species",
-            "The mass of plants",
-            "The amount of rain",
-            "The variety of all species in an area"
+            "The variety of all of the species in an area",
+            "The number of individuals of one species in an area",
+            "The total mass of the plants that grow in an area",
+            "The amount of rain that falls in an area in a year"
           ],
-          "a": 3,
-          "why": "High biodiversity increases stability."
+          "a": 0,
+          "why": "High biodiversity increases the stability of an ecosystem."
         },
         {
           "q": "Which is a consequence of global warming?",
           "opts": [
-            "Less flooding",
-            "More ice",
-            "Lower sea levels",
-            "Species distribution changes"
+            "Less flooding, as the ice at the poles melts",
+            "More ice at the poles, because the sea levels rise",
+            "The distribution of species changes as the climate changes",
+            "Lower sea levels, because the oceans are warmer"
           ],
-          "a": 3,
-          "why": "Species move as climate changes."
+          "a": 2,
+          "why": "Species move as the climate changes."
         },
         {
           "q": "Which helps maintain biodiversity?",
           "opts": [
-            "Breeding programmes for endangered species",
-            "Removing hedgerows",
-            "Burning peat",
-            "Deforestation"
+            "Removing the hedgerows around the fields",
+            "Burning the peat that is found in a bog",
+            "Deforestation so that land is cleared for farming",
+            "Breeding programmes for endangered species"
           ],
-          "a": 0,
-          "why": "Captive breeding protects species."
+          "a": 3,
+          "why": "Captive breeding can protect species and increase their numbers."
         },
         {
           "q": "Why do extremophiles survive in hot springs?",
           "opts": [
-            "They are not alive",
-            "They need no water",
-            "They are plants",
-            "Their enzymes are adapted to high temperatures"
+            "Their enzymes are adapted to work at high temperatures",
+            "They are not alive, so the heat does not harm them",
+            "They need no water, so they do not dry out",
+            "They are plants, so they use the energy from the light"
           ],
-          "a": 3,
-          "why": "Enzymes resist denaturing."
+          "a": 0,
+          "why": "Extremophile enzymes are not denatured by heat."
         },
         {
           "q": "A transect is used to…",
           "opts": [
-            "count every organism",
-            "study changes in distribution across a habitat",
-            "measure rainfall",
-            "estimate SA:V"
+            "count every organism that is found in a small area",
+            "study the changes in the distribution of organisms across a habitat",
+            "measure the rainfall in different parts of the habitat",
+            "estimate the surface area to volume ratio of an organism"
           ],
           "a": 1,
-          "why": "Quadrats are placed along a line."
+          "why": "Quadrats are placed along a transect line to show how the distribution changes."
         },
         {
           "q": "Which gas from burning fossil fuels causes acid rain?",
           "opts": [
             "Oxygen",
             "Methane",
-            "Water vapour",
-            "Sulfur dioxide"
+            "Sulfur dioxide",
+            "Water vapour"
           ],
-          "a": 3,
-          "why": "SO₂ forms acids."
+          "a": 2,
+          "why": "Burning fossil fuels releases sulfur dioxide, which forms acids in rain water."
         }
       ],
       "exam": [

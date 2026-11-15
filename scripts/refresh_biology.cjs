@@ -2,9 +2,16 @@
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
 const root=path.join(__dirname,'..');
 (async()=>{
- const response=await fetch('https://raw.githubusercontent.com/prodigyai-app/GCSEBiology/main/course.json');
+ /* Set BIOLOGY_SOURCE to a local clone of GCSEBiology to build from it instead of downloading. */
+ const local=process.env.BIOLOGY_SOURCE;
+ let source;
+ if(local)source=JSON.parse(fs.readFileSync(path.join(local,'course.json'),'utf8'));
+ else{const response=await fetch('https://raw.githubusercontent.com/prodigyai-app/GCSEBiology/main/course.json');
  if(!response.ok)throw Error('Biology download failed: '+response.status);
- const source=await response.json(),course=JSON.parse(fs.readFileSync(path.join(root,'course.json'),'utf8'));
+ source=await response.json();}
+ const course=JSON.parse(fs.readFileSync(path.join(root,'course.json'),'utf8'));
+ if(local){for(const f of fs.readdirSync(root))if(/^depth-bio-/.test(f))fs.unlinkSync(path.join(root,f));
+  for(const f of fs.readdirSync(local))if(/^depth-[\w-]+\.js$/.test(f))fs.copyFileSync(path.join(local,f),path.join(root,'depth-bio-'+f.slice(6)));}
  const map={1:1,3:2,4:3,5:4,6:5,7:6,9:7};
  const remap=x=>Array.isArray(x)?x.map(remap):x&&typeof x==='object'?Object.fromEntries(Object.entries(x).map(([k,v])=>[k,remap(v)])):typeof x==='string'?x.replace(/(RP\s*|[Rr]equired practical(?: activity)?\s+)(\d+)\b/g,(_,prefix,n)=>prefix+(map[n]??n)):x;
  course.lessons=[...remap(source.lessons.filter(l=>!l.separate)),...course.lessons.filter(l=>!l.id.startsWith('b-'))];

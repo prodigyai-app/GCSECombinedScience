@@ -1,10 +1,12 @@
 {
   "chem": {
     "repository": "prodigyai-app/GCSEChemistry",
-    "ref": "7256ccdc0e7ac2b13aa192e41585268af5663e22"
+    "ref": "8290ea05bbcd426901753d0fd9d05fb3e37621b1",
+    "sha256": "aff8a1783196133e729afde19685d71d81a127cdf4e4287e6f48c9b380b5d596"
   },
   "phys": {
     "repository": "prodigyai-app/GCSEPhysics",
-    "ref": "adf30217d0078209b46e029a1436b2c7b1f606f7"
+    "ref": "a17d3e18c7f77257cfc1a778ad4e4583c5228b02",
+    "sha256": "9385962aa6eb762f945b7b937343ce2bc67f1540af9e277264a4d76b7761020c"
   }
 }

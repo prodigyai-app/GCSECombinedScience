@@ -1,7 +1,9 @@
 from pathlib import Path
-import json,re,urllib.request,subprocess,hashlib
+import json,re,urllib.request,subprocess,hashlib,os
 PROJECT=Path(__file__).resolve().parents[1]
 ROOT=PROJECT/'sources'
+# Set SCIENCE_SOURCES to a folder holding local clones (GCSEChemistry, GCSEPhysics) to build from them instead of downloading the pinned refs.
+LOCAL=os.environ.get('SCIENCE_SOURCES')
 ROOT.mkdir(exist_ok=True)
 SCRIPT=re.compile(r'<script[^>]*>([\s\S]*?)</script>')
 def scripts(source):return [m[1] for m in SCRIPT.finditer(source)]
@@ -46,7 +48,7 @@ def combined_corrections(code,subject):
  code=re.sub(r'(RP\s?|[Rr]equired practical(?: activity)?\s+)(\d+)\b',remap,code)
  return code
 
-def imported(repo,prefix,allowed):
+def imported(repo,prefix,allowed,local=None):
  source=(ROOT/repo/'index.html').read_text(encoding='utf-8')
  rows=json.loads((ROOT/(repo+'-lessons.json')).read_text(encoding='utf-8'))
  allids={r['id'] for r in rows if r['id']}
@@ -82,6 +84,15 @@ def imported(repo,prefix,allowed):
   # Attach only the exam questions belonging to allowed lessons.
   attached=re.findall(r'(?:EXAM\.)?attach\("([^"]+)"',code)
   if any(i in allowed for i in attached) and not m:output.append(tag(namespace(code)))
+ if local:
+  # Depth data (worked examples, fill-the-gaps, extra exam parts) lives in depth-*.js beside each source page.
+  for old in PROJECT.glob('depth-'+prefix+'-*.js'):old.unlink()
+  for f in sorted(Path(local).glob('depth-*.js')):
+   code=namespace(f.read_text(encoding='utf-8'))
+   if prefix=='chem':
+    # Combined (Trilogy) does not require the general formula of the alkenes.
+    code='\n'.join(l for l in code.split('\n') if 'C<sub>n</sub>H<sub>[[2n]]</sub>' not in l)
+   (PROJECT/('depth-'+prefix+'-'+f.name[len('depth-'):])).write_text(code,encoding='utf-8')
  return ''.join(output),used
 if __name__=='__main__':
  versions=json.loads((PROJECT/'shared-sources.json').read_text(encoding='utf-8'))
@@ -89,7 +100,8 @@ if __name__=='__main__':
  output='';used=[]
  for pre,repo in [('chem','GCSEChemistry'),('phys','GCSEPhysics')]:
   ref=versions[pre]['ref'];url=f'https://raw.githubusercontent.com/prodigyai-app/{repo}/{ref}/index.html'
-  source=urllib.request.urlopen(url,timeout=60).read().decode('utf-8')
+  local=Path(LOCAL)/repo if LOCAL else None
+  source=(local/'index.html').read_text(encoding='utf-8') if local else urllib.request.urlopen(url,timeout=60).read().decode('utf-8')
   folder=ROOT/repo;folder.mkdir(exist_ok=True);(folder/'index.html').write_text(source,encoding='utf-8')
   rows=[];unit=''
   for code in scripts(source):
@@ -104,7 +116,7 @@ if __name__=='__main__':
   if pre=='phys':
    for block in scripts(source):
     if '/* GCSE helpers:' in block:output+=tag(block.replace('AQA GCSE Physics','AQA Combined Science · Physics'))
-  block,meta=imported(repo,pre,manifest[pre]);output+=block;used+=meta
+  block,meta=imported(repo,pre,manifest[pre],local);output+=block;used+=meta
   versions[pre]['sha256']=hashlib.sha256(source.encode()).hexdigest()
  html=(PROJECT/'index.html').read_text(encoding='utf-8')
  begin='<!-- BEGIN SHARED SCIENCE LESSONS -->';end='<!-- END SHARED SCIENCE LESSONS -->'
