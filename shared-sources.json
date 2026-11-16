@@ -1,8 +1,8 @@
 {
   "chem": {
     "repository": "prodigyai-app/GCSEChemistry",
-    "ref": "9cfa12d0a911186f931d037c5b3f6746231cd6b4",
-    "sha256": "63a8019a596b513a0edb82a8778c9ff6aafc551d8cb843d9d5ae0d8f75e91fc5"
+    "ref": "4d3cd2230b5a961d111f1cf9b7988000ed8b4ba5",
+    "sha256": "ce4e2d57369094850586b23e7a43721844d312e3a8f53f5aa98274feca615215"
   },
   "phys": {
     "repository": "prodigyai-app/GCSEPhysics",

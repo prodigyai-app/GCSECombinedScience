@@ -110,7 +110,7 @@ function draw(){ const s=S[st.k], tt=Math.min(st.t,180); let g=GL.beaker(400,410
     g+=GL.tube(x,220,140,34,0,"",true); const v=vol(p); if(v>0) g+=`<rect x="${x-15}" y="${222}" width="30" height="${138*v}" fill="#eef6fb" opacity=".5"/>`;
     if(st.on&&p[1]==="gas") for(let b=0;b<4;b++) g+=`<circle cx="${x+((b*7+st.t*30)%14)-7}" cy="${380-((st.t*80+b*30)%140)}" r="2.5" fill="none" stroke="#fff"/>`;
     g+=`<text x="${x}" y="440" text-anchor="middle" font-family="Arial" font-size="13" fill="#1d2a33">${i?"anode (+)":"cathode (−)"}</text>`; });
-  g+=`<path d="M340 230V160H640M460 230V180H660" fill="none" stroke="${st.on?"#d33":"#777"}" stroke-width="3"/>`;
+  { /* leads from the electrodes to the power supply: anode (+) to the red terminal, cathode (−) to the black one */ const T=C.psuTerm(640,250); g+=C.lead(`M340 228 C 340 120, ${T.neg[0]} 110, ${T.neg[0]} ${T.neg[1]}`,"black")+C.lead(`M460 228 C 460 170, ${T.pos[0]} 160, ${T.pos[0]} ${T.pos[1]}`,"red")+C.plug(T.pos[0],T.pos[1],"red")+C.plug(T.neg[0],T.neg[1],"black"); }
   $("#elec-g").innerHTML=g; LAB.setStopwatch($("#elec-sw"),st.t); LAB.setPsu("elec-psu",6,12,st.on); }
 function graph(){ const s=S[st.k], pts=[0,1].map(i=>st.trace.map(([t,a,b])=>[t,i?b:a])); plot($("#elec-graph"),{x:{label:"Time / s",def:[0,180]},y:{label:"Volume of gas / cm³",def:[0,10]},series:[{pts:pts[0],col:RUNCOL[1],join:"line",noPts:true,label:"cathode: "+s.cat[0]},{pts:pts[1],col:RUNCOL[0],join:"line",noPts:true,label:"anode: "+s.an[0]}],empty:"Switch on to collect gas"}); }
 LAB.C&&CH.loop("elec",dt=>{ if(!st.on) return; st.t+=dt*4; const s=S[st.k], tt=Math.min(st.t,180), v=p=>p[1]==="gas"?Math.min(1,tt*p[2]/120)*9:0; if(st.t-st.last>=5){ st.last=st.t; st.trace.push([+st.t.toFixed(0),v(s.cat),v(s.an)]); graph(); }
