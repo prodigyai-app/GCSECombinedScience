@@ -324,8 +324,8 @@ ${C.shadow(cx,botY+6,74,6)}
 <g clip-path="url(#shc-thclip)">${C.thermo(544,30,240,"shc-col",{scaleLen:200})}</g>
 ${C.clamp(640,80,544)}
 ${C.psu(14,268,"shc-psu")}
-${C.lead("M512 184 C 520 100, 200 84, 174 338","black")}
 ${C.mm(214,214,"shc-am","A")}${C.mm(324,214,"shc-vm","V")}
+${C.lead("M512 184 C 532 240, 540 412, 470 430 L 230 436 C 178 436, 172 396, 174 338","black")}
 ${C.lead("M142 338 C 142 420, 236 430, 236 348","red")}
 ${C.lead("M264 348 C 270 440, 440 420, 446 300 S 472 176, 489 182","red")}
 ${C.lead("M402 348 C 404 420, 452 380, 455 292 S 478 190, 489 182","red")}
@@ -539,10 +539,7 @@ ${C.room(306)}${C.benchFront(440)}
  <text x="300" y="406" font-family="Arial" font-size="7" fill="#7c8079" letter-spacing=".5">RESISTOR BOARD</text>
  <g id="rs-board"></g>
 </g>
-<g id="rs-leads"></g>
-<g id="rs-fixed"></g>
-<g id="rs-move" style="cursor:grab"></g>
-<g>
+<g transform="translate(100 0)">
  ${C.shadow(108,356,92,6)}
  <rect x="26" y="306" width="160" height="48" rx="5" fill="#1a1c1e"/><rect x="26" y="306" width="160" height="5" rx="2" fill="#3b3f43"/>
  <rect x="48" y="312" width="118" height="34" rx="5" fill="url(#g-cell)"/>
@@ -553,7 +550,7 @@ ${C.room(306)}${C.benchFront(440)}
  <rect x="28" y="310" width="18" height="40" rx="2" fill="#2a2d30"/><rect x="172" y="310" width="12" height="40" rx="2" fill="#2a2d30"/>
  <circle cx="37" cy="318" r="6" fill="#0d0f10" stroke="#777" stroke-width="1.6"/><circle cx="178" cy="318" r="5" fill="#0d0f10" stroke="#c0392b" stroke-width="1.6"/>
 </g>
-<g id="rs-switch" style="cursor:pointer" role="button" aria-label="Switch">
+<g id="rs-switch" style="cursor:pointer" role="button" aria-label="Switch" transform="translate(100 0)">
  ${C.shadow(252,362,48,5)}
  <rect x="208" y="336" width="88" height="20" rx="3" fill="#6b4a2b"/><rect x="208" y="336" width="88" height="4" rx="2" fill="#8d6a46"/>
  <rect x="222" y="326" width="8" height="12" fill="url(#g-brass)"/><rect x="272" y="324" width="10" height="14" fill="url(#g-brass)"/><rect x="274" y="322" width="6" height="6" fill="#5a4210"/>
@@ -561,7 +558,10 @@ ${C.room(306)}${C.benchFront(440)}
  <circle cx="226" cy="328" r="3.2" fill="#5a4210"/>
  <circle cx="216" cy="346" r="4" fill="url(#g-brass)"/><circle cx="288" cy="346" r="4" fill="url(#g-brass)"/>
 </g>
-${C.mm(300,140,"rs-am","A")}${C.mm(560,140,"rs-vm","V")}
+<g id="rs-leads"></g>
+<g id="rs-fixed"></g>
+<g id="rs-move" style="cursor:grab"></g>
+${C.mm(430,140,"rs-am","A")}${C.mm(110,140,"rs-vm","V")}
 <g id="rs-plugs"></g>
 </svg>`;
 
@@ -629,22 +629,24 @@ function drawBoard(){
   if(a==="r1"||a==="r2") s+=resistor(PA[0],PB[0],382,a==="r1"?st.r1:st.r2);
   else if(a==="series") s+=resistor(PA[0],450,382,st.r1)+resistor(450,PB[0],382,st.r2)+`<circle cx="450" cy="382" r="2.5" fill="#9aa1a6"/>`;
   else s+=`<path d="M${PA[0]} 382 V368 H360 M${PA[0]} 382 V398 H360 M${PB[0]} 382 V368 H540 M${PB[0]} 382 V398 H540" fill="none" stroke="#b9bfc4" stroke-width="1.6"/>`+resistor(360,540,368,st.r1)+resistor(360,540,398,st.r2);
-  s+=sock(PA[0],PA[1],"#c0392b")+sock(PB[0],PB[1]);
+  s+=sock(PA[0],PA[1])+sock(PB[0],PB[1],"#c0392b");
   $("#rs-board").innerHTML=s;
 }
-const AM=C.mmSock(300,140), VM=C.mmSock(560,140);
+const AM=C.mmSock(430,140), VM=C.mmSock(110,140);
 function drawLeads(){
   const wire=st.mode==="wire";
   const A=wire?[X0,WY-46]:PA, B=wire?[xOf(st.L),WY-46]:PB;
-  let s=C.lead(`M178 318 C 192 290, 205 300, 216 342`,"red")+
-    C.lead(`M288 342 C 300 380, ${AM.a10[0]} 340, ${AM.a10[0]} ${AM.a10[1]}`,"red")+
-    C.lead(`M${AM.com[0]} ${AM.com[1]} C ${AM.com[0]+6} 330, ${A[0]+30} ${A[1]-40}, ${A[0]} ${A[1]}`,"red")+
-    C.lead(`M${B[0]} ${B[1]} C ${B[0]-10} ${B[1]-70}, 60 270, 37 318`,"black")+
-    C.lead(`M${VM.v[0]} ${VM.v[1]} C ${VM.v[0]} 330, ${A[0]+80} ${A[1]-60}, ${A[0]+3} ${A[1]}`,"blue")+
-    C.lead(`M${VM.com[0]} ${VM.com[1]} C ${VM.com[0]} 320, ${B[0]+40} ${B[1]-60}, ${B[0]+3} ${B[1]}`,"yellow");
+  let s=C.lead(`M278 318 C 292 290, 305 300, 316 342`,"red")+
+    C.lead(`M388 342 C 400 380, ${AM.a10[0]} 340, ${AM.a10[0]} ${AM.a10[1]}`,"red")+
+    /* Routes kept short and apart: current goes cell + → switch → ammeter → B (moving clip) → wire → A → cell −,
+       and the voltmeter sits above the cell so its leads drop straight onto the clips. */
+    C.lead(`M${AM.com[0]} ${AM.com[1]} C ${AM.com[0]} 322, ${B[0]+26} ${B[1]-70}, ${B[0]} ${B[1]}`,"red")+
+    C.lead(`M137 318 C 118 300, ${A[0]+10} ${A[1]-36}, ${A[0]-3} ${A[1]}`,"black")+
+    C.lead(`M${VM.com[0]} ${VM.com[1]} C ${VM.com[0]} 312, ${A[0]+26} ${A[1]-44}, ${A[0]+3} ${A[1]}`,"yellow")+
+    C.lead(`M${VM.v[0]} ${VM.v[1]} C ${VM.v[0]+4} 300, ${B[0]-40} ${B[1]-76}, ${B[0]-3} ${B[1]}`,"blue");
   $("#rs-leads").innerHTML=s;
-  $("#rs-plugs").innerHTML=C.plug(AM.a10[0],AM.a10[1],"red")+C.plug(AM.com[0],AM.com[1],"red")+C.plug(VM.v[0],VM.v[1],"blue")+C.plug(VM.com[0],VM.com[1],"yellow")+C.plug(178,318,"red")+C.plug(37,318,"black")+(wire?"":C.plug(PA[0],PA[1],"red")+C.plug(PB[0],PB[1],"black"));
-  if(wire){ $("#rs-fixed").innerHTML=C.croc(X0,WY,"red",90); $("#rs-move").innerHTML=C.croc(xOf(st.L),WY,"black",90)+`<rect x="${xOf(st.L)-14}" y="${WY-50}" width="28" height="60" fill="transparent"/>`; }
+  $("#rs-plugs").innerHTML=C.plug(AM.a10[0],AM.a10[1],"red")+C.plug(AM.com[0],AM.com[1],"red")+C.plug(VM.v[0],VM.v[1],"blue")+C.plug(VM.com[0],VM.com[1],"yellow")+C.plug(278,318,"red")+C.plug(137,318,"black")+(wire?"":C.plug(PA[0],PA[1],"black")+C.plug(PB[0],PB[1],"red"));
+  if(wire){ $("#rs-fixed").innerHTML=C.croc(X0,WY,"black",90); $("#rs-move").innerHTML=C.croc(xOf(st.L),WY,"red",90)+`<rect x="${xOf(st.L)-14}" y="${WY-50}" width="28" height="60" fill="transparent"/>`; }
   else { $("#rs-fixed").innerHTML=""; $("#rs-move").innerHTML=""; }
 }
 function rWire(){ return WIRES[st.wire].r*st.L; }
@@ -721,7 +723,7 @@ function work(){
 
 /* ---------- controls ---------- */
 $("#rs-modes").addEventListener("change",e=>{ st.mode=e.target.value; $("#rs-pA").hidden=st.mode!=="wire"; $("#rs-pB").hidden=st.mode==="wire";
-  $("#rs-wiremode").hidden=st.mode!=="wire"; $("#rs-boardmode").hidden=st.mode==="wire"; drawBoard(); drawLeads(); render(); refresh(); });
+  /* SVG groups have no .hidden property: set the attribute */ $("#rs-wiremode").toggleAttribute("hidden",st.mode!=="wire"); $("#rs-boardmode").toggleAttribute("hidden",st.mode==="wire"); drawBoard(); drawLeads(); render(); refresh(); });
 $("#rs-wiresel").addEventListener("change",e=>{ st.wire=e.target.value; $("#rs-wire").setAttribute("stroke",WIRES[st.wire].col); render(); });
 $("#rs-L").addEventListener("input",e=>setL(e.target.value)); $("#rs-L-n").addEventListener("change",e=>setL(e.target.value));
 $("#rs-r1").addEventListener("change",e=>{st.r1=+e.target.value; drawBoard(); render(); work();});
