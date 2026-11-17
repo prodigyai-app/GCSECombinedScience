@@ -972,11 +972,11 @@ const B={
  fig:(svg,cap)=>`<figure class="fig">${svg}${cap?`<figcaption>${cap}</figcaption>`:""}</figure>`,
  eq:(...items)=>`<div class="eqbox">${items.map(i=>`<div>${i}</div>`).join("")}</div>`,
  sim:(id,title,stage,panel,bar,after="")=>`<div class="lcard sim" id="${id}"><h3>${kind("k-sim","Interactive")}${title}</h3><div class="bench"><div class="stage">${stage}${bar?`<div class="stage-bar">${bar}</div>`:""}</div><div class="panel">${panel}</div></div>${after}</div>`,
- example:(title,q,steps)=>{ const id="ex"+(++qid); return `<div class="lcard ex" id="${id}"><h3>${kind("k-ex","Worked example")}${title}</h3><div class="exq">${q}</div><div class="exs">${steps.map(([t,why,eqs],i)=>W.step(i+1,t,why,eqs).replace('<div class="wstep"',`<div class="wstep" ${i?"hidden":""}`)).join("")}</div><div class="exbtns"><button class="btn primary" data-exnext="${id}">Show next step</button><button class="btn" data-exall="${id}">Show all steps</button></div></div>`; },
+ example:(title,q,steps,fixed)=>{ /* a fixed id keeps the numbering of later lessons unchanged */ const id=fixed||"ex"+(++qid); return `<div class="lcard ex" id="${id}"><h3>${kind("k-ex","Worked example")}${title}</h3><div class="exq">${q}</div><div class="exs">${steps.map(([t,why,eqs],i)=>W.step(i+1,t,why,eqs).replace('<div class="wstep"',`<div class="wstep" ${i?"hidden":""}`)).join("")}</div><div class="exbtns"><button class="btn primary" data-exnext="${id}">Show next step</button><button class="btn" data-exall="${id}">Show all steps</button></div></div>`; },
  keypoints:(list,title="Key points")=>`<div class="lcard"><h3>${title}</h3><ul class="kp">${list.map(x=>`<li>${x}</li>`).join("")}</ul></div>`,
  mistakes:(list)=>`<div class="lcard"><h3>Common mistakes</h3><ul class="kp kbad">${list.map(x=>`<li>${x}</li>`).join("")}</ul></div>`,
  practical:(html,label)=>`<div class="lcard"><h3>${kind("k-prac","Practical")}${label}</h3><div class="prac-link"><div class="prose" style="flex:1 1 320px">${html}</div></div></div>`,
- check:(qs,title="Check your understanding")=>{ const id="qz"+(++qid); QZ[id]=qs;
+ check:(qs,title="Check your understanding",fixed)=>{ const id=fixed||"qz"+(++qid); QZ[id]=qs;
   return `<div class="lcard" id="${id}"><h3>${kind("k-chk","Check")}${title} <span class="qscore" id="${id}-score"></span></h3><div class="qz">${qs.map((q,i)=>{ const n=`${id}-${i}`;
    const body=q.opts?`<div class="qo">${q.opts.map((o,j)=>`<label><input type="radio" name="${n}" value="${j}"><span>${o}</span></label>`).join("")}</div>`:`<div class="qnum"><input type="text" inputmode="decimal" id="${n}-in" aria-label="Your answer" autocomplete="off"><span>${q.unit||""}</span></div>`;
    return `<div class="qi" data-q="${n}"><div class="qq"><b class="qn">${i+1}</b>${q.q}</div>${body}<div class="qact"><button class="btn primary" data-chk="${n}">Check</button><button class="btn" data-show="${n}">Show answer</button></div><div class="qfb" id="${n}-fb" hidden></div></div>`; }).join("")}</div></div>`; }
@@ -5188,6 +5188,102 @@ $("#phys-el4-2").addEventListener("input",e=>{ st.R2=+e.target.value; draw(); })
 <script>
 LEARN.unit="phys-elec";
 
+/* EL11 (Lesson 5): potential dividers and sensing circuits. Added November 2026.
+   Fixed ids (qz-phys-el11, ex-phys-el11-1) keep the numbering of the lessons after it unchanged. */
+(()=>{
+const {$,fx}=LAB, {B,lesson}=LEARN, {v,fr,res}=LAB.W, {eb}=G, S=window.SYM;
+const V0=12, THRESH=6.0;
+const st={sensor:"ldr",pos:"top",Rf:4.0,light:60,temp:20,R2:4.0};
+/* resistances in kilohms */
+const Rldr=L=>0.5+99.5*Math.exp(-L/18);                                   // about 100 kΩ in the dark, under 1 kΩ in bright light
+const Rth=T=>10*Math.exp(3950*(1/(T+273.15)-1/298.15));                   // NTC thermistor: 10 kΩ at 25 °C
+const sensorR=()=>st.sensor==="ldr"?Rldr(st.light):st.sensor==="th"?Rth(st.temp):st.R2;
+const kfmt=R=>R>=10?`${R.toFixed(1)} kΩ`:R>=1?`${R.toFixed(2)} kΩ`:`${Math.round(R*1000)} Ω`;
+
+const stage=`<svg id="phys-el11-svg" viewBox="0 0 600 330" style="display:block;margin:0 auto;max-width:640px" role="img" aria-label="A potential divider: a 12 V supply with two components in series; a voltmeter shows the output p.d. across the lower component, which switches a lamp"></svg>`;
+const seg=(id,opts)=>`<div class="seg c${opts.length}" id="${id}">${opts.map(([v,t],i)=>`<label class="opt"><input type="radio" name="${id}" value="${v}"${i?"":" checked"}><span>${t}</span></label>`).join("")}</div>`;
+const panel=`<div class="field"><div class="lbl">Sensor</div>${seg("phys-el11-s",[["ldr","LDR"],["th","Thermistor"],["fx","Resistor"]])}</div>
+<div class="field"><div class="lbl">Sensor position</div>${seg("phys-el11-p",[["top","Top"],["bot","Bottom"]])}</div>
+<div class="field" id="phys-el11-cw"><div class="lbl" id="phys-el11-cl">Light level <b id="phys-el11-cv"></b></div><input type="range" id="phys-el11-c" min="0" max="100" step="1" value="60" aria-label="Condition"></div>
+<div class="field"><div class="lbl">Fixed resistor <b id="phys-el11-fl"></b></div><input type="range" id="phys-el11-f" min="0.5" max="20" step="0.5" value="4" aria-label="Fixed resistor"></div>
+<div class="readout"><div><span>Sensor resistance</span><b id="phys-el11-R">—</b></div><div><span>Current</span><b id="phys-el11-I">—</b></div><div><span>P.d. across top</span><b id="phys-el11-Vt">—</b></div><div><span>Output p.d. (bottom)</span><b id="phys-el11-Vo">—</b></div></div>
+<p class="note" id="phys-el11-msg"></p>`;
+
+lesson({id:"phys-el11",group:"b",num:5,lvl:"6.2.2 · Lesson 5",name:"Potential dividers and sensing circuits",icon:"series",
+ eyebrow:eb("6.2.1.4 and 6.2.2 Potential dividers and sensing circuits",5),title:"Potential dividers and sensing circuits",
+ intro:"Two resistors in series share the supply p.d. in the ratio of their resistances. Swap one of them for a thermistor or an LDR and the share changes with temperature or light. That is how a circuit can switch a heater, a fan or a street light on and off by itself.",
+ outcomes:[["Explain why two components in series share the supply p.d. in the ratio of their resistances","6.2.2"],["Calculate the p.d. across each resistor in a potential divider","6.2.2"],["Explain how a thermistor or an LDR in a potential divider makes the output p.d. change with temperature or light, and choose where to take the output for a sensing circuit","6.2.1.4"]],
+ blocks:[
+  B.text("Sharing the p.d.",`<p>In a series circuit the current is the same through every component. Since ${v("V")} = ${v("I")}${v("R")}, the component with the bigger resistance has the bigger p.d. across it. Two resistors in series therefore <b>share</b> the supply p.d. in the ratio of their resistances. A circuit used like this is called a <b>potential divider</b>.</p>
+<p>For example, a 12 V supply connected to a 2.0 kΩ and a 4.0 kΩ resistor in series: the 4.0 kΩ resistor has twice the resistance, so it gets twice the share. The p.d.s are 4.0 V and 8.0 V, and they add up to the 12 V supply.</p>
+<p>There are two ways to find the p.d. across one resistor:</p>
+<ul><li><b>Current first:</b> add the resistances, find the current with ${v("I")} = ${v("V")} ÷ ${v("R")}, then use ${v("V")} = ${v("I")}${v("R")} for the resistor you want. This always works and only uses equations you already know.</li>
+<li><b>Ratio:</b> p.d. across R₂ = supply p.d. × ${fr("R₂","R₁ + R₂")}</li></ul>
+<p class="note">The ratio equation is not on the AQA Physics Equation Sheet. The current-first method gives the same answer, so use whichever you find easier.</p>`),
+  B.example("Finding the output p.d.","A 9.0 V battery is connected to a 1.5 kΩ resistor and a 3.0 kΩ resistor in series. Calculate the p.d. across each resistor.",[
+   ["Total resistance","Resistances in series add; work in ohms",[`${v("R")} = 1500 + 3000 = 4500 Ω`]],
+   ["Current","The same everywhere in series",[`${v("I")} = ${fr("9.0","4500")} = 0.0020 A`]],
+   ["P.d.s","V = IR for each resistor",[`3.0 kΩ: ${v("V")} = 0.0020 × 3000 = ${res("6.0 V")}`,`1.5 kΩ: ${v("V")} = 0.0020 × 1500 = ${res("3.0 V")} (total 9.0 V ✓)`]]],"ex-phys-el11-1"),
+  B.sim("phys-el11-sim","Build a sensing circuit",stage,panel,`<span>Supply: 12 V</span><span>The lamp switches on when the output p.d. is above ${THRESH.toFixed(1)} V</span>`),
+  B.text("Sensing circuits",`<p>Replace one of the resistors with a sensor whose resistance changes:</p>
+<ul><li>an <b>LDR</b> (light-dependent resistor): its resistance falls as the light gets brighter</li><li>a <b>thermistor</b>: its resistance falls as the temperature rises</li></ul>
+<p>When the sensor's resistance changes, its share of the p.d. changes. If the sensor's resistance goes <b>up</b>, the p.d. across the sensor goes up and the p.d. across the fixed resistor goes down, because the two always add up to the supply p.d.</p>
+<p>The output p.d. is connected to a switching circuit that turns a device on when the p.d. rises above a set value. So the output must be taken across the component whose p.d. <b>rises</b> in the conditions where the device should come on.</p>
+<div style="overflow-x:auto"><table class="gtab"><thead><tr><th style="white-space:normal">Device</th><th style="white-space:normal">Sensor</th><th style="white-space:normal">Take the output across</th><th style="white-space:normal">Why</th></tr></thead><tbody>
+<tr><td style="white-space:normal">Street light that comes on in the dark</td><td style="white-space:normal">LDR</td><td style="white-space:normal">the LDR</td><td style="white-space:normal">In the dark the LDR's resistance rises, so its p.d. rises</td></tr>
+<tr><td style="white-space:normal">Fire alarm that sounds when it gets hot</td><td style="white-space:normal">Thermistor</td><td style="white-space:normal">the fixed resistor</td><td style="white-space:normal">When hot the thermistor's resistance falls, so the fixed resistor's share rises</td></tr>
+<tr><td style="white-space:normal">Frost warning that comes on when it gets cold</td><td style="white-space:normal">Thermistor</td><td style="white-space:normal">the thermistor</td><td style="white-space:normal">When cold the thermistor's resistance rises, so its p.d. rises</td></tr></tbody></table></div>
+<p>Changing the value of the fixed resistor changes the light level or temperature at which the device switches. A variable resistor in place of the fixed one lets the user adjust it.</p>`),
+  B.check([
+   {q:"A 3.0 kΩ and a 6.0 kΩ resistor are connected in series to a 9.0 V supply. What is the p.d. across the 6.0 kΩ resistor?",a:6,unit:"V",tol:0.01,why:"I = 9.0 ÷ 9000 = 0.0010 A; V = 0.0010 × 6000 = 6.0 V. (The 6.0 kΩ resistor has two thirds of the total resistance, so it gets two thirds of 9.0 V.)"},
+   {q:"A 12 V supply is connected to a 1.0 kΩ and a 3.0 kΩ resistor in series. What is the p.d. across the 1.0 kΩ resistor?",a:3,unit:"V",tol:0.01,why:"I = 12 ÷ 4000 = 0.0030 A; V = 0.0030 × 1000 = 3.0 V."},
+   {q:"An LDR is in series with a fixed resistor. The light gets brighter. What happens to the p.d. across the LDR?",opts:["It increases","It decreases","It stays the same"],a:1,why:"The LDR's resistance falls in brighter light, so it gets a smaller share of the supply p.d."},
+   {q:"A thermistor is in series with a fixed resistor. The temperature rises. What happens to the p.d. across the fixed resistor?",opts:["It increases","It decreases","It stays the same"],a:0,why:"The thermistor's resistance falls, so its share falls and the fixed resistor's share rises (the two always add up to the supply p.d.)."},
+   {q:"A street light should switch on when it gets dark. Its switching circuit turns on when the output p.d. rises. Where should the output be taken from?",opts:["Across the LDR","Across the fixed resistor","Across the supply"],a:0,why:"In the dark the LDR's resistance rises, so the p.d. across the LDR rises and can switch the light on."},
+   {q:"A 6.0 V supply is connected to two resistors in series. The p.d. across a 2.0 kΩ resistor is 1.5 V. What is the resistance of the other resistor, in kΩ?",a:6,unit:"kΩ",tol:0.01,why:"P.d. across the other resistor = 6.0 − 1.5 = 4.5 V. Current = 1.5 ÷ 2000 = 0.00075 A. R = 4.5 ÷ 0.00075 = 6000 Ω = 6.0 kΩ."}
+  ],"Check your understanding","qz-phys-el11"),
+  B.keypoints(["In series the current is the same, so the p.d. is shared in the ratio of the resistances: the bigger resistance gets the bigger share.","The p.d.s across the components add up to the supply p.d.","To find one p.d.: total resistance → current → V = IR for that component.","LDR: resistance falls as light increases. Thermistor: resistance falls as temperature increases.","Take the output across the component whose p.d. rises in the conditions where the device should switch on; the fixed resistor sets the switching point."]),
+  B.mistakes(["Using the supply p.d. with just one resistor (V = IR needs the current through that resistor, which depends on the total resistance).","Mixing kΩ and Ω: convert to ohms before calculating a current.","Saying the current is shared between components in series: it is the p.d. that is shared.","Getting the sensor the wrong way round: brighter light and higher temperature both make the resistance fall."])
+ ],onShow:()=>draw()});
+
+function draw(){ const s=$("#phys-el11-svg"); if(!s) return;
+  const Rs=sensorR(), Rf=st.Rf, Rtop=st.pos==="top"?Rs:Rf, Rbot=st.pos==="top"?Rf:Rs;
+  const I=V0/((Rtop+Rbot)*1000), Vt=I*Rtop*1000, Vb=I*Rbot*1000, on=Vb>THRESH;
+  const sym=(x,y,lab)=>st.sensor==="ldr"?S.ldr(x,y,true,lab):st.sensor==="th"?S.therm(x,y,true,lab):S.res(x,y,true,lab);
+  const sName=st.sensor==="ldr"?"LDR":st.sensor==="th"?"thermistor":"R₂";
+  let g="";
+  g+=S.wire([[70,40],[230,40],[230,290],[70,290],[70,40]])+S.battery(70,165,true,"")+`<text x="40" y="170" text-anchor="end" font-size="13" class="tm">12 V</text>`;
+  g+=S.dot(230,165)+S.wire([[230,165],[450,165]])+S.wire([[230,290],[450,290]])+`<text x="300" y="158" font-size="12" class="tm">output</text>`;
+  g+=(st.pos==="top"?sym(230,102,""):S.res(230,102,true,""))+(st.pos==="top"?S.res(230,228,true,""):sym(230,228,""));
+  const lab=(y,name,R,V)=>`<text x="208" y="${y-8}" text-anchor="end" font-size="13" font-weight="700">${name}</text><text x="208" y="${y+8}" text-anchor="end" font-size="12">${kfmt(R)}</text><text x="208" y="${y+24}" text-anchor="end" font-size="12" class="tdat">${V.toFixed(2)} V</text>`;
+  g+=lab(102,st.pos==="top"?sName:"fixed resistor",Rtop,Vt)+lab(228,st.pos==="top"?"fixed resistor":sName,Rbot,Vb);
+  /* voltmeter connected across the output (in parallel with the bottom component) */
+  g+=S.dot(400,165)+S.dot(400,290)+S.wire([[400,165],[400,290]])+S.meter(400,215,"V",`${Vb.toFixed(2)} V`);
+  /* switching unit and lamp */
+  g+=`<rect x="450" y="150" width="86" height="156" rx="10" class="fsunk ink" stroke-width="2"/><text x="493" y="178" text-anchor="middle" font-size="11" font-weight="700">SWITCHING</text><text x="493" y="192" text-anchor="middle" font-size="11" font-weight="700">CIRCUIT</text><text x="493" y="290" text-anchor="middle" font-size="11">on above ${THRESH.toFixed(1)} V</text>`;
+  g+=S.lamp(493,240,false,"",on?1:0)+`<text x="493" y="140" text-anchor="middle" font-size="13" font-weight="700" class="${on?"tdat":"tm"}">Lamp ${on?"ON":"off"}</text>`;
+  s.innerHTML=g;
+  const cond=st.sensor==="ldr"?`Light level ${st.light}%`:st.sensor==="th"?`Temperature ${st.temp} °C`:`R₂ = ${kfmt(st.R2)}`;
+  $("#phys-el11-cl").firstChild.textContent=st.sensor==="ldr"?"Light level ":st.sensor==="th"?"Temperature ":"Second resistor R₂ ";
+  $("#phys-el11-cv").textContent=st.sensor==="ldr"?`${st.light}%`:st.sensor==="th"?`${st.temp} °C`:kfmt(st.R2);
+  $("#phys-el11-fl").textContent=kfmt(Rf); $("#phys-el11-R").textContent=kfmt(Rs); $("#phys-el11-I").textContent=`${(I*1000).toFixed(2)} mA`; $("#phys-el11-Vt").textContent=`${Vt.toFixed(2)} V`; $("#phys-el11-Vo").textContent=`${Vb.toFixed(2)} V`;
+  const share=`${cond}: the ${sName} is ${kfmt(Rs)}, so the 12 V is shared ${Vt.toFixed(1)} V (top) and ${Vb.toFixed(1)} V (bottom).`;
+  const hint=st.sensor==="fx"?" The bigger resistor always gets the bigger share.":st.pos==="top"?` With the ${sName} at the top, the output rises when the ${sName}'s resistance falls (${st.sensor==="ldr"?"brighter light":"higher temperature"}).`:` With the ${sName} at the bottom, the output rises when the ${sName}'s resistance rises (${st.sensor==="ldr"?"darker":"colder"}).`;
+  $("#phys-el11-msg").textContent=share+hint+` Change the fixed resistor to move the switching point.`; }
+function setCond(){ const c=$("#phys-el11-c");
+  if(st.sensor==="ldr"){ c.min=0; c.max=100; c.step=1; c.value=st.light; }
+  else if(st.sensor==="th"){ c.min=0; c.max=100; c.step=1; c.value=st.temp; }
+  else { c.min=0.5; c.max=20; c.step=0.5; c.value=st.R2; } }
+$("#phys-el11-s").addEventListener("change",e=>{ st.sensor=e.target.value; setCond(); draw(); });
+$("#phys-el11-p").addEventListener("change",e=>{ st.pos=e.target.value; draw(); });
+$("#phys-el11-c").addEventListener("input",e=>{ const x=+e.target.value; if(st.sensor==="ldr") st.light=x; else if(st.sensor==="th") st.temp=x; else st.R2=x; draw(); });
+$("#phys-el11-f").addEventListener("input",e=>{ st.Rf=+e.target.value; draw(); });
+})();
+
+</script>
+<script>
+LEARN.unit="phys-elec";
+
 /* EL5: mains electricity */
 (()=>{
 const {$,fx,plot,css}=LAB, {B,lesson,asp}=LEARN, {eb}=G;
@@ -5200,8 +5296,8 @@ const panel2=`<label style="display:flex;gap:8px;align-items:center;cursor:point
 <label style="display:flex;gap:8px;align-items:center;cursor:pointer"><input type="checkbox" id="phys-el5-earth" checked style="width:18px;height:18px;accent-color:var(--accent)"> Earth wire connected</label>
 <p class="note" id="phys-el5-msg2"></p>`;
 
-lesson({id:"phys-el5",group:"c",num:5,lvl:"6.2.3 · Lesson 5",name:"Mains electricity",icon:"mains",
- eyebrow:eb("6.2.3 Domestic uses and safety",5),title:"Mains electricity",
+lesson({id:"phys-el5",group:"c",num:6,lvl:"6.2.3 · Lesson 6",name:"Mains electricity",icon:"mains",
+ eyebrow:eb("6.2.3 Domestic uses and safety",6),title:"Mains electricity",
  intro:"Batteries give a steady direct current, but the mains supply in your home is alternating. Appliances are connected with three-core cable, and each wire has a job, including one that is there only to keep you safe.",
  outcomes:[["Explain the difference between direct and alternating potential difference","6.2.3.1"],["Recall that UK mains is a.c. at 50 Hz and about 230 V","6.2.3.1"],["Describe the live, neutral and earth wires, including their colours and potentials","6.2.3.2"],["Explain why a live wire can be dangerous even when a switch is open","6.2.3.2"]],
  blocks:[
@@ -5255,8 +5351,8 @@ const panel=`<div class="field"><div class="lbl">Appliance</div><select id="phys
 <div class="field"><div class="lbl">Time switched on <b id="phys-el6-tl"></b></div><input type="range" id="phys-el6-t" min="1" max="60" step="1" value="5" aria-label="Time in minutes"></div>
 <div class="readout"><div><span>Current I = P/V</span><b id="phys-el6-I">—</b></div><div><span>Energy E = Pt</span><b id="phys-el6-E">—</b></div><div><span>Charge Q = It</span><b id="phys-el6-Q">—</b></div><div><span>Check: E = QV</span><b id="phys-el6-QV">—</b></div></div>`;
 
-lesson({id:"phys-el6",group:"c",num:6,lvl:"6.2.4 · Lesson 6",name:"Power and energy transfers",icon:"power",
- eyebrow:eb("6.2.4 Energy transfers",6),title:"Power and energy transfers",
+lesson({id:"phys-el6",group:"c",num:7,lvl:"6.2.4 · Lesson 7",name:"Power and energy transfers",icon:"power",
+ eyebrow:eb("6.2.4 Energy transfers",7),title:"Power and energy transfers",
  intro:"Every appliance transfers energy from the mains or a battery. How much it transfers depends on its power and how long it is switched on. The power depends on the current and the potential difference.",
  outcomes:[["Use P = VI and P = I²R","6.2.4.1"],["Use E = Pt and E = QV","6.2.4.2"],["Describe how different appliances transfer energy, and explain how power ratings relate to energy transferred","6.2.4.2"]],
  blocks:[
@@ -7384,46 +7480,47 @@ window.ALP_ACCOUNTS={sb,merge,stats,get user(){ return user; },get profile(){ re
 
 
 <script src="gcse-depth.js?v=20261115"></script>
-<script src="depth-bio-o1.js?v=20261115c"></script>
-<script src="depth-bio-o2.js?v=20261115c"></script>
-<script src="depth-bio-o3.js?v=20261115c"></script>
-<script src="depth-bio-o4.js?v=20261115c"></script>
-<script src="depth-bio-o5.js?v=20261115c"></script>
-<script src="depth-bio-p1.js?v=20261115c"></script>
-<script src="depth-bio-p2.js?v=20261115c"></script>
-<script src="depth-bio-q1.js?v=20261115c"></script>
-<script src="depth-bio-q2.js?v=20261115c"></script>
-<script src="depth-bio-r1.js?v=20261115c"></script>
-<script src="depth-bio-s1.js?v=20261115c"></script>
-<script src="depth-bio-s2.js?v=20261115c"></script>
-<script src="depth-bio-s3.js?v=20261115c"></script>
-<script src="depth-chem-ex1.js?v=20261115c"></script>
-<script src="depth-chem-o1.js?v=20261115c"></script>
-<script src="depth-chem-o2.js?v=20261115c"></script>
-<script src="depth-chem-o3.js?v=20261115c"></script>
-<script src="depth-chem-o4.js?v=20261115c"></script>
-<script src="depth-chem-o5.js?v=20261115c"></script>
-<script src="depth-chem-o6.js?v=20261115c"></script>
-<script src="depth-chem-o7.js?v=20261115c"></script>
-<script src="depth-chem-q1.js?v=20261115c"></script>
-<script src="depth-chem-q2.js?v=20261115c"></script>
-<script src="depth-chem-q3.js?v=20261115c"></script>
-<script src="depth-chem-r1.js?v=20261115c"></script>
-<script src="depth-chem-r2.js?v=20261115c"></script>
-<script src="depth-chem-s1.js?v=20261115c"></script>
-<script src="depth-chem-s2.js?v=20261115c"></script>
-<script src="depth-chem-s3.js?v=20261115c"></script>
-<script src="depth-phys-l1.js?v=20261115c"></script>
-<script src="depth-phys-o1.js?v=20261115c"></script>
-<script src="depth-phys-o2.js?v=20261115c"></script>
-<script src="depth-phys-s1.js?v=20261115c"></script>
-<script src="depth-phys-s2.js?v=20261115c"></script>
-<script src="depth-phys-s3.js?v=20261115c"></script>
-<script src="depth-phys-s4.js?v=20261115c"></script>
-<script src="depth-phys-s5.js?v=20261115c"></script>
-<script src="depth-phys-x1.js?v=20261115c"></script>
-<script src="depth-phys-x2.js?v=20261115c"></script>
-<script src="depth-phys-x3.js?v=20261115c"></script>
+<script src="depth-bio-o1.js?v=20261117"></script>
+<script src="depth-bio-o2.js?v=20261117"></script>
+<script src="depth-bio-o3.js?v=20261117"></script>
+<script src="depth-bio-o4.js?v=20261117"></script>
+<script src="depth-bio-o5.js?v=20261117"></script>
+<script src="depth-bio-p1.js?v=20261117"></script>
+<script src="depth-bio-p2.js?v=20261117"></script>
+<script src="depth-bio-q1.js?v=20261117"></script>
+<script src="depth-bio-q2.js?v=20261117"></script>
+<script src="depth-bio-r1.js?v=20261117"></script>
+<script src="depth-bio-s1.js?v=20261117"></script>
+<script src="depth-bio-s2.js?v=20261117"></script>
+<script src="depth-bio-s3.js?v=20261117"></script>
+<script src="depth-chem-ex1.js?v=20261117"></script>
+<script src="depth-chem-o1.js?v=20261117"></script>
+<script src="depth-chem-o2.js?v=20261117"></script>
+<script src="depth-chem-o3.js?v=20261117"></script>
+<script src="depth-chem-o4.js?v=20261117"></script>
+<script src="depth-chem-o5.js?v=20261117"></script>
+<script src="depth-chem-o6.js?v=20261117"></script>
+<script src="depth-chem-o7.js?v=20261117"></script>
+<script src="depth-chem-q1.js?v=20261117"></script>
+<script src="depth-chem-q2.js?v=20261117"></script>
+<script src="depth-chem-q3.js?v=20261117"></script>
+<script src="depth-chem-r1.js?v=20261117"></script>
+<script src="depth-chem-r2.js?v=20261117"></script>
+<script src="depth-chem-s1.js?v=20261117"></script>
+<script src="depth-chem-s2.js?v=20261117"></script>
+<script src="depth-chem-s3.js?v=20261117"></script>
+<script src="depth-phys-l1.js?v=20261117"></script>
+<script src="depth-phys-o1.js?v=20261117"></script>
+<script src="depth-phys-o2.js?v=20261117"></script>
+<script src="depth-phys-pd.js?v=20261117"></script>
+<script src="depth-phys-s1.js?v=20261117"></script>
+<script src="depth-phys-s2.js?v=20261117"></script>
+<script src="depth-phys-s3.js?v=20261117"></script>
+<script src="depth-phys-s4.js?v=20261117"></script>
+<script src="depth-phys-s5.js?v=20261117"></script>
+<script src="depth-phys-x1.js?v=20261117"></script>
+<script src="depth-phys-x2.js?v=20261117"></script>
+<script src="depth-phys-x3.js?v=20261117"></script>
 <script>GcseDepth.apply();</script>
 <script src="subject-icons.js?v=20261023-ks3"></script>
 <script src="maths-keyboard.js?v=20261031-fast"></script>
@@ -7495,4 +7592,5 @@ window.ALP_ACCOUNTS={sb,merge,stats,get user(){ return user; },get profile(){ re
   watch(); addEventListener('scroll',all,{passive:true}); addEventListener('resize',all); addEventListener('hashchange',all); setTimeout(all,500);
   new MutationObserver(function(){ document.querySelectorAll('.stage svg text[data-lt-keep]').forEach(function(t){ delete t.dataset.ltKeep; }); all(); }).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 })();
-</script>/body></html>
+</script>
+</body></html>

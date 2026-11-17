@@ -11096,10 +11096,18 @@
     },
     {
       "unit": "phys-elec",
+      "id": "phys-el11",
+      "name": "Potential dividers and sensing circuits",
+      "group": "b",
+      "lvl": "6.2.2 · Lesson 5",
+      "subject": "phys"
+    },
+    {
+      "unit": "phys-elec",
       "id": "phys-el5",
       "name": "Mains electricity",
       "group": "c",
-      "lvl": "6.2.3 · Lesson 5",
+      "lvl": "6.2.3 · Lesson 6",
       "subject": "phys"
     },
     {
@@ -11107,7 +11115,7 @@
       "id": "phys-el6",
       "name": "Power and energy transfers",
       "group": "c",
-      "lvl": "6.2.4 · Lesson 6",
+      "lvl": "6.2.4 · Lesson 7",
       "subject": "phys"
     },
     {
