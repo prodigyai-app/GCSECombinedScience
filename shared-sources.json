@@ -6,7 +6,7 @@
   },
   "phys": {
     "repository": "prodigyai-app/GCSEPhysics",
-    "ref": "5161cdd365a6a8f9d271841fc1153782c733a9c2",
-    "sha256": "2564a91fa74c659060207e6338813cba06531b3936fd554b70e2e145727ea824"
+    "ref": "1c02a3d5f3c3efb46a46555286b1042f29817dfb",
+    "sha256": "19602a6f98203e6aef2c52b67d256c531332dbad321b9d7952f9e733d51b2d52"
   }
 }

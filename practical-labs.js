@@ -883,13 +883,25 @@ setInterval(()=>{ if(st.on){ jit={I:gauss()*(st.comp==="diode"?2e-5:4e-4),V:gaus
 function refresh(){
   const d=st.data[st.comp];
   $("#iv-thead").innerHTML=`<tr><th>V / V</th><th>I / ${iUnit()}</th><th>R = V/I / Ω</th><th></th></tr>`;
-  rows($("#iv-tbody"),d.map(r=>[fx(r.V,2),iShow(r.I),Math.abs(r.I)<1e-6?"very large":fmt(r.V/r.I,3)]),"Set a supply voltage and record readings.",3,true);
+  rows($("#iv-tbody"),d.map(r=>[fx(r.V,2),iShow(r.I),Math.abs(r.I)<(st.comp==="diode"?5e-5:1e-6)?"very large":fmt(r.V/r.I,3)]),"Set a supply voltage and record readings.",3,true);
   draw(); work();
 }
 function draw(){
   const d=st.data[st.comp], k=st.comp==="diode"?1000:1;
   const o={x:{label:"Potential difference V / V",def:[-6,6],min:-6,max:6},y:{label:`Current I / ${iUnit()}`,def:st.comp==="diode"?[-10,60]:[-0.6,0.6]},series:[{pts:d.map(r=>[r.V,r.I*k]),col:LAB.RUNCOL[0],join:st.comp==="res"?null:"curve"}],empty:"Readings will be plotted here"};
-  if(st.comp==="diode") o.x={label:"Potential difference V / V",min:-6,max:1};
+  if(st.comp==="diode"){
+    /* Draw a smooth curve of best fit through the readings, following the diode's shape: almost no current until the threshold (about 0.6 V), then a steep rise. A spline through sparse readings would wrongly start rising from 0 V. */
+    const lo=Math.min(-1,Math.floor(Math.min(0,...d.map(r=>r.V)))); o.x={label:"Potential difference V / V",min:lo,max:1};
+    o.series[0].join=null;
+    if(d.length>=2){ const v0=Math.min(...d.map(r=>r.V)), v1=Math.max(...d.map(r=>r.V)), pts=[];
+      /* fit I = A(e^(V/n) − 1) to the conducting readings: a straight line of ln I against V */
+      const on=d.filter(r=>r.I>5e-4); let n=0.0437, A=1e-8;
+      if(on.length>=2){ const f=linfit(on.map(r=>[r.V,Math.log(r.I)])); if(f&&f.m>5){ n=1/f.m; A=Math.exp(f.c); } }
+      else if(on.length===1){ A=on[0].I/Math.exp(on[0].V/n); }
+      const fI=V=>A*(Math.exp(V/n)-1)*1000, top=Math.max(...d.map(r=>r.I*1000));
+      for(let V=v0;V<=v1+0.02;V+=0.001){ const y=fI(V); if(y>top*1.06) break; pts.push([V,y]); }
+      o.series.unshift({pts,col:LAB.RUNCOL[0],join:"line",noPts:true}); }
+  }
   if(st.comp==="res"&&d.length>=3){ const f=linfit(d.map(r=>[r.V,r.I])); if(f) o.fits=[{m:f.m,c:f.c,x0:-6,x1:6,label:"line of best fit"}]; o.legend="left"; }
   plot($("#iv-graph"),o);
 }
